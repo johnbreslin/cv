@@ -1,0 +1,5 @@
+[0] Config.pm:302> INFO - This is Biber 2.11
+[0] Config.pm:305> INFO - Logfile is 'publications.blg'
+[35] biber-darwin:313> INFO - === Wed Jan 13, 2021, 11:35:16
+[171] Utils.pm:209> ERROR - Cannot find control file 'publications.bcf'! - Did latex run successfully on your .tex file before you ran biber?
+[171] Biber.pm:114> INFO - ERRORS: 1
