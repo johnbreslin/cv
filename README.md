@@ -6,7 +6,7 @@ Uses res.cls by Michael DeCorte
 
 Should use pdflatex (or pdflatekmk in TeXShop) to make (it calls biber for the BibTeX)
 
-Can use pandoc to convert from TeX to HTML, I've updated the pandoc.sh file to replace centerline with underline first (.bib processing needs pandoc-citeproc, but I haven't gotten it to work yet)
+Can use pandoc to convert from TeX to HTML, I've updated the pandoc.sh file to replace centerline with underline first (.bib processing needs pandoc-citeproc, but I haven't gotten it to work yet with the \printbibliography type filtering, so I have just added a standalone publications.tex conversion)
 
 Can also change longtable to tabular before pandoc
 
