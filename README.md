@@ -6,7 +6,7 @@ Uses res.cls by Michael DeCorte
 
 Should use pdflatex (or pdflatekmk in TeXShop) to make (it calls biber for the BibTeX)
 
-Can use pandoc to convert from TeX to HTML, but you will need to find/replace \centerline with something like \underline beforehand [Use :%s/centerline/underline/g in vi]
+Can use pandoc to convert from TeX to HTML, I've updated the pandoc.sh file to replace centerline with underline first (.bib processing needs pandoc-citeproc, but I haven't gotten it to work yet)
 
 Can also change longtable to tabular before pandoc
 
