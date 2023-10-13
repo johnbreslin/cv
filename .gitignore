@@ -21,6 +21,7 @@ Curriculum_Vitae.tex.bbl
 Curriculum_Vitae.tex.blg
 publications.bib.blg
 publications.bib.bbl
+publications.fls
 publications.log
 publications.blg
 publications.aux
@@ -28,6 +29,7 @@ publications.bbl
 publications.csl
 publications.fdb_latex
 publications.fsl
+publications_iris.bib
 figures/Hancock.png
 figures/Icon
 Icon
