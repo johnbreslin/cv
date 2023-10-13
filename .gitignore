@@ -27,7 +27,7 @@ publications.blg
 publications.aux
 publications.bbl
 publications.csl
-publications.fdb_latex
+publications.fdb_latexmk
 publications.fsl
 publications_iris.bib
 figures/Hancock.png
