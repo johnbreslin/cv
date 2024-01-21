@@ -30,9 +30,15 @@ publications.csl
 publications.fdb_latexmk
 publications.fsl
 publications_iris.bib
+publications_bibertool.bib
 figures/Hancock.png
 figures/Icon
 Icon
 people.html
 people.php
 publications.php
+bib2html5ab81a
+bib2html5ab81a.aux
+bib2html5ab81a.bbl
+bib2html5ab81a.blg
+publications.blg
