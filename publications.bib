@@ -6,12 +6,15 @@
 %% Saved with string encoding Unicode (UTF-8) 
 
 %% For importing into IRIS:
-%%   In this file, replace conference with inproceedings and unpublished (conference abstracts) to inproceedings before importing
-%%   In IRIS, change any workshops/posters/demos/abstracts to the Conference Contribution type under Bulk Actions
+%%   In this file, replace @conference with @inproceedings and @unpublished (conference abstracts) to @inproceedings before importing
+%%   In IRIS, change any workshops/posters/demos/abstracts to the @conference Contribution type under Bulk Actions
 %%   In IRIS, remove some Books Edited from Books
 %%   In IRIS, remove any duplicate papers, e.g., some entries with \& come up twice
 
 %% To count authors, try grep "Author =" publications.bib |sed 's#        Author = {##g' | sed 's#},##g' |sed 's# and #\n#g' |sort -u |wc
+%% Extract counts per type per year on a Mac
+%% grep "ATSIGNHERE" publications.bib | sed -e 's/_/J/g' | sed -e 's/{[[:alnum:]][[:alnum:]][[:alnum:]][[:alnum:]]/ /g' | sed -e 's/ATSIGNHERE//g' | sed -e 's/[[:alpha:]],//g' | sed -e 's/,//g' | uniq -c
+%% To count senior authors, try grep "{Breslin, John G" publications.bib | wc and grep "Breslin, John G}" publications.bib | wc
 
 @book{oiic2023,
 	Author = {Breslin, John G and Buckley, Sarah-Anne},
@@ -35,7 +38,7 @@
 	Year = 2021,
 	Bdsk-Url-1 = {https://irishacademicpress.ie/product/old-ireland-in-colour-2/}}
 
-% Added to Sesame with grants Insight, Confirm and VistaMilk
+%% Added to Sesame with grants Insight, Confirm and VistaMilk
 @book{oiic2020,
 	Author = {Breslin, John G and Buckley, Sarah-Anne},
 	Day = 7,
@@ -48,9 +51,9 @@
 	Year = 2020,
 	Bdsk-Url-1 = {https://irishacademicpress.ie/product/old-ireland-in-colour/}}
 
-% Isbn = {9783031794582},
-% Publisher = {Springer},
-% Url = {https://link.springer.com/book/10.1007/978-3-031-79459-9},
+%% Isbn = {9783031794582},
+%% Publisher = {Springer},
+%% Url = {https://link.springer.com/book/10.1007/978-3-031-79459-9},
 
 @book{sswm2015,
 	Author = {Omitola, Tope and R{\'i}os, Sebasti{\'a}n A and Breslin, John G},
@@ -76,7 +79,7 @@
 	Year = 2009,
 	Bdsk-Url-1 = {https://link.springer.com/book/10.1007/978-3-642-01172-6}}
 
-%	Author = {Various Authors},
+%%	Author = {Various Authors},
 @book{swcs2016a,
 	Day = 20,
 	Editor = {Molli, Pascal and Breslin, John G and Vidal, Maria-Esther},
@@ -90,7 +93,7 @@
 	Year = 2016,
 	Bdsk-Url-1 = {https://link.springer.com/book/10.1007/978-3-319-32667-2}}
 
-%	Author = {Various Authors},
+%%	Author = {Various Authors},
 @book{eswc2015,
 	Day = 15,
 	Editor = {Gandon, Fabien and Gu{\'e}ret, Christophe and Villata, Serena and Breslin, John G and Faron-Zucker, Catherine and Zimmermann, Antoine},
@@ -103,7 +106,7 @@
 	Year = 2015,
 	Bdsk-Url-1 = {https://link.springer.com/book/10.1007/978-3-319-25639-9}}
 
-%	Author = {Various Authors},
+%%	Author = {Various Authors},
 @book{icws2012,
 	Day = 4,
 	Editor = {Breslin, John G and Ellison, Nicole B and Shanahan, James G and Tufekci, Zeynep},
@@ -117,7 +120,7 @@
 	Year = 2012,
 	Bdsk-Url-1 = {http://www.aaai.org/Press/Proceedings/icwsm12.php}}
 
-%	Author = {Various Authors},
+%%	Author = {Various Authors},
 @book{blog2010,
 	Day = 30,
 	Editor = {Breslin, John G and Burg, Thomas N and Kim, Hong-Gee and Raftery, Tom and Schmidt, Jan-Hinrik},
@@ -130,7 +133,7 @@
 	Year = 2010,
 	Bdsk-Url-1 = {https://link.springer.com/book/10.1007/978-3-642-16581-8}}
 
-% Added to Sesame with grants CENTS, VistaMilk and Insight
+%% Added to Sesame with grants CENTS, VistaMilk and Insight
 @inbook{wire2021,
 	Author = {Thakur, Subhasis and Breslin, John G},
 	Booktitle = {Decentralized Content Vetting in Social Network with Blockchain},
@@ -144,7 +147,7 @@
 	Title = {Wireless Blockchain: Principles, Technologies and Applications},
 	Year = 2021}
 
-% Added to Sesame with grants VistaMilk and Insight
+%% Added to Sesame with grants VistaMilk and Insight
 @inbook{iucb2021,
 	Author = {Bandara, Kosala Y and Thakur, Subhasis and Breslin, John G},
 	Booktitle = {End-to-End Tracing and Congestion in a Blockchain: A Supply Chain Use Case in Hyperledger Fabric},
@@ -364,24 +367,50 @@
 	Title = {SIOC Browser - Towards a Richer Blog Browsing Experience},
 	Year = 2006}
 
-% Add to Sesame with grants CRT-AI and Insight and get file
-%	Day = ,
-%	Doi = {},
-%	Month = ,
-%	Pdf = {http://www.johnbreslin.com/files/publications/20240000_acce2024.pdf},
-@article{acce2024,
-	Author = {Ward, Rory and Bigioi, Dan and Basak, Shubhajit and Breslin, John G and Corcoran, Peter},
-	Issn = {21693536},
-	Journal = {IEEE Access},
-	Publisher = {IEEE},
-	Title = {LatentColorization: Latent Diffusion-Based Speaker Video Colorization},
-	Year = 2024}
+%% Add to Sesame with grants Cyber-Shock and Insight, get file
+%%	Day = ,
+%%	Doi = {},
+%%	Month = ,
+%%	Pdf = {http://www.johnbreslin.com/files/publications/20250000_supe2025.pdf},
+@article{supe2025,
+	Author = {Verma, Priyanka and O'Shea, Donna and Newe, Thomas and Mehta, Nakul and Bharot, Nitesh and Breslin, John G},
+	Issn = {09208542},
+	Journal = {Journal of Supercomputing},
+	Publisher = {Springer},
+	Title = {ABIDS-VEM: Leveraging an Equilibrium Optimizer and Data Ramification in Association with Ensemble Learning for Anomaly-Based Intrusion Detection System},
+	Year = 2025}
 
-% Add to Sesame with grants SMART 4.0, Confirm and Insight and get file
-%	Day = ,
-%	Doi = {},
-%	Month = ,
-%	Pdf = {http://www.johnbreslin.com/files/publications/20240000_exsy2024.pdf},
+%% Add to Sesame with grants Insight and SustAIn, get file
+%%	Day = ,
+%%	Doi = {},
+%%	Month = ,
+%%	Pdf = {http://www.johnbreslin.com/files/publications/20250000_jait2025.pdf},
+@article{jait2025,
+	Author = {Ahmed, Hager and McCann, Michael and Breslin, John G and El-Sappagh, Shaker},
+	Issn = {17982340},
+	Journal = {Journal of Advances in Information Technology},
+	Publisher = {JAIT},
+	Title = {Beyond Classical Approaches: Fine-Tuning Clinical BERT Models on Structured Data for Alzheimer's Disease Diagnosis},
+	Year = 2025}
+
+%% Add to Sesame with grants CRT-AI and Insight, get file
+%%	Day = ,
+%%	Doi = {},
+%%	Month = ,
+%%	Pdf = {http://www.johnbreslin.com/files/publications/20250000_tai_2025.pdf},
+@article{tai_2025,
+	Author = {Khan, M Jaleed and Breslin, John G and Curry, Edward},
+	Issn = {26914581},
+	Journal = {Transactions on Artificial Intelligence},
+	Publisher = {IEEE},
+	Title = {KnowZRel: Common Sense Knowledge-Based Zero-Shot Relationship Retrieval for Generalised Scene Graph Generation},
+	Year = 2025}
+
+%% Add to Sesame with grants Insight and SustAIn, get file
+%%	Day = ,
+%%	Doi = {},
+%%	Month = ,
+%%	Pdf = {http://www.johnbreslin.com/files/publications/20240000_exsy2024.pdf},
 @article{exsy2024,
 	Author = {Vidyarthi, Ankit and Verma, Priyanka and Bharot, Nitesh and Breslin, John G and O'Shea, Donna and Mishra, Anand K and Gupta, Deepak},
 	Issn = {14680394},
@@ -390,21 +419,72 @@
 	Title = {Leveraging Transfer Learning Domain Adaptation Model with Federated Learning to Revolutionize Healthcare},
 	Year = 2024}
 
-% Add to Sesame with grants CRT-AI and Insight and get file
-%	Day = ,
-%	Doi = {},
-%	Month = ,
-%	Pdf = {http://www.johnbreslin.com/files/publications/20240000_nai_2024.pdf},
+%% Added to Sesame with grant Insight
+@article{eswa2024,
+	Author = {Usmani, Atiya and Alsamhi, Saeed H and Khan, M Jaleed and Breslin, John G and Curry, Edward},
+	Day = 7,
+	Doi = {10.1016/j.eswa.2024.125695},
+	Issn = {18736793},
+	Journal = {Expert Systems With Applications},
+	Month = nov,
+	Pdf = {http://www.johnbreslin.com/files/publications/20241107_eswa2024.pdf},
+	Publisher = {Elsevier},
+	Title = {MuSe-CarASTE: A Comprehensive Dataset for Aspect Sentiment Triplet Extraction in Automotive Review Videos},
+	Year = 2024}
+
+%% Added to Sesame with grants VistaMilk, Insight and SustAIn
+@article{acce2024c,
+	Author = {De Silva, Anupa and Thakur, Subhasis and Breslin, John G},
+	Day = 9,
+	Doi = {10.1109/ACCESS.2024.3477258},
+	Issn = {21693536},
+	Journal = {IEEE Access},
+	Month = oct,
+	Pdf = {http://www.johnbreslin.com/files/publications/20241009_acce2024c.pdf},
+	Publisher = {IEEE},
+	Title = {An Integrated Stablecoin and Subsidised Node Design for Payment Channel Networks},
+	Year = 2024}
+
+%% Added to Sesame with grants Insight, Confirm and OntoCommons
+@article{acce2024b,
+	Author = {Yahya, Muhammad and Wahid, Abdul and Yang, Lan and Breslin, John G and Kharlamov, Evgeny and Ali, M Intizar},
+	Day = 27,
+	Doi = {10.1109/ACCESS.2024.3419911},
+	Issn = {21693536},
+	Journal = {IEEE Access},
+	Month = jun,
+	Pdf = {http://www.johnbreslin.com/files/publications/20240627_acce2024b.pdf},
+	Publisher = {IEEE},
+	Title = {Link Prediction in Industrial Knowledge Graphs: A Case Study on Football Manufacturing},
+	Year = 2024}
+
+%% Added to Sesame with grants CRT-AI and Insight
+@article{acce2024a,
+	Author = {Ward, Rory and Bigioi, Dan and Basak, Shubhajit and Breslin, John G and Corcoran, Peter},
+	Day = 27,
+	Doi = {10.1109/ACCESS.2024.3406249},
+	Issn = {21693536},
+	Journal = {IEEE Access},
+	Month = may,
+	Pdf = {http://www.johnbreslin.com/files/publications/20240527_acce2024a.pdf},
+	Publisher = {IEEE},
+	Title = {LatentColorization: Latent Diffusion-Based Speaker Video Colorization},
+	Year = 2024}
+
+%% Added to Sesame with grants CRT-AI and Insight
 @article{nai_2024,
 	Author = {Khan, M Jaleed and Ilievski, Filip and Breslin, John G and Curry, Edward},
+	Day = 13,
+	Doi = {10.3233/NAI-240719},
 	Issn = {29498732},
 	Journal = {Neurosymbolic Artificial Intelligence Journal},
+	Month = may,
+	Pdf = {http://www.johnbreslin.com/files/publications/20240513_nai_2024.pdf},
 	Publisher = {IOS Press},
 	Title = {A Survey of Neurosymbolic Visual Reasoning with Scene Graphs and Common Sense Knowledge},
 	Year = 2024}
 
-% Add to Sesame with grants VistaMilk and Insight and get file
-%	Pdf = {http://www.johnbreslin.com/files/publications/20240326_dlt_2024.pdf},
+%% Added to Sesame with grants VistaMilk and Insight
 @article{dlt_2024,
 	Author = {De Silva, Anupa and Thakur, Subhasis and Breslin, John G},
 	Day = 26,
@@ -412,12 +492,12 @@
 	Issn = {27696480},
 	Journal = {Distributed Ledger Technologies},
 	Month = mar,
+	Pdf = {http://www.johnbreslin.com/files/publications/20240326_dlt_2024.pdf},
 	Publisher = {ACM},
 	Title = {Card Payment Protocol for Cryptocurrencies with Payment Channel Network},
 	Year = 2024}
 
-% Add to Sesame with grants SMART 4.0 and Confirm and get file
-%	Pdf = {http://www.johnbreslin.com/files/publications/20240201_tce_2024b.pdf},
+%% Added to Sesame with grants SMART 4.0, Confirm and Insight
 @article{tce_2024b,
 	Author = {Verma, Priyanka and Bharot, Nitesh and Breslin, John G and O'Shea, Donna and Vidyarthi, Ankit and Gupta, Deepak},
 	Day = 1,
@@ -427,12 +507,13 @@
 	Month = feb,
 	Number = 1,
 	Pages = {3856--3866},
+	Pdf = {http://www.johnbreslin.com/files/publications/20240201_tce_2024b.pdf},
 	Publisher = {IEEE},
 	Title = {Zero-Day Guardian: A Dual Model enabled Federated Learning Framework for Handling Zero-day Attacks in 5G Enabled IIoT},
+	Volume = 70,
 	Year = 2024}
 
-% Add to Sesame with grants Confirm, Insight and SMART 4.0 and get file
-%	Pdf = {http://www.johnbreslin.com/files/publications/20240201_tce_2024a.pdf},
+%% Added to Sesame with grants Confirm, Insight and SMART 4.0
 @article{tce_2024a,
 	Author = {Verma, Priyanka and Breslin, John G and O'Shea, Donna and Mehta, Nakul and Bharot, Nitesh and Vidyarthi, Ankit},
 	Day = 1,
@@ -442,14 +523,15 @@
 	Month = feb,
 	Number = 1,
 	Pages = {1940--1951},
+	Pdf = {http://www.johnbreslin.com/files/publications/20240201_tce_2024a.pdf},
 	Publisher = {IEEE},
-	Title = {Gametic Heredity in Oversampling Techniques to Handle Class Imbalance for Efficient Cyberthreat Detection in IIoT},
+	Title = {Leveraging Gametic Heredity in Oversampling Techniques to Handle Class Imbalance for Efficient Cyberthreat Detection in IIoT},
 	Volume = 70,
 	Year = 2024}
 
-% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame with grants Confirm and Insight
 @article{hcis2024,
-	Author = {Wahid, Abdul and Breslin, John G and Ali, Muhammad I},
+	Author = {Wahid, Abdul and Breslin, John G and Ali, M Intizar},
 	Day = 29,
 	Doi = {10.1007/s44230-023-00060-0},
 	Issn = {26671336},
@@ -473,7 +555,7 @@
 	Title = {Uncovering Collateral Damages and Advanced Defense Strategies in Cloud Environments against DDoS Attacks: A Comprehensive Review},
 	Year = 2024}
 
-% Added to Sesame with grants CRT-AI and Insight
+%% Added to Sesame with grants CRT-AI and Insight
 @article{swj_2023b,
 	Author = {Khan, M Jaleed and Breslin, John G and Curry, Edward},
 	Day = 13,
@@ -486,9 +568,9 @@
 	Title = {NeuSyRE: Neuro-Symbolic Visual Understanding and Reasoning Framework Based on Scene Graph Enrichment},
 	Year = 2023}
 
-% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame with grants Confirm and Insight
 @article{acce2023c,
-	Author = {Kafunah, Jefkine and Verma, Priyanka and Ali, Muhammad I and Breslin, John G},
+	Author = {Kafunah, Jefkine and Verma, Priyanka and Ali, M Intizar and Breslin, John G},
 	Day = 28,
 	Doi = {10.1109/ACCESS.2023.3337658},
 	Issn = {21693536},
@@ -500,7 +582,7 @@
 	Url = {https://ieeexplore.ieee.org/document/10145852},
 	Year = 2023}
 
-% Added to Sesame with grants CENTS and Insight
+%% Added to Sesame with grants CENTS and Insight
 @article{sgse2023,
 	Author = {Malik, Sweta and Thakur, Subhasis and Duffy, Maeve and Breslin, John G},
 	Day = 21,
@@ -528,7 +610,7 @@
 	Volume = 88,
 	Year = 2023}
 
-% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame with grants Confirm and Insight
 @article{sust2023,
 	Author = {Abimannan, Satheesh and El-Alfy, El-Sayed M and Hussain, Shahid and Chang, Yue-Shan and Shukla, Saurabh and Satheesh, Dhivyadharsini and Breslin, John G},
 	Day = 20,
@@ -544,7 +626,7 @@
 	Volume = 15,
 	Year = 2023}
 
-% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame with grants Confirm and Insight
 @article{acce2023b,
 	Author = {Irshad, Reyazur R and Hussain, Shahid and Hussain, Ihtisham and Ahmad, Ibrar and Yousif, Adil and Alwayle, Ibrahim M and Alattab, Ahmed A and Alalayah, Khaled M and Breslin, John G and Badr, Mohammed M and Rodrigues, Joel JPC},
 	Day = 22,
@@ -558,9 +640,9 @@
 	Url = {https://ieeexplore.ieee.org/document/10159381},
 	Year = 2023}
 
-% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame with grants Confirm and Insight
 @article{indu2023,
-	Author = {Kafunah, Jefkine and Ali, Muhammad I and Breslin, John G},
+	Author = {Kafunah, Jefkine and Ali, M Intizar and Breslin, John G},
 	Day = 7,
 	Doi = {10.1109/TII.2023.3280566},
 	Issn = {15513203},
@@ -573,7 +655,7 @@
 	Url = {https://ieeexplore.ieee.org/document/10145852},
 	Year = 2023}
 
-% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame with grants Confirm and Insight
 @article{its_2023,
 	Author = {Hussain, Shahid and Irshad, Reyazur R and Pallonetto, Fabiano and Jan, Qasim and Shukla, Saurabh and Thakur, Subhasis and Breslin, John G and Kim, Yun-Su and Rathore, M Ahmad and El-Sayed, Hesham},
 	Day = 18,
@@ -588,9 +670,9 @@
 	Url = {https://ieeexplore.ieee.org/document/10129128},
 	Year = 2023}
 
-% Added to Sesame with grants Confirm, Insight and OntoCommons
+%% Added to Sesame with grants Confirm, Insight and OntoCommons
 @article{swj_2023a,
-	Author = {Yahya, Muhammad and Ali, Aabid and Mehmood, Qaiser and Yang, Lan and Breslin, John G and Ali, Muhammad I},
+	Author = {Yahya, Muhammad and Ali, Aabid and Mehmood, Qaiser and Yang, Lan and Breslin, John G and Ali, M Intizar},
 	Day = 30,
 	Doi = {10.5281/zenodo.7779522},
 	Http = {https://www.semantic-web-journal.net/system/files/swj3431.pdf},
@@ -603,9 +685,9 @@
 	Url = {https://www.semantic-web-journal.net/content/benchmark-dataset-knowledge-graph-generation-industry-40-production-lines-0},
 	Year = 2023}
 
-% Added to Sesame with grants Confirm and OntoCommons
+%% Added to Sesame with grants Confirm and OntoCommons
 @article{acce2023a,
-	Author = {Yahya, Muhammad and Zhou, Baifan and Breslin, John G and Ali, Muhammad I and Kharlamov, Evgeny},
+	Author = {Yahya, Muhammad and Zhou, Baifan and Breslin, John G and Ali, M Intizar and Kharlamov, Evgeny},
 	Day = 13,
 	Doi = {10.1109/ACCESS.2023.3267000},
 	Issn = {21693536},
@@ -627,7 +709,7 @@
 	Type = {Magazine Article},
 	Year = 2023}
 
-% Added to Sesame with grants Confirm and SMART 4.0
+%% Added to Sesame with grants Confirm and SMART 4.0
 @article{sens2022,
 	Author = {Verma, Priyanka and Breslin, John G and O'Shea, Donna},
 	Day = 19,
@@ -640,7 +722,7 @@
 	Url = {https://www.mdpi.com/1424-8220/22/22/8974},
 	Year = 2022}
 
-% Added to Sesame with grants Confirm, Insight, VistaMilk and OntoCommons
+%% Added to Sesame with grants Confirm, Insight, VistaMilk and OntoCommons
 @article{fuin2022,
 	Author = {Rejeb, Abderahman and Keogh, John G and Martindale, Wayne and Dooley, Damion and Smart, Edward and Simske, Steven and Wamba, Samuel F and Breslin, John G and Bandara, Kosala Y and Thakur, Subhasis and Liu, Kelly and Crowley, Bridgette and Desaraju, Sowmya and Ospina, Angela and Bradau, Horia},
 	Day = 25,
@@ -653,7 +735,7 @@
 	Url = {https://www.mdpi.com/1999-5903/14/6/161},
 	Year = 2022}
 
-% Added to Sesame with grants CENTS, Insight, Confirm and VistaMilk
+%% Added to Sesame with grants CENTS, Insight, Confirm and VistaMilk
 @article{kisa2022,
 	Author = {Hussain, Shahid and Thakur, Subhasis and Shukla, Saurabh and Breslin, John G and Jan, Qasim and Khan, Faisal and Kim, Yun-Su},
 	Day = 11,
@@ -666,9 +748,9 @@
 	Url = {https://www.sciencedirect.com/science/article/pii/S1319157822001471},
 	Year = 2022}
 
-% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame with grants Confirm and Insight
 @article{apsc2022a,
-	Author = {Wahid, Abdul and Breslin, John G and Ali, Muhammad I},
+	Author = {Wahid, Abdul and Breslin, John G and Ali, M Intizar},
 	Day = 22,
 	Doi = {10.3390/app12094221},
 	Journal = {Applied Sciences},
@@ -679,9 +761,9 @@
 	Url = {https://www.mdpi.com/2076-3417/12/9/4221},
 	Year = 2022}
 
-% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame with grants Confirm and Insight
 @article{ic__2022b,
-	Author = {Sudharsan, Bharath and Breslin, John G and Tahir, Mehreen and Ali, Muhammad I and Rana, Omer and Dustdar, Schahram and Ranjan, Rajiv},
+	Author = {Sudharsan, Bharath and Breslin, John G and Tahir, Mehreen and Ali, M Intizar and Rana, Omer and Dustdar, Schahram and Ranjan, Rajiv},
 	Day = {30},
 	Doi = {10.1109/MIC.2021.3133552},
 	Journal = {Internet Computing},
@@ -692,7 +774,7 @@
 	Title = {OTA-TinyML: Over the Air Deployment of TinyML Models and Execution on IoT Devices},
 	Year = 2022}
 
-% Added to Sesame with grants CRT-AI and Insight
+%% Added to Sesame with grants CRT-AI and Insight
 @article{ic__2022a,
 	Author = {Khan, M Jaleed and Breslin, John G and Curry, Edward},
 	Day = 20,
@@ -705,7 +787,7 @@
 	Title = {Common Sense Knowledge Infusion for Visual Understanding and Reasoning: Approaches, Challenges, and Applications},
 	Year = 2022}
 
-% Added to Sesame with grants CENTS, Insight, Confirm and VistaMilk
+%% Added to Sesame with grants CENTS, Insight, Confirm and VistaMilk
 @article{ener2022,
 	Author = {Hussain, Shahid and Thakur, Subhasis and Shukla, Saurabh and Breslin, John G and Jan, Qasim and Khan, Faisal and Ahmad, Ibrar and Marzband, Mousa and Madden, Michael G},
 	Day = {11},
@@ -717,7 +799,7 @@
 	Title = {A Heuristic Charging Cost Optimization Algorithm for Residential Charging of Electric Vehicles},
 	Year = 2022}
 
-% Added to Sesame with grants CENTS and Insight
+%% Added to Sesame with grants CENTS and Insight
 @article{its_2022,
 	Author = {Hussain, Shahid and Kim, Yun-Su and Thakur, Subhasis and Breslin, John G},
 	Day = {13},
@@ -730,9 +812,9 @@
 	Title = {Optimization of Waiting Time for Electric Vehicles Using a Fuzzy Inference System},
 	Year = 2022}
 	
-% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame with grants Confirm and Insight
 @article{apsc2021c,
-	Author = {Kafunah, Jefkine and Ali, Muhammad I and Breslin, John G},
+	Author = {Kafunah, Jefkine and Ali, M Intizar and Breslin, John G},
 	Day = 20,
 	Doi = {10.3390/app11219783},
 	Journal = {Applied Sciences},
@@ -743,9 +825,9 @@
 	Url = {https://www.mdpi.com/2076-3417/11/21/9783},
 	Year = 2021}
 
-% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame with grants Confirm and Insight
 @article{iot_2021b,
-	Author = {Sudharsan, Bharath and Breslin, John G and Ali, Muhammad I},
+	Author = {Sudharsan, Bharath and Breslin, John G and Ali, M Intizar},
 	Day = 19,
 	Doi = {10.1109/JIOT.2021.3098166},
 	Journal = {Internet of Things},
@@ -755,7 +837,7 @@
 	Title = {ML-MCU: A Framework to Train ML Classifiers on MCU-based IoT Edge Devices},
 	Year = 2021}
 
-% Added to Sesame with grants CENTS and Insight
+%% Added to Sesame with grants CENTS and Insight
 @article{iot_2021a,
 	Author = {Shukla, Saurabh and Thakur, Subhasis and Hussain, Shahid and Breslin, John G and Jameel, Syed M},
 	Day = {29},
@@ -768,7 +850,7 @@
 	Url = {https://www.sciencedirect.com/science/article/pii/S2542660521000664},
 	Year = 2021}
 	
-% Added to Sesame with grant Confirm
+%% Added to Sesame with grant Confirm
 @article{mna_2021,
 	Author = {Almalki, Faris A and Alsamhi, Saeed H and Sahal, Radhya and Hassan, Jahan and Hawbani, Ammar and Rajput, Navin S and Saif, Abdu and Morgan, Jeff and Breslin, John G},
 	Day = {17},
@@ -781,7 +863,7 @@
 	Url = {https://link.springer.com/article/10.1007/s11036-021-01790-w},
 	Year = 2021}
 
-% Added to Sesame with grants CENTS and Insight
+%% Added to Sesame with grants CENTS and Insight
 @article{ijep2021b,
 	Author = {Malik, Sweta and Duffy, Maeve and Thakur, Subhasis and Hayes, Barry P and Breslin, John G},
 	Day = {21},
@@ -793,9 +875,9 @@
 	Title = {A Priority-Based Approach for Peer-to-Peer Energy Trading Using Cooperative Game Theory in Local Energy Community},
 	Year = 2021}
 
-% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame with grants Confirm and Insight
 @article{apsc2021b,
-	Author = {Yahya, Muhammad and Breslin, John G and Ali, Muhammad I},
+	Author = {Yahya, Muhammad and Breslin, John G and Ali, M Intizar},
 	Day = 31,
 	Doi = {10.3390/app11115110},
 	Journal = {Applied Sciences},
@@ -806,9 +888,9 @@
 	Url = {https://www.mdpi.com/2076-3417/11/11/5110},
 	Year = 2021}
 
-% Added to Sesame with grants SMART 4.0, Confirm and Insight
+%% Added to Sesame with grants SMART 4.0, Confirm and Insight
 @article{ic__2021,
-	Author = {Sudharsan, Bharath and Patel, Pankesh and Breslin, John G and Ali, Muhammad I and Mitra, Karan and Dustdar, Schahram and Rana, Omer and Jayaraman, Prem P and Ranjan, Rajiv},
+	Author = {Sudharsan, Bharath and Patel, Pankesh and Breslin, John G and Ali, M Intizar and Mitra, Karan and Dustdar, Schahram and Rana, Omer and Jayaraman, Prem P and Ranjan, Rajiv},
 	Day = 1,
 	Doi = {10.1109/MIC.2021.3053711},
 	Journal = {Internet Computing},
@@ -818,9 +900,9 @@
 	Title = {Toward Distributed, Global, Deep Learning Using IoT Devices},
 	Year = 2021}
 
-% Added to Sesame with grants SMART 4.0 and Confirm
+%% Added to Sesame with grants SMART 4.0 and Confirm
 @article{is__2021,
-	Author = {Ali, Muhammad I and Patel, Pankesh and Breslin, John G and Harik, Rami and Sheth, Amit},
+	Author = {Ali, M Intizar and Patel, Pankesh and Breslin, John G and Harik, Rami and Sheth, Amit},
 	Day = 21,
 	Doi = {10.1109/MIS.2021.3062437},
 	Journal = {Intelligent Systems},
@@ -833,7 +915,7 @@
 	Volume = 36,
 	Year = 2021}
 
-% Added to Sesame with grant Confirm
+%% Added to Sesame with grant Confirm
 @article{jms_2021,
 	Author = {Morgan, Jeff and Halton, Mark and Qiao, Yuansong and Breslin, John G},
 	Day = 7,
@@ -846,7 +928,7 @@
 	Url = {https://www.sciencedirect.com/science/article/pii/S027861252100056X},
 	Year = 2021}
 
-% Added to Sesame with grants CENTS and Insight
+%% Added to Sesame with grants CENTS and Insight
 @article{ijep2021a,
 	Author = {Bandara, Kosala Y and Thakur, Subhasis and Breslin, John G},
 	Day = 2,
@@ -859,9 +941,9 @@
 	Url = {https://www.sciencedirect.com/science/article/pii/S0142061521000065},
 	Year = 2021}
 
-% Added to Sesame with grant Confirm
+%% Added to Sesame with grant Confirm
 @article{apsc2021a,
-	Author = {Sahal, Radhya and Alsamhi, Saeed H and Breslin, John G and Brown, Kenneth N and Ali, Muhammad I},
+	Author = {Sahal, Radhya and Alsamhi, Saeed H and Breslin, John G and Brown, Kenneth N and Ali, M Intizar},
 	Day = 2,
 	Doi = {10.3390/app11073186},
 	Journal = {Applied Sciences},
@@ -872,9 +954,9 @@
 	Url = {https://www.mdpi.com/2076-3417/11/7/3186},
 	Year = 2021}
 
-% Added to Sesame with grant Confirm
+%% Added to Sesame with grant Confirm
 @article{sens2021,
-	Author = {Sahal, Radhya and Alsamhi, Saeed H and Breslin, John G and Ali, Muhammad I},
+	Author = {Sahal, Radhya and Alsamhi, Saeed H and Breslin, John G and Ali, M Intizar},
     Day = 20,
     Doi = {10.3390/s21030694},
 	Journal = {Sensors},
@@ -898,7 +980,7 @@
 	Year = 2020}
 	
 @article{jms_2019,
-	Author = {Sahal, Radhya and Breslin, John G and Ali, Muhammad I},
+	Author = {Sahal, Radhya and Breslin, John G and Ali, M Intizar},
 	Day = 19,
 	Doi = {10.1016/j.jmsy.2019.11.004},
 	Journal = {Journal of Manufacturing Systems},
@@ -908,7 +990,7 @@
 	Title = {Big Data and Stream Processing Platforms for Industry 4.0: Requirements Mapping for Predictive Maintenance Use Case},
 	Year = 2019}
 
-% Added to Sesame with grants Insight, Confirm, ACTIVAGE and SMARTER
+%% Added to Sesame with grants Insight, Confirm, ACTIVAGE and SMARTER
 @article{sens2019,
 	Author = {Quoc, Hoan Nguyen Mau and Serrano, Martin and Nguyen, Han Mau and Breslin, John G and Le Phuoc, Danh},
 	Day = 9,
@@ -960,7 +1042,7 @@
 	Year = 2018,
 	Bdsk-Url-1 = {https://energyinformatics.springeropen.com/articles/10.1186/s42162-018-0057-8}}
 
-% Added to Sesame with grant Insight
+%% Added to Sesame with grant Insight
 @article{tesg2018,
 	Author = {Thakur, Subhasis and Breslin, John G},
 	Day = 1,
@@ -1301,7 +1383,7 @@
 	Month = dec,
 	Number = 6,
 	Pdf = {http://www.johnbreslin.com/files/publications/20051200_upgr2005.pdf},
-	Title = {Towards Semantically-Interlinked Online Communities},
+	Title = {Towards Semantically Interlinked Online Communities},
 	Volume = 6,
 	Year = 2005}
 
@@ -1363,13 +1445,145 @@
 	Volume = 57,
 	Year = 2003}
 
-% Efficient Deep Neural Network Verification with QAP-based zkSNARK
-% The 5th International Conference on Deep Learning Theory and Applications (DELTA 2024)
+%% Add to Sesame with grants SustAIn and Insight, get DOI, get file
+%%	Day = ,
+%%	Location = {},
+%%	Month = ,
+%%	Pdf = {http://www.johnbreslin.com/files/publications/20250000_ict42025.pdf},
+@conference{ict42025,
+	Author = {Iftikhar, Sunbal and Khan, Hassan and Breslin, John G and Davy, Steven},
+	Booktitle = {The 11th International Conference on ICT for Sustainability (ICT4S 2025)},
+	Title = {Sustainable AI: Sparse Backpropagation for Low-Carbon On-Device Training},
+	Year = 2025}
+	
+%% Add to Sesame with grants Insight and SustAIn, get DOI, get file
+%%	Day = ,
+%%	Location = {},
+%%	Month = ,
+%%	Pdf = {http://www.johnbreslin.com/files/publications/20250000_embc2025.pdf},
+@conference{embc2025,
+	Author = {Bharot, Nitesh and Verma, Priyanka and Singh, Karandeep and Chaurasia, Nisha and Breslin, John G},
+	Booktitle = {The 47th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC 2025)},
+	Title = {Boosting Skin Lesion Classification with a Class Expert DCGAN Framework for Skin Disease Detection},
+	Year = 2025}
 
-% Verification of Deep Neural Networks with KGZ-based zkSNARK
-% The 10th Intelligent Systems Conference (IntelliSys 2024)
+%% Add to Sesame with grants CRT-AI and Insight, get DOI, get file
+@conference{visa2025,
+	Author = {Ward, Rory and Breslin, John G},
+	Booktitle = {The 20th International Conference on Computer Vision Theory and Applications (VISAPP 2025)},
+	Day = 28,
+	Location = {Porto, Portugal},
+	Month = feb,
+	Pdf = {http://www.johnbreslin.com/files/publications/20250228_visa2025.pdf},
+	Title = {FRCol: Face Recognition Based Speaker Video Colorization},
+	Year = 2025}
 
-% Add to Sesame with grants SecMC, Confirm and Insight
+%% Add to Sesame with grants ENEPORTS and Insight, get DOI
+@conference{cc__2025,
+	Author = {Bharot, Nitesh and Breslin, John G},
+	Booktitle = {The 13th Computing Conference (CC 2025)},
+	Day = 19,
+	Location = {London, UK},
+	Month = jun,
+	Pdf = {http://www.johnbreslin.com/files/publications/20250619_cc__2025.pdf},
+	Title = {A Transfer Learning-Enhanced TabNet-Based Intrusion Detection System for IoMT Security},
+	Year = 2025}
+
+%% Add to Sesame with grants CRT-AI and Insight, get DOI
+@conference{sac_2025,
+	Author = {Ward, Rory and Dalal, Dhairya and Buitelaar, Paul and Breslin, John G},
+	Booktitle = {The 40th ACM/SIGAPP Symposium On Applied Computing (SAC 2025)},
+	Day = 1,
+	Location = {Sicily, Italy},
+	Month = apr,
+	Note = {Best Paper Award in the AI and Agents Theme},
+	Pdf = {http://www.johnbreslin.com/files/publications/20250401_sac_2025.pdf},
+	Title = {RAGCol: RAG-Based Automatic Video Colorization Through Text Caption Generation and Knowledge Enrichment},
+	Year = 2025}
+
+%% Added to Sesame with grants Insight and SustAIn, get DOI
+@conference{icca2024,
+	Author = {Saleh, Hager and McCann, Michael and El-Sappagh, Shaker and Breslin, John G},
+	Booktitle = {The 6th IEEE International Conference on Computer and Applications (ICCA 2024)},
+	Day = 19,
+	Location = {Cairo, Egypt},
+	Month = dec,
+	Pdf = {http://www.johnbreslin.com/files/publications/20241219_icca2024.pdf},
+	Title = {TransformerFusionNet: A Real-Time Multimodal Framework for ICU Heart Failure Mortality Prediction Using Big Data Streaming},
+	Year = 2024}
+
+%% Added to Sesame with grant Insight, get DOI
+@conference{icce2024,
+	Author = {Saleh, Hager and Alsamhi, Saeed H and McCann, Michael and \'{O} Brolch\'{a}in, Niall and Breslin, John G},
+	Booktitle = {The 10th International Conference on Computing, Engineering and Design (ICCED 2024)},
+	Day = 11,
+	Location = {Jeddah, Saudi Arabia},
+	Month = dec,
+	Pdf = {http://www.johnbreslin.com/files/publications/20241211_icce2024.pdf},
+	Title = {AI Meets Climate: Advanced Transformer Multimodal Model for Early and Accurate Plant Disease Diagnosis},
+	Year = 2024}
+
+%% Added to Sesame with grants SustAIn, VistaMilk and Insight
+@conference{delt2024b,
+	Author = {Thakur, Subhasis and Breslin, John G},
+	Booktitle = {The 5th International Conference on Deep Learning Theory and Applications (DeLTA 2024)},
+	Day = 10,
+	Doi = {10.1007/978-3-031-66705-3_12},
+	Location = {Dijon, France},
+	Month = jul,
+	Pdf = {http://www.johnbreslin.com/files/publications/20240710_delt2024b.pdf},
+	Title = {Efficient Deep Neural Network Verification with QAP-based zkSNARK},
+	Year = 2024}
+
+%% Added to Sesame with grants SustAIn, VistaMilk and Insight
+@conference{delt2024a,
+	Author = {Thakur, Subhasis and Breslin, John G},
+	Booktitle = {The 5th International Conference on Deep Learning Theory and Applications (DeLTA 2024)},
+	Day = 10,
+	Doi = {10.1007/978-3-031-66694-0_15},
+	Location = {Dijon, France},
+	Month = jul,
+	Pdf = {http://www.johnbreslin.com/files/publications/20240710_delt2024a.pdf},
+	Title = {Secure Coalition Formation for Federated Machine Learning},
+	Year = 2024}
+
+%% Added to Sesame with grants SustAIn, VistaMilk and Insight
+@conference{inte2024,
+	Author = {Thakur, Subhasis and Breslin, John G},
+	Booktitle = {The 10th Intelligent Systems Conference (IntelliSys 2024)},
+	Day = 29,
+	Doi = {10.1007/978-3-031-66336-9_6},
+	Location = {Amsterdam, The Netherlands},
+	Month = aug,
+	Pdf = {http://www.johnbreslin.com/files/publications/20240829_inte2024.pdf},
+	Title = {Verification of Deep Neural Networks with KGZ-based zkSNARK},
+	Year = 2024}
+
+%% Added to Sesame with grants VistaMilk and Insight
+@conference{apcc2024,
+	Author = {De Silva, Anupa and Thakur, Subhasis and Breslin, John G},
+	Booktitle = {The 29th IEEE Asia Pacific Conference on Communications (APCC 2024)},
+	Day = 6,
+	Doi = {10.1109/APCC62576.2024.10768001},
+	Location = {Bali, Indonesia},
+	Month = nov,
+	Pdf = {http://www.johnbreslin.com/files/publications/20241106_apcc2024.pdf},
+	Title = {xPayments: Cross-Domain End-to-End Payment Protocol using Payment Channel Network},
+	Year = 2024}
+
+%% Added to Sesame with grant Insight
+@conference{soft2024,
+	Author = {Bharot, Nitesh and Breslin, John G and Verma, Priyanka},
+	Booktitle = {The 32nd International Conference on Software, Telecommunications and Computer Networks (SoftCOM 2024)},
+	Day = 27,
+	Doi = {10.23919/SoftCOM62040.2024.10721868},
+	Location = {Split, Croatia},
+	Month = sep,
+	Pdf = {http://www.johnbreslin.com/files/publications/20240927_soft2024.pdf},
+	Title = {Revolutionizing Human Activity Recognition in Healthcare: Harnessing Red Deer for Feature Selection and Focal Loss-Based MLP for Classification},
+	Year = 2024}
+
+%% Add to Sesame with grants SecMC, Confirm and Insight
 @conference{anti2023,
 	Author = {Bharot, Nitesh and Breslin, John G},
 	Booktitle = {The 3rd International Conference on Advanced Network Technologies and Intelligent Computing (ANTIC 2023)},
@@ -1380,7 +1594,7 @@
 	Title = {Intrusion Watchdog: Enhancing Intrusion Detection System with Machine Learning using 3-way Feature Selection Technique},
 	Year = 2023}
 
-% Add to Sesame with grants Confirm and Insight
+%% Add to Sesame with grants Confirm and Insight
 @conference{ism_2023,
 	Author = {Bharot, Nitesh and Verma, Priyanka and Soderi, Mirco and Breslin, John G},
 	Booktitle = {The 5th International Conference on Industry 4.0 and Smart Manufacturing (ISM 2023)},
@@ -1392,7 +1606,7 @@
 	Title = {DQ-DeepLearn: Data Quality Driven Deep Learning Approach for Enhanced Predictive Maintenance in Smart Manufacturing},
 	Year = 2023}
 
-% Added to Sesame with grant Insight
+%% Added to Sesame with grant Insight
 @conference{icsc2023,
 	Author = {Usmani, Atiya and Alsamhi, Saeed H and Breslin, John G and Curry, Edward},
 	Booktitle = {The 17th IEEE International Conference on Semantic Computing (ICSC 2023)},
@@ -1405,10 +1619,10 @@
 	Title = {A Novel Framework for Constructing Multimodal Knowledge Graph from MuSe-CaR Video Reviews},
 	Year = 2023}
 
-% Added to Sesame with no ack
+%% Added to Sesame with no ack
 @conference{mind2022,
 	Author = {Verma, Priyanka and Breslin, John G and O'Shea, Donna and Pateriya, R K},
-	Booktitle = {The 4th International Conference on International Conference on Machine Learning, Image Processing, Network Security and Data Sciences (MIND 2022)},
+	Booktitle = {The 4th International Conference on Machine Learning, Image Processing, Network Security and Data Sciences (MIND 2022)},
 	Day = 21,
 	Doi = {10.1007/978-3-031-24367-7_32},
 	Location = {Online},
@@ -1417,9 +1631,9 @@
 	Title = {A Stacked Ensemble Method with Adaptive Attribute Selection to Detect DDoS Attack in Cloud-Assisted WBAN},
 	Year = 2022}
 
-% Added to Sesame with no ack
+%% Added to Sesame with no ack
 @conference{ism_2022,
-	Author = {Wahid, Abdul and Yahya, Muhammad and Breslin, John G and Ali, Muhammad I},
+	Author = {Wahid, Abdul and Yahya, Muhammad and Breslin, John G and Ali, M Intizar},
 	Booktitle = {The 4th International Conference on Industry 4.0 and Smart Manufacturing (ISM 2022)},
 	Day = 2,
 	Doi = {10.1016/j.procs.2022.12.241},
@@ -1429,7 +1643,7 @@
 	Title = {Self-Attention Transformer-Based Architecture for Remaining Useful Life Estimation of Complex Machines},
 	Year = 2022}
 
-% Added to Sesame with grant Confirm
+%% Added to Sesame with grant Confirm
 @conference{isol2022,
 	Author = {Soderi, Mirco and Breslin, John G},
 	Booktitle = {The 11th International Symposium on Leveraging Applications of Formal Methods (ISOLA 2022)},
@@ -1442,7 +1656,7 @@
 	Title = {Crazy Nodes: Towards Ultimate Flexibility in Ubiquitous Big Data Stream Engineering, Visualisation, and Analytics, in Smart Factories},
 	Year = 2022}
 
-% Added to Sesame with grants CRT-AI and Insight
+%% Added to Sesame with grants CRT-AI and Insight
 @conference{imvi2022,
 	Author = {Ward, Rory and Breslin, John G},
 	Booktitle = {The 24th Irish Machine Vision and Image Processing Conference (IMVIP 2022)},
@@ -1454,7 +1668,7 @@
 	Title = {Towards Temporal Stability in Automatic Video Colourisation},
 	Year = 2022}
 	
-% Added to Sesame with grant Insight
+%% Added to Sesame with grant Insight
 @conference{bloc2022e,
 	Author = {Thakur, Subhasis and Breslin, John G},
 	Booktitle = {The 4th International Congress on Blockchain and Applications (BLOCKCHAIN 2022)},
@@ -1466,7 +1680,7 @@
 	Title = {A Model of Decentralised Distribution Line Using Layer 2 Blockchains},
 	Year = 2022}
 
-% Added to Sesame with grants VistaMilk and Insight
+%% Added to Sesame with grants VistaMilk and Insight
 @conference{bloc2022d,
 	Author = {De Silva, Anupa and Thakur, Subhasis and Breslin, John G},
 	Booktitle = {The 4th International Congress on Blockchain and Applications (BLOCKCHAIN 2022)},
@@ -1478,7 +1692,7 @@
 	Title = {Profitable Fee Controller for Payment Channel Networks},
 	Year = 2022}
 
-% Added to Sesame with grant Insight
+%% Added to Sesame with grant Insight
 @conference{bloc2022c,
 	Author = {Thakur, Subhasis and Breslin, John G},
 	Booktitle = {The 4th International Congress on Blockchain and Applications (BLOCKCHAIN 2022)},
@@ -1490,7 +1704,7 @@
 	Title = {Decentralised Argumentation for Data Vetting in Blockchains},
 	Year = 2022}
 
-% Added to Sesame with grant Insight
+%% Added to Sesame with grant Insight
 @conference{bloc2022b,
 	Author = {Thakur, Subhasis and Breslin, John G and Malik, Sweta},
 	Booktitle = {The 4th International Congress on Blockchain and Applications (BLOCKCHAIN 2022)},
@@ -1502,7 +1716,7 @@
 	Title = {Privacy-Preserving Energy Trade Using Double Auction in Blockchain Offline Channels},
 	Year = 2022}
 
-% Added to Sesame with grants CENTS and Insight
+%% Added to Sesame with grants CENTS and Insight
 @conference{bloc2022a,
 	Author = {Shukla, Saurabh and Thakur, Subhasis and Hussain, Shahid and Breslin, John G and Jameel, Syed M},
 	Booktitle = {The 4th International Congress on Blockchain and Applications (BLOCKCHAIN 2022)},
@@ -1514,7 +1728,7 @@
 	Title = {Identification of False Stealthy Data Injection Attacks in Smart Meters Using Machine Learning and Blockchain},
 	Year = 2022}
 
-% Added to Sesame with no ack
+%% Added to Sesame with no ack
 @conference{ekno2022b,
 	Author = {Thakur, Subhasis and Breslin, John G},
 	Booktitle = {The 14th International Conference on Information, Process, and Knowledge Management (eKNOW 2022)},
@@ -1526,7 +1740,7 @@
 	Title = {A Decentralised Reputation Management System for Internet of Things Data Marketplace},
 	Year = 2022}
 
-% Added to Sesame with grants CENTS and Insight
+%% Added to Sesame with grants CENTS and Insight
 @conference{ekno2022a,
 	Author = {Malik, Sweta and Thakur, Subhasis and Breslin, John G and Duffy, Maeve},
 	Booktitle = {The 14th International Conference on Information, Process, and Knowledge Management (eKNOW 2022)},
@@ -1537,7 +1751,7 @@
 	Title = {Blockchain-Based Decentralized Home Energy Management System Using Double Auction},
 	Year = 2022}
 
-% Added to Sesame with grants CENTS and Insight
+%% Added to Sesame with grants CENTS and Insight
 @conference{enrc2022,
 	Author = {Malik, Sweta and Thakur, Subhasis and Duffy, Maeve and Breslin, John G},
 	Booktitle = {The 7th IEEE International Energy Conference (ENERGYCON 2022)},
@@ -1549,7 +1763,7 @@
 	Title = {Double Auction Mechanisms for Peer-to-Peer Energy Trading: A Comparative Analysis},
 	Year = 2022}
 
-% Added to Sesame with grants CRT-AI and Insight
+%% Added to Sesame with grants CRT-AI and Insight
 @conference{eswc2022a,
 	Author = {Khan, M Jaleed and Breslin, John G and Curry, Edward},
 	Booktitle = {The 19th Extended Semantic Web Conference (ESWC 2022)},
@@ -1561,9 +1775,9 @@
 	Title = {Expressive Scene Graph Generation Using Commonsense Knowledge Infusion for Visual Understanding and Reasoning},
 	Year = 2022}
 
-% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame with grants Confirm and Insight
 @conference{sac_2022,
-	Author = {Sudharsan, Bharath and Breslin, John G and Ali, Muhammad I and Corcoran, Peter and Ranjan, Rajiv},
+	Author = {Sudharsan, Bharath and Breslin, John G and Ali, M Intizar and Corcoran, Peter and Ranjan, Rajiv},
 	Booktitle = {The 37th ACM/SIGAPP Symposium on Applied Computing (SAC 2022)},
 	Day = 25,
 	Doi = {10.1145/3477314.3507135},
@@ -1573,7 +1787,7 @@
 	Title = {ElastiQuant: Elastic Quantization Strategy for Communication Efficient Distributed Machine Learning in IoT},
 	Year = 2022}
 
-% Added to Sesame with grant Confirm
+%% Added to Sesame with grant Confirm
 @conference{sami2022,
 	Author = {Soderi, Mirco and Kamath, Vignesh and Morgan, Jeff and Breslin, John G},
 	Booktitle = {The 20th IEEE Jubilee World Symposium on Applied Machine Intelligence and Informatics (SAMI 2022)},
@@ -1586,9 +1800,9 @@
 	Title = {Advanced Analytics as a Service in Smart Factories},
 	Year = 2022}
 
-% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame with grants Confirm and Insight
 @conference{bigd2021b,
-	Author = {Sudharsan, Bharath and Breslin, John G and Ali, Muhammad I},
+	Author = {Sudharsan, Bharath and Breslin, John G and Ali, M Intizar},
 	Booktitle = {The 2021 IEEE International Conference on Big Data (BigData 2021)},
 	Day = 15,
 	Doi = {10.1109/BigData52589.2021.9671765},
@@ -1600,7 +1814,7 @@
 	Title = {Imbal-OL: Online Machine Learning from Imbalanced Data Streams in Real-world IoT},
 	Year = 2021}
 
-% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame with grants Confirm and Insight
 @conference{bigd2021a,
 	Author = {Sudharsan, Bharath and Yadav, Piyush and Nguyen, Duc-Duy and Kafunah, Jefkine and Breslin, John G},
 	Booktitle = {The 2021 IEEE International Conference on Big Data (BigData 2021)},
@@ -1614,7 +1828,7 @@
 	Title = {Ensemble Methods for Collective Intelligence: Combining Ubiquitous ML Models in IoT},
 	Year = 2021}
 
-% Added to Sesame with grant Confirm
+%% Added to Sesame with grant Confirm
 @conference{iota2021,
 	Author = {Soderi, Mirco and Kamath, Vignesh and Morgan, Jeff and Breslin, John G},
 	Booktitle = {The 2021 IEEE International Conference on Internet of Things and Intelligence Systems (IoTaIS 2021)},
@@ -1627,7 +1841,7 @@
 	Title = {Ubiquitous System Integration as a Service in Smart Factories},
 	Year = 2021}
 	
-% Added to Sesame with grants VistaMilk and Public Service Fellowship
+%% Added to Sesame with grants VistaMilk and Public Service Fellowship
 @conference{isnc2021,
 	Author = {Bandara, Kosala Y and Breslin, John G},
 	Booktitle = {The 2021 International Symposium on Networks, Computers and Communications (ISNCC 2021)},
@@ -1640,7 +1854,7 @@
 	Url = {https://www.ops.gov.ie/app/uploads/2021/12/IEEE_ISNCC_2021__1570726476.pdf},
 	Year = 2021}
 
-% Added to Sesame with grants CENTS and Insight
+%% Added to Sesame with grants CENTS and Insight
 @conference{bloc2021b,
 	Author = {Shukla, Saurabh and Thakur, Subhasis and Hussain, Shahid and Breslin, John G},
 	Booktitle = {The 3rd International Congress on Blockchain and Applications (BLOCKCHAIN 2021)},
@@ -1652,7 +1866,7 @@
 	Title = {A Blockchain-Enabled Fog Computing Model for Peer-to-Peer Energy Trading in Smart Grid},
 	Year = 2021}
 
-% Added to Sesame with grants VistaMilk and Insight
+%% Added to Sesame with grants VistaMilk and Insight
 @conference{bloc2021a,
 	Author = {De Silva, Anupa and Thakur, Subhasis and Breslin, John G},
 	Booktitle = {The 3rd International Congress on Blockchain and Applications (BLOCKCHAIN 2021)},
@@ -1664,9 +1878,9 @@
 	Title = {Towards Micropayment for Intermediary Based Trading},
 	Year = 2021}
 
-% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame with grants Confirm and Insight
 @conference{uic_2021b,
-	Author = {Sudharsan, Bharath and Breslin, John G and Ali, Muhammad I},
+	Author = {Sudharsan, Bharath and Breslin, John G and Ali, M Intizar},
 	Booktitle = {The 18th IEEE International Conference on Ubiquitous Intelligence and Computing (UIC 2021)},
 	Day = 18,
 	Location = {Atlanta, Georgia, USA},
@@ -1675,9 +1889,9 @@
 	Title = {Globe2Train: A Framework for Distributed ML Model Training Using IoT Devices Across the Globe},
 	Year = 2021}
 
-% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame with grants Confirm and Insight
 @conference{uic_2021a,
-	Author = {Sudharsan, Bharath and Yadav, Piyush and Breslin, John G and Ali, Muhammad I},
+	Author = {Sudharsan, Bharath and Yadav, Piyush and Breslin, John G and Ali, M Intizar},
 	Booktitle = {The 18th IEEE International Conference on Ubiquitous Intelligence and Computing (UIC 2021)},
 	Day = 18,
 	Location = {Atlanta, Georgia, USA},
@@ -1686,7 +1900,7 @@
 	Title = {Train++: An Incremental ML Model Training Algorithm to Create Self-Learning IoT Devices},
 	Year = 2021}
   
-% Added to Sesame with grants CENTS and Insight
+%% Added to Sesame with grants CENTS and Insight
 @conference{lod_2021,
 	Author = {Shukla, Saurabh and Thakur, Subhasis and Breslin, John G},
 	Booktitle = {The 7th International Conference on Machine Learning, Optimization and Data Science (LOD 2021)},
@@ -1698,9 +1912,9 @@
 	Title = {Anomaly Detection in Smart Grid Network Using FC-Based Blockchain Model and Linear SVM},
 	Year = 2021}
 
-% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame with grants Confirm and Insight
 @conference{ecml2021,
-	Author = {Sudharsan, Bharath and Patel, Pankesh and Breslin, John G and Ali, Muhammad I},
+	Author = {Sudharsan, Bharath and Patel, Pankesh and Breslin, John G and Ali, M Intizar},
 	Booktitle = {The European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML-PKDD 2021)},
 	Day = 13,
 	Location = {Online},
@@ -1709,9 +1923,9 @@
 	Title = {Enabling Machine Learning on the Edge Using SRAM Conserving Efficient Neural Networks Execution Approach},
 	Year = 2021}
 
-% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame with grants Confirm and Insight
 @conference{scc_2021,
-	Author = {Sudharsan, Bharath and Yadav, Piyush and Breslin, John G and Ali, Muhammad I},
+	Author = {Sudharsan, Bharath and Yadav, Piyush and Breslin, John G and Ali, M Intizar},
 	Booktitle = {The 2021 IEEE International Conference on Services Computing (SCC 2021)},
 	Day = 8,
 	Location = {Online},
@@ -1720,7 +1934,7 @@
 	Title = {An SRAM Optimized Approach for Constant Memory Consumption and Ultra-fast Execution of ML Classifiers on TinyML Hardware},
 	Year = 2021}
 
-% Added to Sesame with grants CENTS and Insight
+%% Added to Sesame with grants CENTS and Insight
 @conference{csr_2021,
 	Author = {Shukla, Saurabh and Thakur, Subhasis and Breslin, John G},
 	Booktitle = {The 2021 IEEE International Conference on Cyber Security and Resilience (CSR 2021)},
@@ -1732,7 +1946,7 @@
 	Title = {Secure Communication in Smart Meters Using Elliptic Curve Cryptography and Digital Signature Algorithm},
 	Year = 2021}
 
-% Added to Sesame with grants CENTS and Insight
+%% Added to Sesame with grants CENTS and Insight
 @conference{powe2021,
 	Author = {Malik, Sweta and Duffy, Maeve and Thakur, Subhasis and Breslin, John G},
 	Booktitle = {The 7th IEEE International Energy Conference (ENERGYCON 2022)},
@@ -1744,9 +1958,9 @@
 	Title = {Fractional Hedonic Coalition Formation Game for Peer to Peer Energy Trading in a Microgrid},
 	Year = 2021}
 	
-% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame with grants Confirm and Insight
 @conference{wfio2021a,
-	Author = {Sudharsan, Bharath and Malik, Sweta and Corcoran, Peter and Patel, Pankesh and Breslin, John G and Ali, Muhammad I},
+	Author = {Sudharsan, Bharath and Malik, Sweta and Corcoran, Peter and Patel, Pankesh and Breslin, John G and Ali, M Intizar},
 	Booktitle = {The 7th IEEE World Forum on Internet of Things (WF-IoT 2021)},
 	Day = 20,
 	Location = {New Orleans, Louisiana, USA},
@@ -1755,9 +1969,9 @@
 	Title = {OWSNet: Towards Real-time Offensive Words Spotting Network for Consumer IoT Devices},
 	Year = 2021}
 
-% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame with grants Confirm and Insight
 @conference{perc2021,
-	Author = {Sudharsan, Bharath and Patel, Pankesh and Breslin, John G and Ali, Muhammad I},
+	Author = {Sudharsan, Bharath and Patel, Pankesh and Breslin, John G and Ali, M Intizar},
 	Booktitle = {The 19th IEEE International Conference on Pervasive Computing and Communications (PerCom 2021)},
 	Day = 22,
 	Doi = {10.1109/PerComWorkshops51409.2021.9431061},
@@ -1767,7 +1981,7 @@
 	Title = {Ultra-Fast Machine Learning Classifier Execution on IoT Devices Without SRAM Consumption},
 	Year = 2021}
 
-% Added to Sesame with no ack
+%% Added to Sesame with no ack
 @conference{icic2021,
 	Author = {Shukla, Saurabh and Thakur, Subhasis and Breslin, John G},
 	Booktitle = {The 6th International Congress on Information and Communication Technology (ICICT 2021)},
@@ -1779,9 +1993,9 @@
 	Title = {Secure Data Transmission in Smart Meters Using Q-Learning in Fog Computing Environment},
 	Year = 2021}
 
-% Added to Sesame with grant Confirm
+%% Added to Sesame with grant Confirm
 @conference{cods2021a,
-	Author = {Mehta, Parit and Dwivedi, Rudresh and Feeney, Ciaran and Patel, Pankesh and Ali, Muhammad I and Breslin, John G},
+	Author = {Mehta, Parit and Dwivedi, Rudresh and Feeney, Ciaran and Patel, Pankesh and Ali, M Intizar and Breslin, John G},
 	Booktitle = {The ACM India Joint International Conference on Data Science and Management of Data (CODS-COMAD 2021)},
 	Day = 3,
 	Doi = {10.1145/3430984.3431071},
@@ -1792,7 +2006,7 @@
 	Title = {Towards Designing an Explainable-AI based Solution for Livestock Mart Industry},
 	Year = 2021}
 
-% Added to Sesame with grants CENTS and Insight
+%% Added to Sesame with grants CENTS and Insight
 @conference{medp2020,
 	Author = {Malik, Sweta and Duffy, Maeve and Thakur, Subhasis and Hayes, Barry P and Breslin, John G},
 	Booktitle = {The 12th Mediterranean Conference on Power Generation, Transmission, Distribution and Energy Conversion (MEDPOWER 2020)},
@@ -1803,7 +2017,7 @@
 	Title = {Cooperative Game Theory-Based Peer-to-Peer Energy Trading Algorithm},
 	Year = 2020}
 
-% Added to Sesame with grant Insight
+%% Added to Sesame with grant Insight
 @conference{bloc2020a,
 	Author = {Bandara, Kosala Y and Thakur, Subhasis and Breslin, John G},
 	Booktitle = {The 3rd IEEE International Conference on Blockchain (IEEE Blockchain 2020)},
@@ -1816,7 +2030,7 @@
 	Title = {Enrichment of Blockchain Transaction Management with Semantic Triples},
 	Year = 2020}
 
-% Added to Sesame with grants VistaMilk and Insight
+%% Added to Sesame with grants VistaMilk and Insight
 @conference{bloc2020b,
 	Author = {Thakur, Subhasis and Breslin, John G},
 	Booktitle = {The 3rd IEEE International Conference on Blockchain (IEEE Blockchain 2020)},
@@ -1828,7 +2042,7 @@
 	Title = {An Edge Colouring-Based Collaborative Routing Protocol for Blockchain Offline Channels},
 	Year = 2020}
 
-% Added to Sesame with grants CENTS, Insight and VistaMilk
+%% Added to Sesame with grants CENTS, Insight and VistaMilk
 @conference{bcca2020b,
 	Author = {Thakur, Subhasis and Breslin, John G},
 	Booktitle = {The 2nd International Conference on Blockchain Computing and Applications (IEEE BCCA 2020)},
@@ -1840,7 +2054,7 @@
 	Title = {Coordinated Landmark-Based Routing for Blockchain Offline Channels},
 	Year = 2020}
 
-% Added to Sesame with grants VistaMilk and Insight
+%% Added to Sesame with grants VistaMilk and Insight
 @conference{bcca2020a,
 	Author = {Thakur, Subhasis and Breslin, John G},
 	Booktitle = {The 2nd International Conference on Blockchain Computing and Applications (IEEE BCCA 2020)},
@@ -1852,7 +2066,7 @@
 	Title = {A Model of Decentralized Social Internet of Things Using Blockchain Offline Channels},
 	Year = 2020}
 
-% Added to Sesame with grant Insight
+%% Added to Sesame with grant Insight
 @conference{repe2020,
 	Author = {Bandara, Kosala Y and Thakur, Subhasis and Breslin, John G},
 	Booktitle = {The 3rd IEEE International Conference on Renewable Energy and Power Engineering (REPE 2020)},
@@ -1865,9 +2079,9 @@
 	Title = {Renewable Energy Integration Through Coalition Formation for P2P Energy Trading},
 	Year = 2020}
 
-% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame with grants Confirm and Insight
 @conference{icio2020b,
-	Author = {Sudharsan, Bharath and Breslin, John G and Ali, Muhammad I},
+	Author = {Sudharsan, Bharath and Breslin, John G and Ali, M Intizar},
 	Booktitle = {The 10th International Conference on the Internet of Things (ICIOT 2020)},
 	Day = 6,
 	Doi = {10.1145/3410992.3411014},
@@ -1877,9 +2091,9 @@
 	Title = {Edge2Train: A Framework to Train Machine Learning Models (SVMs) on Resource-Constrained IoT Edge Devices},
 	Year = 2020}
 	
-% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame with grants Confirm and Insight
 @conference{icio2020a,
-	Author = {Sudharsan, Bharath and Breslin, John G and Ali, Muhammad I},
+	Author = {Sudharsan, Bharath and Breslin, John G and Ali, M Intizar},
 	Booktitle = {The 10th International Conference on the Internet of Things (ICIOT 2020)},
 	Day = 6,
 	Doi = {10.1145/3410992.3411005},
@@ -1889,7 +2103,7 @@
 	Title = {RCE-NN: A Five-Stage Pipeline to Execute Neural Networks (CNNs) on Resource-Constrained IoT Edge Devices},
 	Year = 2020}
 
-% Added to Sesame with grants CENTS and Insight
+%% Added to Sesame with grants CENTS and Insight
 @conference{powe2020,
 	Author = {Thakur, Subhasis and Breslin, John G},
 	Booktitle = {The 2020 IEEE International Conference on Power System Technology (IEEE POWERCON 2020)},
@@ -1913,7 +2127,7 @@
 	Year = 2020}
 
 @conference{wfio2020,
-	Author = {Sudharsan, Bharath and Breslin, John G and Ali, Muhammad I},
+	Author = {Sudharsan, Bharath and Breslin, John G and Ali, M Intizar},
 	Booktitle = {The 6th IEEE World Forum on Internet of Things (WF-IoT 2020)},
 	Day = 5,
 	Doi = {10.1109/WF-IoT48130.2020.9221276},
@@ -2327,7 +2541,7 @@
 
 @conference{igic2012b,
 	Author = {Sacco, Owen and Dabrowski, Maciej and Breslin, John G},
-	Booktitle = {The 4th IEEE International Games Innovation Conference},
+	Booktitle = {The 4th IEEE International Games Innovation Conference (IGIC 2012)},
 	Day = 7,
 	Location = {Rochester, New York, USA},
 	Month = sep,
@@ -2337,7 +2551,7 @@
 
 @conference{igic2012a,
 	Author = {Crowley, David N and Breslin, John G and Corcoran, Peter and Young, Karen},
-	Booktitle = {The 4th IEEE International Games Innovation Conference},
+	Booktitle = {The 4th IEEE International Games Innovation Conference (IGIC 2012)},
 	Day = 7,
 	Location = {Rochester, New York, USA},
 	Month = sep,
@@ -2761,7 +2975,7 @@
 	Pages = {500--514},
 	Pdf = {http://www.johnbreslin.com/files/publications/20050519_eswc2005.pdf},
 	Series = {LNCS},
-	Title = {Towards Semantically-Interlinked Online Communities},
+	Title = {Towards Semantically Interlinked Online Communities},
 	Volume = 3532,
 	Year = 2005}
 
@@ -2843,7 +3057,19 @@
 	Volume = 1,
 	Year = 1995}
 
-% Added to Sesame with grants CRT-AI and Insight
+%% Added to Sesame with grant Insight
+@inproceedings{semi2024,
+	Author = {Wahid, Abdul and Yahya, Muhammad and Zaman, Farooq and Zhou, Baifan and Breslin, John G and Ali, M Intizar and Kharlamov, Evgeny},
+	Booktitle = {The 3rd International Workshop on Semantic Industrial Information Modelling (SEMIIM 2024) at the 23rd International Semantic Web Conference (ISWC 2024)},
+	Day = 12,
+	Location = {Baltimore, Maryland, USA},
+	Month = nov,
+	Pdf = {http://www.johnbreslin.com/files/publications/20241112_semi2024.pdf},
+	Title = {Integrating I4.0 Knowledge Graphs with Large Language Models Beyond SPARQL Endpoints},
+	Type = {Workshop Paper},
+	Year = 2024}
+
+%% Added to Sesame with grants CRT-AI and Insight
 @inproceedings{muws2023,
 	Author = {Khan, M Jaleed and Breslin, John G and Curry, Edward},
 	Booktitle = {The 2nd International Workshop on Multimodal Human Understanding for the Web and Social Media (MUWS 2023) at the 32nd ACM International Conference on Information and Knowledge Management (CIKM 2023)},
@@ -2855,7 +3081,7 @@
 	Type = {Workshop Paper},
 	Year = 2023}
 
-% Added to Sesame with grants CRT-AI and Insight
+%% Added to Sesame with grants CRT-AI and Insight
 @inproceedings{nesy2023,
 	Author = {Ward, Rory and Khan, M Jaleed and Curry, Edward and Breslin, John G},
 	Booktitle = {The 17th International Workshop on Neural-Symbolic Learning and Reasoning (NeSy 2023)},
@@ -2867,7 +3093,7 @@
 	Type = {Workshop Paper},
 	Year = 2023}
 
-% Added to Sesame with grants CRT-AI and Insight
+%% Added to Sesame with grants CRT-AI and Insight
 @inproceedings{sds_2023,
 	Author = {Usmani, Atiya and Khan, M Jaleed and Breslin, John G and Curry, Edward},
 	Booktitle = {The 1st International Workshop on Semantics in Dataspaces (SDS 2023) at the 32nd ACM Web Conference 2023 (TheWebConf 2023)},
@@ -2879,9 +3105,9 @@
 	Type = {Workshop Paper},
 	Year = 2023}
 
-% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame with grants Confirm and Insight
 @inproceedings{spti2021,
-	Author = {Sudharsan, Bharath and Sundaram, Dineshkumar and Patel, Pankesh and Breslin, John G and Ali, Muhammad I},
+	Author = {Sudharsan, Bharath and Sundaram, Dineshkumar and Patel, Pankesh and Breslin, John G and Ali, M Intizar},
 	Booktitle = {The 5th Workshop on Security, Privacy, and Trust in the Internet of Things (SPT-IoT 2021) at the 19th IEEE International Conference on Pervasive Computing and Communications (PerCom 2021)},
 	Day = 22,
 	Location = {New Orleans, Louisiana, USA},
@@ -2891,9 +3117,9 @@
 	Type = {Workshop Paper},
 	Year = 2021}
 
-% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame with grants Confirm and Insight
 @inproceedings{ioth2020,
-	Author = {Sudharsan, Bharath and Sundaram, Dineshkumar and Breslin, John G and Ali, Muhammad I},
+	Author = {Sudharsan, Bharath and Sundaram, Dineshkumar and Breslin, John G and Ali, M Intizar},
 	Booktitle = {The 1st Workshop on Internet of Things-Based Health Services and Applications (IOT-HSA 2020) at the 10th International Conference on the Internet of Things (IOT 2020)},
 	Day = 6,
 	Doi = {10.1145/3423423.3423433},
@@ -2905,7 +3131,7 @@
 	Year = 2020}
 
 @inproceedings{ioti2019,
-	Author = {Ali, Muhammad I and Patel, Pankesh and Breslin, John G},
+	Author = {Ali, M Intizar and Patel, Pankesh and Breslin, John G},
 	Booktitle = {The International Workshop on IoT Applications and Industry 4.0 (IoTI4 2019) at the 15th International Conference on Distributed Computing in Sensor Systems (DCOSS 2019)},
 	Day = 30,
 	DOI = {10.1109/DCOSS.2019.00079},
@@ -3241,7 +3467,7 @@
 	Type = {Workshop Paper},
 	Year = 1996}
 
-% Added to Sesame with grants Confirm and SMART 4.0
+%% Added to Sesame with grants Confirm and SMART 4.0
 @inproceedings{smar2023a,
 	Author = {Verma, Priyanka and Breslin, John G and Ponce de Leon, Miguel and O'Shea, Donna},
 	Booktitle = {The 9th IEEE International Conference on Smart Computing (SMARTCOMP 2023)},
@@ -3255,7 +3481,7 @@
 	Type = {Work in Progress Paper},
 	Year = 2023}
 
-% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame with grants Confirm and Insight
 @inproceedings{smar2023b,
 	Author = {Bharot, Nitesh and Soderi, Mirco and Verma, Priyanka and Breslin, John G},
 	Booktitle = {The 9th IEEE International Conference on Smart Computing (SMARTCOMP 2023)},
@@ -3269,7 +3495,7 @@
 	Type = {Work in Progress Paper},
 	Year = 2023}
 
-% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame with grants Confirm and Insight
 @inproceedings{smar2023c,
 	Author = {Soderi, Mirco and Breslin, John G},
 	Booktitle = {The 9th IEEE International Conference on Smart Computing (SMARTCOMP 2023)},
@@ -3283,7 +3509,7 @@
 	Type = {Work in Progress Paper},
 	Year = 2023}
 
-% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame with grants Confirm and Insight
 @inproceedings{smar2023d,
 	Author = {Soderi, Mirco and Breslin, John G},
 	Booktitle = {The 9th IEEE International Conference on Smart Computing (SMARTCOMP 2023)},
@@ -3297,7 +3523,7 @@
 	Type = {Poster Paper},
 	Year = 2023}
 
-% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame with grants Confirm and Insight
 @inproceedings{mobi2022,
 	Author = {Sudharsan, Bharath and Prasad, Sonu and Jose, Dan and Breslin, John G},
 	Booktitle = {The 28th Annual International Conference On Mobile Computing And Networking (MobiCom 2022)},
@@ -3311,9 +3537,9 @@
 	Type = {Poster Paper},
 	Year = 2022}
 	
-% Added to Sesame with grants Confirm, Insight and VistaMilk
+%% Added to Sesame with grants Confirm, Insight and VistaMilk
 @inproceedings{ipsn2022b,
-	Author = {Sheth, Dhruv and Sudharsan, Bharath and Breslin, John G and Ali, Muhammad I},
+	Author = {Sheth, Dhruv and Sudharsan, Bharath and Breslin, John G and Ali, M Intizar},
 	Booktitle = {The 21st ACM/IEEE International Conference on Information Processing in Sensor Networks (IPSN 2022)},
 	Day = 4,
 	Doi = {10.1109/IPSN54338.2022.00064},
@@ -3325,7 +3551,7 @@
 	Type = {Poster Paper},
 	Year = 2022}
 
-% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame with grants Confirm and Insight
 @inproceedings{ipsn2022a,
 	Author = {Sudharsan, Bharath and Salerno, Simone and Yadav, Piyush and Breslin, John G},
 	Booktitle = {The 21st ACM/IEEE International Conference on Information Processing in Sensor Networks (IPSN 2022)},
@@ -3339,9 +3565,9 @@
 	Type = {Poster Paper},
 	Year = 2022}
 
-% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame with grants Confirm and Insight
 @inproceedings{snss2021,
-	Author = {Sudharsan, Bharath and Sheth, Dhruv and Arya, Shailesh and Rollo, Federica and Yadav, Piyush and Patel, Pankesh and Breslin, John G and Ali, Muhammad I},
+	Author = {Sudharsan, Bharath and Sheth, Dhruv and Arya, Shailesh and Rollo, Federica and Yadav, Piyush and Patel, Pankesh and Breslin, John G and Ali, M Intizar},
 	Booktitle = {The 19th ACM Conference on Embedded Networked Sensor Systems (SenSys '21)},
 	Day = 15,
 	Doi = {10.1145/3485730.3492885},
@@ -3354,7 +3580,7 @@
 	Year = 2021}
 	
 @inproceedings{debs2019,
-	Author = {Sahal, Radhya and Breslin, John G and Ali, Muhammad I},
+	Author = {Sahal, Radhya and Breslin, John G and Ali, M Intizar},
 	Booktitle = {The 13th ACM International Conference on Distributed and Event-Based Systems (DEBS 2019)},
 	Day = 26,
 	Doi = {10.1145/3328905.3332509},
@@ -3565,9 +3791,9 @@
 	Type = {Poster Paper},
 	Year = 2004}
 
-% Added to Sesame with grant Confirm and OntoCommons
+%% Added to Sesame with grant Confirm and OntoCommons
 @inproceedings{eswc2022b,
-	Author = {Yahya, Muhammad and Zhou, Baifan and Zheng, Zhuoxun and Zhou, Dongzhuoran and Breslin, John G and Ali, Muhammad I and Kharlamov, Evgeny},
+	Author = {Yahya, Muhammad and Zhou, Baifan and Zheng, Zhuoxun and Zhou, Dongzhuoran and Breslin, John G and Ali, M Intizar and Kharlamov, Evgeny},
 	Booktitle = {The 19th Extended Semantic Web Conference (ESWC 2022)},
 	Day = 29,
 	Doi = {10.1007/978-3-031-11609-4_16},
@@ -3578,7 +3804,7 @@
 	Type = {Poster and Demonstration Paper},
 	Year = 2022}
 	
-% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame with grants Confirm and Insight
 @inproceedings{ubic2021,
 	Author = {Rollo, Federica and Sudharsan, Bharath and Po, Laura and Breslin, John G},
 	Booktitle = {The ACM International Joint Conference on Pervasive and Ubiquitous Computing and the 25th Annual International Symposium on Wearable Computers (UbiComp / ISWC 2021)},
@@ -3590,8 +3816,7 @@
 	Type = {Poster and Demonstration Paper},
 	Year = 2021}
 
-% Added to Sesame with grants VistaMilk and Insight
-% Get file
+%% Added to Sesame with grants VistaMilk and Insight
 @inproceedings{mass2023,
 	Author = {De Silva, Anupa and Thakur, Subhasis and Breslin, John G},
 	Booktitle = {The 20th IEEE International Conference on Mobile Ad-Hoc and Smart Systems (MASS 2023)},
@@ -3604,7 +3829,7 @@
 	Type = {Demonstration Paper},
 	Year = 2023}
 
-% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame with grants Confirm and Insight
 @inproceedings{smar2023e,
 	Author = {Bharot, Nitesh and Breslin, John G and Soderi, Mirco},
 	Booktitle = {The 9th IEEE International Conference on Smart Computing (SMARTCOMP 2023)},
@@ -3618,8 +3843,8 @@
 	Type = {Demonstration Paper},
 	Year = 2023}
 
-% Added to Sesame with grants Confirm
-@conference{aics2022,
+%% Added to Sesame with grants Confirm
+@inproceedings{aics2022,
 	Author = {Soderi, Mirco and Breslin, John G},
 	Booktitle = {The 30th Irish Conference on Artificial Intelligence and Cognitive Science (AICS 2022)},
 	Day = 8,
@@ -3630,7 +3855,7 @@
 	Type = {Demonstration Paper},
 	Year = 2022}
 
-% Added to Sesame with grant Confirm
+%% Added to Sesame with grant Confirm
 @inproceedings{smar2022b,
 	Author = {Soderi, Mirco and Kamath, Vignesh and Breslin, John G},
 	Booktitle = {The 8th IEEE International Conference on Smart Computing (SMARTCOMP 2022)},
@@ -3643,7 +3868,7 @@
 	Type = {Demonstration Paper},
 	Year = 2022}
 
-% Added to Sesame with grant Confirm
+%% Added to Sesame with grant Confirm
 @inproceedings{smar2022a,
 	Author = {Soderi, Mirco and Kamath, Vignesh and Breslin, John G},
 	Booktitle = {The 8th IEEE International Conference on Smart Computing (SMARTCOMP 2022)},
@@ -3656,7 +3881,7 @@
 	Type = {Demonstration Paper},
 	Year = 2022}
 
-% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame with grants Confirm and Insight
 @inproceedings{perc2022,
 	Author = {Kopparapu, Kavya and Lin, Eric and Breslin, John G and Sudharsan, Bharath},
 	Booktitle = {The 20th International Conference on Pervasive Computing and Communications (PerCom 2022)},
@@ -3669,9 +3894,9 @@
 	Type = {Demonstration Paper},
 	Year = 2022}
 
-% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame with grants Confirm and Insight
 @inproceedings{wfio2021b,
-	Author = {Sudharsan, Bharath and Salerno, Simone and Nguyen, Duc-Duy and Yahya, Muhammad and Wahid, Abdul and Yadav, Piyush and Breslin, John G and Ali, Muhammad I},
+	Author = {Sudharsan, Bharath and Salerno, Simone and Nguyen, Duc-Duy and Yahya, Muhammad and Wahid, Abdul and Yadav, Piyush and Breslin, John G and Ali, M Intizar},
 	Booktitle = {The 7th IEEE World Forum on Internet of Things (WF-IoT 2021)},
 	Day = 20,
 	Location = {New Orleans, Louisiana, USA},
@@ -3681,9 +3906,9 @@
 	Type = {Demonstration Paper},
 	Year = 2021}
 
-% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame with grants Confirm and Insight
 @inproceedings{iotd2021,
-	Author = {Sudharsan, Bharath and Patel, Pankesh and Wahid, Abdul and Yahya, Muhammad and Breslin, John G and Ali, Muhammad I},
+	Author = {Sudharsan, Bharath and Patel, Pankesh and Wahid, Abdul and Yahya, Muhammad and Breslin, John G and Ali, M Intizar},
 	Booktitle = {The 6th ACM/IEEE International Conference on Internet of Things Design and Implementation (IOTDI 2021)},
 	Day = 18,
 	Doi = {10.1145/3450268.3453513},
@@ -3694,9 +3919,9 @@
 	Type = {Demonstration Paper},
 	Year = 2021}
 
-% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame with grants Confirm and Insight
 @inproceedings{iccp2021,
-	Author = {Sudharsan, Bharath and Patel, Pankesh and Breslin, John G and Ali, Muhammad I},
+	Author = {Sudharsan, Bharath and Patel, Pankesh and Breslin, John G and Ali, M Intizar},
 	Booktitle = {The 12th ACM/IEEE International Conference on Cyber-Physical Systems (ICCPS 2021)},
 	Day = 19,
 	Doi = {10.1145/3450267.3451999},
@@ -3707,9 +3932,9 @@
 	Type = {Demonstration Paper},
 	Year = 2021}
 
-% Added to Sesame with no ack
+%% Added to Sesame with no ack
 @inproceedings{cods2021b,
-	Author = {Patel, Vatsal and Kanani, Sarth and Pathak, Tapan and Patel, Pankesh and Ali, Muhammad I and Breslin, John G},
+	Author = {Patel, Vatsal and Kanani, Sarth and Pathak, Tapan and Patel, Pankesh and Ali, M Intizar and Breslin, John G},
 	Booktitle = {The ACM India Joint International Conference on Data Science and Management of Data (CODS-COMAD 2021)},
 	Day = 4,
 	Doi = {10.1145/3430984.3430988},
@@ -3944,10 +4169,10 @@
 	Title = {Optimisation of High Frequency Transformer Design with Arbitrary Current and Voltage Waveforms},
 	Year = 2002}
 
-% Add co-authored OntoCommons deliverables
+%% Add co-authored OntoCommons deliverables
 
 @techreport{arxi2022,
-	Author = {Sudharsan, Bharath and Sundaram, Dineshkumar and Patel, Pankesh and Breslin, John G and Ali, Muhammad I and Dustdar, Schahram and Zomaya, Albert and Ranjan, Rajiv},
+	Author = {Sudharsan, Bharath and Sundaram, Dineshkumar and Patel, Pankesh and Breslin, John G and Ali, M Intizar and Dustdar, Schahram and Zomaya, Albert and Ranjan, Rajiv},
 	Day = 20,
 	Http = {https://arxiv.org/pdf/2204.10183.pdf},
 	Institution = {Confirm SFI Research Centre for Smart Manufacturing, National University of Ireland Galway},
