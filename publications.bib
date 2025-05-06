@@ -5,16 +5,12 @@
 
 %% Saved with string encoding Unicode (UTF-8) 
 
-%% For importing into IRIS:
-%%   In this file, replace @conference with @inproceedings and @unpublished (conference abstracts) to @inproceedings before importing
-%%   In IRIS, change any workshops/posters/demos/abstracts to the @conference Contribution type under Bulk Actions
-%%   In IRIS, remove some Books Edited from Books
-%%   In IRIS, remove any duplicate papers, e.g., some entries with \& come up twice
-
 %% To count authors, try grep "Author =" publications.bib |sed 's#        Author = {##g' | sed 's#},##g' |sed 's# and #\n#g' |sort -u |wc
 %% Extract counts per type per year on a Mac
 %% grep "ATSIGNHERE" publications.bib | sed -e 's/_/J/g' | sed -e 's/{[[:alnum:]][[:alnum:]][[:alnum:]][[:alnum:]]/ /g' | sed -e 's/ATSIGNHERE//g' | sed -e 's/[[:alpha:]],//g' | sed -e 's/,//g' | uniq -c
 %% To count senior authors, try grep "{Breslin, John G" publications.bib | wc and grep "Breslin, John G}" publications.bib | wc
+
+%% Books
 
 @book{oiic2023,
 	Author = {Breslin, John G and Buckley, Sarah-Anne},
@@ -133,10 +129,12 @@
 	Year = 2010,
 	Bdsk-Url-1 = {https://link.springer.com/book/10.1007/978-3-642-16581-8}}
 
+%% Book Chapters, Peer-Reviewed
+
 %% Added to Sesame with grants CENTS, VistaMilk and Insight
 @inbook{wire2021,
 	Author = {Thakur, Subhasis and Breslin, John G},
-	Booktitle = {Decentralized Content Vetting in Social Network with Blockchain},
+	Booktitle = {Decentralized Content Vetting in Social Network with Blockchain}, 
 	Day = 1,
 	Doi = {10.1002/9781119790839.ch12},
 	Isbn = 9781119790808,
@@ -150,7 +148,7 @@
 %% Added to Sesame with grants VistaMilk and Insight
 @inbook{iucb2021,
 	Author = {Bandara, Kosala Y and Thakur, Subhasis and Breslin, John G},
-	Booktitle = {End-to-End Tracing and Congestion in a Blockchain: A Supply Chain Use Case in Hyperledger Fabric},
+	Booktitle = {End-to-End Tracing and Congestion in a Blockchain: A Supply Chain Use Case in Hyperledger Fabric}, 
 	Day = 1,
 	Doi = {10.4018/978-1-7998-6650-3.ch004},
 	Isbn = 9781799866503,
@@ -163,7 +161,7 @@
 	
 @inbook{skbs2018,
 	Author = {Guerra, Francesco and Velegrakis, Yannis and Cardoso, Jorge and Breslin, John G},
-	Booktitle = {Semantic Keyword-Based Search on Structured Data Sources},
+	Booktitle = {Semantic Keyword-Based Search on Structured Data Sources}, 
 	Day = 7,
 	Doi = {10.1007/978-3-319-74497-1_19},
 	Month = feb,
@@ -177,7 +175,7 @@
 
 @inbook{swcs2016b,
 	Author = {Molli, Pascal and Breslin, John G and Vidal, Maria-Esther},
-	Booktitle = {Semantic Web Collaborative Spaces},
+	Booktitle = {Semantic Web Collaborative Spaces}, 
 	Day = 20,
 	Month = apr,
 	Pages = {3--9},
@@ -190,7 +188,7 @@
 
 @inbook{esna2014,
 	Author = {Vickey, Theodore A and Breslin, John G},
-	Booktitle = {The Encyclopedia of Social Network Analysis and Mining},
+	Booktitle = {The Encyclopedia of Social Network Analysis and Mining}, 
 	Day = 5,
 	Month = oct,
 	Pages = {1901--1904},
@@ -201,7 +199,7 @@
 
 @inbook{bdio2014,
 	Author = {Crowley, David N and Curry, Edward and Breslin, John G},
-	Booktitle = {Big Data and Internet of Things: A Roadmap for Smart Environments},
+	Booktitle = {Big Data and Internet of Things: A Roadmap for Smart Environments}, 
 	Day = 12,
 	Month = mar,
 	Pages = {379--399},
@@ -212,7 +210,7 @@
 
 @inbook{hswt2011,
 	Author = {Breslin, John G and Passant, Alexandre and Vrandecic, Denny},
-	Booktitle = {The Handbook of Semantic Web Technologies},
+	Booktitle = {The Handbook of Semantic Web Technologies}, 
 	Chapter = 12,
 	Day = 24,
 	Isbn = 9783540929123,
@@ -225,7 +223,7 @@
 
 @inbook{hrmt2011,
 	Author = {Passant, Alexandre and Kinsella, Sheila and Boj{\=a}rs, Uldis and Breslin, John G and Decker, Stefan},
-	Booktitle = {The Handbook of Research on Methods and Techniques for Studying Virtual Communities: Paradigms and Phenomena},
+	Booktitle = {The Handbook of Research on Methods and Techniques for Studying Virtual Communities: Paradigms and Phenomena}, 
 	Date-Modified = {2018-03-14 14:35:16 +0000},
 	Day = 10,
 	Isbn = 9781609600402,
@@ -238,7 +236,7 @@
 
 @inbook{rtds2010,
 	Author = {Boj{\=a}rs, Uldis and Breslin, John G and Decker, Stefan},
-	Booktitle = {Recent Trends and Developments in Social Software},
+	Booktitle = {Recent Trends and Developments in Social Software}, 
 	Date-Modified = {2018-03-14 14:35:16 +0000},
 	Day = 30,
 	Isbn = 9783642165801,
@@ -251,7 +249,7 @@
 
 @inbook{led_2010,
 	Author = {Passant, Alexandre and Laublet, Philippe and Breslin, John G and Decker, Stefan},
-	Booktitle = {Linking Enterprise Data},
+	Booktitle = {Linking Enterprise Data}, 
 	Day = 22,
 	Isbn = 9781441976642,
 	Month = oct,
@@ -263,7 +261,7 @@
 
 @inbook{sitc2009,
 	Author = {Kim, Hak-Lae and Breslin, John G and Kim, Hong-Gee},
-	Booktitle = {The Handbook of Research on Social Interaction Technologies and Collaboration Software: Concepts and Trends},
+	Booktitle = {The Handbook of Research on Social Interaction Technologies and Collaboration Software: Concepts and Trends}, 
 	Chapter = 46,
 	Isbn = 9781605663685,
 	Month = jul,
@@ -275,7 +273,7 @@
 
 @inbook{aic_2009,
 	Author = {Kinsella, Sheila and Passant, Alexandre and Breslin, John G and Decker, Stefan and Jaokar, Ajit},
-	Booktitle = {Advances in Computers},
+	Booktitle = {Advances in Computers}, 
 	Day = 25,
 	Month = jun,
 	Pages = {121--175},
@@ -287,7 +285,7 @@
 
 @inbook{web22008,
 	Author = {Kim, Hak-Lae and Breslin, John G},
-	Booktitle = {Web 2.0: The Business Model},
+	Booktitle = {Web 2.0: The Business Model}, 
 	Month = nov,
 	Pages = {189--200},
 	Pdf = {http://www.johnbreslin.com/files/publications/20081100_web22008.pdf},
@@ -297,7 +295,7 @@
 
 @inbook{sdl_2008,
 	Author = {Breslin, John G},
-	Booktitle = {Semantic Digital Libraries},
+	Booktitle = {Semantic Digital Libraries}, 
 	Day = 9,
 	Isbn = 9783540854333,
 	Month = oct,
@@ -309,7 +307,7 @@
 
 @inbook{wcm_2008,
 	Author = {Kinsella, Sheila and Harth, Andreas and Troussov, Alexander and Sogrin, Mikhail and Judge, John and Hayes, Conor and Breslin, John G},
-	Booktitle = {Why Context Matters: Applications of Social Network Analysis},
+	Booktitle = {Why Context Matters: Applications of Social Network Analysis}, 
 	Isbn = 9783531163284,
 	Month = sep,
 	Pages = {79--96},
@@ -320,7 +318,7 @@
 
 @inbook{icfa2008,
 	Author = {Choi, Hee-Chul and Kruk, Sebastian R and Grzonkowski, S\l{}awomir and Stankiewicz, Katarzyna and Davis, Brian and Breslin, John G},
-	Booktitle = {Trust Management in Virtual Environment},
+	Booktitle = {Trust Management in Virtual Environment}, 
 	Chapter = 7,
 	Isbn = 8131412541,
 	Month = jun,
@@ -332,7 +330,7 @@
 
 @inbook{icfa2007,
 	Author = {O'Murchu, Ina and Breslin, John G and Decker, Stefan},
-	Booktitle = {Viral Marketing: Concepts and Cases},
+	Booktitle = {Viral Marketing: Concepts and Cases}, 
 	Chapter = 6,
 	Isbn = 8131407667,
 	Month = jun,
@@ -344,7 +342,7 @@
 
 @inbook{epta2006,
 	Author = {O'Murchu, Ina and Zhdanova, Anna V and Breslin, John G},
-	Booktitle = {The Encyclopaedia of Portal Technology and Applications},
+	Booktitle = {The Encyclopaedia of Portal Technology and Applications}, 
 	Day = 30,
 	Month = apr,
 	Pages = {875--880},
@@ -355,7 +353,7 @@
 
 @inbook{btr_2006,
 	Author = {Boj{\=a}rs, Uldis and Breslin, John G and Passant, Alexandre},
-	Booktitle = {BlogTalks Reloaded: Social Software - Research and Cases},
+	Booktitle = {BlogTalks Reloaded: Social Software - Research and Cases}, 
 	Date-Modified = {2018-03-14 14:35:16 +0000},
 	Day = 3,
 	Isbn = 3833496142,
@@ -366,6 +364,8 @@
 	Publisher = {BoD},
 	Title = {SIOC Browser - Towards a Richer Blog Browsing Experience},
 	Year = 2006}
+
+%% Journal Papers, Peer-Reviewed
 
 %% Add to Sesame with grants Cyber-Shock and Insight, get file
 %%	Day = ,
@@ -416,7 +416,7 @@
 	Issn = {14680394},
 	Journal = {Expert Systems},
 	Publisher = {Wiley},
-	Title = {Leveraging Transfer Learning Domain Adaptation Model with Federated Learning to Revolutionize Healthcare},
+	Title = {Leveraging Transfer Learning Domain Adaptation Model with Federated Learning to Revolutionise Healthcare},
 	Year = 2024}
 
 %% Added to Sesame with grant Insight
@@ -812,6 +812,19 @@
 	Title = {Optimization of Waiting Time for Electric Vehicles Using a Fuzzy Inference System},
 	Year = 2022}
 	
+%% Add to Sesame with grants CENTS and Insight
+@article{snam2021,
+	Author = {Thakur, Subhasis and Breslin, John G},
+	Day = 21,
+	Journal = {The Journal of Social Network Analysis and Mining},
+	Month = oct,
+	Number = 104,
+	Pdf = {http://www.johnbreslin.com/files/publications/20211021_snam2021.pdf},
+	Publisher = {Springer},
+	Title = {Rumour Prevention in Social Networks with Layer 2 Blockchains},
+	Volume = 11,
+	Year = 2021}
+
 %% Added to Sesame with grants Confirm and Insight
 @article{apsc2021c,
 	Author = {Kafunah, Jefkine and Ali, M Intizar and Breslin, John G},
@@ -1091,6 +1104,20 @@
 	Pdf = {http://www.johnbreslin.com/files/publications/20170329_tcc_2017.pdf},
 	Title = {A Robust Reputation Management Mechanism in Federated Cloud},
 	Year = 2017}
+
+@article{ces_2016,
+	Author = {Crowley, David N and Curry, Edward and Breslin, John G},
+	Day = 10,
+	Doi = {10.1109/MCE.2016.2556918},
+	Issn = {2162-2248},
+	Journal = {IEEE Consumer Electronics Magazine},
+	Month = aug,
+	Pages = {90--94},
+	Pdf = {http://www.johnbreslin.com/files/publications/20160810_ces_2016.pdf},
+	Title = {Citizen Actuation for Smart Environments},
+	Type = {Magazine Article},
+	Volume = 5,
+	Year = 2016}
 
 @article{giq_2016b,
 	Author = {Porwol, Lukasz and Ojo, Adegboyega and Breslin, John G},
@@ -1396,7 +1423,7 @@
 	Pages = {472--487},
 	Pdf = {http://www.johnbreslin.com/files/publications/20050823_jeit2005.pdf},
 	Publisher = {Emerald Group},
-	Title = {Semantic Social Network Portal for Enterprise Online Communities},
+	Title = {Semantic Social Network Portal for Collaborative Online Communities},
 	Volume = 29,
 	Year = 2005}
 
@@ -1407,7 +1434,7 @@
 	Number = 4,
 	Pages = {919--928},
 	Pdf = {http://www.johnbreslin.com/files/publications/20040800_jcsc2004.pdf},
-	Title = {Critical Choices in a System for Optimised Design of Arbitrary Waveform Transformers},
+	Title = {Critical Choices in a System for Optimized Design of Arbitrary Waveform Transformers},
 	Volume = 13,
 	Year = 2004}
 
@@ -1445,14 +1472,17 @@
 	Volume = 57,
 	Year = 2003}
 
+%% Conference Papers, Peer-Reviewed
+
 %% Add to Sesame with grants SustAIn and Insight, get DOI, get file
 %%	Day = ,
 %%	Location = {},
 %%	Month = ,
 %%	Pdf = {http://www.johnbreslin.com/files/publications/20250000_ict42025.pdf},
-@conference{ict42025,
+@inproceedings{ict42025,
 	Author = {Iftikhar, Sunbal and Khan, Hassan and Breslin, John G and Davy, Steven},
-	Booktitle = {The 11th International Conference on ICT for Sustainability (ICT4S 2025)},
+	Booktitle = {The 11th International Conference on ICT for Sustainability (ICT4S 2025)}, 
+	Series = {The 11th International Conference on ICT for Sustainability (ICT4S 2025)},
 	Title = {Sustainable AI: Sparse Backpropagation for Low-Carbon On-Device Training},
 	Year = 2025}
 	
@@ -1461,16 +1491,18 @@
 %%	Location = {},
 %%	Month = ,
 %%	Pdf = {http://www.johnbreslin.com/files/publications/20250000_embc2025.pdf},
-@conference{embc2025,
+@inproceedings{embc2025,
 	Author = {Bharot, Nitesh and Verma, Priyanka and Singh, Karandeep and Chaurasia, Nisha and Breslin, John G},
-	Booktitle = {The 47th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC 2025)},
+	Booktitle = {The 47th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC 2025)}, 
+	Series = {The 47th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC 2025)},
 	Title = {Boosting Skin Lesion Classification with a Class Expert DCGAN Framework for Skin Disease Detection},
 	Year = 2025}
 
 %% Add to Sesame with grants CRT-AI and Insight, get DOI, get file
-@conference{visa2025,
+@inproceedings{visa2025,
 	Author = {Ward, Rory and Breslin, John G},
-	Booktitle = {The 20th International Conference on Computer Vision Theory and Applications (VISAPP 2025)},
+	Booktitle = {The 20th International Conference on Computer Vision Theory and Applications (VISAPP 2025)}, 
+	Series = {The 20th International Conference on Computer Vision Theory and Applications (VISAPP 2025)},
 	Day = 28,
 	Location = {Porto, Portugal},
 	Month = feb,
@@ -1479,20 +1511,22 @@
 	Year = 2025}
 
 %% Add to Sesame with grants ENEPORTS and Insight, get DOI
-@conference{cc__2025,
+@inproceedings{comp2025,
 	Author = {Bharot, Nitesh and Breslin, John G},
-	Booktitle = {The 13th Computing Conference (CC 2025)},
+	Booktitle = {The 13th Computing Conference (CC 2025)}, 
+	Series = {The 13th Computing Conference (CC 2025)},
 	Day = 19,
 	Location = {London, UK},
 	Month = jun,
-	Pdf = {http://www.johnbreslin.com/files/publications/20250619_cc__2025.pdf},
+	Pdf = {http://www.johnbreslin.com/files/publications/20250619_comp2025.pdf},
 	Title = {A Transfer Learning-Enhanced TabNet-Based Intrusion Detection System for IoMT Security},
 	Year = 2025}
 
 %% Add to Sesame with grants CRT-AI and Insight, get DOI
-@conference{sac_2025,
+@inproceedings{sac_2025,
 	Author = {Ward, Rory and Dalal, Dhairya and Buitelaar, Paul and Breslin, John G},
-	Booktitle = {The 40th ACM/SIGAPP Symposium On Applied Computing (SAC 2025)},
+	Booktitle = {The 40th ACM/SIGAPP Symposium On Applied Computing (SAC 2025)}, 
+	Series = {The 40th ACM/SIGAPP Symposium On Applied Computing (SAC 2025)},
 	Day = 1,
 	Location = {Sicily, Italy},
 	Month = apr,
@@ -1502,9 +1536,10 @@
 	Year = 2025}
 
 %% Added to Sesame with grants Insight and SustAIn, get DOI
-@conference{icca2024,
+@inproceedings{icca2024,
 	Author = {Saleh, Hager and McCann, Michael and El-Sappagh, Shaker and Breslin, John G},
-	Booktitle = {The 6th IEEE International Conference on Computer and Applications (ICCA 2024)},
+	Booktitle = {The 6th IEEE International Conference on Computer and Applications (ICCA 2024)}, 
+	Series = {The 6th IEEE International Conference on Computer and Applications (ICCA 2024)},
 	Day = 19,
 	Location = {Cairo, Egypt},
 	Month = dec,
@@ -1513,9 +1548,10 @@
 	Year = 2024}
 
 %% Added to Sesame with grant Insight, get DOI
-@conference{icce2024,
+@inproceedings{icce2024,
 	Author = {Saleh, Hager and Alsamhi, Saeed H and McCann, Michael and \'{O} Brolch\'{a}in, Niall and Breslin, John G},
-	Booktitle = {The 10th International Conference on Computing, Engineering and Design (ICCED 2024)},
+	Booktitle = {The 10th International Conference on Computing, Engineering and Design (ICCED 2024)}, 
+	Series = {The 10th International Conference on Computing, Engineering and Design (ICCED 2024)},
 	Day = 11,
 	Location = {Jeddah, Saudi Arabia},
 	Month = dec,
@@ -1524,9 +1560,10 @@
 	Year = 2024}
 
 %% Added to Sesame with grants SustAIn, VistaMilk and Insight
-@conference{delt2024b,
+@inproceedings{delt2024b,
 	Author = {Thakur, Subhasis and Breslin, John G},
-	Booktitle = {The 5th International Conference on Deep Learning Theory and Applications (DeLTA 2024)},
+	Booktitle = {The 5th International Conference on Deep Learning Theory and Applications (DeLTA 2024)}, 
+	Series = {The 5th International Conference on Deep Learning Theory and Applications (DeLTA 2024)},
 	Day = 10,
 	Doi = {10.1007/978-3-031-66705-3_12},
 	Location = {Dijon, France},
@@ -1536,9 +1573,10 @@
 	Year = 2024}
 
 %% Added to Sesame with grants SustAIn, VistaMilk and Insight
-@conference{delt2024a,
+@inproceedings{delt2024a,
 	Author = {Thakur, Subhasis and Breslin, John G},
-	Booktitle = {The 5th International Conference on Deep Learning Theory and Applications (DeLTA 2024)},
+	Booktitle = {The 5th International Conference on Deep Learning Theory and Applications (DeLTA 2024)}, 
+	Series = {The 5th International Conference on Deep Learning Theory and Applications (DeLTA 2024)},
 	Day = 10,
 	Doi = {10.1007/978-3-031-66694-0_15},
 	Location = {Dijon, France},
@@ -1548,9 +1586,10 @@
 	Year = 2024}
 
 %% Added to Sesame with grants SustAIn, VistaMilk and Insight
-@conference{inte2024,
+@inproceedings{inte2024,
 	Author = {Thakur, Subhasis and Breslin, John G},
-	Booktitle = {The 10th Intelligent Systems Conference (IntelliSys 2024)},
+	Booktitle = {The 10th Intelligent Systems Conference (IntelliSys 2024)}, 
+	Series = {The 10th Intelligent Systems Conference (IntelliSys 2024)},
 	Day = 29,
 	Doi = {10.1007/978-3-031-66336-9_6},
 	Location = {Amsterdam, The Netherlands},
@@ -1560,9 +1599,10 @@
 	Year = 2024}
 
 %% Added to Sesame with grants VistaMilk and Insight
-@conference{apcc2024,
+@inproceedings{apcc2024,
 	Author = {De Silva, Anupa and Thakur, Subhasis and Breslin, John G},
-	Booktitle = {The 29th IEEE Asia Pacific Conference on Communications (APCC 2024)},
+	Booktitle = {The 29th IEEE Asia Pacific Conference on Communications (APCC 2024)}, 
+	Series = {The 29th IEEE Asia Pacific Conference on Communications (APCC 2024)},
 	Day = 6,
 	Doi = {10.1109/APCC62576.2024.10768001},
 	Location = {Bali, Indonesia},
@@ -1572,9 +1612,10 @@
 	Year = 2024}
 
 %% Added to Sesame with grant Insight
-@conference{soft2024,
+@inproceedings{soft2024,
 	Author = {Bharot, Nitesh and Breslin, John G and Verma, Priyanka},
-	Booktitle = {The 32nd International Conference on Software, Telecommunications and Computer Networks (SoftCOM 2024)},
+	Booktitle = {The 32nd International Conference on Software, Telecommunications and Computer Networks (SoftCOM 2024)}, 
+	Series = {The 32nd International Conference on Software, Telecommunications and Computer Networks (SoftCOM 2024)},
 	Day = 27,
 	Doi = {10.23919/SoftCOM62040.2024.10721868},
 	Location = {Split, Croatia},
@@ -1584,9 +1625,10 @@
 	Year = 2024}
 
 %% Add to Sesame with grants SecMC, Confirm and Insight
-@conference{anti2023,
+@inproceedings{anti2023,
 	Author = {Bharot, Nitesh and Breslin, John G},
-	Booktitle = {The 3rd International Conference on Advanced Network Technologies and Intelligent Computing (ANTIC 2023)},
+	Booktitle = {The 3rd International Conference on Advanced Network Technologies and Intelligent Computing (ANTIC 2023)}, 
+	Series = {The 3rd International Conference on Advanced Network Technologies and Intelligent Computing (ANTIC 2023)},
 	Day = 21,
 	Location = {Varanasi, India},
 	Month = dec,
@@ -1594,10 +1636,25 @@
 	Title = {Intrusion Watchdog: Enhancing Intrusion Detection System with Machine Learning using 3-way Feature Selection Technique},
 	Year = 2023}
 
+%% Add to Sesame with grants FAME and Insight
+@inproceedings{icml2023,
+	Author = {Chandaliya, Rishabh and Timilsina, Mohan and Breslin, John G and Serrano, Martin},
+	Booktitle = {The 22nd IEEE International Conference on Machine Learning and Applications (ICMLA 2023)},
+	Series = {The 22nd IEEE International Conference on Machine Learning and Applications (ICMLA 2023)},
+	Day = 16,
+	Doi = {10.1109/ICMLA58977.2023.00209},
+	Location = {Florida, USA},
+	Month = dec,
+	Pages = {1385--1391},
+	Pdf = {http://www.johnbreslin.com/files/publications/20231216_icml2023.pdf},
+	Title = {Towards Graph-Based Semi-Supervised Learning on Audio Embeddings for Label Classification},
+	Year = 2023}
+
 %% Add to Sesame with grants Confirm and Insight
-@conference{ism_2023,
+@inproceedings{ism_2023,
 	Author = {Bharot, Nitesh and Verma, Priyanka and Soderi, Mirco and Breslin, John G},
-	Booktitle = {The 5th International Conference on Industry 4.0 and Smart Manufacturing (ISM 2023)},
+	Booktitle = {The 5th International Conference on Industry 4.0 and Smart Manufacturing (ISM 2023)}, 
+	Series = {The 5th International Conference on Industry 4.0 and Smart Manufacturing (ISM 2023)},
 	Day = 23,
 	Location = {Lisbon, Portugal},
 	Month = nov,
@@ -1607,9 +1664,10 @@
 	Year = 2023}
 
 %% Added to Sesame with grant Insight
-@conference{icsc2023,
+@inproceedings{icsc2023,
 	Author = {Usmani, Atiya and Alsamhi, Saeed H and Breslin, John G and Curry, Edward},
-	Booktitle = {The 17th IEEE International Conference on Semantic Computing (ICSC 2023)},
+	Booktitle = {The 17th IEEE International Conference on Semantic Computing (ICSC 2023)}, 
+	Series = {The 17th IEEE International Conference on Semantic Computing (ICSC 2023)},
 	Day = 1,
 	Doi = {10.1109/ICSC56153.2023.00066},
 	Location = {Laguna Hills, California, USA},
@@ -1620,9 +1678,10 @@
 	Year = 2023}
 
 %% Added to Sesame with no ack
-@conference{mind2022,
+@inproceedings{mind2022,
 	Author = {Verma, Priyanka and Breslin, John G and O'Shea, Donna and Pateriya, R K},
-	Booktitle = {The 4th International Conference on Machine Learning, Image Processing, Network Security and Data Sciences (MIND 2022)},
+	Booktitle = {The 4th International Conference on Machine Learning, Image Processing, Network Security and Data Sciences (MIND 2022)}, 
+	Series = {The 4th International Conference on Machine Learning, Image Processing, Network Security and Data Sciences (MIND 2022)},
 	Day = 21,
 	Doi = {10.1007/978-3-031-24367-7_32},
 	Location = {Online},
@@ -1632,9 +1691,10 @@
 	Year = 2022}
 
 %% Added to Sesame with no ack
-@conference{ism_2022,
+@inproceedings{ism_2022,
 	Author = {Wahid, Abdul and Yahya, Muhammad and Breslin, John G and Ali, M Intizar},
-	Booktitle = {The 4th International Conference on Industry 4.0 and Smart Manufacturing (ISM 2022)},
+	Booktitle = {The 4th International Conference on Industry 4.0 and Smart Manufacturing (ISM 2022)}, 
+	Series = {The 4th International Conference on Industry 4.0 and Smart Manufacturing (ISM 2022)},
 	Day = 2,
 	Doi = {10.1016/j.procs.2022.12.241},
 	Location = {Linz, Austria},
@@ -1644,9 +1704,10 @@
 	Year = 2022}
 
 %% Added to Sesame with grant Confirm
-@conference{isol2022,
+@inproceedings{isol2022,
 	Author = {Soderi, Mirco and Breslin, John G},
-	Booktitle = {The 11th International Symposium on Leveraging Applications of Formal Methods (ISOLA 2022)},
+	Booktitle = {The 11th International Symposium on Leveraging Applications of Formal Methods (ISOLA 2022)}, 
+	Series = {The 11th International Symposium on Leveraging Applications of Formal Methods (ISOLA 2022)},
 	Day = 22,
 	Doi = {10.1007/978-3-031-19762-8_18},
 	Location = {Rhodes, Greece},
@@ -1657,9 +1718,10 @@
 	Year = 2022}
 
 %% Added to Sesame with grants CRT-AI and Insight
-@conference{imvi2022,
+@inproceedings{imvi2022,
 	Author = {Ward, Rory and Breslin, John G},
-	Booktitle = {The 24th Irish Machine Vision and Image Processing Conference (IMVIP 2022)},
+	Booktitle = {The 24th Irish Machine Vision and Image Processing Conference (IMVIP 2022)}, 
+	Series = {The 24th Irish Machine Vision and Image Processing Conference (IMVIP 2022)},
 	Day = 31,
 	Location = {Belfast, Northern Ireland},
 	Month = aug,
@@ -1669,9 +1731,10 @@
 	Year = 2022}
 	
 %% Added to Sesame with grant Insight
-@conference{bloc2022e,
+@inproceedings{bloc2022e,
 	Author = {Thakur, Subhasis and Breslin, John G},
-	Booktitle = {The 4th International Congress on Blockchain and Applications (BLOCKCHAIN 2022)},
+	Booktitle = {The 4th International Congress on Blockchain and Applications (BLOCKCHAIN 2022)}, 
+	Series = {The 4th International Congress on Blockchain and Applications (BLOCKCHAIN 2022)},
 	Day = 13,
 	Doi = {10.1007/978-3-031-21229-1_3},
 	Location = {L'Aquila, Italy},
@@ -1681,9 +1744,10 @@
 	Year = 2022}
 
 %% Added to Sesame with grants VistaMilk and Insight
-@conference{bloc2022d,
+@inproceedings{bloc2022d,
 	Author = {De Silva, Anupa and Thakur, Subhasis and Breslin, John G},
-	Booktitle = {The 4th International Congress on Blockchain and Applications (BLOCKCHAIN 2022)},
+	Booktitle = {The 4th International Congress on Blockchain and Applications (BLOCKCHAIN 2022)}, 
+	Series = {The 4th International Congress on Blockchain and Applications (BLOCKCHAIN 2022)},
 	Day = 13,
 	Doi = {10.1007/978-3-031-21229-1_9},
 	Location = {L'Aquila, Italy},
@@ -1693,9 +1757,10 @@
 	Year = 2022}
 
 %% Added to Sesame with grant Insight
-@conference{bloc2022c,
+@inproceedings{bloc2022c,
 	Author = {Thakur, Subhasis and Breslin, John G},
-	Booktitle = {The 4th International Congress on Blockchain and Applications (BLOCKCHAIN 2022)},
+	Booktitle = {The 4th International Congress on Blockchain and Applications (BLOCKCHAIN 2022)}, 
+	Series = {The 4th International Congress on Blockchain and Applications (BLOCKCHAIN 2022)},
 	Day = 13,
 	Doi = {10.1007/978-3-031-21229-1_20},
 	Location = {L'Aquila, Italy},
@@ -1705,9 +1770,10 @@
 	Year = 2022}
 
 %% Added to Sesame with grant Insight
-@conference{bloc2022b,
+@inproceedings{bloc2022b,
 	Author = {Thakur, Subhasis and Breslin, John G and Malik, Sweta},
-	Booktitle = {The 4th International Congress on Blockchain and Applications (BLOCKCHAIN 2022)},
+	Booktitle = {The 4th International Congress on Blockchain and Applications (BLOCKCHAIN 2022)}, 
+	Series = {The 4th International Congress on Blockchain and Applications (BLOCKCHAIN 2022)},
 	Day = 13,
 	Doi = {10.1007/978-3-031-21229-1_27},
 	Location = {L'Aquila, Italy},
@@ -1717,9 +1783,10 @@
 	Year = 2022}
 
 %% Added to Sesame with grants CENTS and Insight
-@conference{bloc2022a,
+@inproceedings{bloc2022a,
 	Author = {Shukla, Saurabh and Thakur, Subhasis and Hussain, Shahid and Breslin, John G and Jameel, Syed M},
-	Booktitle = {The 4th International Congress on Blockchain and Applications (BLOCKCHAIN 2022)},
+	Booktitle = {The 4th International Congress on Blockchain and Applications (BLOCKCHAIN 2022)}, 
+	Series = {The 4th International Congress on Blockchain and Applications (BLOCKCHAIN 2022)},
 	Day = 13,
 	Doi = {10.1007/978-3-031-21229-1_37},
 	Location = {L'Aquila, Italy},
@@ -1729,9 +1796,10 @@
 	Year = 2022}
 
 %% Added to Sesame with no ack
-@conference{ekno2022b,
+@inproceedings{ekno2022b,
 	Author = {Thakur, Subhasis and Breslin, John G},
-	Booktitle = {The 14th International Conference on Information, Process, and Knowledge Management (eKNOW 2022)},
+	Booktitle = {The 14th International Conference on Information, Process, and Knowledge Management (eKNOW 2022)}, 
+	Series = {The 14th International Conference on Information, Process, and Knowledge Management (eKNOW 2022)},
 	Day = {26},
 	Location = {Porto, Portugal},
 	Month = jun,
@@ -1741,9 +1809,10 @@
 	Year = 2022}
 
 %% Added to Sesame with grants CENTS and Insight
-@conference{ekno2022a,
+@inproceedings{ekno2022a,
 	Author = {Malik, Sweta and Thakur, Subhasis and Breslin, John G and Duffy, Maeve},
-	Booktitle = {The 14th International Conference on Information, Process, and Knowledge Management (eKNOW 2022)},
+	Booktitle = {The 14th International Conference on Information, Process, and Knowledge Management (eKNOW 2022)}, 
+	Series = {The 14th International Conference on Information, Process, and Knowledge Management (eKNOW 2022)},
 	Day = {26},
 	Location = {Porto, Portugal},
 	Month = jun,
@@ -1751,22 +1820,11 @@
 	Title = {Blockchain-Based Decentralized Home Energy Management System Using Double Auction},
 	Year = 2022}
 
-%% Added to Sesame with grants CENTS and Insight
-@conference{enrc2022,
-	Author = {Malik, Sweta and Thakur, Subhasis and Duffy, Maeve and Breslin, John G},
-	Booktitle = {The 7th IEEE International Energy Conference (ENERGYCON 2022)},
-	Day = {9},
-	Doi = {10.1109/ENERGYCON53164.2022.9830460},
-	Location = {Riga, Latvia},
-	Month = may,
-	Pdf = {http://www.johnbreslin.com/files/publications/20220509_enrc2022.pdf},
-	Title = {Double Auction Mechanisms for Peer-to-Peer Energy Trading: A Comparative Analysis},
-	Year = 2022}
-
 %% Added to Sesame with grants CRT-AI and Insight
-@conference{eswc2022a,
+@inproceedings{eswc2022a,
 	Author = {Khan, M Jaleed and Breslin, John G and Curry, Edward},
-	Booktitle = {The 19th Extended Semantic Web Conference (ESWC 2022)},
+	Booktitle = {The 19th Extended Semantic Web Conference (ESWC 2022)}, 
+	Series = {The 19th Extended Semantic Web Conference (ESWC 2022)},
 	Day = 29,
 	Doi = {10.1007/978-3-031-06981-9_6},
 	Location = {Hersonissos, Greece},
@@ -1775,10 +1833,24 @@
 	Title = {Expressive Scene Graph Generation Using Commonsense Knowledge Infusion for Visual Understanding and Reasoning},
 	Year = 2022}
 
+%% Added to Sesame with grants CENTS and Insight
+@inproceedings{enrc2022,
+	Author = {Malik, Sweta and Thakur, Subhasis and Duffy, Maeve and Breslin, John G},
+	Booktitle = {The 7th IEEE International Energy Conference (ENERGYCON 2022)}, 
+	Series = {The 7th IEEE International Energy Conference (ENERGYCON 2022)},
+	Day = {9},
+	Doi = {10.1109/ENERGYCON53164.2022.9830460},
+	Location = {Riga, Latvia},
+	Month = may,
+	Pdf = {http://www.johnbreslin.com/files/publications/20220509_enrc2022.pdf},
+	Title = {Double Auction Mechanisms for Peer-to-Peer Energy Trading: A Comparative Analysis},
+	Year = 2022}
+
 %% Added to Sesame with grants Confirm and Insight
-@conference{sac_2022,
+@inproceedings{sac_2022,
 	Author = {Sudharsan, Bharath and Breslin, John G and Ali, M Intizar and Corcoran, Peter and Ranjan, Rajiv},
-	Booktitle = {The 37th ACM/SIGAPP Symposium on Applied Computing (SAC 2022)},
+	Booktitle = {The 37th ACM/SIGAPP Symposium on Applied Computing (SAC 2022)}, 
+	Series = {The 37th ACM/SIGAPP Symposium on Applied Computing (SAC 2022)},
 	Day = 25,
 	Doi = {10.1145/3477314.3507135},
 	Location = {Online},
@@ -1788,9 +1860,10 @@
 	Year = 2022}
 
 %% Added to Sesame with grant Confirm
-@conference{sami2022,
+@inproceedings{sami2022,
 	Author = {Soderi, Mirco and Kamath, Vignesh and Morgan, Jeff and Breslin, John G},
-	Booktitle = {The 20th IEEE Jubilee World Symposium on Applied Machine Intelligence and Informatics (SAMI 2022)},
+	Booktitle = {The 20th IEEE Jubilee World Symposium on Applied Machine Intelligence and Informatics (SAMI 2022)}, 
+	Series = {The 20th IEEE Jubilee World Symposium on Applied Machine Intelligence and Informatics (SAMI 2022)},
 	Day = 2,
 	Doi = {10.1109/SAMI54271.2022.9780768},
 	Location = {Online},
@@ -1801,9 +1874,10 @@
 	Year = 2022}
 
 %% Added to Sesame with grants Confirm and Insight
-@conference{bigd2021b,
+@inproceedings{bigd2021b,
 	Author = {Sudharsan, Bharath and Breslin, John G and Ali, M Intizar},
-	Booktitle = {The 2021 IEEE International Conference on Big Data (BigData 2021)},
+	Booktitle = {The 2021 IEEE International Conference on Big Data (BigData 2021)}, 
+	Series = {The 2021 IEEE International Conference on Big Data (BigData 2021)},
 	Day = 15,
 	Doi = {10.1109/BigData52589.2021.9671765},
 	Location = {Online},
@@ -1815,9 +1889,10 @@
 	Year = 2021}
 
 %% Added to Sesame with grants Confirm and Insight
-@conference{bigd2021a,
+@inproceedings{bigd2021a,
 	Author = {Sudharsan, Bharath and Yadav, Piyush and Nguyen, Duc-Duy and Kafunah, Jefkine and Breslin, John G},
-	Booktitle = {The 2021 IEEE International Conference on Big Data (BigData 2021)},
+	Booktitle = {The 2021 IEEE International Conference on Big Data (BigData 2021)}, 
+	Series = {The 2021 IEEE International Conference on Big Data (BigData 2021)},
 	Day = 15,
 	Doi = {10.1109/BigData52589.2021.9671901},
 	Location = {Online},
@@ -1829,9 +1904,10 @@
 	Year = 2021}
 
 %% Added to Sesame with grant Confirm
-@conference{iota2021,
+@inproceedings{iota2021,
 	Author = {Soderi, Mirco and Kamath, Vignesh and Morgan, Jeff and Breslin, John G},
-	Booktitle = {The 2021 IEEE International Conference on Internet of Things and Intelligence Systems (IoTaIS 2021)},
+	Booktitle = {The 2021 IEEE International Conference on Internet of Things and Intelligence Systems (IoTaIS 2021)}, 
+	Series = {The 2021 IEEE International Conference on Internet of Things and Intelligence Systems (IoTaIS 2021)},
 	Day = 24,
 	Doi = {10.1109/IoTaIS53735.2021.9628434},
 	Location = {Online},
@@ -1842,9 +1918,10 @@
 	Year = 2021}
 	
 %% Added to Sesame with grants VistaMilk and Public Service Fellowship
-@conference{isnc2021,
+@inproceedings{isnc2021,
 	Author = {Bandara, Kosala Y and Breslin, John G},
-	Booktitle = {The 2021 International Symposium on Networks, Computers and Communications (ISNCC 2021)},
+	Booktitle = {The 2021 International Symposium on Networks, Computers and Communications (ISNCC 2021)}, 
+	Series = {The 2021 International Symposium on Networks, Computers and Communications (ISNCC 2021)},
 	Day = 1,
 	Doi = {10.1109/ISNCC52172.2021.9615670},
 	Location = {Dubai, United Arab Emirates},
@@ -1855,9 +1932,10 @@
 	Year = 2021}
 
 %% Added to Sesame with grants CENTS and Insight
-@conference{bloc2021b,
+@inproceedings{bloc2021b,
 	Author = {Shukla, Saurabh and Thakur, Subhasis and Hussain, Shahid and Breslin, John G},
-	Booktitle = {The 3rd International Congress on Blockchain and Applications (BLOCKCHAIN 2021)},
+	Booktitle = {The 3rd International Congress on Blockchain and Applications (BLOCKCHAIN 2021)}, 
+	Series = {The 3rd International Congress on Blockchain and Applications (BLOCKCHAIN 2021)},
 	Day = 6,
 	Doi = {10.1007/978-3-030-86162-9_2},
 	Location = {Salamanca, Spain},
@@ -1867,9 +1945,10 @@
 	Year = 2021}
 
 %% Added to Sesame with grants VistaMilk and Insight
-@conference{bloc2021a,
+@inproceedings{bloc2021a,
 	Author = {De Silva, Anupa and Thakur, Subhasis and Breslin, John G},
-	Booktitle = {The 3rd International Congress on Blockchain and Applications (BLOCKCHAIN 2021)},
+	Booktitle = {The 3rd International Congress on Blockchain and Applications (BLOCKCHAIN 2021)}, 
+	Series = {The 3rd International Congress on Blockchain and Applications (BLOCKCHAIN 2021)},
 	Day = 6,
 	Doi = {10.1007/978-3-030-86162-9_22},
 	Location = {Salamanca, Spain},
@@ -1879,9 +1958,10 @@
 	Year = 2021}
 
 %% Added to Sesame with grants Confirm and Insight
-@conference{uic_2021b,
+@inproceedings{uic_2021b,
 	Author = {Sudharsan, Bharath and Breslin, John G and Ali, M Intizar},
-	Booktitle = {The 18th IEEE International Conference on Ubiquitous Intelligence and Computing (UIC 2021)},
+	Booktitle = {The 18th IEEE International Conference on Ubiquitous Intelligence and Computing (UIC 2021)}, 
+	Series = {The 18th IEEE International Conference on Ubiquitous Intelligence and Computing (UIC 2021)},
 	Day = 18,
 	Location = {Atlanta, Georgia, USA},
 	Month = oct,
@@ -1890,9 +1970,10 @@
 	Year = 2021}
 
 %% Added to Sesame with grants Confirm and Insight
-@conference{uic_2021a,
+@inproceedings{uic_2021a,
 	Author = {Sudharsan, Bharath and Yadav, Piyush and Breslin, John G and Ali, M Intizar},
-	Booktitle = {The 18th IEEE International Conference on Ubiquitous Intelligence and Computing (UIC 2021)},
+	Booktitle = {The 18th IEEE International Conference on Ubiquitous Intelligence and Computing (UIC 2021)}, 
+	Series = {The 18th IEEE International Conference on Ubiquitous Intelligence and Computing (UIC 2021)},
 	Day = 18,
 	Location = {Atlanta, Georgia, USA},
 	Month = oct,
@@ -1901,9 +1982,10 @@
 	Year = 2021}
   
 %% Added to Sesame with grants CENTS and Insight
-@conference{lod_2021,
+@inproceedings{lod_2021,
 	Author = {Shukla, Saurabh and Thakur, Subhasis and Breslin, John G},
-	Booktitle = {The 7th International Conference on Machine Learning, Optimization and Data Science (LOD 2021)},
+	Booktitle = {The 7th International Conference on Machine Learning, Optimization and Data Science (LOD 2021)}, 
+	Series = {The 7th International Conference on Machine Learning, Optimization and Data Science (LOD 2021)},
 	Day = 19,
 	Doi = {10.1007/978-3-030-95467-3_13},
 	Location = {Grasmere, United Kingdom},
@@ -1913,9 +1995,10 @@
 	Year = 2021}
 
 %% Added to Sesame with grants Confirm and Insight
-@conference{ecml2021,
+@inproceedings{ecml2021,
 	Author = {Sudharsan, Bharath and Patel, Pankesh and Breslin, John G and Ali, M Intizar},
-	Booktitle = {The European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML-PKDD 2021)},
+	Booktitle = {The European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML-PKDD 2021)}, 
+	Series = {The European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML-PKDD 2021)},
 	Day = 13,
 	Location = {Online},
 	Month = sep,
@@ -1924,9 +2007,10 @@
 	Year = 2021}
 
 %% Added to Sesame with grants Confirm and Insight
-@conference{scc_2021,
+@inproceedings{scc_2021,
 	Author = {Sudharsan, Bharath and Yadav, Piyush and Breslin, John G and Ali, M Intizar},
-	Booktitle = {The 2021 IEEE International Conference on Services Computing (SCC 2021)},
+	Booktitle = {The 2021 IEEE International Conference on Services Computing (SCC 2021)}, 
+	Series = {The 2021 IEEE International Conference on Services Computing (SCC 2021)},
 	Day = 8,
 	Location = {Online},
 	Month = sep,
@@ -1935,9 +2019,10 @@
 	Year = 2021}
 
 %% Added to Sesame with grants CENTS and Insight
-@conference{csr_2021,
+@inproceedings{csr_2021,
 	Author = {Shukla, Saurabh and Thakur, Subhasis and Breslin, John G},
-	Booktitle = {The 2021 IEEE International Conference on Cyber Security and Resilience (CSR 2021)},
+	Booktitle = {The 2021 IEEE International Conference on Cyber Security and Resilience (CSR 2021)}, 
+	Series = {The 2021 IEEE International Conference on Cyber Security and Resilience (CSR 2021)},
 	Day = 26,
 	Doi = {10.1109/CSR51186.2021.9527947},
 	Location = {Rhodes, Greece},
@@ -1947,9 +2032,10 @@
 	Year = 2021}
 
 %% Added to Sesame with grants CENTS and Insight
-@conference{powe2021,
+@inproceedings{powe2021,
 	Author = {Malik, Sweta and Duffy, Maeve and Thakur, Subhasis and Breslin, John G},
-	Booktitle = {The 7th IEEE International Energy Conference (ENERGYCON 2022)},
+	Booktitle = {The 7th IEEE International Energy Conference (ENERGYCON 2022)}, 
+	Series = {The 7th IEEE International Energy Conference (ENERGYCON 2022)},
 	Day = {28},
 	Doi = {10.1109/PowerTech46648.2021.9494877},
 	Location = {Madrid, Spain},
@@ -1959,9 +2045,10 @@
 	Year = 2021}
 	
 %% Added to Sesame with grants Confirm and Insight
-@conference{wfio2021a,
+@inproceedings{wfio2021a,
 	Author = {Sudharsan, Bharath and Malik, Sweta and Corcoran, Peter and Patel, Pankesh and Breslin, John G and Ali, M Intizar},
-	Booktitle = {The 7th IEEE World Forum on Internet of Things (WF-IoT 2021)},
+	Booktitle = {The 7th IEEE World Forum on Internet of Things (WF-IoT 2021)}, 
+	Series = {The 7th IEEE World Forum on Internet of Things (WF-IoT 2021)},
 	Day = 20,
 	Location = {New Orleans, Louisiana, USA},
 	Month = jun,
@@ -1970,9 +2057,10 @@
 	Year = 2021}
 
 %% Added to Sesame with grants Confirm and Insight
-@conference{perc2021,
+@inproceedings{perc2021,
 	Author = {Sudharsan, Bharath and Patel, Pankesh and Breslin, John G and Ali, M Intizar},
-	Booktitle = {The 19th IEEE International Conference on Pervasive Computing and Communications (PerCom 2021)},
+	Booktitle = {The 19th IEEE International Conference on Pervasive Computing and Communications (PerCom 2021)}, 
+	Series = {The 19th IEEE International Conference on Pervasive Computing and Communications (PerCom 2021)},
 	Day = 22,
 	Doi = {10.1109/PerComWorkshops51409.2021.9431061},
 	Location = {Atlanta, Georgia, USA},
@@ -1982,9 +2070,10 @@
 	Year = 2021}
 
 %% Added to Sesame with no ack
-@conference{icic2021,
+@inproceedings{icic2021,
 	Author = {Shukla, Saurabh and Thakur, Subhasis and Breslin, John G},
-	Booktitle = {The 6th International Congress on Information and Communication Technology (ICICT 2021)},
+	Booktitle = {The 6th International Congress on Information and Communication Technology (ICICT 2021)}, 
+	Series = {The 6th International Congress on Information and Communication Technology (ICICT 2021)},
 	Day = 25,
 	Doi = {10.1007/978-981-16-1781-2_58},
 	Location = {London, UK},
@@ -1994,9 +2083,10 @@
 	Year = 2021}
 
 %% Added to Sesame with grant Confirm
-@conference{cods2021a,
+@inproceedings{cods2021a,
 	Author = {Mehta, Parit and Dwivedi, Rudresh and Feeney, Ciaran and Patel, Pankesh and Ali, M Intizar and Breslin, John G},
-	Booktitle = {The ACM India Joint International Conference on Data Science and Management of Data (CODS-COMAD 2021)},
+	Booktitle = {The ACM India Joint International Conference on Data Science and Management of Data (CODS-COMAD 2021)}, 
+	Series = {The ACM India Joint International Conference on Data Science and Management of Data (CODS-COMAD 2021)},
 	Day = 3,
 	Doi = {10.1145/3430984.3431071},
 	Location = {Bangalore, India},
@@ -2007,9 +2097,10 @@
 	Year = 2021}
 
 %% Added to Sesame with grants CENTS and Insight
-@conference{medp2020,
+@inproceedings{medp2020,
 	Author = {Malik, Sweta and Duffy, Maeve and Thakur, Subhasis and Hayes, Barry P and Breslin, John G},
-	Booktitle = {The 12th Mediterranean Conference on Power Generation, Transmission, Distribution and Energy Conversion (MEDPOWER 2020)},
+	Booktitle = {The 12th Mediterranean Conference on Power Generation, Transmission, Distribution and Energy Conversion (MEDPOWER 2020)}, 
+	Series = {The 12th Mediterranean Conference on Power Generation, Transmission, Distribution and Energy Conversion (MEDPOWER 2020)},
 	Day = 09,
 	Location = {Paphos, Cyprus},
 	Month = nov,
@@ -2018,9 +2109,10 @@
 	Year = 2020}
 
 %% Added to Sesame with grant Insight
-@conference{bloc2020a,
+@inproceedings{bloc2020a,
 	Author = {Bandara, Kosala Y and Thakur, Subhasis and Breslin, John G},
-	Booktitle = {The 3rd IEEE International Conference on Blockchain (IEEE Blockchain 2020)},
+	Booktitle = {The 3rd IEEE International Conference on Blockchain (IEEE Blockchain 2020)}, 
+	Series = {The 3rd IEEE International Conference on Blockchain (IEEE Blockchain 2020)},
 	Day = 02,
 	Doi = {10.1109/Blockchain50366.2020.00030},
 	Location = {Rhodes, Greece},
@@ -2031,9 +2123,10 @@
 	Year = 2020}
 
 %% Added to Sesame with grants VistaMilk and Insight
-@conference{bloc2020b,
+@inproceedings{bloc2020b,
 	Author = {Thakur, Subhasis and Breslin, John G},
-	Booktitle = {The 3rd IEEE International Conference on Blockchain (IEEE Blockchain 2020)},
+	Booktitle = {The 3rd IEEE International Conference on Blockchain (IEEE Blockchain 2020)}, 
+	Series = {The 3rd IEEE International Conference on Blockchain (IEEE Blockchain 2020)},
 	Day = 02,
 	Doi = {10.1109/Blockchain50366.2020.00050},
 	Location = {Rhodes, Greece},
@@ -2043,9 +2136,10 @@
 	Year = 2020}
 
 %% Added to Sesame with grants CENTS, Insight and VistaMilk
-@conference{bcca2020b,
+@inproceedings{bcca2020b,
 	Author = {Thakur, Subhasis and Breslin, John G},
-	Booktitle = {The 2nd International Conference on Blockchain Computing and Applications (IEEE BCCA 2020)},
+	Booktitle = {The 2nd International Conference on Blockchain Computing and Applications (IEEE BCCA 2020)}, 
+	Series = {The 2nd International Conference on Blockchain Computing and Applications (IEEE BCCA 2020)},
 	Day = 02,
 	Doi = {10.1109/BCCA50787.2020.9274462},
 	Location = {Antalya, Turkey},
@@ -2055,9 +2149,10 @@
 	Year = 2020}
 
 %% Added to Sesame with grants VistaMilk and Insight
-@conference{bcca2020a,
+@inproceedings{bcca2020a,
 	Author = {Thakur, Subhasis and Breslin, John G},
-	Booktitle = {The 2nd International Conference on Blockchain Computing and Applications (IEEE BCCA 2020)},
+	Booktitle = {The 2nd International Conference on Blockchain Computing and Applications (IEEE BCCA 2020)}, 
+	Series = {The 2nd International Conference on Blockchain Computing and Applications (IEEE BCCA 2020)},
 	Day = 02,
 	Doi = {10.1109/BCCA50787.2020.9274459},
 	Location = {Antalya, Turkey},
@@ -2067,9 +2162,10 @@
 	Year = 2020}
 
 %% Added to Sesame with grant Insight
-@conference{repe2020,
+@inproceedings{repe2020,
 	Author = {Bandara, Kosala Y and Thakur, Subhasis and Breslin, John G},
-	Booktitle = {The 3rd IEEE International Conference on Renewable Energy and Power Engineering (REPE 2020)},
+	Booktitle = {The 3rd IEEE International Conference on Renewable Energy and Power Engineering (REPE 2020)}, 
+	Series = {The 3rd IEEE International Conference on Renewable Energy and Power Engineering (REPE 2020)},
 	Day = 09,
 	Doi = {10.1109/REPE50851.2020.9253870},
 	Location = {Rhodes, Greece},
@@ -2080,9 +2176,10 @@
 	Year = 2020}
 
 %% Added to Sesame with grants Confirm and Insight
-@conference{icio2020b,
+@inproceedings{icio2020b,
 	Author = {Sudharsan, Bharath and Breslin, John G and Ali, M Intizar},
-	Booktitle = {The 10th International Conference on the Internet of Things (ICIOT 2020)},
+	Booktitle = {The 10th International Conference on the Internet of Things (ICIOT 2020)}, 
+	Series = {The 10th International Conference on the Internet of Things (ICIOT 2020)},
 	Day = 6,
 	Doi = {10.1145/3410992.3411014},
 	Location = {Malm{\"o}, Sweden},
@@ -2092,9 +2189,10 @@
 	Year = 2020}
 	
 %% Added to Sesame with grants Confirm and Insight
-@conference{icio2020a,
+@inproceedings{icio2020a,
 	Author = {Sudharsan, Bharath and Breslin, John G and Ali, M Intizar},
-	Booktitle = {The 10th International Conference on the Internet of Things (ICIOT 2020)},
+	Booktitle = {The 10th International Conference on the Internet of Things (ICIOT 2020)}, 
+	Series = {The 10th International Conference on the Internet of Things (ICIOT 2020)},
 	Day = 6,
 	Doi = {10.1145/3410992.3411005},
 	Location = {Malm{\"o}, Sweden},
@@ -2104,9 +2202,10 @@
 	Year = 2020}
 
 %% Added to Sesame with grants CENTS and Insight
-@conference{powe2020,
+@inproceedings{powe2020,
 	Author = {Thakur, Subhasis and Breslin, John G},
-	Booktitle = {The 2020 IEEE International Conference on Power System Technology (IEEE POWERCON 2020)},
+	Booktitle = {The 2020 IEEE International Conference on Power System Technology (IEEE POWERCON 2020)}, 
+	Series = {The 2020 IEEE International Conference on Power System Technology (IEEE POWERCON 2020)},
 	Day = 14,
 	Doi = {10.1109/POWERCON48463.2020.9230545},
 	Location = {Bangalore, India},
@@ -2115,9 +2214,10 @@
 	Title = {Real-Time Peer-to-Peer Energy Trade with Blockchain Offline Channels},
 	Year = 2020}
 
-@conference{eeei2020,
+@inproceedings{eeei2020,
 	Author = {Thakur, Subhasis and Breslin, John G},
-	Booktitle = {The 20th International Conference on Environmental and Electrical Engineering (EEEIC 2020)},
+	Booktitle = {The 20th International Conference on Environmental and Electrical Engineering (EEEIC 2020)}, 
+	Series = {The 20th International Conference on Environmental and Electrical Engineering (EEEIC 2020)},
 	Day = 10,
 	Doi = {10.1109/EEEIC/ICPSEurope49358.2020.9160550},
 	Location = {Madrid, Spain},
@@ -2126,9 +2226,10 @@
 	Title = {Cost Analysis of Blockchains-based Peer to Peer Energy Trade},
 	Year = 2020}
 
-@conference{wfio2020,
+@inproceedings{wfio2020,
 	Author = {Sudharsan, Bharath and Breslin, John G and Ali, M Intizar},
-	Booktitle = {The 6th IEEE World Forum on Internet of Things (WF-IoT 2020)},
+	Booktitle = {The 6th IEEE World Forum on Internet of Things (WF-IoT 2020)}, 
+	Series = {The 6th IEEE World Forum on Internet of Things (WF-IoT 2020)},
 	Day = 5,
 	Doi = {10.1109/WF-IoT48130.2020.9221276},
 	Location = {New Orleans, Louisiana, USA},
@@ -2137,9 +2238,10 @@
 	Title = {Adaptive Strategy to Improve the Quality of Communication for IoT Edge Devices},
 	Year = 2020}
 
-@conference{idcs2019a,
+@inproceedings{idcs2019a,
 	Author = {Ara, Safina S and Thakur, Subhasis and Breslin, John G},
-	Booktitle = {The 12th International Conference on Internet and Distributed Computing Systems (IDCS 2019)},
+	Booktitle = {The 12th International Conference on Internet and Distributed Computing Systems (IDCS 2019)}, 
+	Series = {The 12th International Conference on Internet and Distributed Computing Systems (IDCS 2019)},
 	Day = 10,
 	Location = {Naples, Italy},
 	Month = oct,
@@ -2147,9 +2249,10 @@
 	Title = {Distributed ACO Based Reputation Management in Crowdsourcing},
 	Year = 2019}
 
-@conference{idcs2019b,
+@inproceedings{idcs2019b,
 	Author = {Ara, Safina S and Thakur, Subhasis and Breslin, John G},
-	Booktitle = {The 12th International Conference on Internet and Distributed Computing Systems (IDCS 2019)},
+	Booktitle = {The 12th International Conference on Internet and Distributed Computing Systems (IDCS 2019)}, 
+	Series = {The 12th International Conference on Internet and Distributed Computing Systems (IDCS 2019)},
 	Day = 10,
 	Location = {Naples, Italy},
 	Month = oct,
@@ -2158,9 +2261,10 @@
 	Title = {Secure and Distributed Crowd-Sourcing Task Coordination Using the Blockchain Mechanism},
 	Year = 2019}
 
-@conference{bloc2019,
+@inproceedings{bloc2019,
 	Author = {Thakur, Subhasis and Breslin, John G},
-	Booktitle = {The 1st International Congress on Blockchain and Applications (BLOCKCHAIN 2019)},
+	Booktitle = {The 1st International Congress on Blockchain and Applications (BLOCKCHAIN 2019)}, 
+	Series = {The 1st International Congress on Blockchain and Applications (BLOCKCHAIN 2019)},
 	Day = 27,
 	Doi = {10.1007/978-3-030-23813-1_10},
 	Location = {{\'A}vila, Spain},
@@ -2173,9 +2277,10 @@
 	Volume = 1010,
 	Year = 2019}
 
-@conference{marb2019,
+@inproceedings{marb2019,
 	Author = {Thakur, Subhasis and Breslin, John G},
-	Booktitle = {The 1st International Conference on Mathematical Research for Blockchain Economy (MARBLE 2019)},
+	Booktitle = {The 1st International Conference on Mathematical Research for Blockchain Economy (MARBLE 2019)}, 
+	Series = {The 1st International Conference on Mathematical Research for Blockchain Economy (MARBLE 2019)},
 	Day = 9,
 	Doi = {10.1007/978-3-030-37110-4_3},
 	Location = {Santorini, Greece},
@@ -2186,9 +2291,10 @@
 	Title = {Collusion Attack from Hubs in the Blockchain Offline Channel Network},
 	Year = 2019}
 
-@conference{iov_2018,
+@inproceedings{iov_2018,
 	Author = {Thakur, Subhasis and Breslin, John G},
-	Booktitle = {The 5th International Conference on Internet of Vehicles (IOV 2018)},
+	Booktitle = {The 5th International Conference on Internet of Vehicles (IOV 2018)}, 
+	Series = {The 5th International Conference on Internet of Vehicles (IOV 2018)},
 	Day = 21,
 	Doi = {10.1007/978-3-030-05081-8_18},
 	Month = nov,
@@ -2197,18 +2303,20 @@
 	Title = {Electric Vehicle Charging Queue Management with Blockchain},
 	Year = 2018}
 
-@conference{medp2018,
+@inproceedings{medp2018,
 	Author = {Thakur, Subhasis and Hayes, Barry P and Breslin, John G},
-	Booktitle = {The 11th Mediterranean Conference on Power Generation, Transmission, Distribution and Energy Conversion (MEDPOWER 2018)},
+	Booktitle = {The 11th Mediterranean Conference on Power Generation, Transmission, Distribution and Energy Conversion (MEDPOWER 2018)}, 
+	Series = {The 11th Mediterranean Conference on Power Generation, Transmission, Distribution and Energy Conversion (MEDPOWER 2018)},
 	Day = 14,
 	Month = nov,
 	Pdf = {http://www.johnbreslin.com/files/publications/20181114_medp2018.pdf},
 	Title = {A Unified Model of Peer-to-Peer Energy Trade and Electric Vehicle Charging Using Blockchains},
 	Year = 2018}
 
-@conference{iot_2018,
+@inproceedings{iot_2018,
 	Author = {Quoc, Hoan Nguyen Mau and Serrano, Martin and Breslin, John G and Le Phuoc, Danh},
-	Booktitle = {The 8th International Conference on the Internet of Things (IoT 2018)},
+	Booktitle = {The 8th International Conference on the Internet of Things (IoT 2018)}, 
+	Series = {The 8th International Conference on the Internet of Things (IoT 2018)},
 	Day = 15,
 	Doi = {10.1145/3277593.3277598},
 	Month = oct,
@@ -2217,18 +2325,20 @@
 	Title = {A Learning Approach for Query Planning on Spatio-Temporal IoT Data},
 	Year = 2018}
 
-@conference{efea2018,
+@inproceedings{efea2018,
 	Author = {Thakur, Subhasis and Hayes, Barry P and Breslin, John G},
-	Booktitle = {The 5th International Symposium on Environment Friendly Energies and Applications (EFEA 2018)},
+	Booktitle = {The 5th International Symposium on Environment Friendly Energies and Applications (EFEA 2018)}, 
+	Series = {The 5th International Symposium on Environment Friendly Energies and Applications (EFEA 2018)},
 	Day = 24,
 	Month = sep,
 	Pdf = {http://www.johnbreslin.com/files/publications/20180924_efea2018.pdf},
 	Title = {Distributed Double Auction for Peer-to-Peer Energy Trade Using Blockchains},
 	Year = 2018}
 
-@conference{icwe2018,
+@inproceedings{icwe2018,
 	Author = {Piao, Guangyuan and Breslin, John G},
-	Booktitle = {The 18th International Conference on Web Engineering (ICWE 2018)},
+	Booktitle = {The 18th International Conference on Web Engineering (ICWE 2018)}, 
+	Series = {The 18th International Conference on Web Engineering (ICWE 2018)},
 	Day = 5,
 	Doi={10.1007/978-3-319-91662-0_22},
 	Month = jun,
@@ -2236,9 +2346,10 @@
 	Title = {Learning to Rank Tweets with Author-Based Long Short-Term Memory Networks},
 	Year = 2018}
 
-@conference{eswc2018,
+@inproceedings{eswc2018,
 	Author = {Piao, Guangyuan and Breslin, John G},
-	Booktitle = {The 15th Extended Semantic Web Conference (ESWC 2018)},
+	Booktitle = {The 15th Extended Semantic Web Conference (ESWC 2018)}, 
+	Series = {The 15th Extended Semantic Web Conference (ESWC 2018)},
 	Day = 5,
 	Doi = {10.1007/978-3-319-93417-4_32},
 	Location = {Heraklion, Greece},
@@ -2247,54 +2358,60 @@
 	Title = {Transfer Learning for Item Recommendations and Knowledge Graph Completion in Item Related Domains via A Co-Factorization Model},
 	Year = 2018}
 
-@conference{wise2017,
+@inproceedings{wise2017,
 	Author = {Piao, Guangyuan and Breslin, John G},
-	Booktitle = {The 18th International Conference on Web Information Systems Engineering (WISE 2017)},
+	Booktitle = {The 18th International Conference on Web Information Systems Engineering (WISE 2017)}, 
+	Series = {The 18th International Conference on Web Information Systems Engineering (WISE 2017)},
 	Day = 7,
 	Month = oct,
 	Pdf = {http://www.johnbreslin.com/files/publications/20171007_wise2017.pdf},
 	Title = {Factorization Machines Leveraging Lightweight Linked Open Data-enabled Features for Top-N Recommendations},
 	Year = 2017}
 
-@conference{ason2017,
+@inproceedings{ason2017,
 	Author = {Ara, Safina S and Thakur, Subhasis and Breslin, John G},
-	Booktitle = {The 2017 IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining (ASONAM 2017)},
+	Booktitle = {The 2017 IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining (ASONAM 2017)}, 
+	Series = {The 2017 IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining (ASONAM 2017)},
 	Day = 31,
 	Month = jul,
 	Pdf = {http://www.johnbreslin.com/files/publications/20170731_ason2017.pdf},
 	Title = {Expertise Discovery in Decentralised Online Social Networks},
 	Year = 2017}
 
-@conference{hype2017,
+@inproceedings{hype2017,
 	Author = {Piao, Guangyuan and Breslin, John G},
-	Booktitle = {The 28th ACM Conference on Hypertext and Social Media (Hypertext 2017)},
+	Booktitle = {The 28th ACM Conference on Hypertext and Social Media (Hypertext 2017)}, 
+	Series = {The 28th ACM Conference on Hypertext and Social Media (Hypertext 2017)},
 	Day = 4,
 	Month = jul,
 	Pdf = {http://www.johnbreslin.com/files/publications/20170704_hype2017.pdf},
 	Title = {Leveraging Followee List Memberships for Inferring User Interests for Passive Users on Twitter},
 	Year = 2017}
 
-@conference{ecir2017,
+@inproceedings{ecir2017,
 	Author = {Piao, Guangyuan and Breslin, John G},
-	Booktitle = {The 39th European Conference on Information Retrieval (ECIR 2017)},
+	Booktitle = {The 39th European Conference on Information Retrieval (ECIR 2017)}, 
+	Series = {The 39th European Conference on Information Retrieval (ECIR 2017)},
 	Day = 12,
 	Month = apr,
 	Pdf = {http://www.johnbreslin.com/files/publications/20170412_ecir2017.pdf},
 	Title = {Inferring User Interests for Passive Users on Twitter by Leveraging Followee Biographies},
 	Year = 2017}
 
-@conference{ekaw2016,
+@inproceedings{ekaw2016,
 	Author = {Piao, Guangyuan and Breslin, John G},
-	Booktitle = {The 20th International Conference on Knowledge Engineering and Knowledge Management (EKAW 2016)},
+	Booktitle = {The 20th International Conference on Knowledge Engineering and Knowledge Management (EKAW 2016)}, 
+	Series = {The 20th International Conference on Knowledge Engineering and Knowledge Management (EKAW 2016)},
 	Day = 19,
 	Month = nov,
 	Pdf = {http://www.johnbreslin.com/files/publications/20161119_ekaw2016.pdf},
 	Title = {Interest Representation, Enrichment, Dynamics, and Propagation: A Study of the Synergetic Effect of Different User Modeling Dimensions for Personalized Recommendations on Twitter},
 	Year = 2016}
 
-@conference{cikm2016,
+@inproceedings{cikm2016,
 	Author = {Piao, Guangyuan and Breslin, John G},
-	Booktitle = {The 25th ACM International Conference on Information and Knowledge Management (CIKM 2016)},
+	Booktitle = {The 25th ACM International Conference on Information and Knowledge Management (CIKM 2016)}, 
+	Series = {The 25th ACM International Conference on Information and Knowledge Management (CIKM 2016)},
 	Day = 24,
 	Location = {Indianapolis, Indiana, USA},
 	Month = oct,
@@ -2302,9 +2419,10 @@
 	Title = {User Modeling on Twitter with WordNet Synsets and DBpedia Concepts for Personalized Recommendations},
 	Year = 2016}
 
-@conference{sema2016,
+@inproceedings{sema2016,
 	Author = {Piao, Guangyuan and Breslin, John G},
-	Booktitle = {The 12th International Conference on Semantic Systems (SEMANTiCS 2016)},
+	Booktitle = {The 12th International Conference on Semantic Systems (SEMANTiCS 2016)}, 
+	Series = {The 12th International Conference on Semantic Systems (SEMANTiCS 2016)},
 	Day = 13,
 	Location = {Leipzig, Germany},
 	Month = sep,
@@ -2313,37 +2431,41 @@
 	Title = {Exploring Dynamics and Semantics of User Interests for User Modeling on Twitter for Link Recommendations},
 	Year = 2016}
 
-@conference{umap2016a,
+@inproceedings{umap2016a,
 	Author = {Piao, Guangyuan and Breslin, John G},
-	Booktitle = {The 24th Conference on User Modelling, Adaptation and Personalization (UMAP 2016)},
+	Booktitle = {The 24th Conference on User Modelling, Adaptation and Personalization (UMAP 2016)}, 
+	Series = {The 24th Conference on User Modelling, Adaptation and Personalization (UMAP 2016)},
 	Day = 13,
 	Location = {Halifax, Canada},
 	Month = jul,
 	Pdf = {http://www.johnbreslin.com/files/publications/20160713_umap2016a.pdf},
-	Title = {Analyzing Aggregated Semantics-Enabled User Modeling on Twitter and Google+ for Personalized Link Recommendations},
+	Title = {Analyzing Aggregated Semantics-Enabled User Modeling on Google+ and Twitter for Personalized Link Recommendations},
 	Year = 2016}
 
-@conference{sac_2016,
+@inproceedings{sac_2016,
 	Author = {Piao, Guangyuan and Breslin, John G},
-	Booktitle = {The 31st ACM/SIGAPP Symposium on Applied Computing (SAC 2016)},
+	Booktitle = {The 31st ACM/SIGAPP Symposium on Applied Computing (SAC 2016)}, 
+	Series = {The 31st ACM/SIGAPP Symposium on Applied Computing (SAC 2016)},
 	Day = 4,
 	Month = apr,
 	Pdf = {http://www.johnbreslin.com/files/publications/20160404_sac_2016.pdf},
 	Title = {Measuring Semantic Distance for Linked Open Data-Enabled Recommender Systems},
 	Year = 2016}
 
-@conference{bigd2016,
+@inproceedings{bigd2016,
 	Author = {Barnaghi, Peiman and Ghaffari, Parsa and Breslin, John G},
-	Booktitle = {The 2nd IEEE International Conference on Big Data Computing Service and Applications (BigDataService 2016)},
+	Booktitle = {The 2nd IEEE International Conference on Big Data Computing Service and Applications (BigDataService 2016)}, 
+	Series = {The 2nd IEEE International Conference on Big Data Computing Service and Applications (BigDataService 2016)},
 	Day = 29,
 	Month = mar,
 	Pdf = {http://www.johnbreslin.com/files/publications/20160329_bigd2016.pdf},
-	Title = {Opinion Mining and Sentiment Polarity on Twitter and Correlation Between Events},
+	Title = {Opinion Mining and Sentiment Polarity on Twitter and Correlation Between Events and Sentiment},
 	Year = 2016}
 
-@conference{ista2015,
+@inproceedings{ista2015,
 	Author = {Crowley, David N and Breslin, John G and Curry, Edward},
-	Booktitle = {The 21st IEEE International Symposium on Technology and Society (ISTAS 2015)},
+	Booktitle = {The 21st IEEE International Symposium on Technology and Society (ISTAS 2015)}, 
+	Series = {The 21st IEEE International Symposium on Technology and Society (ISTAS 2015)},
 	Day = 12,
 	Location = {Dublin, Ireland},
 	Month = nov,
@@ -2352,9 +2474,10 @@
 	Title = {Towards a Citizen Actuation Framework for Smart Environments},
 	Year = 2015}
 
-@conference{jist2015b,
+@inproceedings{jist2015b,
 	Author = {Piao, Guangyuan and Ara, Safina S and Breslin, John G},
-	Booktitle = {The 5th Joint International Semantic Technology Conference (JIST 2015)},
+	Booktitle = {The 5th Joint International Semantic Technology Conference (JIST 2015)}, 
+	Series = {The 5th Joint International Semantic Technology Conference (JIST 2015)},
 	Day = 12,
 	Location = {Yichang, China},
 	Month = nov,
@@ -2363,18 +2486,20 @@
 	Title = {Computing the Semantic Similarity of Resources in DBpedia for Recommendation Purposes},
 	Year = 2015}
 
-@conference{iccg2015,
+@inproceedings{iccg2015,
 	Author = {Sacco, Owen and Breslin, John G},
-	Booktitle = {The 10th International Multi-Conference on Computing in the Global Information Technology (ICCGI 2015)},
+	Booktitle = {The 10th International Multi-Conference on Computing in the Global Information Technology (ICCGI 2015)}, 
+	Series = {The 10th International Multi-Conference on Computing in the Global Information Technology (ICCGI 2015)},
 	Day = 10,
 	Month = oct,
 	Pdf = {http://www.johnbreslin.com/files/publications/20151010_iccg2015.pdf},
 	Title = {An Authorisation and Access Control Framework for Information Sharing on the Semantic Web},
 	Year = 2015}
 
-@conference{elpu2015,
+@inproceedings{elpu2015,
 	Author = {Sacco, Owen and Breslin, John G},
-	Booktitle = {The 19th International Conference on Electronic Publishing (ELPUB 2015)},
+	Booktitle = {The 19th International Conference on Electronic Publishing (ELPUB 2015)}, 
+	Series = {The 19th International Conference on Electronic Publishing (ELPUB 2015)},
 	Day = 1,
 	Location = {Malta},
 	Month = sep,
@@ -2382,9 +2507,10 @@
 	Title = {Towards Privacy Aware Social Semantic Digital Libraries},
 	Year = 2015}
 
-@conference{epar2015,
+@inproceedings{epar2015,
 	Author = {Porwol, Lukasz and Hassan, Islam and Ojo, Adegboyega and Breslin, John G},
-	Booktitle = {The 7th IFIP International Conference on eParticipation (ePart 2015)},
+	Booktitle = {The 7th IFIP International Conference on eParticipation (ePart 2015)}, 
+	Series = {The 7th IFIP International Conference on eParticipation (ePart 2015)},
 	Day = 30,
 	Location = {Thessaloniki, Greece},
 	Month = aug,
@@ -2396,9 +2522,10 @@
 	Volume = 9249,
 	Year = 2015}
 
-@conference{iwcm2015,
+@inproceedings{iwcm2015,
 	Author = {Leggieri, Myriam and Davis, Brian and Breslin, John G},
-	Booktitle = {The 11th IEEE International Wireless Communications and Mobile Computing Conference (IWCMC 2015)},
+	Booktitle = {The 11th IEEE International Wireless Communications and Mobile Computing Conference (IWCMC 2015)}, 
+	Series = {The 11th IEEE International Wireless Communications and Mobile Computing Conference (IWCMC 2015)},
 	Day = 25,
 	Location = {Dubrovnik, Croatia},
 	Month = aug,
@@ -2407,9 +2534,10 @@
 	Title = {Distributional Semantics and Unsupervised Clustering for Sensor Relevancy Prediction},
 	Year = 2015}
 
-@conference{issn2015,
+@inproceedings{issn2015,
 	Author = {Leggieri, Myriam and von der Weth, Christian and Breslin, John G},
-	Booktitle = {The 10th IEEE International Conference on Intelligent Sensors, Sensor Networks and Information Processing (ISSNIP 2015)},
+	Booktitle = {The 10th IEEE International Conference on Intelligent Sensors, Sensor Networks and Information Processing (ISSNIP 2015)}, 
+	Series = {The 10th IEEE International Conference on Intelligent Sensors, Sensor Networks and Information Processing (ISSNIP 2015)},
 	Day = 7,
 	Location = {Singapore},
 	Month = apr,
@@ -2417,9 +2545,10 @@
 	Title = {Using Sensors to Bridge the Gap Between Real Places and Their Web-Based Representations},
 	Year = 2015}
 
-@conference{epar2014,
+@inproceedings{epar2014,
 	Author = {Porwol, Lukasz and Ojo, Adegboyega and Breslin, John G},
-	Booktitle = {The 6th IFIP International Conference on eParticipation (ePart 2014)},
+	Booktitle = {The 6th IFIP International Conference on eParticipation (ePart 2014)}, 
+	Series = {The 6th IFIP International Conference on eParticipation (ePart 2014)},
 	Day = 3,
 	Location = {Dublin, Ireland},
 	Month = sep,
@@ -2427,9 +2556,10 @@
 	Title = {A Semantic Deliberation Model for e-Participation},
 	Year = 2014}
 
-@conference{dgo_2014,
+@inproceedings{dgo_2014,
 	Author = {Porwol, Lukasz and Ojo, Adegboyega and Breslin, John G},
-	Booktitle = {The 15th International Conference on Digital Government Research (dg.o 2014)},
+	Booktitle = {The 15th International Conference on Digital Government Research (dg.o 2014)}, 
+	Series = {The 15th International Conference on Digital Government Research (dg.o 2014)},
 	Day = 20,
 	Location = {Aguascalientes, Mexico},
 	Month = jun,
@@ -2437,9 +2567,10 @@
 	Title = {A Semantic Model for e-Participation - Detailed Conceptualization and Ontology},
 	Year = 2014}
 
-@conference{iceg2013,
+@inproceedings{iceg2013,
 	Author = {Porwol, Lukasz and Ojo, Adegboyega and Breslin, John G},
-	Booktitle = {The 7th International Conference on Theory and Practice of Electronic Governance (ICEGOV 2013)},
+	Booktitle = {The 7th International Conference on Theory and Practice of Electronic Governance (ICEGOV 2013)}, 
+	Series = {The 7th International Conference on Theory and Practice of Electronic Governance (ICEGOV 2013)},
 	Day = 22,
 	Location = {Seoul, Korea},
 	Month = oct,
@@ -2448,9 +2579,10 @@
 	Title = {Harnessing the Duality of e-Participation - Social Software Infrastructure Design},
 	Year = 2013}
 
-@conference{wise2013,
+@inproceedings{wise2013,
 	Author = {Sacco, Owen and Collina, Matteo and Schiele, Gregor and Corazza, Giovanni E and Breslin, John G and Hauswirth, Manfred},
-	Booktitle = {The 14th International Conference on Web Information System Engineering (WISE 2013)},
+	Booktitle = {The 14th International Conference on Web Information System Engineering (WISE 2013)}, 
+	Series = {The 14th International Conference on Web Information System Engineering (WISE 2013)},
 	Day = 13,
 	Location = {Nanjing, China},
 	Month = oct,
@@ -2458,9 +2590,10 @@
 	Title = {Fine-Grained Access Control for RDF Data on Mobile Devices},
 	Year = 2013}
 
-@conference{prov2013,
+@inproceedings{prov2013,
 	Author = {Dabrowski, Maciej and Griffin, Keith and Breslin, John G},
-	Booktitle = {The 14th IFIP Working Conference on Virtual Enterprises (PRO-VE 2013)},
+	Booktitle = {The 14th IFIP Working Conference on Virtual Enterprises (PRO-VE 2013)}, 
+	Series = {The 14th IFIP Working Conference on Virtual Enterprises (PRO-VE 2013)},
 	Day = 2,
 	Location = {Dresden, Germany},
 	Month = oct,
@@ -2468,9 +2601,10 @@
 	Title = {Real-Time Data Aggregation in Distributed Enterprise Social Platforms},
 	Year = 2013}
 
-@conference{soci2013,
+@inproceedings{soci2013,
 	Author = {Sacco, Owen and Breslin, John G},
-	Booktitle = {The 5th IEEE International Conference on Social Computing (SocialCom 2013)},
+	Booktitle = {The 5th IEEE International Conference on Social Computing (SocialCom 2013)}, 
+	Series = {The 5th IEEE International Conference on Social Computing (SocialCom 2013)},
 	Day = 10,
 	Location = {Washington, DC, USA},
 	Month = sep,
@@ -2478,9 +2612,10 @@
 	Title = {``I Like'' - Analysing Interactions within Social Networks to Assert the Trustworthiness of Users, Sources and Content},
 	Year = 2013}
 
-@conference{egov2013,
+@inproceedings{egov2013,
 	Author = {Porwol, Lukasz and Ojo, Adegboyega and Breslin, John G},
-	Booktitle = {The 2nd Joint International Conference on Electronic Government and the Information Systems Perspective and International Conference on Electronic Democracy (EGOVIS '13, EDEM '13)},
+	Booktitle = {The 2nd Joint International Conference on Electronic Government and the Information Systems Perspective and International Conference on Electronic Democracy (EGOVIS '13, EDEM '13)}, 
+	Series = {The 2nd Joint International Conference on Electronic Government and the Information Systems Perspective and International Conference on Electronic Democracy (EGOVIS '13, EDEM '13)},
 	Day = 26,
 	Location = {Prague, Czech Republic},
 	Month = aug,
@@ -2488,9 +2623,10 @@
 	Title = {On The Duality of E-Participation - Towards a Foundation for Citizen-Led Participation},
 	Year = 2013}
 
-@conference{amci2013,
+@inproceedings{amci2013,
 	Author = {Crowley, David N and Dabrowski, Maciej and Breslin, John G},
-	Booktitle = {The 19th Americas Conference on Information Systems (AMCIS 2013)},
+	Booktitle = {The 19th Americas Conference on Information Systems (AMCIS 2013)}, 
+	Series = {The 19th Americas Conference on Information Systems (AMCIS 2013)},
 	Day = 16,
 	Location = {Chicago, Illinois, USA},
 	Month = aug,
@@ -2498,18 +2634,20 @@
 	Title = {Decision Support Using Linked, Social, and Sensor Data},
 	Year = 2013}
 
-@conference{dest2013,
+@inproceedings{dest2013,
 	Author = {Crowley, David N and Curry, Edward and Breslin, John G},
-	Booktitle = {The 7th IEEE International Conference on Digital Ecosystems and Technologies (DEST 2013)},
+	Booktitle = {The 7th IEEE International Conference on Digital Ecosystems and Technologies (DEST 2013)}, 
+	Series = {The 7th IEEE International Conference on Digital Ecosystems and Technologies (DEST 2013)},
 	Day = 24,
 	Month = jul,
 	Pdf = {http://www.johnbreslin.com/files/publications/20130724_dest2013.pdf},
 	Title = {Closing the Loop - From Citizen Sensing to Citizen Actuation},
 	Year = 2013}
 
-@conference{trus2013,
+@inproceedings{trus2013,
 	Author = {Sacco, Owen and Breslin, John G and Decker, Stefan},
-	Booktitle = {The 12th IEEE International Conference on Trust, Security and Privacy in Computing and Communications (TrustCom '13)},
+	Booktitle = {The 12th IEEE International Conference on Trust, Security and Privacy in Computing and Communications (TrustCom '13)}, 
+	Series = {The 12th IEEE International Conference on Trust, Security and Privacy in Computing and Communications (TrustCom '13)},
 	Day = 16,
 	Location = {Melbourne, Australia},
 	Month = jul,
@@ -2517,9 +2655,10 @@
 	Title = {Fine-Grained Trust Assertions for Privacy Management in the Social Semantic Web},
 	Year = 2013}
 
-@conference{dgo_2013,
+@inproceedings{dgo_2013,
 	Author = {Porwol, Lukasz and Ojo, Adegboyega and Breslin, John G},
-	Booktitle = {The 14th Annual International Conference on Digital Government Research (d.go 2013)},
+	Booktitle = {The 14th Annual International Conference on Digital Government Research (d.go 2013)}, 
+	Series = {The 14th Annual International Conference on Digital Government Research (d.go 2013)},
 	Day = 19,
 	Location = {Quebec, Canada},
 	Month = jun,
@@ -2528,9 +2667,10 @@
 	Title = {Structuring E-Participation Perspectives: Mapping and Aligning Models to Core Facets},
 	Year = 2013}
 
-@conference{iceg2012,
+@inproceedings{iceg2012,
 	Author = {Porwol, Lukasz and O'Donoghue, Padraic and Breslin, John G and Coughlan, Chris and Mulligan, Brendan},
-	Booktitle = {The 6th International Conference on Theory and Practice of Electronic Governance (ICEGOV 2012)},
+	Booktitle = {The 6th International Conference on Theory and Practice of Electronic Governance (ICEGOV 2012)}, 
+	Series = {The 6th International Conference on Theory and Practice of Electronic Governance (ICEGOV 2012)},
 	Day = 22,
 	Location = {Albany, New York, USA},
 	Month = oct,
@@ -2539,9 +2679,10 @@
 	Title = {Social Inclusion and Digital Divide: eParticipation Dilemmas in Municipalities},
 	Year = 2012}
 
-@conference{igic2012b,
+@inproceedings{igic2012b,
 	Author = {Sacco, Owen and Dabrowski, Maciej and Breslin, John G},
-	Booktitle = {The 4th IEEE International Games Innovation Conference (IGIC 2012)},
+	Booktitle = {The 4th IEEE International Games Innovation Conference (IGIC 2012)}, 
+	Series = {The 4th IEEE International Games Innovation Conference (IGIC 2012)},
 	Day = 7,
 	Location = {Rochester, New York, USA},
 	Month = sep,
@@ -2549,9 +2690,10 @@
 	Title = {Linking In-Game Events and Entities to Social Data on the Web},
 	Year = 2012}
 
-@conference{igic2012a,
+@inproceedings{igic2012a,
 	Author = {Crowley, David N and Breslin, John G and Corcoran, Peter and Young, Karen},
-	Booktitle = {The 4th IEEE International Games Innovation Conference (IGIC 2012)},
+	Booktitle = {The 4th IEEE International Games Innovation Conference (IGIC 2012)}, 
+	Series = {The 4th IEEE International Games Innovation Conference (IGIC 2012)},
 	Day = 7,
 	Location = {Rochester, New York, USA},
 	Month = sep,
@@ -2559,9 +2701,10 @@
 	Title = {Gamification of Citizen Sensing through Mobile Social Reporting},
 	Year = 2012}
 
-@conference{isem2012b,
+@inproceedings{isem2012b,
 	Author = {Orlandi, Fabrizio and Breslin, John G and Passant, Alexandre},
-	Booktitle = {The 8th International Conference on Semantic Systems (I-SEMANTICS 2012)},
+	Booktitle = {The 8th International Conference on Semantic Systems (I-SEMANTICS 2012)}, 
+	Series = {The 8th International Conference on Semantic Systems (I-SEMANTICS 2012)},
 	Day = 5,
 	Location = {Graz, Austria},
 	Month = sep,
@@ -2569,19 +2712,21 @@
 	Title = {Aggregated, Interoperable and Multi-Domain User Profiles for the Social Web},
 	Year = 2012}
 
-@conference{isem2012a,
+@inproceedings{isem2012a,
 	Author = {Sacco, Owen and Breslin, John G},
-	Booktitle = {The 8th International Conference on Semantic Systems (I-SEMANTICS 2012)},
+	Booktitle = {The 8th International Conference on Semantic Systems (I-SEMANTICS 2012)}, 
+	Series = {The 8th International Conference on Semantic Systems (I-SEMANTICS 2012)},
 	Day = 5,
 	Location = {Graz, Austria},
 	Month = sep,
 	Pdf = {http://www.johnbreslin.com/files/publications/20120905_isem2012a.pdf},
-	Title = {PPO and PPM 2.0: Extending the Privacy Preference Framework to Provide Finer-Grained Access Control for the Web of Data},
+	Title = {PPO \& PPM 2.0: Extending the Privacy Preference Framework to Provide Finer-Grained Access Control for the Web of Data},
 	Year = 2012}
 
-@conference{icss2012,
+@inproceedings{icss2012,
 	Author = {Vickey, Theodore A and Breslin, John G and Williams, Antonio},
-	Booktitle = {The Third International Conference on Sport and Society (ICSS 2012)},
+	Booktitle = {The Third International Conference on Sport and Society (ICSS 2012)}, 
+	Series = {The Third International Conference on Sport and Society (ICSS 2012)},
 	Day = 25,
 	Location = {Cambridge, UK},
 	Month = jul,
@@ -2589,18 +2734,20 @@
 	Title = {Fitness - There's an App for That: Review of Mobile Fitness Apps},
 	Year = 2012}
 
-@conference{sss_2012,
+@inproceedings{sss_2012,
 	Author = {Vickey, Theodore A and Breslin, John G},
-	Booktitle = {The AAAI 2012 Spring Symposium on Self-Tracking and Collective Intelligence for Personal Wellness},
+	Booktitle = {The AAAI 2012 Spring Symposium on Self-Tracking and Collective Intelligence for Personal Wellness}, 
+	Series = {The AAAI 2012 Spring Symposium on Self-Tracking and Collective Intelligence for Personal Wellness},
 	Day = 26,
 	Month = mar,
 	Pdf = {http://www.johnbreslin.com/files/publications/20120326_sss_2012.pdf},
 	Title = {A Study on Twitter Usage for Fitness Self Reporting via Mobile Apps},
 	Year = 2012}
 
-@conference{icas2011,
+@inproceedings{icas2011,
 	Author = {Vickey, Theodore A and Tsai, Nancey T and Breslin, John G},
-	Booktitle = {The 8th International Symposium on Computer Science in Sport (IACSS 2011)},
+	Booktitle = {The 8th International Symposium on Computer Science in Sport (IACSS 2011)}, 
+	Series = {The 8th International Symposium on Computer Science in Sport (IACSS 2011)},
 	Day = 23,
 	Month = sep,
 	Pages = {38--40},
@@ -2608,9 +2755,10 @@
 	Title = {Mobile Fitness Apps and Twitter: A Systemic Review},
 	Year = 2011}
 
-@conference{eswc2011,
+@inproceedings{eswc2011,
 	Author = {Kinsella, Sheila and Wang, Mengjiao and Breslin, John G and Hayes, Conor},
-	Booktitle = {The 8th Extended Semantic Web Conference (ESWC '11)},
+	Booktitle = {The 8th Extended Semantic Web Conference (ESWC '11)}, 
+	Series = {The 8th Extended Semantic Web Conference (ESWC '11)},
 	Day = 1,
 	Location = {Heraklion, Greece},
 	Month = jun,
@@ -2618,9 +2766,10 @@
 	Title = {Improving Categorisation in Social Media Using Hyperlinks to Structured Data Sources},
 	Year = 2011}
 
-@conference{ecir2011,
+@inproceedings{ecir2011,
 	Author = {Kinsella, Sheila and Passant, Alexandre and Breslin, John G},
-	Booktitle = {The 33rd European Conference on Information Retrieval (ECIR 2011)},
+	Booktitle = {The 33rd European Conference on Information Retrieval (ECIR 2011)}, 
+	Series = {The 33rd European Conference on Information Retrieval (ECIR 2011)},
 	Day = 19,
 	Location = {Dublin, Ireland},
 	Month = apr,
@@ -2628,9 +2777,10 @@
 	Title = {Topic Classification in Social Media Using Metadata from Hyperlinked Objects},
 	Year = 2011}
 
-@conference{sac_2011,
+@inproceedings{sac_2011,
 	Author = {Schneider, Jodi and Passant, Alexandre and Breslin, John G},
-	Booktitle = {The 26th ACM Symposium On Applied Computing (SAC 2011)},
+	Booktitle = {The 26th ACM Symposium On Applied Computing (SAC 2011)}, 
+	Series = {The 26th ACM Symposium On Applied Computing (SAC 2011)},
 	Day = 24,
 	Location = {Taichung, Taiwan},
 	Month = mar,
@@ -2638,9 +2788,10 @@
 	Title = {Understanding and Improving Wikipedia Article Discussion Spaces},
 	Year = 2011}
 
-@conference{sema2010,
+@inproceedings{sema2010,
 	Author = {Choudhury, Smitashree and Breslin, John G},
-	Booktitle = {The 4th International Conference on Advances in Semantic Processing (SEMAPRO 2010)},
+	Booktitle = {The 4th International Conference on Advances in Semantic Processing (SEMAPRO 2010)}, 
+	Series = {The 4th International Conference on Advances in Semantic Processing (SEMAPRO 2010)},
 	Day = 25,
 	Month = oct,
 	Pages = {126--131},
@@ -2648,9 +2799,10 @@
 	Title = {Enriching Videos With Light Semantics},
 	Year = 2010}
 
-@conference{comm2010,
+@inproceedings{comm2010,
 	Author = {Schneider, Jodi and Passant, Alexandre and Groza, Tudor and Breslin, John G},
-	Booktitle = {The 3rd International Conference on Computational Models of Argument (COMMA 2010)},
+	Booktitle = {The 3rd International Conference on Computational Models of Argument (COMMA 2010)}, 
+	Series = {The 3rd International Conference on Computational Models of Argument (COMMA 2010)},
 	Day = 10,
 	Location = {Desenzano del Garda, Italy},
 	Month = sep,
@@ -2658,9 +2810,10 @@
 	Title = {Argumentation 3.0: How Semantic Web Technologies Can Improve Argumentation Modeling in Web 2.0 Environments},
 	Year = 2010}
 
-@conference{isem2010,
+@inproceedings{isem2010,
 	Author = {Kinsella, Sheila and Passant, Alexandre and Breslin, John G},
-	Booktitle = {The 6th International Conference on Semantic Systems (I-SEMANTICS 2010)},
+	Booktitle = {The 6th International Conference on Semantic Systems (I-SEMANTICS 2010)}, 
+	Series = {The 6th International Conference on Semantic Systems (I-SEMANTICS 2010)},
 	Day = 1,
 	Location = {Graz, Austria},
 	Month = sep,
@@ -2668,18 +2821,20 @@
 	Title = {Using Hyperlinks to Enrich Message Board Content with Linked Data},
 	Year = 2010}
 
-@conference{aics2010,
+@inproceedings{aics2010,
 	Author = {Choudhury, Smitashree and Breslin, John G},
-	Booktitle = {The 21st National Conference on Artificial Intelligence and Cognitive Science (AICS 2010)},
+	Booktitle = {The 21st National Conference on Artificial Intelligence and Cognitive Science (AICS 2010)}, 
+	Series = {The 21st National Conference on Artificial Intelligence and Cognitive Science (AICS 2010)},
 	Day = 31,
 	Month = aug,
 	Pdf = {http://www.johnbreslin.com/files/publications/20100831_aics2010.pdf},
 	Title = {User Sentiment Detection: A YouTube Use Case},
 	Year = 2010}
 
-@conference{icwe2010a,
+@inproceedings{icwe2010a,
 	Author = {Passant, Alexandre and Breslin, John G and Decker, Stefan},
-	Booktitle = {The 10th International Conference on Web Engineering (ICWE 2010)},
+	Booktitle = {The 10th International Conference on Web Engineering (ICWE 2010)}, 
+	Series = {The 10th International Conference on Web Engineering (ICWE 2010)},
 	Day = 8,
 	Month = jul,
 	Pages = {263--277},
@@ -2690,9 +2845,10 @@
 	Volume = 6189,
 	Year = 2010}
 
-@conference{isws2010,
+@inproceedings{isws2010,
 	Author = {Passant, Alexandre and Zimmerman, Antoine and Schneider, Jodi and Breslin, John G},
-	Booktitle = {The International Conference on Intelligent Semantic Web, Services and Applications (ISWSA 2010)},
+	Booktitle = {The International Conference on Intelligent Semantic Web, Services and Applications (ISWSA 2010)}, 
+	Series = {The International Conference on Intelligent Semantic Web, Services and Applications (ISWSA 2010)},
 	Day = 14,
 	Location = {Amman, Jordan},
 	Month = jun,
@@ -2700,9 +2856,10 @@
 	Title = {A Semantic Framework for Modelling Quotes in Email Conversations},
 	Year = 2010}
 
-@conference{webs2010c,
+@inproceedings{webs2010c,
 	Author = {Letierce, Julie and Passant, Alexandre and Breslin, John G and Decker, Stefan},
-	Booktitle = {The Web Science Conference 2010 (WebSci '10)},
+	Booktitle = {The Web Science Conference 2010 (WebSci '10)}, 
+	Series = {The Web Science Conference 2010 (WebSci '10)},
 	Day = 26,
 	Location = {Raleigh, North Carolina, USA},
 	Month = apr,
@@ -2710,19 +2867,21 @@
 	Title = {Understanding How Twitter is Used to Spread Scientific Messages},
 	Year = 2010}
 
-@conference{coll2009,
+@inproceedings{coll2009,
 	Author = {Passant, Alexandre and Laublet, Philippe and Breslin, John G and Decker, Stefan},
-	Booktitle = {The 5th International Conference on Collaborative Computing: Networking, Applications and Worksharing (CollaborateCom 2009)},
+	Booktitle = {The 5th International Conference on Collaborative Computing: Networking, Applications and Worksharing (CollaborateCom 2009)}, 
+	Series = {The 5th International Conference on Collaborative Computing: Networking, Applications and Worksharing (CollaborateCom 2009)},
 	Day = 13,
 	Location = {Washington, DC, USA},
 	Month = nov,
 	Pdf = {http://www.johnbreslin.com/files/publications/20091113_coll2009.pdf},
-	Title = {SemSLATES: Improving Enterprise 2.0 Information Systems},
+	Title = {SemSLATES: Improving Enterprise 2.0 Information Systems Using Semantic Web Technologies},
 	Year = 2009}
 
-@conference{iswc2009,
+@inproceedings{iswc2009,
 	Author = {Choudhury, Smitashree and Breslin, John G and Passant, Alexandre},
-	Booktitle = {The 8th International Semantic Web Conference (ISWC 2009)},
+	Booktitle = {The 8th International Semantic Web Conference (ISWC 2009)}, 
+	Series = {The 8th International Semantic Web Conference (ISWC 2009)},
 	Day = 27,
 	Location = {Washington, DC, USA},
 	Month = oct,
@@ -2730,9 +2889,10 @@
 	Title = {Enrichment and Ranking of the YouTube Tag Space and Integration with the Linked Data Cloud},
 	Year = 2009}
 
-@conference{ss__2009,
+@inproceedings{ss__2009,
 	Author = {Kim, Hak-Lae and Scerri, Simon and Breslin, John G},
-	Booktitle = {The AAAI 2009 Spring Symposium on Social Semantic Web: Where Web 2.0 Meets Web 3.0},
+	Booktitle = {The AAAI 2009 Spring Symposium on Social Semantic Web: Where Web 2.0 Meets Web 3.0}, 
+	Series = {The AAAI 2009 Spring Symposium on Social Semantic Web: Where Web 2.0 Meets Web 3.0},
 	Day = 23,
 	Location = {Stanford, California, USA},
 	Month = mar,
@@ -2740,9 +2900,10 @@
 	Title = {Analysis and Representation of Tagging Practices in Online Communities},
 	Year = 2009}
 
-@conference{webs2009,
+@inproceedings{webs2009,
 	Author = {Passant, Alexandre and Samwald, Matthias and Breslin, John G and Decker, Stefan},
-	Booktitle = {The Web Science Conference 2009 (WebSci '09)},
+	Booktitle = {The Web Science Conference 2009 (WebSci '09)}, 
+	Series = {The Web Science Conference 2009 (WebSci '09)},
 	Day = 19,
 	Location = {Athens, Greece},
 	Month = mar,
@@ -2750,9 +2911,10 @@
 	Title = {Federating Distributed Social Data to Build an Interlinked Online Information Society},
 	Year = 2009}
 
-@conference{wi__2008,
+@inproceedings{wi__2008,
 	Author = {Groza, Tudor and Handschuh, Siegfried and Breslin, John G},
-	Booktitle = {The IEEE/WIC/ACM International Conference on Web Intelligence (WI '08)},
+	Booktitle = {The IEEE/WIC/ACM International Conference on Web Intelligence (WI '08)}, 
+	Series = {The IEEE/WIC/ACM International Conference on Web Intelligence (WI '08)},
 	Day = 10,
 	Location = {Sydney, Australia},
 	Month = dec,
@@ -2760,9 +2922,10 @@
 	Title = {Adding Provenance and Evolution Information to Modularized Argumentation Models},
 	Year = 2008}
 
-@conference{itt_2008,
+@inproceedings{itt_2008,
 	Author = {Choudhury, Smitashree and Breslin, John G},
-	Booktitle = {The 8th Annual Conference on Information Technology and Telecommunication (IT\&T 2008)},
+	Booktitle = {The 8th Annual Conference on Information Technology and Telecommunication (IT\&T 2008)}, 
+	Series = {The 8th Annual Conference on Information Technology and Telecommunication (IT\&T 2008)},
 	Day = 23,
 	Location = {Galway, Ireland},
 	Month = oct,
@@ -2770,9 +2933,10 @@
 	Title = {Using a Lightweight Multimedia Content Model for Semantic Annotation},
 	Year = 2008}
 
-@conference{dc__2008,
+@inproceedings{dc__2008,
 	Author = {Kim, Hak-Lae and Scerri, Simon and Breslin, John G and Decker, Stefan and Kim, Hong-Gee},
-	Booktitle = {The 8th International Conference on Dublin Core and Metadata Applications (DC 2008)},
+	Booktitle = {The 8th International Conference on Dublin Core and Metadata Applications (DC 2008)}, 
+	Series = {The 8th International Conference on Dublin Core and Metadata Applications (DC 2008)},
 	Day = 25,
 	Location = {Berlin, Germany},
 	Month = sep,
@@ -2780,21 +2944,24 @@
 	Title = {The State of the Art in Tag Ontologies: A Semantic Model for Tagging and Folksonomies},
 	Year = 2008}
 
-@conference{rwss2008,
+@inproceedings{rwss2008,
 	Author = {Kinsella, Sheila and Breslin, John G and Passant, Alexandre and Decker, Stefan},
-	Booktitle = {The Reasoning Web Summer School 2008 (RWSS 2008)},
+	Booktitle = {The Reasoning Web Summer School 2008 (RWSS 2008)}, 
+	Series = {The Reasoning Web Summer School 2008 (RWSS 2008)},
 	Day = 10,
 	Month = sep,
 	Pages = {171--199},
 	Pdf = {http://www.johnbreslin.com/files/publications/20080910_rwss2008.pdf},
+	Publisher = {Springer},
 	Series = {LNCS},
 	Title = {Applications of Semantic Web Methodologies and Techniques to Social Networks and Social Websites},
 	Volume = 5224,
 	Year = 2008}
 
-@conference{icsc2008,
+@inproceedings{icsc2008,
 	Author = {Kim, Hak-Lae and Passant, Alexandre and Breslin, John G and Scerri, Simon and Decker, Stefan},
-	Booktitle = {The 2nd IEEE International Conference on Semantic Computing (ICSC 2008)},
+	Booktitle = {The 2nd IEEE International Conference on Semantic Computing (ICSC 2008)}, 
+	Series = {The 2nd IEEE International Conference on Semantic Computing (ICSC 2008)},
 	Day = 7,
 	Location = {Santa Clara, California, USA},
 	Month = aug,
@@ -2802,9 +2969,10 @@
 	Title = {Review and Alignment of Tag Ontologies for Semantically-Linked Data in Collaborative Tagging Spaces},
 	Year = 2008}
 
-@conference{iv__2008,
+@inproceedings{iv__2008,
 	Author = {Kinsella, Sheila and Boj{\=a}rs, Uldis and Harth, Andreas and Breslin, John G and Decker, Stefan},
-	Booktitle = {The 12th International Conference on Information Visualisation (IV '08)},
+	Booktitle = {The 12th International Conference on Information Visualisation (IV '08)}, 
+	Series = {The 12th International Conference on Information Visualisation (IV '08)},
 	Date-Modified = {2018-03-14 14:35:16 +0000},
 	Day = 10,
 	Location = {London, UK},
@@ -2814,9 +2982,10 @@
 	Title = {An Interactive Map of Semantic Web Ontology Usage},
 	Year = 2008}
 
-@conference{xtec2008,
+@inproceedings{xtec2008,
 	Author = {Boj{\=a}rs, Uldis and Breslin, John G and Passant, Alexandre},
-	Booktitle = {The European Web Technologies Conference (XTech 2008)},
+	Booktitle = {The European Web Technologies Conference (XTech 2008)}, 
+	Series = {The European Web Technologies Conference (XTech 2008)},
 	Date-Modified = {2018-03-14 14:35:16 +0000},
 	Day = 9,
 	Location = {Dublin, Ireland},
@@ -2825,9 +2994,10 @@
 	Title = {Data Portability with SIOC and FOAF},
 	Year = 2008}
 
-@conference{sip_2008,
+@inproceedings{sip_2008,
 	Author = {Kim, Hak-Lae and Breslin, John G and Yang, Sung-Kwon and Song, Seung-Jae and Kim, Hong-Gee},
-	Booktitle = {The AAAI 2008 Spring Symposium on Social Information Processing (SIP 2008)},
+	Booktitle = {The AAAI 2008 Spring Symposium on Social Information Processing (SIP 2008)}, 
+	Series = {The AAAI 2008 Spring Symposium on Social Information Processing (SIP 2008)},
 	Day = 27,
 	Location = {Stanford, California, USA},
 	Month = mar,
@@ -2835,22 +3005,25 @@
 	Title = {int.ere.st: Building a Tag Sharing Service with the SCOT Ontology},
 	Year = 2008}
 
-@conference{amst2008,
+@inproceedings{amst2008,
 	Author = {Kim, Hak-Lae and Breslin, John G and Yang, Sung-Kwon and Kim, Hong-Gee},
-	Booktitle = {The 2nd KES International Symposium on Agent and Multi-Agent Systems: Technologies and Applications (KES AMSTA 2008)},
+	Booktitle = {The 2nd KES International Symposium on Agent and Multi-Agent Systems: Technologies and Applications (KES AMSTA 2008)}, 
+	Series = {The 2nd KES International Symposium on Agent and Multi-Agent Systems: Technologies and Applications (KES AMSTA 2008)},
 	Day = 27,
 	Location = {Inha University, Korea},
 	Month = mar,
 	Pages = {83--92},
 	Pdf = {http://www.johnbreslin.com/files/publications/20080327_amst2008.pdf},
+	Publisher = {Springer},
 	Series = {LNCS},
-	Title = {Social Semantic Cloud of Tags: A Semantic Model for Social Tagging},
+	Title = {Social Semantic Cloud of Tag: Semantic Model for Social Tagging},
 	Volume = 4953,
 	Year = 2008}
 
-@conference{iat_2007,
+@inproceedings{iat_2007,
 	Author = {Kim, Hak-Lae and Yang, Sung-Kwon and Breslin, John G and Kim, Hong-Gee},
-	Booktitle = {The IEEE/WIC/ACM International Conference on Intelligent Agent Technology (IAT '07)},
+	Booktitle = {The IEEE/WIC/ACM International Conference on Intelligent Agent Technology (IAT '07)}, 
+	Series = {The IEEE/WIC/ACM International Conference on Intelligent Agent Technology (IAT '07)},
 	Day = 4,
 	Location = {Silicon Valley, California, USA},
 	Month = nov,
@@ -2858,9 +3031,10 @@
 	Title = {Simple Algorithms for Representing Tag Frequencies in the SCOT Exporter},
 	Year = 2007}
 
-@conference{asna2007,
+@inproceedings{asna2007,
 	Author = {Kinsella, Sheila and Harth, Andreas and Troussov, Alexander and Sogrin, Mikhail and Judge, John and Hayes, Conor and Breslin, John G},
-	Booktitle = {The 4th Conference on Applications of Social Network Analysis (ASNA 2007)},
+	Booktitle = {The 4th Conference on Applications of Social Network Analysis (ASNA 2007)}, 
+	Series = {The 4th Conference on Applications of Social Network Analysis (ASNA 2007)},
 	Day = 13,
 	Location = {University of Zurich, Switzerland},
 	Month = sep,
@@ -2868,9 +3042,10 @@
 	Title = {Navigating and Annotating Semantically-Enabled Networks of People and Associated Objects},
 	Year = 2007}
 
-@conference{uksn2007,
+@inproceedings{uksn2007,
 	Author = {Kinsella, Sheila and Harth, Andreas and Breslin, John G},
-	Booktitle = {The UK Social Network Conference},
+	Booktitle = {The UK Social Network Conference}, 
+	Series = {The UK Social Network Conference},
 	Day = 13,
 	Location = {University of London, UK},
 	Month = jul,
@@ -2878,9 +3053,10 @@
 	Title = {Network Analysis of Semantic Connections in Heterogeneous Social Spaces},
 	Year = 2007}
 
-@conference{eswc2007a,
+@inproceedings{eswc2007a,
 	Author = {Aleman-Meza, Boanerges and Boj{\=a}rs, Uldis and Boley, Harold and Breslin, John G and Mochol, Malgorzata and Nixon, Lyndon J B and Polleres, Axel and Zhdanova, Anna V},
-	Booktitle = {The 4th European Semantic Web Conference (ESWC '07)},
+	Booktitle = {The 4th European Semantic Web Conference (ESWC '07)}, 
+	Series = {The 4th European Semantic Web Conference (ESWC '07)},
 	Date-Modified = {2018-03-14 14:35:16 +0000},
 	Day = 4,
 	Location = {Innsbruck, Austria},
@@ -2889,9 +3065,10 @@
 	Title = {Combining RDF Vocabularies for Expert Finding},
 	Year = 2007}
 
-@conference{icws2007,
+@inproceedings{icws2007,
 	Author = {Breslin, John G and Kass, Ron and Boj{\=a}rs, Uldis},
-	Booktitle = {The International Conference on Weblogs and Social Media (ICWSM 2007)},
+	Booktitle = {The International Conference on Weblogs and Social Media (ICWSM 2007)}, 
+	Series = {The International Conference on Weblogs and Social Media (ICWSM 2007)},
 	Date-Modified = {2018-03-14 14:35:16 +0000},
 	Day = 26,
 	Location = {Boulder, Colorado},
@@ -2900,9 +3077,10 @@
 	Title = {The Boardscape: Creating a Super Social Network of Message Boards},
 	Year = 2007}
 
-@conference{wbc_2007,
+@inproceedings{wbc_2007,
 	Author = {Breslin, John G and Grzonkowski, S\l{}awomir and Gzella, Adam and Kruk, Sebastian R and Woroniecki, Tomasz},
-	Booktitle = {The 4th IADIS International Conference on Web-Based Communities (WBC 2007)},
+	Booktitle = {The 4th IADIS International Conference on Web-Based Communities (WBC 2007)}, 
+	Series = {The 4th IADIS International Conference on Web-Based Communities (WBC 2007)},
 	Day = 20,
 	Location = {Salamanca, Spain},
 	Month = feb,
@@ -2910,9 +3088,10 @@
 	Title = {Sharing Information Across Community Portals with FOAFRealm},
 	Year = 2007}
 
-@conference{dexa2006,
+@inproceedings{dexa2006,
 	Author = {Oren, Eyal and V{\"o}lkel, Max and Breslin, John G and Decker, Stefan},
-	Booktitle = {The 17th International Conference on Database and Expert Systems Applications (DEXA 2006)},
+	Booktitle = {The 17th International Conference on Database and Expert Systems Applications (DEXA 2006)}, 
+	Series = {The 17th International Conference on Database and Expert Systems Applications (DEXA 2006)},
 	Day = 19,
 	Location = {Krakow, Poland},
 	Month = sep,
@@ -2920,23 +3099,26 @@
 	Title = {Semantic Wikis for Personal Knowledge Management},
 	Year = 2006}
 
-@conference{eswc2006,
+@inproceedings{eswc2006,
 	Author = {M{\"o}ller, Knud and Boj{\=a}rs, Uldis and Breslin, John G},
-	Booktitle = {The 3rd European Semantic Web Conference (ESWC '06)},
+	Booktitle = {The 3rd European Semantic Web Conference (ESWC '06)}, 
+	Series = {The 3rd European Semantic Web Conference (ESWC '06)},
 	Date-Modified = {2018-03-14 14:35:16 +0000},
 	Day = 13,
 	Location = {Budva, Montenegro},
 	Month = jun,
 	Pages = {679--696},
 	Pdf = {http://www.johnbreslin.com/files/publications/20060613_eswc2006.pdf},
+	Publisher = {Springer},
 	Series = {LNCS},
 	Title = {Using Semantics to Enhance the Blogging Experience},
 	Volume = 4011,
 	Year = 2006}
 
-@conference{iima2005,
+@inproceedings{iima2005,
 	Author = {Sapkota, Brahmananda and Ludwig, Lars and Zhou, Xuan and Breslin, John G},
-	Booktitle = {The 16th Annual International Information Management Association Conference (IIMA 2005)},
+	Booktitle = {The 16th Annual International Information Management Association Conference (IIMA 2005)}, 
+	Series = {The 16th Annual International Information Management Association Conference (IIMA 2005)},
 	Day = 22,
 	Location = {Dublin, Ireland},
 	Month = sep,
@@ -2944,9 +3126,10 @@
 	Title = {SiFo-Peers: A Social FOAF Based Peer-to-Peer Network},
 	Year = 2005}
 
-@conference{isd_2005,
+@inproceedings{isd_2005,
 	Author = {M{\"o}ller, Knud and Breslin, John G and Decker, Stefan},
-	Booktitle = {The 14th International Conference on Information Systems Development (ISD 2005)},
+	Booktitle = {The 14th International Conference on Information Systems Development (ISD 2005)}, 
+	Series = {The 14th International Conference on Information Systems Development (ISD 2005)},
 	Day = 17,
 	Location = {Karlstad, Sweden},
 	Month = aug,
@@ -2954,9 +3137,10 @@
 	Title = {semiBlog - Semantic Publishing of Desktop Data},
 	Year = 2005}
 
-@conference{wiki2005,
+@inproceedings{wiki2005,
 	Author = {Harth, Andreas and Gassert, Hannes and O'Murchu, Ina and Breslin, John G and Decker, Stefan},
-	Booktitle = {The 1st International Wikimedia Conference (Wikimania 2005)},
+	Booktitle = {The 1st International Wikimedia Conference (Wikimania 2005)}, 
+	Series = {The 1st International Wikimedia Conference (Wikimania 2005)},
 	Day = 4,
 	Location = {Frankfurt, Germany},
 	Month = aug,
@@ -2964,9 +3148,10 @@
 	Title = {WikiOnt: An Ontology for Describing and Exchanging Wiki Articles},
 	Year = 2005}
 
-@conference{eswc2005,
+@inproceedings{eswc2005,
 	Author = {Breslin, John G and Harth, Andreas and Boj{\=a}rs, Uldis and Decker, Stefan},
-	Booktitle = {The 2nd European Semantic Web Conference (ESWC '05)},
+	Booktitle = {The 2nd European Semantic Web Conference (ESWC '05)}, 
+	Series = {The 2nd European Semantic Web Conference (ESWC '05)},
 	Date-Modified = {2018-03-14 14:35:16 +0000},
 	Day = 19,
 	Location = {Heraklion, Greece},
@@ -2974,14 +3159,16 @@
 	Note = {Seven-Year Most Influential Paper Award},
 	Pages = {500--514},
 	Pdf = {http://www.johnbreslin.com/files/publications/20050519_eswc2005.pdf},
+	Publisher = {Springer},
 	Series = {LNCS},
 	Title = {Towards Semantically Interlinked Online Communities},
 	Volume = 3532,
 	Year = 2005}
 
-@conference{wbc_2005,
+@inproceedings{wbc_2005,
 	Author = {Breslin, John G and Decker, Stefan and Harth, Andreas},
-	Booktitle = {The 2nd IADIS International Conference on Web-Based Communities (WBC 2005)},
+	Booktitle = {The 2nd IADIS International Conference on Web-Based Communities (WBC 2005)}, 
+	Series = {The 2nd IADIS International Conference on Web-Based Communities (WBC 2005)},
 	Day = 23,
 	Location = {Carvoeiro, Portugal},
 	Month = feb,
@@ -2990,9 +3177,10 @@
 	Title = {An Approach to Connect Web-Based Communities},
 	Year = 2005}
 
-@conference{icit2003,
+@inproceedings{icit2003,
 	Author = {Coughlan, Sean and Breslin, John G},
-	Booktitle = {The IEEE International Conference on Industrial Technology (ICIT '03)},
+	Booktitle = {The IEEE International Conference on Industrial Technology (ICIT '03)}, 
+	Series = {The IEEE International Conference on Industrial Technology (ICIT '03)},
 	Day = 10,
 	Location = {Maribor, Slovenia},
 	Month = dec,
@@ -3001,22 +3189,25 @@
 	Title = {The Application of Modern PDA Technology for Effective Handheld Solutions in the Retail Industry},
 	Year = 2003}
 
-@conference{kes_2003,
+@inproceedings{kes_2003,
 	Author = {Breslin, John G and Hurley, W Gerard},
-	Booktitle = {The 7th International Conference on Knowledge-Based Intelligent Information and Engineering Systems (KES 2003)},
+	Booktitle = {The 7th International Conference on Knowledge-Based Intelligent Information and Engineering Systems (KES 2003)}, 
+	Series = {The 7th International Conference on Knowledge-Based Intelligent Information and Engineering Systems (KES 2003)},
 	Day = 5,
 	Location = {University of Oxford, UK},
 	Month = sep,
 	Pages = {715--721},
 	Pdf = {http://www.johnbreslin.com/files/publications/20030905_kes_2003.pdf},
+	Publisher = {Springer},
 	Series = {LNCS},
 	Title = {A Web-Based System for Transformer Design},
 	Volume = 2773,
 	Year = 2003}
 
-@conference{pesc1999,
+@inproceedings{pesc1999,
 	Author = {Hurley, W Gerard and Gath, Eugene and Breslin, John G},
-	Booktitle = {The 30th IEEE Power Electronics Specialists Conference (PESC '99)},
+	Booktitle = {The 30th IEEE Power Electronics Specialists Conference (PESC '99)}, 
+	Series = {The 30th IEEE Power Electronics Specialists Conference (PESC '99)},
 	Day = 27,
 	Location = {Charleston, South Carolina, USA},
 	Month = jun,
@@ -3024,9 +3215,10 @@
 	Title = {Optimizing the AC Resistance of Multilayer Transformer Windings with Arbitrary Current Waveforms},
 	Year = 1999}
 
-@conference{pesc1997,
+@inproceedings{pesc1997,
 	Author = {Breslin, John G and Hurley, W Gerard},
-	Booktitle = {The 28th IEEE Power Electronics Specialists Conference (PESC '97)},
+	Booktitle = {The 28th IEEE Power Electronics Specialists Conference (PESC '97)}, 
+	Series = {The 28th IEEE Power Electronics Specialists Conference (PESC '97)},
 	Day = 22,
 	Location = {St. Louis, Missouri, USA},
 	Month = jun,
@@ -3035,9 +3227,10 @@
 	Title = {Derivation of Optimum Winding Thickness for Duty Cycle Modulated Current Waveshapes},
 	Year = 1997}
 
-@conference{upec1996,
+@inproceedings{upec1996,
 	Author = {Breslin, John G and Hurley, W Gerard},
-	Booktitle = {The 31st Universities Power Engineering Conference (UPEC 1996)},
+	Booktitle = {The 31st Universities Power Engineering Conference (UPEC 1996)}, 
+	Series = {The 31st Universities Power Engineering Conference (UPEC 1996)},
 	Location = {Crete, Greece},
 	Month = sep,
 	Pages = {465--468},
@@ -3046,9 +3239,10 @@
 	Volume = 1,
 	Year = 1996}
 
-@conference{upec1995,
+@inproceedings{upec1995,
 	Author = {Breslin, John G and Hurley, W Gerard},
-	Booktitle = {The 30th Universities Power Engineering Conference (UPEC 1995)},
+	Booktitle = {The 30th Universities Power Engineering Conference (UPEC 1995)}, 
+	Series = {The 30th Universities Power Engineering Conference (UPEC 1995)},
 	Location = {University of Greenwich, UK},
 	Month = sep,
 	Pages = {347--350},
@@ -3057,10 +3251,13 @@
 	Volume = 1,
 	Year = 1995}
 
+%% Workshop Papers, Peer-Reviewed
+
 %% Added to Sesame with grant Insight
 @inproceedings{semi2024,
 	Author = {Wahid, Abdul and Yahya, Muhammad and Zaman, Farooq and Zhou, Baifan and Breslin, John G and Ali, M Intizar and Kharlamov, Evgeny},
-	Booktitle = {The 3rd International Workshop on Semantic Industrial Information Modelling (SEMIIM 2024) at the 23rd International Semantic Web Conference (ISWC 2024)},
+	Booktitle = {The 3rd International Workshop on Semantic Industrial Information Modelling (SEMIIM 2024) at the 23rd International Semantic Web Conference (ISWC 2024)}, 
+	Series = {The 3rd International Workshop on Semantic Industrial Information Modelling (SEMIIM 2024) at the 23rd International Semantic Web Conference (ISWC 2024)},
 	Day = 12,
 	Location = {Baltimore, Maryland, USA},
 	Month = nov,
@@ -3072,7 +3269,8 @@
 %% Added to Sesame with grants CRT-AI and Insight
 @inproceedings{muws2023,
 	Author = {Khan, M Jaleed and Breslin, John G and Curry, Edward},
-	Booktitle = {The 2nd International Workshop on Multimodal Human Understanding for the Web and Social Media (MUWS 2023) at the 32nd ACM International Conference on Information and Knowledge Management (CIKM 2023)},
+	Booktitle = {The 2nd International Workshop on Multimodal Human Understanding for the Web and Social Media (MUWS 2023) at the 32nd ACM International Conference on Information and Knowledge Management (CIKM 2023)}, 
+	Series = {The 2nd International Workshop on Multimodal Human Understanding for the Web and Social Media (MUWS 2023) at the 32nd ACM International Conference on Information and Knowledge Management (CIKM 2023)},
 	Day = 22,
 	Location = {Birmingham, UK},
 	Month = oct,
@@ -3084,7 +3282,8 @@
 %% Added to Sesame with grants CRT-AI and Insight
 @inproceedings{nesy2023,
 	Author = {Ward, Rory and Khan, M Jaleed and Curry, Edward and Breslin, John G},
-	Booktitle = {The 17th International Workshop on Neural-Symbolic Learning and Reasoning (NeSy 2023)},
+	Booktitle = {The 17th International Workshop on Neural-Symbolic Learning and Reasoning (NeSy 2023)}, 
+	Series = {The 17th International Workshop on Neural-Symbolic Learning and Reasoning (NeSy 2023)},
 	Day = 3,
 	Location = {La Certosa di Pontignano, Siena, Italy},
 	Month = jul,
@@ -3096,7 +3295,8 @@
 %% Added to Sesame with grants CRT-AI and Insight
 @inproceedings{sds_2023,
 	Author = {Usmani, Atiya and Khan, M Jaleed and Breslin, John G and Curry, Edward},
-	Booktitle = {The 1st International Workshop on Semantics in Dataspaces (SDS 2023) at the 32nd ACM Web Conference 2023 (TheWebConf 2023)},
+	Booktitle = {The 1st International Workshop on Semantics in Dataspaces (SDS 2023) at the 32nd ACM Web Conference 2023 (TheWebConf 2023)}, 
+	Series = {The 1st International Workshop on Semantics in Dataspaces (SDS 2023) at the 32nd ACM Web Conference 2023 (TheWebConf 2023)},
 	Day = 30,
 	Location = {Austin, Texas, USA},
 	Month = apr,
@@ -3108,7 +3308,8 @@
 %% Added to Sesame with grants Confirm and Insight
 @inproceedings{spti2021,
 	Author = {Sudharsan, Bharath and Sundaram, Dineshkumar and Patel, Pankesh and Breslin, John G and Ali, M Intizar},
-	Booktitle = {The 5th Workshop on Security, Privacy, and Trust in the Internet of Things (SPT-IoT 2021) at the 19th IEEE International Conference on Pervasive Computing and Communications (PerCom 2021)},
+	Booktitle = {The 5th Workshop on Security, Privacy, and Trust in the Internet of Things (SPT-IoT 2021) at the 19th IEEE International Conference on Pervasive Computing and Communications (PerCom 2021)}, 
+	Series = {The 5th Workshop on Security, Privacy, and Trust in the Internet of Things (SPT-IoT 2021) at the 19th IEEE International Conference on Pervasive Computing and Communications (PerCom 2021)},
 	Day = 22,
 	Location = {New Orleans, Louisiana, USA},
 	Month = mar,
@@ -3120,7 +3321,8 @@
 %% Added to Sesame with grants Confirm and Insight
 @inproceedings{ioth2020,
 	Author = {Sudharsan, Bharath and Sundaram, Dineshkumar and Breslin, John G and Ali, M Intizar},
-	Booktitle = {The 1st Workshop on Internet of Things-Based Health Services and Applications (IOT-HSA 2020) at the 10th International Conference on the Internet of Things (IOT 2020)},
+	Booktitle = {The 1st Workshop on Internet of Things-Based Health Services and Applications (IOT-HSA 2020) at the 10th International Conference on the Internet of Things (IOT 2020)}, 
+	Series = {The 1st Workshop on Internet of Things-Based Health Services and Applications (IOT-HSA 2020) at the 10th International Conference on the Internet of Things (IOT 2020)},
 	Day = 6,
 	Doi = {10.1145/3423423.3423433},
 	Location = {Malm{\"o}, Sweden},
@@ -3132,7 +3334,8 @@
 
 @inproceedings{ioti2019,
 	Author = {Ali, M Intizar and Patel, Pankesh and Breslin, John G},
-	Booktitle = {The International Workshop on IoT Applications and Industry 4.0 (IoTI4 2019) at the 15th International Conference on Distributed Computing in Sensor Systems (DCOSS 2019)},
+	Booktitle = {The International Workshop on IoT Applications and Industry 4.0 (IoTI4 2019) at the 15th International Conference on Distributed Computing in Sensor Systems (DCOSS 2019)}, 
+	Series = {The International Workshop on IoT Applications and Industry 4.0 (IoTI4 2019) at the 15th International Conference on Distributed Computing in Sensor Systems (DCOSS 2019)},
 	Day = 30,
 	DOI = {10.1109/DCOSS.2019.00079},
 	Location = {Santorini, Greece},
@@ -3144,7 +3347,8 @@
 
 @inproceedings{dl4k2018,
 	Author = {Piao, Guangyuan and Breslin, John G},
-	Booktitle = {The 1st Workshop on Deep Learning for Knowledge Graphs and Semantic Technologies (DL4KGS 2018) at the 15th Extended Semantic Web Conference (ESWC 2018)},
+	Booktitle = {The 1st Workshop on Deep Learning for Knowledge Graphs and Semantic Technologies (DL4KGS 2018) at the 15th Extended Semantic Web Conference (ESWC 2018)}, 
+	Series = {The 1st Workshop on Deep Learning for Knowledge Graphs and Semantic Technologies (DL4KGS 2018) at the 15th Extended Semantic Web Conference (ESWC 2018)},
 	Day = 4,
 	Location = {Heraklion, Greece},
 	Month = jun,
@@ -3156,7 +3360,8 @@
 
 @inproceedings{ublp2016,
 	Author = {Ruder, Sebastian and Ghaffari, Parsa and Breslin, John G},
-	Booktitle = {The Workshop on Uphill Battles in Language Processing (UBLP 2016) at the 2016 Conference on Empirical Methods in Natural Language Processing (EMNLP 2016)},
+	Booktitle = {The Workshop on Uphill Battles in Language Processing (UBLP 2016) at the 2016 Conference on Empirical Methods in Natural Language Processing (EMNLP 2016)}, 
+	Series = {The Workshop on Uphill Battles in Language Processing (UBLP 2016) at the 2016 Conference on Empirical Methods in Natural Language Processing (EMNLP 2016)},
 	Day = 5,
 	Location = {Austin, Texas, USA},
 	Month = nov,
@@ -3167,31 +3372,34 @@
 
 @inproceedings{seme2016b,
 	Author = {Ruder, Sebastian and Ghaffari, Parsa and Breslin, John G},
-	Booktitle = {The International Workshop on Semantic Evaluation (SemEval 2016) at the 15th Annual Conference of the North American Chapter of the Association for Computational Linguistics (NAACL 2016)},
+	Booktitle = {The International Workshop on Semantic Evaluation (SemEval 2016) at the 15th Annual Conference of the North American Chapter of the Association for Computational Linguistics (NAACL 2016)}, 
+	Series = {The International Workshop on Semantic Evaluation (SemEval 2016) at the 15th Annual Conference of the North American Chapter of the Association for Computational Linguistics (NAACL 2016)},
 	Day = 16,
 	Location = {San Diego, California, USA},
 	Month = jun,
 	Pages = {330--336},
 	Pdf = {http://www.johnbreslin.com/files/publications/20160616_seme2016b.pdf},
-	Title = {Deep Learning for Multilingual Aspect-Based Sentiment Analysis},
+	Title = {INSIGHT-1 at SemEval-2016 Task 5: Deep Learning for Multilingual Aspect-Based Sentiment Analysis},
 	Type = {Workshop Paper},
 	Year = 2016}
 
 @inproceedings{seme2016a,
 	Author = {Ruder, Sebastian and Ghaffari, Parsa and Breslin, John G},
-	Booktitle = {The International Workshop on Semantic Evaluation (SemEval 2016) at the 15th Annual Conference of the North American Chapter of the Association for Computational Linguistics (NAACL 2016)},
+	Booktitle = {The International Workshop on Semantic Evaluation (SemEval 2016) at the 15th Annual Conference of the North American Chapter of the Association for Computational Linguistics (NAACL 2016)}, 
+	Series = {The International Workshop on Semantic Evaluation (SemEval 2016) at the 15th Annual Conference of the North American Chapter of the Association for Computational Linguistics (NAACL 2016)},
 	Day = 16,
 	Location = {San Diego, California, USA},
 	Month = jun,
 	Pages = {178--182},
 	Pdf = {http://www.johnbreslin.com/files/publications/20160616_seme2016a.pdf},
-	Title = {Convolutional Neural Networks for Sentiment Classification and Quantification},
+	Title = {INSIGHT-1 at SemEval-2016 Task 4: Convolutional Neural Networks for Sentiment Classification and Quantification},
 	Type = {Workshop Paper},
 	Year = 2016}
 
 @inproceedings{iesd2012,
 	Author = {Sacco, Owen and Thomas, George and Breslin, John G},
-	Booktitle = {The International Workshop on Intelligent Exploration of Semantic Data (IESD 2012) at the 18th International Conference on Knowledge Engineering and Knowledge Management (EKAW 2012)},
+	Booktitle = {The International Workshop on Intelligent Exploration of Semantic Data (IESD 2012) at the 18th International Conference on Knowledge Engineering and Knowledge Management (EKAW 2012)}, 
+	Series = {The International Workshop on Intelligent Exploration of Semantic Data (IESD 2012) at the 18th International Conference on Knowledge Engineering and Knowledge Management (EKAW 2012)},
 	Day = 9,
 	Location = {Galway, Ireland},
 	Month = oct,
@@ -3202,7 +3410,8 @@
 
 @inproceedings{socm2012,
 	Author = {Heravi, Bahareh R and Boran, Marie and Breslin, John G},
-	Booktitle = {The Workshop on the Potential of Social Media Tools and Data for Journalists (SocMedNews 2012) at the 6th International AAAI Conference on Weblogs and Social Media (ICWSM-12)},
+	Booktitle = {The Workshop on the Potential of Social Media Tools and Data for Journalists (SocMedNews 2012) at the 6th International AAAI Conference on Weblogs and Social Media (ICWSM-12)}, 
+	Series = {The Workshop on the Potential of Social Media Tools and Data for Journalists (SocMedNews 2012) at the 6th International AAAI Conference on Weblogs and Social Media (ICWSM-12)},
 	Day = 4,
 	Location = {Dublin, Ireland},
 	Month = jun,
@@ -3213,18 +3422,20 @@
 
 @inproceedings{ssn_2011,
 	Author = {Crowley, David N and Passant, Alexandre and Breslin, John G},
-	Booktitle = {The 4th International Workshop on Semantic Sensor Networks 2011 (SSN 2011) at the 10th International Semantic Web Conference (ISWC 2011)},
+	Booktitle = {The 4th International Workshop on Semantic Sensor Networks 2011 (SSN 2011) at the 10th International Semantic Web Conference (ISWC 2011)}, 
+	Series = {The 4th International Workshop on Semantic Sensor Networks 2011 (SSN 2011) at the 10th International Semantic Web Conference (ISWC 2011)},
 	Day = 23,
 	Location = {Bonn, Germany},
 	Month = oct,
 	Pdf = {http://www.johnbreslin.com/files/publications/20111023_ssn_2011.pdf},
-	Title = {Annotating Microblog Posts with Sensor Data for Emergency Reporting},
+	Title = {Annotating Microblog Posts with Sensor Data for Emergency Reporting Applications},
 	Type = {Workshop Paper},
 	Year = 2011}
 
 @inproceedings{msm_2011,
 	Author = {Choudhury, Smitashree and Breslin, John G},
-	Booktitle = {The 1st Workshop on Making Sense of Microposts (MSM 2011) at the 8th Extended Semantic Web Conference (ESWC 2011)},
+	Booktitle = {The 1st Workshop on Making Sense of Microposts (MSM 2011) at the 8th Extended Semantic Web Conference (ESWC 2011)}, 
+	Series = {The 1st Workshop on Making Sense of Microposts (MSM 2011) at the 8th Extended Semantic Web Conference (ESWC 2011)},
 	Day = 30,
 	Location = {Heraklion, Greece},
 	Month = may,
@@ -3235,7 +3446,8 @@
 
 @inproceedings{semw2010,
 	Author = {Schneider, Jodi and Passant, Alexandre and Breslin, John G},
-	Booktitle = {The 5th Workshop on Semantic Wikis: Linking Data and People Workshop (SemWiki 2010)},
+	Booktitle = {The 5th Workshop on Semantic Wikis: Linking Data and People Workshop (SemWiki 2010)}, 
+	Series = {The 5th Workshop on Semantic Wikis: Linking Data and People Workshop (SemWiki 2010)},
 	Day = 31,
 	Location = {Crete, Greece},
 	Month = may,
@@ -3246,7 +3458,8 @@
 
 @inproceedings{swas2009,
 	Author = {Passant, Alexandre and Ciccarese, Paolo and Breslin, John G and Clark, Tim},
-	Booktitle = {The 1st International Workshop on Semantic Web Applications in Scientific Discourse (SWASD 2009) at the 8th International Semantic Web Conference (ISWC 2009)},
+	Booktitle = {The 1st International Workshop on Semantic Web Applications in Scientific Discourse (SWASD 2009) at the 8th International Semantic Web Conference (ISWC 2009)}, 
+	Series = {The 1st International Workshop on Semantic Web Applications in Scientific Discourse (SWASD 2009) at the 8th International Semantic Web Conference (ISWC 2009)},
 	Day = 26,
 	Location = {Washington, DC, USA},
 	Month = oct,
@@ -3257,7 +3470,8 @@
 
 @inproceedings{sdow2009,
 	Author = {Hastrup, Tuukka and Boj{\=a}rs, Uldis and Breslin, John G},
-	Booktitle = {The 2nd International Workshop on Social Data on the Web (SDOW 2009) at the 8th International Semantic Web Conference (ISWC 2009)},
+	Booktitle = {The 2nd International Workshop on Social Data on the Web (SDOW 2009) at the 8th International Semantic Web Conference (ISWC 2009)}, 
+	Series = {The 2nd International Workshop on Social Data on the Web (SDOW 2009) at the 8th International Semantic Web Conference (ISWC 2009)},
 	Date-Modified = {2018-03-14 14:35:16 +0000},
 	Day = 25,
 	Location = {Washington, DC, USA},
@@ -3267,21 +3481,40 @@
 	Type = {Workshop Paper},
 	Year = 2009}
 
-@inproceedings{coin2009,
+@inproceedings{coin2010,
+	Author = {Passant, Alexandre and Boj{\=a}rs, Uldis and Breslin, John G and Decker, Stefan},
+	Booktitle = {Coordination, Organizations, Institutions and Norms in Agent Systems V (COIN 2009)},
+	Series = {Coordination, Organizations, Institutions and Norms in Agent Systems V (COIN 2009)},
+	Day = 7,
+	Doi = {10.1007/978-3-642-14962-7_12},
+	Month = aug,
+	Note = {Extended and Revised Version},
+	Pages = {179--194},
+	Pdf = {http://www.johnbreslin.com/files/publications/20100807_coin2010.pdf},
+	Publisher = {Springer},
+	Series = {LNCS},
+	Title = {The SIOC Project: Semantically-Interlinked Online Communities, from Humans to Machines},
+	Type = {Workshop Paper},
+	Volume = 6069,
+	Year = 2010}
+
+@inproceedings{mall2009,
 	Author = {Boj{\=a}rs, Uldis and Passant, Alexandre and Breslin, John G and Decker, Stefan},
-	Booktitle = {The MALLOW Workshop on Coordination, Organization, Institutions and Norms in Agent Systems in Online Communities (COIN at MALLOW 2009)},
+	Booktitle = {The MALLOW Workshop on Coordination, Organizations, Institutions and Norms in Agent Systems in Online Communities (COIN at MALLOW 2009)}, 
+	Series = {The MALLOW Workshop on Coordination, Organizations, Institutions and Norms in Agent Systems in Online Communities (COIN at MALLOW 2009)},
 	Date-Modified = {2018-03-14 14:35:16 +0000},
 	Day = 9,
 	Location = {Turin, Italy},
 	Month = sep,
-	Pdf = {http://www.johnbreslin.com/files/publications/20090909_coin2009.pdf},
+	Pdf = {http://www.johnbreslin.com/files/publications/20090909_mall2009.pdf},
 	Title = {The SIOC Project: Semantically-Interlinked Online Communities},
 	Type = {Workshop Paper},
 	Year = 2009}
 
 @inproceedings{saak2009,
 	Author = {Choudhury, Smitashree and Breslin, John G and Decker, Stefan},
-	Booktitle = {The Workshop on Semantic Authoring, Annotation and Knowledge Markup Workshop (SAAKM 2009) at the 5th International Conference on Knowledge Capture (K-CAP 2009)},
+	Booktitle = {The Workshop on Semantic Authoring, Annotation and Knowledge Markup Workshop (SAAKM 2009) at the 5th International Conference on Knowledge Capture (K-CAP 2009)}, 
+	Series = {The Workshop on Semantic Authoring, Annotation and Knowledge Markup Workshop (SAAKM 2009) at the 5th International Conference on Knowledge Capture (K-CAP 2009)},
 	Day = 1,
 	Location = {Redondo Beach, California, USA},
 	Month = sep,
@@ -3292,7 +3525,8 @@
 
 @inproceedings{widm2008,
 	Author = {Kinsella, Sheila and Budura, Adriana and Skobeltsyn, Gleb and Michel, Sebastian and Breslin, John G and Aberer, Karl},
-	Booktitle = {The 10th ACM International Workshop on Web Information and Data Management (WIDM 2008)},
+	Booktitle = {The 10th ACM International Workshop on Web Information and Data Management (WIDM 2008)}, 
+	Series = {The 10th ACM International Workshop on Web Information and Data Management (WIDM 2008)},
 	Day = 30,
 	Location = {Napa Valley, California, USA},
 	Month = oct,
@@ -3303,7 +3537,8 @@
 
 @inproceedings{sdow2008,
 	Author = {Lange, Christoph and Boj{\=a}rs, Uldis and Groza, Tudor and Breslin, John G and Handschuh, Siegfried},
-	Booktitle = {The 1st International Workshop on Social Data on the Web (SDOW 2008) at the 7th International Semantic Web Conference (ISWC 2008)},
+	Booktitle = {The 1st International Workshop on Social Data on the Web (SDOW 2008) at the 7th International Semantic Web Conference (ISWC 2008)}, 
+	Series = {The 1st International Workshop on Social Data on the Web (SDOW 2008) at the 7th International Semantic Web Conference (ISWC 2008)},
 	Date-Modified = {2018-03-14 14:35:16 +0000},
 	Day = 27,
 	Issn = {16130073},
@@ -3316,31 +3551,34 @@
 
 @inproceedings{sfsw2008a,
 	Author = {Passant, Alexandre and Hastrup, Tuukka and Boj{\=a}rs, Uldis and Breslin, John G},
-	Booktitle = {The 4th Workshop on Scripting for the Semantic Web (SFSW 2008) at the 5th European Semantic Web Conference (ESWC '08)},
+	Booktitle = {The 4th Workshop on Scripting for the Semantic Web (SFSW 2008) at the 5th European Semantic Web Conference (ESWC '08)}, 
+	Series = {The 4th Workshop on Scripting for the Semantic Web (SFSW 2008) at the 5th European Semantic Web Conference (ESWC '08)},
 	Date-Modified = {2018-03-14 14:35:16 +0000},
 	Day = 2,
 	Location = {Tenerife, Spain},
 	Month = jun,
 	Pdf = {http://www.johnbreslin.com/files/publications/20080602_sfsw2008a.pdf},
-	Title = {Microblogging: A Semantic Web and Distributed Approach},
+	Title = {Microblogging: A Semantic and Distributed Approach},
 	Type = {Workshop Paper},
 	Year = 2008}
 
 @inproceedings{saw_2008,
 	Author = {Boj{\=a}rs, Uldis and Passant, Alexandre and Breslin, John G and Decker, Stefan},
-	Booktitle = {The 2nd Workshop on Social Aspects of the Web (SAW 2008) at the 11th International Conference on Business Information Systems (BIS 2008)},
+	Booktitle = {The 2nd Workshop on Social Aspects of the Web (SAW 2008) at the 11th International Conference on Business Information Systems (BIS 2008)}, 
+	Series = {The 2nd Workshop on Social Aspects of the Web (SAW 2008) at the 11th International Conference on Business Information Systems (BIS 2008)},
 	Date-Modified = {2018-03-14 14:35:16 +0000},
 	Day = 6,
 	Location = {Innsbruck, Austria},
 	Month = may,
 	Pdf = {http://www.johnbreslin.com/files/publications/20080506_saw_2008.pdf},
-	Title = {Social Networks and Data Portability Using Semantic Web Technologies},
+	Title = {Social Network and Data Portability Using Semantic Web Technologies},
 	Type = {Workshop Paper},
 	Year = 2008}
 
 @inproceedings{ldow2008,
 	Author = {Boj{\=a}rs, Uldis and Passant, Alexandre and Breslin, John G},
-	Booktitle = {The Workshop on Linked Data on the Web (LDOW 2008) at the 17th International World Wide Web Conference (WWW2008)},
+	Booktitle = {The Workshop on Linked Data on the Web (LDOW 2008) at the 17th International World Wide Web Conference (WWW2008)}, 
+	Series = {The Workshop on Linked Data on the Web (LDOW 2008) at the 17th International World Wide Web Conference (WWW2008)},
 	Date-Modified = {2018-03-14 14:35:16 +0000},
 	Day = 22,
 	Location = {Beijing, China},
@@ -3352,7 +3590,8 @@
 
 @inproceedings{rdfr2007,
 	Author = {Boj{\=a}rs, Uldis and Breslin, John G},
-	Booktitle = {W3C Workshop on RDF Access to Relational Databases},
+	Booktitle = {W3C Workshop on RDF Access to Relational Databases}, 
+	Series = {W3C Workshop on RDF Access to Relational Databases},
 	Date-Modified = {2018-03-14 14:35:16 +0000},
 	Day = 25,
 	Http = {http://www.w3.org/2007/03/RdfRDB/papers/sioc/},
@@ -3365,7 +3604,8 @@
 
 @inproceedings{ecsc2007,
 	Author = {Ning, Ke and Peristeras, Vassilios and Boj{\=a}rs, Uldis and Breslin, John G},
-	Booktitle = {The Workshop on CSCW and Web 2.0 at the 10th European Conference on Computer Supported Cooperative Work (ECSCW 2007)},
+	Booktitle = {The Workshop on CSCW and Web 2.0 at the 10th European Conference on Computer Supported Cooperative Work (ECSCW 2007)}, 
+	Series = {The Workshop on CSCW and Web 2.0 at the 10th European Conference on Computer Supported Cooperative Work (ECSCW 2007)},
 	Date-Modified = {2018-03-14 14:35:16 +0000},
 	Day = 25,
 	Location = {Limerick, Ireland},
@@ -3377,19 +3617,21 @@
 
 @inproceedings{sfsw2007,
 	Author = {Boj{\=a}rs, Uldis and Passant, Alexandre and Giasson, Frederick and Breslin, John G},
-	Booktitle = {The 3rd Workshop on Scripting for the Semantic Web at the 4th European Semantic Web Conference (ESWC '07)},
+	Booktitle = {The 3rd Workshop on Scripting for the Semantic Web at the 4th European Semantic Web Conference (ESWC '07)}, 
+	Series = {The 3rd Workshop on Scripting for the Semantic Web at the 4th European Semantic Web Conference (ESWC '07)},
 	Date-Modified = {2018-03-14 14:35:16 +0000},
 	Day = 6,
 	Location = {Innsbruck, Austria},
 	Month = jun,
 	Pdf = {http://www.johnbreslin.com/files/publications/20070606_sfsw2007.pdf},
-	Title = {An Architecture to Discover and Query Decentralised RDF Data},
+	Title = {An Architecture to Discover and Query Decentralized RDF Data},
 	Type = {Workshop Paper},
 	Year = 2007}
 
 @inproceedings{efw_2007b,
 	Author = {Breslin, John G and Boj{\=a}rs, Uldis and Aleman-Meza, Boanerges and Boley, Harold and Mochol, Malgorzata and Nixon, Lyndon J B and Polleres, Axel and Zhdanova, Anna V},
-	Booktitle = {The 1st International ExpertFinder Workshop (EFW 2007)},
+	Booktitle = {The 1st International ExpertFinder Workshop (EFW 2007)}, 
+	Series = {The 1st International ExpertFinder Workshop (EFW 2007)},
 	Date-Modified = {2018-03-14 14:35:16 +0000},
 	Day = 16,
 	Location = {Berlin, Germany},
@@ -3401,7 +3643,8 @@
 
 @inproceedings{efw_2007a,
 	Author = {Boj{\=a}rs, Uldis and Breslin, John G},
-	Booktitle = {The 1st International ExpertFinder Workshop (EFW 2007)},
+	Booktitle = {The 1st International ExpertFinder Workshop (EFW 2007)}, 
+	Series = {The 1st International ExpertFinder Workshop (EFW 2007)},
 	Date-Modified = {2018-03-14 14:35:16 +0000},
 	Day = 16,
 	Location = {Berlin, Germany},
@@ -3413,7 +3656,8 @@
 
 @inproceedings{irw_2006,
 	Author = {Choi, Hee-Chul and Kruk, Sebastian R and Grzonkowski, S\l{}awomir and Stankiewicz, Katarzyna and Davis, Brian and Breslin, John G},
-	Booktitle = {The Identity, Reference and Web Workshop (IRW2006) at the 15th International World Wide Web Conference (WWW2006)},
+	Booktitle = {The Identity, Reference and Web Workshop (IRW2006) at the 15th International World Wide Web Conference (WWW2006)}, 
+	Series = {The Identity, Reference and Web Workshop (IRW2006) at the 15th International World Wide Web Conference (WWW2006)},
 	Day = 23,
 	Location = {Edinburgh, Scotland},
 	Month = may,
@@ -3424,7 +3668,8 @@
 
 @inproceedings{foaf2004a,
 	Author = {Harth, Andreas and Breslin, John G and O'Murchu, Ina and Decker, Stefan},
-	Booktitle = {The 1st Workshop on Friend of a Friend, Social Networking and the (Semantic) Web (FOAF Galway)},
+	Booktitle = {The 1st Workshop on Friend of a Friend, Social Networking and the (Semantic) Web (FOAF Galway)}, 
+	Series = {The 1st Workshop on Friend of a Friend, Social Networking and the (Semantic) Web (FOAF Galway)},
 	Day = 1,
 	Http = {http://www.w3.org/2001/sw/Europe/events/foaf-galway/papers/fp/linking_semantically_enabled_online_community_sites/},
 	Location = {Galway, Ireland},
@@ -3437,7 +3682,8 @@
 
 @inproceedings{ecai2004,
 	Author = {O'Murchu, Ina and Breslin, John G and Decker, Stefan},
-	Booktitle = {The Workshop on the Application of Semantic Web Technologies to Web Communities at the 16th European Conference on Artificial Intelligence 2004 (ECAI 2004)},
+	Booktitle = {The Workshop on the Application of Semantic Web Technologies to Web Communities at the 16th European Conference on Artificial Intelligence 2004 (ECAI 2004)}, 
+	Series = {The Workshop on the Application of Semantic Web Technologies to Web Communities at the 16th European Conference on Artificial Intelligence 2004 (ECAI 2004)},
 	Issn = {16130073},
 	Location = {Valencia, Spain},
 	Month = aug,
@@ -3448,7 +3694,8 @@
 
 @inproceedings{comp2000,
 	Author = {Breslin, John G and Hurley, W Gerard},
-	Booktitle = {The 7th IEEE Workshop on Computers in Power Electronics (COMPEL 2000)},
+	Booktitle = {The 7th IEEE Workshop on Computers in Power Electronics (COMPEL 2000)}, 
+	Series = {The 7th IEEE Workshop on Computers in Power Electronics (COMPEL 2000)},
 	Location = {Blacksburg, Virginia, USA},
 	Month = jul,
 	Pages = {268--271},
@@ -3459,7 +3706,8 @@
 
 @inproceedings{vpec1996,
 	Author = {Skutt, Glenn and Lee, Fred C and Breslin, John G},
-	Booktitle = {VPEC Seminar Series},
+	Booktitle = {VPEC Seminar Series}, 
+	Series = {VPEC Seminar Series},
 	Location = {Blacksburg, Virginia, USA},
 	Month = sep,
 	Pdf = {http://www.johnbreslin.com/files/publications/19960900_vpec1996.pdf},
@@ -3467,10 +3715,13 @@
 	Type = {Workshop Paper},
 	Year = 1996}
 
+%% Work in Progress Papers, Peer-Reviewed
+
 %% Added to Sesame with grants Confirm and SMART 4.0
 @inproceedings{smar2023a,
 	Author = {Verma, Priyanka and Breslin, John G and Ponce de Leon, Miguel and O'Shea, Donna},
-	Booktitle = {The 9th IEEE International Conference on Smart Computing (SMARTCOMP 2023)},
+	Booktitle = {The 9th IEEE International Conference on Smart Computing (SMARTCOMP 2023)}, 
+	Series = {The 9th IEEE International Conference on Smart Computing (SMARTCOMP 2023)},
 	Day = 26,
 	Doi = {10.1109/SMARTCOMP58114.2023.00058},
 	Location = {Nashville, Tennessee, USA},
@@ -3484,7 +3735,8 @@
 %% Added to Sesame with grants Confirm and Insight
 @inproceedings{smar2023b,
 	Author = {Bharot, Nitesh and Soderi, Mirco and Verma, Priyanka and Breslin, John G},
-	Booktitle = {The 9th IEEE International Conference on Smart Computing (SMARTCOMP 2023)},
+	Booktitle = {The 9th IEEE International Conference on Smart Computing (SMARTCOMP 2023)}, 
+	Series = {The 9th IEEE International Conference on Smart Computing (SMARTCOMP 2023)},
 	Day = 26,
 	Doi = {10.1109/SMARTCOMP58114.2023.00051},
 	Location = {Nashville, Tennessee, USA},
@@ -3498,7 +3750,8 @@
 %% Added to Sesame with grants Confirm and Insight
 @inproceedings{smar2023c,
 	Author = {Soderi, Mirco and Breslin, John G},
-	Booktitle = {The 9th IEEE International Conference on Smart Computing (SMARTCOMP 2023)},
+	Booktitle = {The 9th IEEE International Conference on Smart Computing (SMARTCOMP 2023)}, 
+	Series = {The 9th IEEE International Conference on Smart Computing (SMARTCOMP 2023)},
 	Day = 26,
 	Doi = {10.1109/SMARTCOMP58114.2023.00056},
 	Location = {Nashville, Tennessee, USA},
@@ -3509,10 +3762,13 @@
 	Type = {Work in Progress Paper},
 	Year = 2023}
 
+%% Poster Papers, Peer-Reviewed
+
 %% Added to Sesame with grants Confirm and Insight
 @inproceedings{smar2023d,
 	Author = {Soderi, Mirco and Breslin, John G},
-	Booktitle = {The 9th IEEE International Conference on Smart Computing (SMARTCOMP 2023)},
+	Booktitle = {The 9th IEEE International Conference on Smart Computing (SMARTCOMP 2023)}, 
+	Series = {The 9th IEEE International Conference on Smart Computing (SMARTCOMP 2023)},
 	Day = 26,
 	Doi = {10.1109/SMARTCOMP58114.2023.00045},
 	Location = {Nashville, Tennessee, USA},
@@ -3526,7 +3782,8 @@
 %% Added to Sesame with grants Confirm and Insight
 @inproceedings{mobi2022,
 	Author = {Sudharsan, Bharath and Prasad, Sonu and Jose, Dan and Breslin, John G},
-	Booktitle = {The 28th Annual International Conference On Mobile Computing And Networking (MobiCom 2022)},
+	Booktitle = {The 28th Annual International Conference On Mobile Computing And Networking (MobiCom 2022)}, 
+	Series = {The 28th Annual International Conference On Mobile Computing And Networking (MobiCom 2022)},
 	Day = 17,
 	Doi = {10.1145/3495243.3558265},
 	Location = {Sydney, Australia},
@@ -3537,10 +3794,26 @@
 	Type = {Poster Paper},
 	Year = 2022}
 	
+%% Add to Sesame with grants CENTS and Insight
+@inproceedings{iccp2022,
+	Author = {Sudharsan, Bharath and Rahul, Panchakarla S and Yadav, Piyush and Gupta, Suneet K and Kumar, Vimal and Nguyen, Duc-Duy and Ali, M Intizar and Breslin, John G},
+	Booktitle = {The 13th ACM/IEEE International Conference on Cyber-Physical Systems (ICCPS 2022)}, 
+	Series = {The 13th ACM/IEEE International Conference on Cyber-Physical Systems (ICCPS 2022)},
+	Day = {5},
+	Doi = {10.1109/ICCPS54341.2022.00039},
+	Location = {Milan, Italy},
+	Month = may,
+	Pages = {296--297},
+	Pdf = {http://www.johnbreslin.com/files/publications/20220505_iccp2022.pdf},
+	Title = {RIS-IoT: Towards Resilient, Interoperable, Scalable IoT},
+	Type = {Poster Paper},
+	Year = 2022}
+
 %% Added to Sesame with grants Confirm, Insight and VistaMilk
 @inproceedings{ipsn2022b,
-	Author = {Sheth, Dhruv and Sudharsan, Bharath and Breslin, John G and Ali, M Intizar},
-	Booktitle = {The 21st ACM/IEEE International Conference on Information Processing in Sensor Networks (IPSN 2022)},
+	Author = {Sheth, Dhruv and Sudharsan, Bharath},
+	Booktitle = {The 21st ACM/IEEE International Conference on Information Processing in Sensor Networks (IPSN 2022)}, 
+	Series = {The 21st ACM/IEEE International Conference on Information Processing in Sensor Networks (IPSN 2022)},
 	Day = 4,
 	Doi = {10.1109/IPSN54338.2022.00064},
 	Location = {Milan, Italy},
@@ -3554,7 +3827,8 @@
 %% Added to Sesame with grants Confirm and Insight
 @inproceedings{ipsn2022a,
 	Author = {Sudharsan, Bharath and Salerno, Simone and Yadav, Piyush and Breslin, John G},
-	Booktitle = {The 21st ACM/IEEE International Conference on Information Processing in Sensor Networks (IPSN 2022)},
+	Booktitle = {The 21st ACM/IEEE International Conference on Information Processing in Sensor Networks (IPSN 2022)}, 
+	Series = {The 21st ACM/IEEE International Conference on Information Processing in Sensor Networks (IPSN 2022)},
 	Day = 4,
 	Doi = {10.1109/IPSN54338.2022.00061},
 	Location = {Milan, Italy},
@@ -3568,7 +3842,8 @@
 %% Added to Sesame with grants Confirm and Insight
 @inproceedings{snss2021,
 	Author = {Sudharsan, Bharath and Sheth, Dhruv and Arya, Shailesh and Rollo, Federica and Yadav, Piyush and Patel, Pankesh and Breslin, John G and Ali, M Intizar},
-	Booktitle = {The 19th ACM Conference on Embedded Networked Sensor Systems (SenSys '21)},
+	Booktitle = {The 19th ACM Conference on Embedded Networked Sensor Systems (SenSys '21)}, 
+	Series = {The 19th ACM Conference on Embedded Networked Sensor Systems (SenSys '21)},
 	Day = 15,
 	Doi = {10.1145/3485730.3492885},
 	Location = {Coimbra, Portugal},
@@ -3581,7 +3856,8 @@
 	
 @inproceedings{debs2019,
 	Author = {Sahal, Radhya and Breslin, John G and Ali, M Intizar},
-	Booktitle = {The 13th ACM International Conference on Distributed and Event-Based Systems (DEBS 2019)},
+	Booktitle = {The 13th ACM International Conference on Distributed and Event-Based Systems (DEBS 2019)}, 
+	Series = {The 13th ACM International Conference on Distributed and Event-Based Systems (DEBS 2019)},
 	Day = 26,
 	Doi = {10.1145/3328905.3332509},
 	Location = {Darmstadt, Germany},
@@ -3594,7 +3870,8 @@
 
 @inproceedings{gem_2018,
 	Author = {Antelmi, Alessia and Breslin, John G and Young, Karen},
-	Booktitle = {The 2018 IEEE Games, Entertainment and Media Conference (GEM 2018)},
+	Booktitle = {The 2018 IEEE Games, Entertainment and Media Conference (GEM 2018)}, 
+	Series = {The 2018 IEEE Games, Entertainment and Media Conference (GEM 2018)},
 	Day = 15,
 	Doi = {10.1109/GEM.2018.8516505},
 	Month = aug,
@@ -3605,7 +3882,8 @@
 
 @inproceedings{emnl2016,
 	Author = {Ruder, Sebastian and Ghaffari, Parsa and Breslin, John G},
-	Booktitle = {The 2016 Conference on Empirical Methods in Natural Language Processing (EMNLP 2016)},
+	Booktitle = {The 2016 Conference on Empirical Methods in Natural Language Processing (EMNLP 2016)}, 
+	Series = {The 2016 Conference on Empirical Methods in Natural Language Processing (EMNLP 2016)},
 	Day = 2,
 	Month = nov,
 	Pdf = {http://www.johnbreslin.com/files/publications/20161102_emnl2016.pdf},
@@ -3615,18 +3893,20 @@
 
 @inproceedings{umap2016b,
 	Author = {Piao, Guangyuan and Breslin, John G},
-	Booktitle = {The 24th Conference on User Modelling, Adaptation and Personalization (UMAP 2016)},
+	Booktitle = {The 24th Conference on User Modelling, Adaptation and Personalization (UMAP 2016)}, 
+	Series = {The 24th Conference on User Modelling, Adaptation and Personalization (UMAP 2016)},
 	Day = 13,
 	Location = {Halifax, Canada},
 	Month = jul,
 	Pdf = {http://www.johnbreslin.com/files/publications/20160713_umap2016b.pdf},
-	Title = {Analyzing MOOC Entries of Professionals in LinkedIn for User Modeling and Personalized MOOC Recommendations},
+	Title = {Analyzing MOOC Entries of Professionals on LinkedIn for User Modeling and Personalized MOOC Recommendations},
 	Type = {Poster Paper},
 	Year = 2016}
 
 @inproceedings{jist2015a,
 	Author = {Piao, Guangyuan and Breslin, John G},
-	Booktitle = {The 5th Joint International Semantic Technology Conference (JIST 2015)},
+	Booktitle = {The 5th Joint International Semantic Technology Conference (JIST 2015)}, 
+	Series = {The 5th Joint International Semantic Technology Conference (JIST 2015)},
 	Day = 11,
 	Location = {Yichang, China},
 	Month = nov,
@@ -3637,7 +3917,8 @@
 
 @inproceedings{lssa2015,
 	Author = {Barnaghi, Peiman and Ghaffari, Parsa and Breslin, John G},
-	Booktitle = {The Workshop on Large-Scale Sports Analytics (LSSA 2015) at the 21st ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD 2015)},
+	Booktitle = {The Workshop on Large-Scale Sports Analytics (LSSA 2015) at the 21st ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD 2015)}, 
+	Series = {The Workshop on Large-Scale Sports Analytics (LSSA 2015) at the 21st ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD 2015)},
 	Day = 10,
 	Location = {Sydney, Australia},
 	Month = aug,
@@ -3648,7 +3929,8 @@
 
 @inproceedings{dgo_2015,
 	Author = {Porwol, Lukasz and Hassan, Islam and Ojo, Adegboyega and Breslin, John G},
-	Booktitle = {The 16th International Conference on Digital Government Research (dg.o 2015)},
+	Booktitle = {The 16th International Conference on Digital Government Research (dg.o 2015)}, 
+	Series = {The 16th International Conference on Digital Government Research (dg.o 2015)},
 	Day = 28,
 	Location = {Phoenix, Arizona, USA},
 	Month = may,
@@ -3660,7 +3942,8 @@
 
 @inproceedings{epar2013,
 	Author = {Porwol, Lukasz and Ojo, Adegboyega and Breslin, John G},
-	Booktitle = {The 5th IFIP International Conference on eParticipation (ePart 2013)},
+	Booktitle = {The 5th IFIP International Conference on eParticipation (ePart 2013)}, 
+	Series = {The 5th IFIP International Conference on eParticipation (ePart 2013)},
 	Day = 17,
 	Location = {Koblenz, Germany},
 	Month = sep,
@@ -3671,7 +3954,8 @@
 
 @inproceedings{meme2013,
 	Author = {Covello, Roberto and Fortino, Giancarlo and Gravina, Raffaele and Aguilar, Antonio and Breslin, John G},
-	Booktitle = {The 8th International Symposium on Medical Measurements and Applications (MEMEA 2013)},
+	Booktitle = {The 8th International Symposium on Medical Measurements and Applications (MEMEA 2013)}, 
+	Series = {The 8th International Symposium on Medical Measurements and Applications (MEMEA 2013)},
 	Day = 4,
 	Location = {Quebec, Canada},
 	Month = may,
@@ -3682,7 +3966,8 @@
 
 @inproceedings{dgo_2012,
 	Author = {Porwol, Lukasz and O'Donoghue, Padraic and Breslin, John G and Mulligan, Brendan and Coughlan, Chris},
-	Booktitle = {The 13th International Conference on Digital Government Research (dg.o 2012)},
+	Booktitle = {The 13th International Conference on Digital Government Research (dg.o 2012)}, 
+	Series = {The 13th International Conference on Digital Government Research (dg.o 2012)},
 	Day = 5,
 	Location = {College Park, Maryland, USA},
 	Month = jun,
@@ -3694,18 +3979,20 @@
 
 @inproceedings{icws2010b,
 	Author = {Letierce, Julie and Passant, Alexandre and Breslin, John G and Decker, Stefan},
-	Booktitle = {The 4th International Conference on Weblogs and Social Media (ICWSM-10)},
+	Booktitle = {The 4th International Conference on Weblogs and Social Media (ICWSM-10)}, 
+	Series = {The 4th International Conference on Weblogs and Social Media (ICWSM-10)},
 	Day = 25,
 	Location = {Washington, DC, USA},
 	Month = may,
 	Pdf = {http://www.johnbreslin.com/files/publications/20100525_icws2010b.pdf},
-	Title = {Using Twitter During an Academic Conference: The iswc2009 Use-Case},
+	Title = {Using Twitter During an Academic Conference: The \#iswc2009 Use-Case},
 	Type = {Poster Paper},
 	Year = 2010}
 
 @inproceedings{icws2010a,
 	Author = {Passant, Alexandre and Boj{\=a}rs, Uldis and Breslin, John G and Hastrup, Tuukka and Stankovic, Milan and Laublet, Philippe},
-	Booktitle = {The 4th International Conference on Weblogs and Social Media (ICWSM-10)},
+	Booktitle = {The 4th International Conference on Weblogs and Social Media (ICWSM-10)}, 
+	Series = {The 4th International Conference on Weblogs and Social Media (ICWSM-10)},
 	Date-Modified = {2018-03-14 14:35:16 +0000},
 	Day = 25,
 	Location = {Washington, DC, USA},
@@ -3717,7 +4004,8 @@
 
 @inproceedings{webs2010d,
 	Author = {Choudhury, Smitashree and Breslin, John G},
-	Booktitle = {The Web Science Conference 2010 (WebSci '10)},
+	Booktitle = {The Web Science Conference 2010 (WebSci '10)}, 
+	Series = {The Web Science Conference 2010 (WebSci '10)},
 	Day = 26,
 	Location = {Raleigh, North Carolina, USA},
 	Month = apr,
@@ -3728,7 +4016,8 @@
 
 @inproceedings{webs2010a,
 	Author = {Schneider, Jodi and Passant, Alexandre and Breslin, John G},
-	Booktitle = {The Web Science Conference 2010 (WebSci '10)},
+	Booktitle = {The Web Science Conference 2010 (WebSci '10)}, 
+	Series = {The Web Science Conference 2010 (WebSci '10)},
 	Day = 26,
 	Location = {Raleigh, North Carolina, USA},
 	Month = apr,
@@ -3739,7 +4028,8 @@
 
 @inproceedings{webs2010b,
 	Author = {Kinsella, Sheila and Passant, Alexandre and Breslin, John G},
-	Booktitle = {The Web Science Conference 2010 (WebSci '10)},
+	Booktitle = {The Web Science Conference 2010 (WebSci '10)}, 
+	Series = {The Web Science Conference 2010 (WebSci '10)},
 	Day = 26,
 	Location = {Raleigh, North Carolina, USA},
 	Month = apr,
@@ -3750,7 +4040,8 @@
 
 @inproceedings{sems2009,
 	Author = {Passant, Alexandre and Laublet, Philippe and Breslin, John G and Decker, Stefan},
-	Booktitle = {The Workshop on Semantic Search (SemSearch2009) at the 18th International World Wide Web Conference (WWW2009)},
+	Booktitle = {The Workshop on Semantic Search (SemSearch2009) at the 18th International World Wide Web Conference (WWW2009)}, 
+	Series = {The Workshop on Semantic Search (SemSearch2009) at the 18th International World Wide Web Conference (WWW2009)},
 	Day = 21,
 	Month = apr,
 	Pdf = {http://www.johnbreslin.com/files/publications/20090421_sems2009.pdf},
@@ -3760,7 +4051,8 @@
 
 @inproceedings{www_2006,
 	Author = {Oren, Eyal and Decker, Stefan and Breslin, John G},
-	Booktitle = {The 15th International World Wide Web Conference (WWW2006)},
+	Booktitle = {The 15th International World Wide Web Conference (WWW2006)}, 
+	Series = {The 15th International World Wide Web Conference (WWW2006)},
 	Day = 26,
 	Location = {Edinburgh, Scotland},
 	Month = may,
@@ -3771,7 +4063,8 @@
 
 @inproceedings{ewim2005,
 	Author = {Hogan, Aidan and Harth, Andreas and Breslin, John G},
-	Booktitle = {The 2nd European Workshop on the Integration of Knowledge, Semantic and Digital Media Technologies (EWIMT 2005)},
+	Booktitle = {The 2nd European Workshop on the Integration of Knowledge, Semantic and Digital Media Technologies (EWIMT 2005)}, 
+	Series = {The 2nd European Workshop on the Integration of Knowledge, Semantic and Digital Media Technologies (EWIMT 2005)},
 	Day = 30,
 	Location = {London, UK},
 	Month = nov,
@@ -3782,7 +4075,8 @@
 
 @inproceedings{iswc2004,
 	Author = {O'Murchu, Ina and Breslin, John G and Decker, Stefan and Neumann, Marco},
-	Booktitle = {The 3rd International Semantic Web Conference (ISWC 2004)},
+	Booktitle = {The 3rd International Semantic Web Conference (ISWC 2004)}, 
+	Series = {The 3rd International Semantic Web Conference (ISWC 2004)},
 	Day = 9,
 	Location = {Hiroshima, Japan},
 	Month = nov,
@@ -3791,10 +4085,13 @@
 	Type = {Poster Paper},
 	Year = 2004}
 
+%% Poster and Demonstration Papers, Peer-Reviewed
+
 %% Added to Sesame with grant Confirm and OntoCommons
 @inproceedings{eswc2022b,
 	Author = {Yahya, Muhammad and Zhou, Baifan and Zheng, Zhuoxun and Zhou, Dongzhuoran and Breslin, John G and Ali, M Intizar and Kharlamov, Evgeny},
-	Booktitle = {The 19th Extended Semantic Web Conference (ESWC 2022)},
+	Booktitle = {The 19th Extended Semantic Web Conference (ESWC 2022)}, 
+	Series = {The 19th Extended Semantic Web Conference (ESWC 2022)},
 	Day = 29,
 	Doi = {10.1007/978-3-031-11609-4_16},
 	Location = {Hersonissos, Greece},
@@ -3807,7 +4104,8 @@
 %% Added to Sesame with grants Confirm and Insight
 @inproceedings{ubic2021,
 	Author = {Rollo, Federica and Sudharsan, Bharath and Po, Laura and Breslin, John G},
-	Booktitle = {The ACM International Joint Conference on Pervasive and Ubiquitous Computing and the 25th Annual International Symposium on Wearable Computers (UbiComp / ISWC 2021)},
+	Booktitle = {The ACM International Joint Conference on Pervasive and Ubiquitous Computing and the 25th Annual International Symposium on Wearable Computers (UbiComp / ISWC 2021)}, 
+	Series = {The ACM International Joint Conference on Pervasive and Ubiquitous Computing and the 25th Annual International Symposium on Wearable Computers (UbiComp / ISWC 2021)},
 	Day = 21,
 	Location = {Online},
 	Month = sep,
@@ -3816,10 +4114,13 @@
 	Type = {Poster and Demonstration Paper},
 	Year = 2021}
 
+%% Demonstration Papers, Peer-Reviewed
+
 %% Added to Sesame with grants VistaMilk and Insight
 @inproceedings{mass2023,
 	Author = {De Silva, Anupa and Thakur, Subhasis and Breslin, John G},
-	Booktitle = {The 20th IEEE International Conference on Mobile Ad-Hoc and Smart Systems (MASS 2023)},
+	Booktitle = {The 20th IEEE International Conference on Mobile Ad-Hoc and Smart Systems (MASS 2023)}, 
+	Series = {The 20th IEEE International Conference on Mobile Ad-Hoc and Smart Systems (MASS 2023)},
 	Day = 25,
 	Location = {Toronto, Canada},
 	Month = sep,
@@ -3832,7 +4133,8 @@
 %% Added to Sesame with grants Confirm and Insight
 @inproceedings{smar2023e,
 	Author = {Bharot, Nitesh and Breslin, John G and Soderi, Mirco},
-	Booktitle = {The 9th IEEE International Conference on Smart Computing (SMARTCOMP 2023)},
+	Booktitle = {The 9th IEEE International Conference on Smart Computing (SMARTCOMP 2023)}, 
+	Series = {The 9th IEEE International Conference on Smart Computing (SMARTCOMP 2023)},
 	Day = 26,
 	Doi = {10.1109/SMARTCOMP58114.2023.00040},
 	Location = {Nashville, Tennessee, USA},
@@ -3846,7 +4148,8 @@
 %% Added to Sesame with grants Confirm
 @inproceedings{aics2022,
 	Author = {Soderi, Mirco and Breslin, John G},
-	Booktitle = {The 30th Irish Conference on Artificial Intelligence and Cognitive Science (AICS 2022)},
+	Booktitle = {The 30th Irish Conference on Artificial Intelligence and Cognitive Science (AICS 2022)}, 
+	Series = {The 30th Irish Conference on Artificial Intelligence and Cognitive Science (AICS 2022)},
 	Day = 8,
 	Location = {Cork, Ireland},
 	Month = dec,
@@ -3858,7 +4161,8 @@
 %% Added to Sesame with grant Confirm
 @inproceedings{smar2022b,
 	Author = {Soderi, Mirco and Kamath, Vignesh and Breslin, John G},
-	Booktitle = {The 8th IEEE International Conference on Smart Computing (SMARTCOMP 2022)},
+	Booktitle = {The 8th IEEE International Conference on Smart Computing (SMARTCOMP 2022)}, 
+	Series = {The 8th IEEE International Conference on Smart Computing (SMARTCOMP 2022)},
 	Day = 20,
 	Doi = {10.1109/SMARTCOMP55677.2022.00036},
 	Location = {Helsinki, Finland},
@@ -3871,7 +4175,8 @@
 %% Added to Sesame with grant Confirm
 @inproceedings{smar2022a,
 	Author = {Soderi, Mirco and Kamath, Vignesh and Breslin, John G},
-	Booktitle = {The 8th IEEE International Conference on Smart Computing (SMARTCOMP 2022)},
+	Booktitle = {The 8th IEEE International Conference on Smart Computing (SMARTCOMP 2022)}, 
+	Series = {The 8th IEEE International Conference on Smart Computing (SMARTCOMP 2022)},
 	Day = 20,
 	Doi = {10.1109/SMARTCOMP55677.2022.00041},
 	Location = {Helsinki, Finland},
@@ -3884,7 +4189,8 @@
 %% Added to Sesame with grants Confirm and Insight
 @inproceedings{perc2022,
 	Author = {Kopparapu, Kavya and Lin, Eric and Breslin, John G and Sudharsan, Bharath},
-	Booktitle = {The 20th International Conference on Pervasive Computing and Communications (PerCom 2022)},
+	Booktitle = {The 20th International Conference on Pervasive Computing and Communications (PerCom 2022)}, 
+	Series = {The 20th International Conference on Pervasive Computing and Communications (PerCom 2022)},
 	Day = 21,
 	Doi = {10.1109/PerComWorkshops53856.2022.9767250},
 	Location = {Pisa, Italy},
@@ -3897,7 +4203,8 @@
 %% Added to Sesame with grants Confirm and Insight
 @inproceedings{wfio2021b,
 	Author = {Sudharsan, Bharath and Salerno, Simone and Nguyen, Duc-Duy and Yahya, Muhammad and Wahid, Abdul and Yadav, Piyush and Breslin, John G and Ali, M Intizar},
-	Booktitle = {The 7th IEEE World Forum on Internet of Things (WF-IoT 2021)},
+	Booktitle = {The 7th IEEE World Forum on Internet of Things (WF-IoT 2021)}, 
+	Series = {The 7th IEEE World Forum on Internet of Things (WF-IoT 2021)},
 	Day = 20,
 	Location = {New Orleans, Louisiana, USA},
 	Month = jun,
@@ -3909,7 +4216,8 @@
 %% Added to Sesame with grants Confirm and Insight
 @inproceedings{iotd2021,
 	Author = {Sudharsan, Bharath and Patel, Pankesh and Wahid, Abdul and Yahya, Muhammad and Breslin, John G and Ali, M Intizar},
-	Booktitle = {The 6th ACM/IEEE International Conference on Internet of Things Design and Implementation (IOTDI 2021)},
+	Booktitle = {The 6th ACM/IEEE International Conference on Internet of Things Design and Implementation (IOTDI 2021)}, 
+	Series = {The 6th ACM/IEEE International Conference on Internet of Things Design and Implementation (IOTDI 2021)},
 	Day = 18,
 	Doi = {10.1145/3450268.3453513},
 	Location = {Nashville, Tennessee, USA},
@@ -3922,7 +4230,8 @@
 %% Added to Sesame with grants Confirm and Insight
 @inproceedings{iccp2021,
 	Author = {Sudharsan, Bharath and Patel, Pankesh and Breslin, John G and Ali, M Intizar},
-	Booktitle = {The 12th ACM/IEEE International Conference on Cyber-Physical Systems (ICCPS 2021)},
+	Booktitle = {The 12th ACM/IEEE International Conference on Cyber-Physical Systems (ICCPS 2021)}, 
+	Series = {The 12th ACM/IEEE International Conference on Cyber-Physical Systems (ICCPS 2021)},
 	Day = 19,
 	Doi = {10.1145/3450267.3451999},
 	Location = {Nashville, Tennessee, USA},
@@ -3935,7 +4244,8 @@
 %% Added to Sesame with no ack
 @inproceedings{cods2021b,
 	Author = {Patel, Vatsal and Kanani, Sarth and Pathak, Tapan and Patel, Pankesh and Ali, M Intizar and Breslin, John G},
-	Booktitle = {The ACM India Joint International Conference on Data Science and Management of Data (CODS-COMAD 2021)},
+	Booktitle = {The ACM India Joint International Conference on Data Science and Management of Data (CODS-COMAD 2021)}, 
+	Series = {The ACM India Joint International Conference on Data Science and Management of Data (CODS-COMAD 2021)},
 	Day = 4,
 	Doi = {10.1145/3430984.3430988},
 	Location = {Bangalore, India},
@@ -3947,7 +4257,8 @@
 
 @inproceedings{ikc_2015,
 	Author = {Kapitsaki, Georgia M and Breslin, John G},
-	Booktitle = {The 1st KEYSTONE Open Conference},
+	Booktitle = {The 1st KEYSTONE Open Conference}, 
+	Series = {The 1st KEYSTONE Open Conference},
 	Day = 8,
 	Location = {Coimbra, Portugal},
 	Month = sep,
@@ -3958,7 +4269,8 @@
 
 @inproceedings{isem2012c,
 	Author = {Sacco, Owen and Passant, Alexandre and Breslin, John G},
-	Booktitle = {The 8th International Conference on Semantic Systems (I-SEMANTICS 2012)},
+	Booktitle = {The 8th International Conference on Semantic Systems (I-SEMANTICS 2012)}, 
+	Series = {The 8th International Conference on Semantic Systems (I-SEMANTICS 2012)},
 	Day = 5,
 	Location = {Graz, Austria},
 	Month = sep,
@@ -3969,7 +4281,8 @@
 
 @inproceedings{icwe2010b,
 	Author = {Passant, Alexandre and Breslin, John G and Decker, Stefan},
-	Booktitle = {The 10th International Conference on Web Engineering (ICWE 2010)},
+	Booktitle = {The 10th International Conference on Web Engineering (ICWE 2010)}, 
+	Series = {The 10th International Conference on Web Engineering (ICWE 2010)},
 	Day = 8,
 	Month = jul,
 	Pages = {263--277},
@@ -3983,7 +4296,8 @@
 
 @inproceedings{sfsw2008b,
 	Author = {Passant, Alexandre and Hastrup, Tuukka and Boj{\=a}rs, Uldis and Breslin, John G},
-	Booktitle = {The 4th Workshop on Scripting for the Semantic Web (SFSW 2008) at the 5th European Semantic Web Conference (ESWC '08)},
+	Booktitle = {The 4th Workshop on Scripting for the Semantic Web (SFSW 2008) at the 5th European Semantic Web Conference (ESWC '08)}, 
+	Series = {The 4th Workshop on Scripting for the Semantic Web (SFSW 2008) at the 5th European Semantic Web Conference (ESWC '08)},
 	Date-Modified = {2018-03-14 14:35:16 +0000},
 	Day = 2,
 	Location = {Tenerife, Spain},
@@ -3996,7 +4310,8 @@
 
 @inproceedings{eswc2007b,
 	Author = {Passant, Alexandre and Boj{\=a}rs, Uldis and Giasson, Frederick and Breslin, John G},
-	Booktitle = {The 4th European Semantic Web Conference (ESWC '07)},
+	Booktitle = {The 4th European Semantic Web Conference (ESWC '07)}, 
+	Series = {The 4th European Semantic Web Conference (ESWC '07)},
 	Date-Modified = {2018-03-14 14:35:16 +0000},
 	Day = 4,
 	Location = {Innsbruck, Austria},
@@ -4006,9 +4321,12 @@
 	Type = {Demonstration Paper},
 	Year = 2007}
 
+%% Challenge Papers, Peer-Reviewed
+
 @inproceedings{ssa_2018,
 	Author = {Piao, Guangyuan and Breslin, John G},
-	Booktitle = {Semantic Web Challenges: Revised Selected Papers from the 5th Semantic Web Evaluation Challenge (SemWebEval 2018) at the 15th Extended Semantic Web Conference (ESWC 2018)},
+	Booktitle = {Semantic Web Challenges: Revised Selected Papers from the 5th Semantic Web Evaluation Challenge (SemWebEval 2018) at the 15th Extended Semantic Web Conference (ESWC 2018)}, 
+	Series = {Semantic Web Challenges: Revised Selected Papers from the 5th Semantic Web Evaluation Challenge (SemWebEval 2018) at the 15th Extended Semantic Web Conference (ESWC 2018)},
 	Day = 17,
 	Doi = {10.1007/978-3-030-00072-1_11},
 	Month = oct,
@@ -4024,7 +4342,8 @@
 
 @inproceedings{fiqa2018,
 	Author = {Piao, Guangyuan and Breslin, John G},
-	Booktitle = {Challenge on Financial Opinion Mining and Question Answering at the 27th Web Conference 2018 (TheWebConf 2018)},
+	Booktitle = {Challenge on Financial Opinion Mining and Question Answering at the 27th Web Conference 2018 (TheWebConf 2018)}, 
+	Series = {Challenge on Financial Opinion Mining and Question Answering at the 27th Web Conference 2018 (TheWebConf 2018)},
 	Day = 23,
 	Doi = {10.1145/3184558.3191829},
 	Location = {Lyon, France},
@@ -4036,7 +4355,8 @@
 
 @inproceedings{jist2015c,
 	Author = {Piao, Guangyuan and Breslin, John G},
-	Booktitle = {Challenge on Entity Type Prediction over Linked Data at the 5th Joint International Semantic Technology Conference (JIST 2015)},
+	Booktitle = {Challenge on Entity Type Prediction over Linked Data at the 5th Joint International Semantic Technology Conference (JIST 2015)}, 
+	Series = {Challenge on Entity Type Prediction over Linked Data at the 5th Joint International Semantic Technology Conference (JIST 2015)},
 	Day = 13,
 	Location = {Yichang, China},
 	Month = nov,
@@ -4048,7 +4368,8 @@
 
 @inproceedings{swc_2008,
 	Author = {Kim, Hak-Lae and Yang, Sung-Kwon and Jung, Ji-Woong and Kim, Kwang-Sub and Breslin, John G and Decker, Stefan and Kim, Hong-Gee},
-	Booktitle = {The 6th Semantic Web Challenge at the 7th International Semantic Web Conference (ISWC 2008)},
+	Booktitle = {The 6th Semantic Web Challenge at the 7th International Semantic Web Conference (ISWC 2008)}, 
+	Series = {The 6th Semantic Web Challenge at the 7th International Semantic Web Conference (ISWC 2008)},
 	Day = 28,
 	Month = oct,
 	Pdf = {http://www.johnbreslin.com/files/publications/20081028_swc_2008.pdf},
@@ -4058,7 +4379,8 @@
 
 @inproceedings{swc_2007,
 	Author = {Kim, Hak-Lae and Yang, Sung-Kwon and Song, Seung-Jae and Breslin, John G and Kim, Hong-Gee},
-	Booktitle = {The 5th Semantic Web Challenge at the 6th International Semantic Web Conference (ISWC 2007)},
+	Booktitle = {The 5th Semantic Web Challenge at the 6th International Semantic Web Conference (ISWC 2007)}, 
+	Series = {The 5th Semantic Web Challenge at the 6th International Semantic Web Conference (ISWC 2007)},
 	Day = 13,
 	Month = nov,
 	Pdf = {http://www.johnbreslin.com/files/publications/20071113_swc_2007.pdf},
@@ -4066,9 +4388,34 @@
 	Type = {Challenge Paper},
 	Year = 2007}
 
-@misc{iafd2009,
+%% Conference Abstracts, Peer-Reviewed
+
+@inproceedings{ieco2017,
+	Author = {Breslin, John G},
+	Booktitle = {The MIT Innovation Ecosystem (iEcosystem) Symposium 2017},
+	Series = {The MIT Innovation Ecosystem (iEcosystem) Symposium 2017},
+	Month = oct,
+	Note = {Best Poster Award},
+	Pdf = {http://www.johnbreslin.com/files/publications/20171012_ieco2017.pdf},
+	Title = {Galway City Innovation District},
+	Type = {Abstract},
+	Year = 2017}
+
+@inproceedings{mcgi2017,
+	Author = {Welsh, Dianne HB and Kaciak, Eugene and Breslin, John G},
+	Booktitle = {The 21st McGill International Entrepreneurship Conference}, 
+	Series = {The 21st McGill International Entrepreneurship Conference},
+	Month = aug,
+	Title = {Irish Women Entrepreneurs: Opportunities and Challenges for International Growth},
+	Type = {Abstract},
+	Year = 2017}
+
+%% Position Papers, Not Peer-Reviewed
+
+@inproceedings{iafd2009,
 	Author = {Passant, Alexandre and Hausenblas, Michael and O'Riain, Sean and Idehen, Kingsley and Breslin, John G and Decker, Stefan},
-	Booktitle = {W3C Workshop on Improving Access to Financial Data on the Web},
+	Booktitle = {W3C Workshop on Improving Access to Financial Data on the Web}, 
+	Series = {W3C Workshop on Improving Access to Financial Data on the Web},
 	Day = 6,
 	Http = {http://www.w3.org/2009/03/xbrl/soi/Passant.html},
 	Location = {Arlington, Virginia, USA},
@@ -4078,9 +4425,10 @@
 	Type = {Position Paper},
 	Year = 2009}
 
-@misc{fsn_2009a,
+@inproceedings{fsn_2009a,
 	Author = {Breslin, John G and Decker, Stefan and Hauswirth, Manfred and Hynes, Gear{\'o}id and Le Phuoc, Danh and Passant, Alexandre and Polleres, Axel and Rabsch, Cornelius and Reynolds, Vinny},
-	Booktitle = {W3C Workshop on the Future of Social Networking},
+	Booktitle = {W3C Workshop on the Future of Social Networking}, 
+	Series = {W3C Workshop on the Future of Social Networking},
 	Day = 15,
 	Http = {http://www.w3.org/2008/09/msnws/papers/sensors.html},
 	Location = {Barcelona, Spain},
@@ -4090,9 +4438,10 @@
 	Type = {Position Paper},
 	Year = 2009}
 
-@misc{fsn_2009b,
+@inproceedings{fsn_2009b,
 	Author = {Breslin, John G and Boj{\=a}rs, Uldis and Passant, Alexandre and Fern{\'a}ndez, Sergio and Decker, Stefan},
-	Booktitle = {W3C Workshop on the Future of Social Networking},
+	Booktitle = {W3C Workshop on the Future of Social Networking}, 
+	Series = {W3C Workshop on the Future of Social Networking},
 	Date-Modified = {2018-03-14 14:35:16 +0000},
 	Day = 15,
 	Http = {http://www.w3.org/2008/09/msnws/papers/sioc.html},
@@ -4103,9 +4452,10 @@
 	Type = {Position Paper},
 	Year = 2009}
 
-@misc{foaf2004c,
+@inproceedings{foaf2004c,
 	Author = {O'Murchu, Ina and Breslin, John G and Decker, Stefan},
-	Booktitle = {The 1st Workshop on Friend of a Friend, Social Networking and the (Semantic) Web (FOAF Galway)},
+	Booktitle = {The 1st Workshop on Friend of a Friend, Social Networking and the (Semantic) Web (FOAF Galway)}, 
+	Series = {The 1st Workshop on Friend of a Friend, Social Networking and the (Semantic) Web (FOAF Galway)},
 	Day = 1,
 	Http = {http://www.w3.org/2001/sw/Europe/events/foaf-galway/papers/pp/social_networking_portals/},
 	Location = {Galway, Ireland},
@@ -4116,9 +4466,10 @@
 	Type = {Position Paper},
 	Year = 2004}
 
-@misc{foaf2004b,
+@inproceedings{foaf2004b,
 	Author = {Breslin, John G},
-	Booktitle = {The 1st Workshop on Friend of a Friend, Social Networking and the (Semantic) Web (FOAF Galway)},
+	Booktitle = {The 1st Workshop on Friend of a Friend, Social Networking and the (Semantic) Web (FOAF Galway)}, 
+	Series = {The 1st Workshop on Friend of a Friend, Social Networking and the (Semantic) Web (FOAF Galway)},
 	Day = 1,
 	Http = {http://www.w3.org/2001/sw/Europe/events/foaf-galway/papers/pp/creating_a_social_network/},
 	Location = {Galway, Ireland},
@@ -4128,6 +4479,8 @@
 	Title = {Creating a Social Network from an Existing Bulletin Board Community},
 	Type = {Position Paper},
 	Year = 2004}
+
+%% Patent Applications
 
 @misc{uspt2012,
 	Assignee = {StreamGlider, Inc.},
@@ -4161,6 +4514,8 @@
 	Yearfiled = 2012,
 	Bdsk-Url-1 = {https://eregister.patentsoffice.ie/query/PTQuery.aspx}}
 
+%% PhD Theses
+
 @phdthesis{phd_2002,
 	Author = {Breslin, John G},
 	Month = apr,
@@ -4170,6 +4525,8 @@
 	Year = 2002}
 
 %% Add co-authored OntoCommons deliverables
+
+%% Technical Reports, Not Peer-Reviewed
 
 @techreport{arxi2022,
 	Author = {Sudharsan, Bharath and Sundaram, Dineshkumar and Patel, Pankesh and Breslin, John G and Ali, M Intizar and Dustdar, Schahram and Zomaya, Albert and Ranjan, Rajiv},
@@ -4190,16 +4547,6 @@
 	Pdf = {http://www.johnbreslin.com/files/publications/20201005_arxi2020.pdf},
 	Title = {Block Chain and Internet of Nano-Things for Optimizing Chemical Sensing in Smart Farming},
 	Year = 2020}
-
-@techreport{arxi2017c,
-	Author = {Piao, Guangyuan and Breslin, John G},
-	Day = 20,
-	Http = {https://arxiv.org/pdf/1712.07691.pdf},
-	Institution = {Insight SFI Research Centre for Data Analytics, National University of Ireland Galway},
-	Month = oct,
-	Pdf = {http://www.johnbreslin.com/files/publications/20171020_arxi2017.pdf},
-	Title = {Inferring User Interests in Microblogging Social Networks: A Survey},
-	Year = 2017}
 
 @techreport{arxi2017b,
 	Author = {Ruder, Sebastian and Ghaffari, Parsa and Breslin, John G},
@@ -4354,18 +4701,3 @@
 	Pdf = {http://www.johnbreslin.com/files/publications/20040404_deri2004c.pdf},
 	Title = {Semantic Web Portal: Community Portal Survey},
 	Year = 2004}
-
-@unpublished{ieco2017,
-	Author = {Breslin, John G},
-	Month = oct,
-	Note = {Best Poster Award, MIT Innovation Ecosystem (iEcosystem) Symposium},
-	Pdf = {http://www.johnbreslin.com/files/publications/20171012_ieco2017.pdf},
-	Title = {Galway City Innovation District},
-	Year = 2017}
-
-@unpublished{mcgi2017,
-	Author = {Welsh, Dianne HB and Kaciak, Eugene and Breslin, John G},
-	Month = aug,
-	Note = {The 21st McGill International Entrepreneurship Conference},
-	Title = {Irish Women Entrepreneurs: Opportunities and Challenges for International Growth},
-	Year = 2017}
