@@ -10,6 +10,8 @@
 %% grep "ATSIGNHERE" publications.bib | sed -e 's/_/J/g' | sed -e 's/{[[:alnum:]][[:alnum:]][[:alnum:]][[:alnum:]]/ /g' | sed -e 's/ATSIGNHERE//g' | sed -e 's/[[:alpha:]],//g' | sed -e 's/,//g' | uniq -c
 %% To count senior authors, try grep "{Breslin, John G" publications.bib | wc and grep "Breslin, John G}" publications.bib | wc
 
+%% Importing inproceedings to ORCID or Pure seems to need a Series as well as Booktitle, so might need to duplicate those line using a regular expression
+
 %% Books
 
 @book{oiic2023,
@@ -34,7 +36,7 @@
 	Year = 2021,
 	Bdsk-Url-1 = {https://irishacademicpress.ie/product/old-ireland-in-colour-2/}}
 
-%% Added to Sesame with grants Insight, Confirm and VistaMilk
+%% Added to Sesame 
 @book{oiic2020,
 	Author = {Breslin, John G and Buckley, Sarah-Anne},
 	Day = 7,
@@ -131,8 +133,9 @@
 
 %% Book Chapters, Peer-Reviewed
 
-%% Added to Sesame with grants CENTS, VistaMilk and Insight
+%% Added to Sesame 
 @inbook{wire2021,
+	Note = {Funded by the Government of Ireland (DTIF DT-2018-0040-C), Taighde {\'E}ireann - Research Ireland (16/RC/3835) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Thakur, Subhasis and Breslin, John G},
 	Booktitle = {Decentralized Content Vetting in Social Network with Blockchain}, 
 	Day = 1,
@@ -145,8 +148,9 @@
 	Title = {Wireless Blockchain: Principles, Technologies and Applications},
 	Year = 2021}
 
-%% Added to Sesame with grants VistaMilk and Insight
+%% Added to Sesame 
 @inbook{iucb2021,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (16/RC/3835) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Bandara, Kosala Y and Thakur, Subhasis and Breslin, John G},
 	Booktitle = {End-to-End Tracing and Congestion in a Blockchain: A Supply Chain Use Case in Hyperledger Fabric}, 
 	Day = 1,
@@ -367,12 +371,13 @@
 
 %% Journal Papers, Peer-Reviewed
 
-%% Add to Sesame with grants Cyber-Shock and Insight, get file
+%% Add to Sesame 
 %%	Day = ,
 %%	Doi = {},
 %%	Month = ,
-%%	Pdf = {http://www.johnbreslin.com/files/publications/20250000_supe2025.pdf},
+%%	Pdf = {http://www.johnbreslin.com/files/publications/.pdf},
 @article{supe2025,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (22/NCF/DR/11165) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Verma, Priyanka and O'Shea, Donna and Newe, Thomas and Mehta, Nakul and Bharot, Nitesh and Breslin, John G},
 	Issn = {09208542},
 	Journal = {Journal of Supercomputing},
@@ -380,12 +385,13 @@
 	Title = {ABIDS-VEM: Leveraging an Equilibrium Optimizer and Data Ramification in Association with Ensemble Learning for Anomaly-Based Intrusion Detection System},
 	Year = 2025}
 
-%% Add to Sesame with grants Insight and SustAIn, get file
+%% Add to Sesame 
 %%	Day = ,
 %%	Doi = {},
 %%	Month = ,
-%%	Pdf = {http://www.johnbreslin.com/files/publications/20250000_jait2025.pdf},
+%%	Pdf = {http://www.johnbreslin.com/files/publications/.pdf},
 @article{jait2025,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2) and Taighde {\'E}ireann - Research Ireland (21/FFP-A/9174)},
 	Author = {Ahmed, Hager and McCann, Michael and Breslin, John G and El-Sappagh, Shaker},
 	Issn = {17982340},
 	Journal = {Journal of Advances in Information Technology},
@@ -393,12 +399,13 @@
 	Title = {Beyond Classical Approaches: Fine-Tuning Clinical BERT Models on Structured Data for Alzheimer's Disease Diagnosis},
 	Year = 2025}
 
-%% Add to Sesame with grants CRT-AI and Insight, get file
+%% Add to Sesame 
 %%	Day = ,
 %%	Doi = {},
 %%	Month = ,
-%%	Pdf = {http://www.johnbreslin.com/files/publications/20250000_tai_2025.pdf},
+%%	Pdf = {http://www.johnbreslin.com/files/publications/.pdf},
 @article{tai_2025,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (18/CRT/6223) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Khan, M Jaleed and Breslin, John G and Curry, Edward},
 	Issn = {26914581},
 	Journal = {Transactions on Artificial Intelligence},
@@ -406,12 +413,13 @@
 	Title = {KnowZRel: Common Sense Knowledge-Based Zero-Shot Relationship Retrieval for Generalised Scene Graph Generation},
 	Year = 2025}
 
-%% Add to Sesame with grants Insight and SustAIn, get file
+%% Add to Sesame 
 %%	Day = ,
 %%	Doi = {},
 %%	Month = ,
-%%	Pdf = {http://www.johnbreslin.com/files/publications/20240000_exsy2024.pdf},
+%%	Pdf = {http://www.johnbreslin.com/files/publications/.pdf},
 @article{exsy2024,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2) and Taighde {\'E}ireann - Research Ireland (21/FFP-A/9174)},
 	Author = {Vidyarthi, Ankit and Verma, Priyanka and Bharot, Nitesh and Breslin, John G and O'Shea, Donna and Mishra, Anand K and Gupta, Deepak},
 	Issn = {14680394},
 	Journal = {Expert Systems},
@@ -419,8 +427,9 @@
 	Title = {Leveraging Transfer Learning Domain Adaptation Model with Federated Learning to Revolutionise Healthcare},
 	Year = 2024}
 
-%% Added to Sesame with grant Insight
+%% Added to Sesame 
 @article{eswa2024,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Usmani, Atiya and Alsamhi, Saeed H and Khan, M Jaleed and Breslin, John G and Curry, Edward},
 	Day = 7,
 	Doi = {10.1016/j.eswa.2024.125695},
@@ -432,8 +441,9 @@
 	Title = {MuSe-CarASTE: A Comprehensive Dataset for Aspect Sentiment Triplet Extraction in Automotive Review Videos},
 	Year = 2024}
 
-%% Added to Sesame with grants VistaMilk, Insight and SustAIn
+%% Added to Sesame 
 @article{acce2024c,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (16/RC/3835), Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2) and Taighde {\'E}ireann - Research Ireland (21/FFP-A/9174)},
 	Author = {De Silva, Anupa and Thakur, Subhasis and Breslin, John G},
 	Day = 9,
 	Doi = {10.1109/ACCESS.2024.3477258},
@@ -445,8 +455,9 @@
 	Title = {An Integrated Stablecoin and Subsidised Node Design for Payment Channel Networks},
 	Year = 2024}
 
-%% Added to Sesame with grants Insight, Confirm and OntoCommons
+%% Added to Sesame 
 @article{acce2024b,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2), Taighde {\'E}ireann - Research Ireland (16/RC/3918) and the European Union (Horizon 2020 958371)},
 	Author = {Yahya, Muhammad and Wahid, Abdul and Yang, Lan and Breslin, John G and Kharlamov, Evgeny and Ali, M Intizar},
 	Day = 27,
 	Doi = {10.1109/ACCESS.2024.3419911},
@@ -458,8 +469,9 @@
 	Title = {Link Prediction in Industrial Knowledge Graphs: A Case Study on Football Manufacturing},
 	Year = 2024}
 
-%% Added to Sesame with grants CRT-AI and Insight
+%% Added to Sesame 
 @article{acce2024a,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (18/CRT/6223) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Ward, Rory and Bigioi, Dan and Basak, Shubhajit and Breslin, John G and Corcoran, Peter},
 	Day = 27,
 	Doi = {10.1109/ACCESS.2024.3406249},
@@ -471,8 +483,9 @@
 	Title = {LatentColorization: Latent Diffusion-Based Speaker Video Colorization},
 	Year = 2024}
 
-%% Added to Sesame with grants CRT-AI and Insight
+%% Added to Sesame 
 @article{nai_2024,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (18/CRT/6223) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Khan, M Jaleed and Ilievski, Filip and Breslin, John G and Curry, Edward},
 	Day = 13,
 	Doi = {10.3233/NAI-240719},
@@ -484,8 +497,9 @@
 	Title = {A Survey of Neurosymbolic Visual Reasoning with Scene Graphs and Common Sense Knowledge},
 	Year = 2024}
 
-%% Added to Sesame with grants VistaMilk and Insight
+%% Added to Sesame 
 @article{dlt_2024,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (16/RC/3835) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {De Silva, Anupa and Thakur, Subhasis and Breslin, John G},
 	Day = 26,
 	Doi = {10.1145/3653681},
@@ -497,8 +511,9 @@
 	Title = {Card Payment Protocol for Cryptocurrencies with Payment Channel Network},
 	Year = 2024}
 
-%% Added to Sesame with grants SMART 4.0, Confirm and Insight
+%% Added to Sesame 
 @article{tce_2024b,
+	Note = {Funded by the European Union (MSCA 847577), Taighde {\'E}ireann - Research Ireland (16/RC/3918) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Verma, Priyanka and Bharot, Nitesh and Breslin, John G and O'Shea, Donna and Vidyarthi, Ankit and Gupta, Deepak},
 	Day = 1,
 	Doi = {10.1109/TCE.2023.3335385},
@@ -513,8 +528,9 @@
 	Volume = 70,
 	Year = 2024}
 
-%% Added to Sesame with grants Confirm, Insight and SMART 4.0
+%% Added to Sesame 
 @article{tce_2024a,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (16/RC/3918), Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2) and the European Union (MSCA 847577)},
 	Author = {Verma, Priyanka and Breslin, John G and O'Shea, Donna and Mehta, Nakul and Bharot, Nitesh and Vidyarthi, Ankit},
 	Day = 1,
 	Doi = {10.1109/TCE.2023.3319439},
@@ -529,8 +545,9 @@
 	Volume = 70,
 	Year = 2024}
 
-%% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame 
 @article{hcis2024,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (16/RC/3918) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Wahid, Abdul and Breslin, John G and Ali, M Intizar},
 	Day = 29,
 	Doi = {10.1007/s44230-023-00060-0},
@@ -555,8 +572,9 @@
 	Title = {Uncovering Collateral Damages and Advanced Defense Strategies in Cloud Environments against DDoS Attacks: A Comprehensive Review},
 	Year = 2024}
 
-%% Added to Sesame with grants CRT-AI and Insight
+%% Added to Sesame 
 @article{swj_2023b,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (18/CRT/6223) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Khan, M Jaleed and Breslin, John G and Curry, Edward},
 	Day = 13,
 	Doi = {10.3233/SW-233510},
@@ -568,8 +586,9 @@
 	Title = {NeuSyRE: Neuro-Symbolic Visual Understanding and Reasoning Framework Based on Scene Graph Enrichment},
 	Year = 2023}
 
-%% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame 
 @article{acce2023c,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (16/RC/3918) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Kafunah, Jefkine and Verma, Priyanka and Ali, M Intizar and Breslin, John G},
 	Day = 28,
 	Doi = {10.1109/ACCESS.2023.3337658},
@@ -582,8 +601,9 @@
 	Url = {https://ieeexplore.ieee.org/document/10145852},
 	Year = 2023}
 
-%% Added to Sesame with grants CENTS and Insight
+%% Added to Sesame 
 @article{sgse2023,
+	Note = {Funded by the Government of Ireland (DTIF DT-2018-0040-C) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Malik, Sweta and Thakur, Subhasis and Duffy, Maeve and Breslin, John G},
 	Day = 21,
 	Doi = {10.1007/s40866-023-00178-x},
@@ -610,8 +630,9 @@
 	Volume = 88,
 	Year = 2023}
 
-%% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame 
 @article{sust2023,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (16/RC/3918) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Abimannan, Satheesh and El-Alfy, El-Sayed M and Hussain, Shahid and Chang, Yue-Shan and Shukla, Saurabh and Satheesh, Dhivyadharsini and Breslin, John G},
 	Day = 20,
 	Doi = {10.3390/su151813951},
@@ -626,8 +647,9 @@
 	Volume = 15,
 	Year = 2023}
 
-%% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame 
 @article{acce2023b,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (16/RC/3918) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Irshad, Reyazur R and Hussain, Shahid and Hussain, Ihtisham and Ahmad, Ibrar and Yousif, Adil and Alwayle, Ibrahim M and Alattab, Ahmed A and Alalayah, Khaled M and Breslin, John G and Badr, Mohammed M and Rodrigues, Joel JPC},
 	Day = 22,
 	Doi = {10.1109/ACCESS.2023.3288815},
@@ -640,8 +662,9 @@
 	Url = {https://ieeexplore.ieee.org/document/10159381},
 	Year = 2023}
 
-%% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame 
 @article{indu2023,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (16/RC/3918) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Kafunah, Jefkine and Ali, M Intizar and Breslin, John G},
 	Day = 7,
 	Doi = {10.1109/TII.2023.3280566},
@@ -655,8 +678,9 @@
 	Url = {https://ieeexplore.ieee.org/document/10145852},
 	Year = 2023}
 
-%% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame 
 @article{its_2023,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (16/RC/3918) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Hussain, Shahid and Irshad, Reyazur R and Pallonetto, Fabiano and Jan, Qasim and Shukla, Saurabh and Thakur, Subhasis and Breslin, John G and Kim, Yun-Su and Rathore, M Ahmad and El-Sayed, Hesham},
 	Day = 18,
 	Doi = {10.1109/TITS.2023.3274608},
@@ -670,8 +694,9 @@
 	Url = {https://ieeexplore.ieee.org/document/10129128},
 	Year = 2023}
 
-%% Added to Sesame with grants Confirm, Insight and OntoCommons
+%% Added to Sesame 
 @article{swj_2023a,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (16/RC/3918), Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2) and the European Union (Horizon 2020 958371)},
 	Author = {Yahya, Muhammad and Ali, Aabid and Mehmood, Qaiser and Yang, Lan and Breslin, John G and Ali, M Intizar},
 	Day = 30,
 	Doi = {10.5281/zenodo.7779522},
@@ -685,8 +710,9 @@
 	Url = {https://www.semantic-web-journal.net/content/benchmark-dataset-knowledge-graph-generation-industry-40-production-lines-0},
 	Year = 2023}
 
-%% Added to Sesame with grants Confirm and OntoCommons
+%% Added to Sesame 
 @article{acce2023a,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (16/RC/3918) and the European Union (Horizon 2020 958371)},
 	Author = {Yahya, Muhammad and Zhou, Baifan and Breslin, John G and Ali, M Intizar and Kharlamov, Evgeny},
 	Day = 13,
 	Doi = {10.1109/ACCESS.2023.3267000},
@@ -709,8 +735,9 @@
 	Type = {Magazine Article},
 	Year = 2023}
 
-%% Added to Sesame with grants Confirm and SMART 4.0
+%% Added to Sesame 
 @article{sens2022,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (16/RC/3918) and the European Union (MSCA 847577)},
 	Author = {Verma, Priyanka and Breslin, John G and O'Shea, Donna},
 	Day = 19,
 	Doi = {10.3390/s22228974},
@@ -722,8 +749,9 @@
 	Url = {https://www.mdpi.com/1424-8220/22/22/8974},
 	Year = 2022}
 
-%% Added to Sesame with grants Confirm, Insight, VistaMilk and OntoCommons
+%% Added to Sesame 
 @article{fuin2022,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (16/RC/3918), Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2), Taighde {\'E}ireann - Research Ireland (16/RC/3835) and the European Union (Horizon 2020 958371)},
 	Author = {Rejeb, Abderahman and Keogh, John G and Martindale, Wayne and Dooley, Damion and Smart, Edward and Simske, Steven and Wamba, Samuel F and Breslin, John G and Bandara, Kosala Y and Thakur, Subhasis and Liu, Kelly and Crowley, Bridgette and Desaraju, Sowmya and Ospina, Angela and Bradau, Horia},
 	Day = 25,
 	Doi = {10.3390/fi14060161},
@@ -735,8 +763,9 @@
 	Url = {https://www.mdpi.com/1999-5903/14/6/161},
 	Year = 2022}
 
-%% Added to Sesame with grants CENTS, Insight, Confirm and VistaMilk
+%% Added to Sesame 
 @article{kisa2022,
+	Note = {Funded by the Government of Ireland (DTIF DT-2018-0040-C), Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2), Taighde {\'E}ireann - Research Ireland (16/RC/3918) and Taighde {\'E}ireann - Research Ireland (16/RC/3835)},
 	Author = {Hussain, Shahid and Thakur, Subhasis and Shukla, Saurabh and Breslin, John G and Jan, Qasim and Khan, Faisal and Kim, Yun-Su},
 	Day = 11,
 	Doi = {10.1016/j.jksuci.2022.04.019},
@@ -748,8 +777,9 @@
 	Url = {https://www.sciencedirect.com/science/article/pii/S1319157822001471},
 	Year = 2022}
 
-%% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame 
 @article{apsc2022a,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (16/RC/3918) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Wahid, Abdul and Breslin, John G and Ali, M Intizar},
 	Day = 22,
 	Doi = {10.3390/app12094221},
@@ -761,8 +791,9 @@
 	Url = {https://www.mdpi.com/2076-3417/12/9/4221},
 	Year = 2022}
 
-%% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame 
 @article{ic__2022b,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (16/RC/3918) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Sudharsan, Bharath and Breslin, John G and Tahir, Mehreen and Ali, M Intizar and Rana, Omer and Dustdar, Schahram and Ranjan, Rajiv},
 	Day = {30},
 	Doi = {10.1109/MIC.2021.3133552},
@@ -774,8 +805,9 @@
 	Title = {OTA-TinyML: Over the Air Deployment of TinyML Models and Execution on IoT Devices},
 	Year = 2022}
 
-%% Added to Sesame with grants CRT-AI and Insight
+%% Added to Sesame 
 @article{ic__2022a,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (18/CRT/6223) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Khan, M Jaleed and Breslin, John G and Curry, Edward},
 	Day = 20,
 	Doi = {10.1109/MIC.2022.3176500},
@@ -787,8 +819,9 @@
 	Title = {Common Sense Knowledge Infusion for Visual Understanding and Reasoning: Approaches, Challenges, and Applications},
 	Year = 2022}
 
-%% Added to Sesame with grants CENTS, Insight, Confirm and VistaMilk
+%% Added to Sesame 
 @article{ener2022,
+	Note = {Funded by the Government of Ireland (DTIF DT-2018-0040-C), Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2), Taighde {\'E}ireann - Research Ireland (16/RC/3918) and Taighde {\'E}ireann - Research Ireland (16/RC/3835)},
 	Author = {Hussain, Shahid and Thakur, Subhasis and Shukla, Saurabh and Breslin, John G and Jan, Qasim and Khan, Faisal and Ahmad, Ibrar and Marzband, Mousa and Madden, Michael G},
 	Day = {11},
 	Doi = {10.3390/en15041304},
@@ -799,8 +832,9 @@
 	Title = {A Heuristic Charging Cost Optimization Algorithm for Residential Charging of Electric Vehicles},
 	Year = 2022}
 
-%% Added to Sesame with grants CENTS and Insight
+%% Added to Sesame 
 @article{its_2022,
+	Note = {Funded by the Government of Ireland (DTIF DT-2018-0040-C) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Hussain, Shahid and Kim, Yun-Su and Thakur, Subhasis and Breslin, John G},
 	Day = {13},
 	Doi = {10.1109/TITS.2022.3140461},
@@ -812,8 +846,9 @@
 	Title = {Optimization of Waiting Time for Electric Vehicles Using a Fuzzy Inference System},
 	Year = 2022}
 	
-%% Add to Sesame with grants CENTS and Insight
+%% Add to Sesame 
 @article{snam2021,
+	Note = {Funded by the Government of Ireland (DTIF DT-2018-0040-C) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Thakur, Subhasis and Breslin, John G},
 	Day = 21,
 	Journal = {The Journal of Social Network Analysis and Mining},
@@ -825,8 +860,9 @@
 	Volume = 11,
 	Year = 2021}
 
-%% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame 
 @article{apsc2021c,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (16/RC/3918) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Kafunah, Jefkine and Ali, M Intizar and Breslin, John G},
 	Day = 20,
 	Doi = {10.3390/app11219783},
@@ -838,8 +874,9 @@
 	Url = {https://www.mdpi.com/2076-3417/11/21/9783},
 	Year = 2021}
 
-%% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame 
 @article{iot_2021b,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (16/RC/3918) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Sudharsan, Bharath and Breslin, John G and Ali, M Intizar},
 	Day = 19,
 	Doi = {10.1109/JIOT.2021.3098166},
@@ -850,8 +887,9 @@
 	Title = {ML-MCU: A Framework to Train ML Classifiers on MCU-based IoT Edge Devices},
 	Year = 2021}
 
-%% Added to Sesame with grants CENTS and Insight
+%% Added to Sesame 
 @article{iot_2021a,
+	Note = {Funded by the Government of Ireland (DTIF DT-2018-0040-C) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Shukla, Saurabh and Thakur, Subhasis and Hussain, Shahid and Breslin, John G and Jameel, Syed M},
 	Day = {29},
 	Doi = {10.1016/j.iot.2021.100422},
@@ -863,8 +901,9 @@
 	Url = {https://www.sciencedirect.com/science/article/pii/S2542660521000664},
 	Year = 2021}
 	
-%% Added to Sesame with grant Confirm
+%% Added to Sesame 
 @article{mna_2021,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (16/RC/3918)},
 	Author = {Almalki, Faris A and Alsamhi, Saeed H and Sahal, Radhya and Hassan, Jahan and Hawbani, Ammar and Rajput, Navin S and Saif, Abdu and Morgan, Jeff and Breslin, John G},
 	Day = {17},
 	Doi = {10.1007/s11036-021-01790-w},
@@ -876,8 +915,9 @@
 	Url = {https://link.springer.com/article/10.1007/s11036-021-01790-w},
 	Year = 2021}
 
-%% Added to Sesame with grants CENTS and Insight
+%% Added to Sesame 
 @article{ijep2021b,
+	Note = {Funded by the Government of Ireland (DTIF DT-2018-0040-C) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Malik, Sweta and Duffy, Maeve and Thakur, Subhasis and Hayes, Barry P and Breslin, John G},
 	Day = {21},
 	Doi = {10.1016/j.ijepes.2021.107865},
@@ -888,8 +928,9 @@
 	Title = {A Priority-Based Approach for Peer-to-Peer Energy Trading Using Cooperative Game Theory in Local Energy Community},
 	Year = 2021}
 
-%% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame 
 @article{apsc2021b,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (16/RC/3918) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Yahya, Muhammad and Breslin, John G and Ali, M Intizar},
 	Day = 31,
 	Doi = {10.3390/app11115110},
@@ -901,8 +942,9 @@
 	Url = {https://www.mdpi.com/2076-3417/11/11/5110},
 	Year = 2021}
 
-%% Added to Sesame with grants SMART 4.0, Confirm and Insight
+%% Added to Sesame 
 @article{ic__2021,
+	Note = {Funded by the European Union (MSCA 847577), Taighde {\'E}ireann - Research Ireland (16/RC/3918) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Sudharsan, Bharath and Patel, Pankesh and Breslin, John G and Ali, M Intizar and Mitra, Karan and Dustdar, Schahram and Rana, Omer and Jayaraman, Prem P and Ranjan, Rajiv},
 	Day = 1,
 	Doi = {10.1109/MIC.2021.3053711},
@@ -913,8 +955,9 @@
 	Title = {Toward Distributed, Global, Deep Learning Using IoT Devices},
 	Year = 2021}
 
-%% Added to Sesame with grants SMART 4.0 and Confirm
+%% Added to Sesame 
 @article{is__2021,
+	Note = {Funded by the European Union (MSCA 847577) and Taighde {\'E}ireann - Research Ireland (16/RC/3918)},
 	Author = {Ali, M Intizar and Patel, Pankesh and Breslin, John G and Harik, Rami and Sheth, Amit},
 	Day = 21,
 	Doi = {10.1109/MIS.2021.3062437},
@@ -928,8 +971,9 @@
 	Volume = 36,
 	Year = 2021}
 
-%% Added to Sesame with grant Confirm
+%% Added to Sesame 
 @article{jms_2021,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (16/RC/3918)},
 	Author = {Morgan, Jeff and Halton, Mark and Qiao, Yuansong and Breslin, John G},
 	Day = 7,
 	Doi = {10.1016/j.jmsy.2021.03.001},
@@ -941,8 +985,9 @@
 	Url = {https://www.sciencedirect.com/science/article/pii/S027861252100056X},
 	Year = 2021}
 
-%% Added to Sesame with grants CENTS and Insight
+%% Added to Sesame 
 @article{ijep2021a,
+	Note = {Funded by the Government of Ireland (DTIF DT-2018-0040-C) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Bandara, Kosala Y and Thakur, Subhasis and Breslin, John G},
 	Day = 2,
 	Doi = {10.1016/j.ijepes.2021.106766},
@@ -954,8 +999,9 @@
 	Url = {https://www.sciencedirect.com/science/article/pii/S0142061521000065},
 	Year = 2021}
 
-%% Added to Sesame with grant Confirm
+%% Added to Sesame 
 @article{apsc2021a,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (16/RC/3918)},
 	Author = {Sahal, Radhya and Alsamhi, Saeed H and Breslin, John G and Brown, Kenneth N and Ali, M Intizar},
 	Day = 2,
 	Doi = {10.3390/app11073186},
@@ -967,8 +1013,9 @@
 	Url = {https://www.mdpi.com/2076-3417/11/7/3186},
 	Year = 2021}
 
-%% Added to Sesame with grant Confirm
+%% Added to Sesame 
 @article{sens2021,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (16/RC/3918)},
 	Author = {Sahal, Radhya and Alsamhi, Saeed H and Breslin, John G and Ali, M Intizar},
     Day = 20,
     Doi = {10.3390/s21030694},
@@ -1003,8 +1050,9 @@
 	Title = {Big Data and Stream Processing Platforms for Industry 4.0: Requirements Mapping for Predictive Maintenance Use Case},
 	Year = 2019}
 
-%% Added to Sesame with grants Insight, Confirm, ACTIVAGE and SMARTER
+%% Added to Sesame 
 @article{sens2019,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2), Taighde {\'E}ireann - Research Ireland (16/RC/3918), the European Union (Horizon 2020 732679) and the European Union (MSCA 661180},
 	Author = {Quoc, Hoan Nguyen Mau and Serrano, Martin and Nguyen, Han Mau and Breslin, John G and Le Phuoc, Danh},
 	Day = 9,
 	Doi = {10.3390/s19204362},
@@ -1055,8 +1103,9 @@
 	Year = 2018,
 	Bdsk-Url-1 = {https://energyinformatics.springeropen.com/articles/10.1186/s42162-018-0057-8}}
 
-%% Added to Sesame with grant Insight
+%% Added to Sesame 
 @article{tesg2018,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (12/RC/2289)},
 	Author = {Thakur, Subhasis and Breslin, John G},
 	Day = 1,
 	Doi = {10.1007/s40866-018-0044-y},
@@ -1474,35 +1523,39 @@
 
 %% Conference Papers, Peer-Reviewed
 
-%% Add to Sesame with grants SustAIn and Insight, get DOI, get file
+%% Add to Sesame 
 %%	Day = ,
+%%	Doi = {},
 %%	Location = {},
 %%	Month = ,
-%%	Pdf = {http://www.johnbreslin.com/files/publications/20250000_ict42025.pdf},
+%%	Pdf = {http://www.johnbreslin.com/files/publications/.pdf},
 @inproceedings{ict42025,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (21/FFP-A/9174) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Iftikhar, Sunbal and Khan, Hassan and Breslin, John G and Davy, Steven},
 	Booktitle = {The 11th International Conference on ICT for Sustainability (ICT4S 2025)}, 
-	Series = {The 11th International Conference on ICT for Sustainability (ICT4S 2025)},
 	Title = {Sustainable AI: Sparse Backpropagation for Low-Carbon On-Device Training},
 	Year = 2025}
 	
-%% Add to Sesame with grants Insight and SustAIn, get DOI, get file
+%% Add to Sesame 
 %%	Day = ,
+%%	Doi = {},
 %%	Location = {},
 %%	Month = ,
-%%	Pdf = {http://www.johnbreslin.com/files/publications/20250000_embc2025.pdf},
+%%	Pdf = {http://www.johnbreslin.com/files/publications/.pdf},
 @inproceedings{embc2025,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2) and Taighde {\'E}ireann - Research Ireland (21/FFP-A/9174)},
 	Author = {Bharot, Nitesh and Verma, Priyanka and Singh, Karandeep and Chaurasia, Nisha and Breslin, John G},
 	Booktitle = {The 47th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC 2025)}, 
-	Series = {The 47th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC 2025)},
 	Title = {Boosting Skin Lesion Classification with a Class Expert DCGAN Framework for Skin Disease Detection},
 	Year = 2025}
 
-%% Add to Sesame with grants CRT-AI and Insight, get DOI, get file
+%% Add to Sesame 
+%%	Doi = {},
+%%	Pdf = {http://www.johnbreslin.com/files/publications/.pdf},
 @inproceedings{visa2025,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (18/CRT/6223) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Ward, Rory and Breslin, John G},
 	Booktitle = {The 20th International Conference on Computer Vision Theory and Applications (VISAPP 2025)}, 
-	Series = {The 20th International Conference on Computer Vision Theory and Applications (VISAPP 2025)},
 	Day = 28,
 	Location = {Porto, Portugal},
 	Month = feb,
@@ -1510,11 +1563,12 @@
 	Title = {FRCol: Face Recognition Based Speaker Video Colorization},
 	Year = 2025}
 
-%% Add to Sesame with grants ENEPORTS and Insight, get DOI
+%% Add to Sesame 
+%%	Doi = {},
 @inproceedings{comp2025,
+	Note = {Funded by Interreg Atlantic Area (EAPA\_0016/2022) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Bharot, Nitesh and Breslin, John G},
 	Booktitle = {The 13th Computing Conference (CC 2025)}, 
-	Series = {The 13th Computing Conference (CC 2025)},
 	Day = 19,
 	Location = {London, UK},
 	Month = jun,
@@ -1522,24 +1576,25 @@
 	Title = {A Transfer Learning-Enhanced TabNet-Based Intrusion Detection System for IoMT Security},
 	Year = 2025}
 
-%% Add to Sesame with grants CRT-AI and Insight, get DOI
+%% Add to Sesame 
+%%	Doi = {},
 @inproceedings{sac_2025,
+	Note = {Best Paper Award in the AI and Agents Theme, Funded by Taighde {\'E}ireann - Research Ireland (18/CRT/6223) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Ward, Rory and Dalal, Dhairya and Buitelaar, Paul and Breslin, John G},
 	Booktitle = {The 40th ACM/SIGAPP Symposium On Applied Computing (SAC 2025)}, 
-	Series = {The 40th ACM/SIGAPP Symposium On Applied Computing (SAC 2025)},
 	Day = 1,
 	Location = {Sicily, Italy},
 	Month = apr,
-	Note = {Best Paper Award in the AI and Agents Theme},
 	Pdf = {http://www.johnbreslin.com/files/publications/20250401_sac_2025.pdf},
 	Title = {RAGCol: RAG-Based Automatic Video Colorization Through Text Caption Generation and Knowledge Enrichment},
 	Year = 2025}
 
-%% Added to Sesame with grants Insight and SustAIn, get DOI
+%% Added to Sesame 
+%%	Doi = {},
 @inproceedings{icca2024,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2) and Taighde {\'E}ireann - Research Ireland (21/FFP-A/9174)},
 	Author = {Saleh, Hager and McCann, Michael and El-Sappagh, Shaker and Breslin, John G},
 	Booktitle = {The 6th IEEE International Conference on Computer and Applications (ICCA 2024)}, 
-	Series = {The 6th IEEE International Conference on Computer and Applications (ICCA 2024)},
 	Day = 19,
 	Location = {Cairo, Egypt},
 	Month = dec,
@@ -1547,11 +1602,12 @@
 	Title = {TransformerFusionNet: A Real-Time Multimodal Framework for ICU Heart Failure Mortality Prediction Using Big Data Streaming},
 	Year = 2024}
 
-%% Added to Sesame with grant Insight, get DOI
+%% Added to Sesame 
+%%	Doi = {},
 @inproceedings{icce2024,
-	Author = {Saleh, Hager and Alsamhi, Saeed H and McCann, Michael and \'{O} Brolch\'{a}in, Niall and Breslin, John G},
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
+	Author = {Saleh, Hager and Alsamhi, Saeed H and McCann, Michael and {\'O} Brolch{\'a}in, Niall and Breslin, John G},
 	Booktitle = {The 10th International Conference on Computing, Engineering and Design (ICCED 2024)}, 
-	Series = {The 10th International Conference on Computing, Engineering and Design (ICCED 2024)},
 	Day = 11,
 	Location = {Jeddah, Saudi Arabia},
 	Month = dec,
@@ -1559,11 +1615,11 @@
 	Title = {AI Meets Climate: Advanced Transformer Multimodal Model for Early and Accurate Plant Disease Diagnosis},
 	Year = 2024}
 
-%% Added to Sesame with grants SustAIn, VistaMilk and Insight
+%% Added to Sesame 
 @inproceedings{delt2024b,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (21/FFP-A/9174), Taighde {\'E}ireann - Research Ireland (16/RC/3835) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Thakur, Subhasis and Breslin, John G},
 	Booktitle = {The 5th International Conference on Deep Learning Theory and Applications (DeLTA 2024)}, 
-	Series = {The 5th International Conference on Deep Learning Theory and Applications (DeLTA 2024)},
 	Day = 10,
 	Doi = {10.1007/978-3-031-66705-3_12},
 	Location = {Dijon, France},
@@ -1572,11 +1628,11 @@
 	Title = {Efficient Deep Neural Network Verification with QAP-based zkSNARK},
 	Year = 2024}
 
-%% Added to Sesame with grants SustAIn, VistaMilk and Insight
+%% Added to Sesame 
 @inproceedings{delt2024a,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (21/FFP-A/9174), Taighde {\'E}ireann - Research Ireland (16/RC/3835) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Thakur, Subhasis and Breslin, John G},
 	Booktitle = {The 5th International Conference on Deep Learning Theory and Applications (DeLTA 2024)}, 
-	Series = {The 5th International Conference on Deep Learning Theory and Applications (DeLTA 2024)},
 	Day = 10,
 	Doi = {10.1007/978-3-031-66694-0_15},
 	Location = {Dijon, France},
@@ -1585,11 +1641,11 @@
 	Title = {Secure Coalition Formation for Federated Machine Learning},
 	Year = 2024}
 
-%% Added to Sesame with grants SustAIn, VistaMilk and Insight
+%% Added to Sesame 
 @inproceedings{inte2024,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (21/FFP-A/9174), Taighde {\'E}ireann - Research Ireland (16/RC/3835) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Thakur, Subhasis and Breslin, John G},
 	Booktitle = {The 10th Intelligent Systems Conference (IntelliSys 2024)}, 
-	Series = {The 10th Intelligent Systems Conference (IntelliSys 2024)},
 	Day = 29,
 	Doi = {10.1007/978-3-031-66336-9_6},
 	Location = {Amsterdam, The Netherlands},
@@ -1598,11 +1654,11 @@
 	Title = {Verification of Deep Neural Networks with KGZ-based zkSNARK},
 	Year = 2024}
 
-%% Added to Sesame with grants VistaMilk and Insight
+%% Added to Sesame 
 @inproceedings{apcc2024,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (16/RC/3835) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {De Silva, Anupa and Thakur, Subhasis and Breslin, John G},
 	Booktitle = {The 29th IEEE Asia Pacific Conference on Communications (APCC 2024)}, 
-	Series = {The 29th IEEE Asia Pacific Conference on Communications (APCC 2024)},
 	Day = 6,
 	Doi = {10.1109/APCC62576.2024.10768001},
 	Location = {Bali, Indonesia},
@@ -1611,11 +1667,11 @@
 	Title = {xPayments: Cross-Domain End-to-End Payment Protocol using Payment Channel Network},
 	Year = 2024}
 
-%% Added to Sesame with grant Insight
+%% Added to Sesame 
 @inproceedings{soft2024,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Bharot, Nitesh and Breslin, John G and Verma, Priyanka},
 	Booktitle = {The 32nd International Conference on Software, Telecommunications and Computer Networks (SoftCOM 2024)}, 
-	Series = {The 32nd International Conference on Software, Telecommunications and Computer Networks (SoftCOM 2024)},
 	Day = 27,
 	Doi = {10.23919/SoftCOM62040.2024.10721868},
 	Location = {Split, Croatia},
@@ -1624,11 +1680,11 @@
 	Title = {Revolutionizing Human Activity Recognition in Healthcare: Harnessing Red Deer for Feature Selection and Focal Loss-Based MLP for Classification},
 	Year = 2024}
 
-%% Add to Sesame with grants SecMC, Confirm and Insight
+%% Add to Sesame 
 @inproceedings{anti2023,
+	Note = {Funded by G{\'E}ANT (SER-23-068\_GIP), Taighde {\'E}ireann - Research Ireland (16/RC/3918) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Bharot, Nitesh and Breslin, John G},
 	Booktitle = {The 3rd International Conference on Advanced Network Technologies and Intelligent Computing (ANTIC 2023)}, 
-	Series = {The 3rd International Conference on Advanced Network Technologies and Intelligent Computing (ANTIC 2023)},
 	Day = 21,
 	Location = {Varanasi, India},
 	Month = dec,
@@ -1636,11 +1692,11 @@
 	Title = {Intrusion Watchdog: Enhancing Intrusion Detection System with Machine Learning using 3-way Feature Selection Technique},
 	Year = 2023}
 
-%% Add to Sesame with grants FAME and Insight
+%% Add to Sesame 
 @inproceedings{icml2023,
+	Note = {Funded by the European Union (Horizon Europe 101092639) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Chandaliya, Rishabh and Timilsina, Mohan and Breslin, John G and Serrano, Martin},
 	Booktitle = {The 22nd IEEE International Conference on Machine Learning and Applications (ICMLA 2023)},
-	Series = {The 22nd IEEE International Conference on Machine Learning and Applications (ICMLA 2023)},
 	Day = 16,
 	Doi = {10.1109/ICMLA58977.2023.00209},
 	Location = {Florida, USA},
@@ -1650,11 +1706,11 @@
 	Title = {Towards Graph-Based Semi-Supervised Learning on Audio Embeddings for Label Classification},
 	Year = 2023}
 
-%% Add to Sesame with grants Confirm and Insight
+%% Add to Sesame 
 @inproceedings{ism_2023,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (16/RC/3918) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Bharot, Nitesh and Verma, Priyanka and Soderi, Mirco and Breslin, John G},
 	Booktitle = {The 5th International Conference on Industry 4.0 and Smart Manufacturing (ISM 2023)}, 
-	Series = {The 5th International Conference on Industry 4.0 and Smart Manufacturing (ISM 2023)},
 	Day = 23,
 	Location = {Lisbon, Portugal},
 	Month = nov,
@@ -1663,11 +1719,11 @@
 	Title = {DQ-DeepLearn: Data Quality Driven Deep Learning Approach for Enhanced Predictive Maintenance in Smart Manufacturing},
 	Year = 2023}
 
-%% Added to Sesame with grant Insight
+%% Added to Sesame 
 @inproceedings{icsc2023,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Usmani, Atiya and Alsamhi, Saeed H and Breslin, John G and Curry, Edward},
 	Booktitle = {The 17th IEEE International Conference on Semantic Computing (ICSC 2023)}, 
-	Series = {The 17th IEEE International Conference on Semantic Computing (ICSC 2023)},
 	Day = 1,
 	Doi = {10.1109/ICSC56153.2023.00066},
 	Location = {Laguna Hills, California, USA},
@@ -1677,11 +1733,10 @@
 	Title = {A Novel Framework for Constructing Multimodal Knowledge Graph from MuSe-CaR Video Reviews},
 	Year = 2023}
 
-%% Added to Sesame with no ack
+%% Added to Sesame
 @inproceedings{mind2022,
 	Author = {Verma, Priyanka and Breslin, John G and O'Shea, Donna and Pateriya, R K},
 	Booktitle = {The 4th International Conference on Machine Learning, Image Processing, Network Security and Data Sciences (MIND 2022)}, 
-	Series = {The 4th International Conference on Machine Learning, Image Processing, Network Security and Data Sciences (MIND 2022)},
 	Day = 21,
 	Doi = {10.1007/978-3-031-24367-7_32},
 	Location = {Online},
@@ -1690,11 +1745,10 @@
 	Title = {A Stacked Ensemble Method with Adaptive Attribute Selection to Detect DDoS Attack in Cloud-Assisted WBAN},
 	Year = 2022}
 
-%% Added to Sesame with no ack
+%% Added to Sesame
 @inproceedings{ism_2022,
 	Author = {Wahid, Abdul and Yahya, Muhammad and Breslin, John G and Ali, M Intizar},
 	Booktitle = {The 4th International Conference on Industry 4.0 and Smart Manufacturing (ISM 2022)}, 
-	Series = {The 4th International Conference on Industry 4.0 and Smart Manufacturing (ISM 2022)},
 	Day = 2,
 	Doi = {10.1016/j.procs.2022.12.241},
 	Location = {Linz, Austria},
@@ -1703,11 +1757,11 @@
 	Title = {Self-Attention Transformer-Based Architecture for Remaining Useful Life Estimation of Complex Machines},
 	Year = 2022}
 
-%% Added to Sesame with grant Confirm
+%% Added to Sesame 
 @inproceedings{isol2022,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (16/RC/3918)},
 	Author = {Soderi, Mirco and Breslin, John G},
 	Booktitle = {The 11th International Symposium on Leveraging Applications of Formal Methods (ISOLA 2022)}, 
-	Series = {The 11th International Symposium on Leveraging Applications of Formal Methods (ISOLA 2022)},
 	Day = 22,
 	Doi = {10.1007/978-3-031-19762-8_18},
 	Location = {Rhodes, Greece},
@@ -1717,24 +1771,23 @@
 	Title = {Crazy Nodes: Towards Ultimate Flexibility in Ubiquitous Big Data Stream Engineering, Visualisation, and Analytics, in Smart Factories},
 	Year = 2022}
 
-%% Added to Sesame with grants CRT-AI and Insight
+%% Added to Sesame 
 @inproceedings{imvi2022,
+	Note = {Best Oral Presentation Award, Funded by Taighde {\'E}ireann - Research Ireland (18/CRT/6223) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Ward, Rory and Breslin, John G},
 	Booktitle = {The 24th Irish Machine Vision and Image Processing Conference (IMVIP 2022)}, 
-	Series = {The 24th Irish Machine Vision and Image Processing Conference (IMVIP 2022)},
 	Day = 31,
 	Location = {Belfast, Northern Ireland},
 	Month = aug,
-	Note = {Best Oral Presentation Award},
 	Pdf = {http://www.johnbreslin.com/files/publications/20220831_imvi2022.pdf},
 	Title = {Towards Temporal Stability in Automatic Video Colourisation},
 	Year = 2022}
 	
-%% Added to Sesame with grant Insight
+%% Added to Sesame 
 @inproceedings{bloc2022e,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Thakur, Subhasis and Breslin, John G},
 	Booktitle = {The 4th International Congress on Blockchain and Applications (BLOCKCHAIN 2022)}, 
-	Series = {The 4th International Congress on Blockchain and Applications (BLOCKCHAIN 2022)},
 	Day = 13,
 	Doi = {10.1007/978-3-031-21229-1_3},
 	Location = {L'Aquila, Italy},
@@ -1743,11 +1796,11 @@
 	Title = {A Model of Decentralised Distribution Line Using Layer 2 Blockchains},
 	Year = 2022}
 
-%% Added to Sesame with grants VistaMilk and Insight
+%% Added to Sesame 
 @inproceedings{bloc2022d,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (16/RC/3835) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {De Silva, Anupa and Thakur, Subhasis and Breslin, John G},
 	Booktitle = {The 4th International Congress on Blockchain and Applications (BLOCKCHAIN 2022)}, 
-	Series = {The 4th International Congress on Blockchain and Applications (BLOCKCHAIN 2022)},
 	Day = 13,
 	Doi = {10.1007/978-3-031-21229-1_9},
 	Location = {L'Aquila, Italy},
@@ -1756,11 +1809,11 @@
 	Title = {Profitable Fee Controller for Payment Channel Networks},
 	Year = 2022}
 
-%% Added to Sesame with grant Insight
+%% Added to Sesame 
 @inproceedings{bloc2022c,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Thakur, Subhasis and Breslin, John G},
 	Booktitle = {The 4th International Congress on Blockchain and Applications (BLOCKCHAIN 2022)}, 
-	Series = {The 4th International Congress on Blockchain and Applications (BLOCKCHAIN 2022)},
 	Day = 13,
 	Doi = {10.1007/978-3-031-21229-1_20},
 	Location = {L'Aquila, Italy},
@@ -1769,11 +1822,11 @@
 	Title = {Decentralised Argumentation for Data Vetting in Blockchains},
 	Year = 2022}
 
-%% Added to Sesame with grant Insight
+%% Added to Sesame 
 @inproceedings{bloc2022b,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Thakur, Subhasis and Breslin, John G and Malik, Sweta},
 	Booktitle = {The 4th International Congress on Blockchain and Applications (BLOCKCHAIN 2022)}, 
-	Series = {The 4th International Congress on Blockchain and Applications (BLOCKCHAIN 2022)},
 	Day = 13,
 	Doi = {10.1007/978-3-031-21229-1_27},
 	Location = {L'Aquila, Italy},
@@ -1782,11 +1835,11 @@
 	Title = {Privacy-Preserving Energy Trade Using Double Auction in Blockchain Offline Channels},
 	Year = 2022}
 
-%% Added to Sesame with grants CENTS and Insight
+%% Added to Sesame 
 @inproceedings{bloc2022a,
+	Note = {Funded by the Government of Ireland (DTIF DT-2018-0040-C) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Shukla, Saurabh and Thakur, Subhasis and Hussain, Shahid and Breslin, John G and Jameel, Syed M},
 	Booktitle = {The 4th International Congress on Blockchain and Applications (BLOCKCHAIN 2022)}, 
-	Series = {The 4th International Congress on Blockchain and Applications (BLOCKCHAIN 2022)},
 	Day = 13,
 	Doi = {10.1007/978-3-031-21229-1_37},
 	Location = {L'Aquila, Italy},
@@ -1795,11 +1848,10 @@
 	Title = {Identification of False Stealthy Data Injection Attacks in Smart Meters Using Machine Learning and Blockchain},
 	Year = 2022}
 
-%% Added to Sesame with no ack
+%% Added to Sesame
 @inproceedings{ekno2022b,
 	Author = {Thakur, Subhasis and Breslin, John G},
 	Booktitle = {The 14th International Conference on Information, Process, and Knowledge Management (eKNOW 2022)}, 
-	Series = {The 14th International Conference on Information, Process, and Knowledge Management (eKNOW 2022)},
 	Day = {26},
 	Location = {Porto, Portugal},
 	Month = jun,
@@ -1808,11 +1860,11 @@
 	Title = {A Decentralised Reputation Management System for Internet of Things Data Marketplace},
 	Year = 2022}
 
-%% Added to Sesame with grants CENTS and Insight
+%% Added to Sesame 
 @inproceedings{ekno2022a,
+	Note = {Funded by the Government of Ireland (DTIF DT-2018-0040-C) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Malik, Sweta and Thakur, Subhasis and Breslin, John G and Duffy, Maeve},
 	Booktitle = {The 14th International Conference on Information, Process, and Knowledge Management (eKNOW 2022)}, 
-	Series = {The 14th International Conference on Information, Process, and Knowledge Management (eKNOW 2022)},
 	Day = {26},
 	Location = {Porto, Portugal},
 	Month = jun,
@@ -1820,11 +1872,11 @@
 	Title = {Blockchain-Based Decentralized Home Energy Management System Using Double Auction},
 	Year = 2022}
 
-%% Added to Sesame with grants CRT-AI and Insight
+%% Added to Sesame 
 @inproceedings{eswc2022a,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (18/CRT/6223) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Khan, M Jaleed and Breslin, John G and Curry, Edward},
 	Booktitle = {The 19th Extended Semantic Web Conference (ESWC 2022)}, 
-	Series = {The 19th Extended Semantic Web Conference (ESWC 2022)},
 	Day = 29,
 	Doi = {10.1007/978-3-031-06981-9_6},
 	Location = {Hersonissos, Greece},
@@ -1833,11 +1885,11 @@
 	Title = {Expressive Scene Graph Generation Using Commonsense Knowledge Infusion for Visual Understanding and Reasoning},
 	Year = 2022}
 
-%% Added to Sesame with grants CENTS and Insight
+%% Added to Sesame 
 @inproceedings{enrc2022,
+	Note = {Funded by the Government of Ireland (DTIF DT-2018-0040-C) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Malik, Sweta and Thakur, Subhasis and Duffy, Maeve and Breslin, John G},
 	Booktitle = {The 7th IEEE International Energy Conference (ENERGYCON 2022)}, 
-	Series = {The 7th IEEE International Energy Conference (ENERGYCON 2022)},
 	Day = {9},
 	Doi = {10.1109/ENERGYCON53164.2022.9830460},
 	Location = {Riga, Latvia},
@@ -1846,11 +1898,11 @@
 	Title = {Double Auction Mechanisms for Peer-to-Peer Energy Trading: A Comparative Analysis},
 	Year = 2022}
 
-%% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame 
 @inproceedings{sac_2022,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (16/RC/3918) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Sudharsan, Bharath and Breslin, John G and Ali, M Intizar and Corcoran, Peter and Ranjan, Rajiv},
 	Booktitle = {The 37th ACM/SIGAPP Symposium on Applied Computing (SAC 2022)}, 
-	Series = {The 37th ACM/SIGAPP Symposium on Applied Computing (SAC 2022)},
 	Day = 25,
 	Doi = {10.1145/3477314.3507135},
 	Location = {Online},
@@ -1859,11 +1911,11 @@
 	Title = {ElastiQuant: Elastic Quantization Strategy for Communication Efficient Distributed Machine Learning in IoT},
 	Year = 2022}
 
-%% Added to Sesame with grant Confirm
+%% Added to Sesame 
 @inproceedings{sami2022,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (16/RC/3918)},
 	Author = {Soderi, Mirco and Kamath, Vignesh and Morgan, Jeff and Breslin, John G},
 	Booktitle = {The 20th IEEE Jubilee World Symposium on Applied Machine Intelligence and Informatics (SAMI 2022)}, 
-	Series = {The 20th IEEE Jubilee World Symposium on Applied Machine Intelligence and Informatics (SAMI 2022)},
 	Day = 2,
 	Doi = {10.1109/SAMI54271.2022.9780768},
 	Location = {Online},
@@ -1873,11 +1925,11 @@
 	Title = {Advanced Analytics as a Service in Smart Factories},
 	Year = 2022}
 
-%% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame 
 @inproceedings{bigd2021b,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (16/RC/3918) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Sudharsan, Bharath and Breslin, John G and Ali, M Intizar},
 	Booktitle = {The 2021 IEEE International Conference on Big Data (BigData 2021)}, 
-	Series = {The 2021 IEEE International Conference on Big Data (BigData 2021)},
 	Day = 15,
 	Doi = {10.1109/BigData52589.2021.9671765},
 	Location = {Online},
@@ -1888,11 +1940,11 @@
 	Title = {Imbal-OL: Online Machine Learning from Imbalanced Data Streams in Real-world IoT},
 	Year = 2021}
 
-%% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame 
 @inproceedings{bigd2021a,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (16/RC/3918) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Sudharsan, Bharath and Yadav, Piyush and Nguyen, Duc-Duy and Kafunah, Jefkine and Breslin, John G},
 	Booktitle = {The 2021 IEEE International Conference on Big Data (BigData 2021)}, 
-	Series = {The 2021 IEEE International Conference on Big Data (BigData 2021)},
 	Day = 15,
 	Doi = {10.1109/BigData52589.2021.9671901},
 	Location = {Online},
@@ -1903,11 +1955,11 @@
 	Title = {Ensemble Methods for Collective Intelligence: Combining Ubiquitous ML Models in IoT},
 	Year = 2021}
 
-%% Added to Sesame with grant Confirm
+%% Added to Sesame 
 @inproceedings{iota2021,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (16/RC/3918)},
 	Author = {Soderi, Mirco and Kamath, Vignesh and Morgan, Jeff and Breslin, John G},
 	Booktitle = {The 2021 IEEE International Conference on Internet of Things and Intelligence Systems (IoTaIS 2021)}, 
-	Series = {The 2021 IEEE International Conference on Internet of Things and Intelligence Systems (IoTaIS 2021)},
 	Day = 24,
 	Doi = {10.1109/IoTaIS53735.2021.9628434},
 	Location = {Online},
@@ -1917,11 +1969,11 @@
 	Title = {Ubiquitous System Integration as a Service in Smart Factories},
 	Year = 2021}
 	
-%% Added to Sesame with grants VistaMilk and Public Service Fellowship
+%% Added to Sesame 
 @inproceedings{isnc2021,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (16/RC/3835) and Taighde {\'E}ireann - Research Ireland (19/PSF/7603)},
 	Author = {Bandara, Kosala Y and Breslin, John G},
 	Booktitle = {The 2021 International Symposium on Networks, Computers and Communications (ISNCC 2021)}, 
-	Series = {The 2021 International Symposium on Networks, Computers and Communications (ISNCC 2021)},
 	Day = 1,
 	Doi = {10.1109/ISNCC52172.2021.9615670},
 	Location = {Dubai, United Arab Emirates},
@@ -1931,11 +1983,11 @@
 	Url = {https://www.ops.gov.ie/app/uploads/2021/12/IEEE_ISNCC_2021__1570726476.pdf},
 	Year = 2021}
 
-%% Added to Sesame with grants CENTS and Insight
+%% Added to Sesame 
 @inproceedings{bloc2021b,
+	Note = {Funded by the Government of Ireland (DTIF DT-2018-0040-C) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Shukla, Saurabh and Thakur, Subhasis and Hussain, Shahid and Breslin, John G},
 	Booktitle = {The 3rd International Congress on Blockchain and Applications (BLOCKCHAIN 2021)}, 
-	Series = {The 3rd International Congress on Blockchain and Applications (BLOCKCHAIN 2021)},
 	Day = 6,
 	Doi = {10.1007/978-3-030-86162-9_2},
 	Location = {Salamanca, Spain},
@@ -1944,11 +1996,11 @@
 	Title = {A Blockchain-Enabled Fog Computing Model for Peer-to-Peer Energy Trading in Smart Grid},
 	Year = 2021}
 
-%% Added to Sesame with grants VistaMilk and Insight
+%% Added to Sesame 
 @inproceedings{bloc2021a,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (16/RC/3835) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {De Silva, Anupa and Thakur, Subhasis and Breslin, John G},
 	Booktitle = {The 3rd International Congress on Blockchain and Applications (BLOCKCHAIN 2021)}, 
-	Series = {The 3rd International Congress on Blockchain and Applications (BLOCKCHAIN 2021)},
 	Day = 6,
 	Doi = {10.1007/978-3-030-86162-9_22},
 	Location = {Salamanca, Spain},
@@ -1957,11 +2009,11 @@
 	Title = {Towards Micropayment for Intermediary Based Trading},
 	Year = 2021}
 
-%% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame 
 @inproceedings{uic_2021b,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (16/RC/3918) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Sudharsan, Bharath and Breslin, John G and Ali, M Intizar},
 	Booktitle = {The 18th IEEE International Conference on Ubiquitous Intelligence and Computing (UIC 2021)}, 
-	Series = {The 18th IEEE International Conference on Ubiquitous Intelligence and Computing (UIC 2021)},
 	Day = 18,
 	Location = {Atlanta, Georgia, USA},
 	Month = oct,
@@ -1969,11 +2021,11 @@
 	Title = {Globe2Train: A Framework for Distributed ML Model Training Using IoT Devices Across the Globe},
 	Year = 2021}
 
-%% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame 
 @inproceedings{uic_2021a,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (16/RC/3918) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Sudharsan, Bharath and Yadav, Piyush and Breslin, John G and Ali, M Intizar},
 	Booktitle = {The 18th IEEE International Conference on Ubiquitous Intelligence and Computing (UIC 2021)}, 
-	Series = {The 18th IEEE International Conference on Ubiquitous Intelligence and Computing (UIC 2021)},
 	Day = 18,
 	Location = {Atlanta, Georgia, USA},
 	Month = oct,
@@ -1981,11 +2033,11 @@
 	Title = {Train++: An Incremental ML Model Training Algorithm to Create Self-Learning IoT Devices},
 	Year = 2021}
   
-%% Added to Sesame with grants CENTS and Insight
+%% Added to Sesame 
 @inproceedings{lod_2021,
+	Note = {Funded by the Government of Ireland (DTIF DT-2018-0040-C) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Shukla, Saurabh and Thakur, Subhasis and Breslin, John G},
 	Booktitle = {The 7th International Conference on Machine Learning, Optimization and Data Science (LOD 2021)}, 
-	Series = {The 7th International Conference on Machine Learning, Optimization and Data Science (LOD 2021)},
 	Day = 19,
 	Doi = {10.1007/978-3-030-95467-3_13},
 	Location = {Grasmere, United Kingdom},
@@ -1994,11 +2046,11 @@
 	Title = {Anomaly Detection in Smart Grid Network Using FC-Based Blockchain Model and Linear SVM},
 	Year = 2021}
 
-%% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame 
 @inproceedings{ecml2021,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (16/RC/3918) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Sudharsan, Bharath and Patel, Pankesh and Breslin, John G and Ali, M Intizar},
 	Booktitle = {The European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML-PKDD 2021)}, 
-	Series = {The European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML-PKDD 2021)},
 	Day = 13,
 	Location = {Online},
 	Month = sep,
@@ -2006,11 +2058,11 @@
 	Title = {Enabling Machine Learning on the Edge Using SRAM Conserving Efficient Neural Networks Execution Approach},
 	Year = 2021}
 
-%% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame 
 @inproceedings{scc_2021,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (16/RC/3918) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Sudharsan, Bharath and Yadav, Piyush and Breslin, John G and Ali, M Intizar},
 	Booktitle = {The 2021 IEEE International Conference on Services Computing (SCC 2021)}, 
-	Series = {The 2021 IEEE International Conference on Services Computing (SCC 2021)},
 	Day = 8,
 	Location = {Online},
 	Month = sep,
@@ -2018,11 +2070,11 @@
 	Title = {An SRAM Optimized Approach for Constant Memory Consumption and Ultra-fast Execution of ML Classifiers on TinyML Hardware},
 	Year = 2021}
 
-%% Added to Sesame with grants CENTS and Insight
+%% Added to Sesame 
 @inproceedings{csr_2021,
+	Note = {Funded by the Government of Ireland (DTIF DT-2018-0040-C) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Shukla, Saurabh and Thakur, Subhasis and Breslin, John G},
 	Booktitle = {The 2021 IEEE International Conference on Cyber Security and Resilience (CSR 2021)}, 
-	Series = {The 2021 IEEE International Conference on Cyber Security and Resilience (CSR 2021)},
 	Day = 26,
 	Doi = {10.1109/CSR51186.2021.9527947},
 	Location = {Rhodes, Greece},
@@ -2031,11 +2083,11 @@
 	Title = {Secure Communication in Smart Meters Using Elliptic Curve Cryptography and Digital Signature Algorithm},
 	Year = 2021}
 
-%% Added to Sesame with grants CENTS and Insight
+%% Added to Sesame 
 @inproceedings{powe2021,
+	Note = {Funded by the Government of Ireland (DTIF DT-2018-0040-C) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Malik, Sweta and Duffy, Maeve and Thakur, Subhasis and Breslin, John G},
 	Booktitle = {The 7th IEEE International Energy Conference (ENERGYCON 2022)}, 
-	Series = {The 7th IEEE International Energy Conference (ENERGYCON 2022)},
 	Day = {28},
 	Doi = {10.1109/PowerTech46648.2021.9494877},
 	Location = {Madrid, Spain},
@@ -2044,11 +2096,11 @@
 	Title = {Fractional Hedonic Coalition Formation Game for Peer to Peer Energy Trading in a Microgrid},
 	Year = 2021}
 	
-%% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame 
 @inproceedings{wfio2021a,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (16/RC/3918) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Sudharsan, Bharath and Malik, Sweta and Corcoran, Peter and Patel, Pankesh and Breslin, John G and Ali, M Intizar},
 	Booktitle = {The 7th IEEE World Forum on Internet of Things (WF-IoT 2021)}, 
-	Series = {The 7th IEEE World Forum on Internet of Things (WF-IoT 2021)},
 	Day = 20,
 	Location = {New Orleans, Louisiana, USA},
 	Month = jun,
@@ -2056,11 +2108,11 @@
 	Title = {OWSNet: Towards Real-time Offensive Words Spotting Network for Consumer IoT Devices},
 	Year = 2021}
 
-%% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame 
 @inproceedings{perc2021,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (16/RC/3918) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Sudharsan, Bharath and Patel, Pankesh and Breslin, John G and Ali, M Intizar},
 	Booktitle = {The 19th IEEE International Conference on Pervasive Computing and Communications (PerCom 2021)}, 
-	Series = {The 19th IEEE International Conference on Pervasive Computing and Communications (PerCom 2021)},
 	Day = 22,
 	Doi = {10.1109/PerComWorkshops51409.2021.9431061},
 	Location = {Atlanta, Georgia, USA},
@@ -2069,11 +2121,10 @@
 	Title = {Ultra-Fast Machine Learning Classifier Execution on IoT Devices Without SRAM Consumption},
 	Year = 2021}
 
-%% Added to Sesame with no ack
+%% Added to Sesame
 @inproceedings{icic2021,
 	Author = {Shukla, Saurabh and Thakur, Subhasis and Breslin, John G},
 	Booktitle = {The 6th International Congress on Information and Communication Technology (ICICT 2021)}, 
-	Series = {The 6th International Congress on Information and Communication Technology (ICICT 2021)},
 	Day = 25,
 	Doi = {10.1007/978-981-16-1781-2_58},
 	Location = {London, UK},
@@ -2082,25 +2133,24 @@
 	Title = {Secure Data Transmission in Smart Meters Using Q-Learning in Fog Computing Environment},
 	Year = 2021}
 
-%% Added to Sesame with grant Confirm
+%% Added to Sesame 
 @inproceedings{cods2021a,
+	Note = {Young Researchers' Symposium Track, Funded by Taighde {\'E}ireann - Research Ireland (16/RC/3918)},
 	Author = {Mehta, Parit and Dwivedi, Rudresh and Feeney, Ciaran and Patel, Pankesh and Ali, M Intizar and Breslin, John G},
 	Booktitle = {The ACM India Joint International Conference on Data Science and Management of Data (CODS-COMAD 2021)}, 
-	Series = {The ACM India Joint International Conference on Data Science and Management of Data (CODS-COMAD 2021)},
 	Day = 3,
 	Doi = {10.1145/3430984.3431071},
 	Location = {Bangalore, India},
 	Month = jan,
-	Note = {Young Researchers' Symposium Track},
 	Pdf = {http://www.johnbreslin.com/files/publications/20210103_cods2021a.pdf},
 	Title = {Towards Designing an Explainable-AI based Solution for Livestock Mart Industry},
 	Year = 2021}
 
-%% Added to Sesame with grants CENTS and Insight
+%% Added to Sesame 
 @inproceedings{medp2020,
+	Note = {Funded by the Government of Ireland (DTIF DT-2018-0040-C) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Malik, Sweta and Duffy, Maeve and Thakur, Subhasis and Hayes, Barry P and Breslin, John G},
 	Booktitle = {The 12th Mediterranean Conference on Power Generation, Transmission, Distribution and Energy Conversion (MEDPOWER 2020)}, 
-	Series = {The 12th Mediterranean Conference on Power Generation, Transmission, Distribution and Energy Conversion (MEDPOWER 2020)},
 	Day = 09,
 	Location = {Paphos, Cyprus},
 	Month = nov,
@@ -2108,11 +2158,11 @@
 	Title = {Cooperative Game Theory-Based Peer-to-Peer Energy Trading Algorithm},
 	Year = 2020}
 
-%% Added to Sesame with grant Insight
+%% Added to Sesame 
 @inproceedings{bloc2020a,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Bandara, Kosala Y and Thakur, Subhasis and Breslin, John G},
 	Booktitle = {The 3rd IEEE International Conference on Blockchain (IEEE Blockchain 2020)}, 
-	Series = {The 3rd IEEE International Conference on Blockchain (IEEE Blockchain 2020)},
 	Day = 02,
 	Doi = {10.1109/Blockchain50366.2020.00030},
 	Location = {Rhodes, Greece},
@@ -2122,11 +2172,11 @@
 	Title = {Enrichment of Blockchain Transaction Management with Semantic Triples},
 	Year = 2020}
 
-%% Added to Sesame with grants VistaMilk and Insight
+%% Added to Sesame 
 @inproceedings{bloc2020b,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (16/RC/3835) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Thakur, Subhasis and Breslin, John G},
 	Booktitle = {The 3rd IEEE International Conference on Blockchain (IEEE Blockchain 2020)}, 
-	Series = {The 3rd IEEE International Conference on Blockchain (IEEE Blockchain 2020)},
 	Day = 02,
 	Doi = {10.1109/Blockchain50366.2020.00050},
 	Location = {Rhodes, Greece},
@@ -2135,11 +2185,11 @@
 	Title = {An Edge Colouring-Based Collaborative Routing Protocol for Blockchain Offline Channels},
 	Year = 2020}
 
-%% Added to Sesame with grants CENTS, Insight and VistaMilk
+%% Added to Sesame 
 @inproceedings{bcca2020b,
+	Note = {Funded by the Government of Ireland (DTIF DT-2018-0040-C), Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2) and Taighde {\'E}ireann - Research Ireland (16/RC/3835)},
 	Author = {Thakur, Subhasis and Breslin, John G},
 	Booktitle = {The 2nd International Conference on Blockchain Computing and Applications (IEEE BCCA 2020)}, 
-	Series = {The 2nd International Conference on Blockchain Computing and Applications (IEEE BCCA 2020)},
 	Day = 02,
 	Doi = {10.1109/BCCA50787.2020.9274462},
 	Location = {Antalya, Turkey},
@@ -2148,11 +2198,11 @@
 	Title = {Coordinated Landmark-Based Routing for Blockchain Offline Channels},
 	Year = 2020}
 
-%% Added to Sesame with grants VistaMilk and Insight
+%% Added to Sesame 
 @inproceedings{bcca2020a,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (16/RC/3835) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Thakur, Subhasis and Breslin, John G},
 	Booktitle = {The 2nd International Conference on Blockchain Computing and Applications (IEEE BCCA 2020)}, 
-	Series = {The 2nd International Conference on Blockchain Computing and Applications (IEEE BCCA 2020)},
 	Day = 02,
 	Doi = {10.1109/BCCA50787.2020.9274459},
 	Location = {Antalya, Turkey},
@@ -2161,25 +2211,24 @@
 	Title = {A Model of Decentralized Social Internet of Things Using Blockchain Offline Channels},
 	Year = 2020}
 
-%% Added to Sesame with grant Insight
+%% Added to Sesame 
 @inproceedings{repe2020,
+	Note = {Best Presentation Award, Funded by Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Bandara, Kosala Y and Thakur, Subhasis and Breslin, John G},
 	Booktitle = {The 3rd IEEE International Conference on Renewable Energy and Power Engineering (REPE 2020)}, 
-	Series = {The 3rd IEEE International Conference on Renewable Energy and Power Engineering (REPE 2020)},
 	Day = 09,
 	Doi = {10.1109/REPE50851.2020.9253870},
 	Location = {Rhodes, Greece},
 	Month = oct,
-	Note = {Best Presentation Award},
 	Pdf = {http://www.johnbreslin.com/files/publications/20201009_repe2020.pdf},
 	Title = {Renewable Energy Integration Through Coalition Formation for P2P Energy Trading},
 	Year = 2020}
 
-%% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame 
 @inproceedings{icio2020b,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (16/RC/3918) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Sudharsan, Bharath and Breslin, John G and Ali, M Intizar},
 	Booktitle = {The 10th International Conference on the Internet of Things (ICIOT 2020)}, 
-	Series = {The 10th International Conference on the Internet of Things (ICIOT 2020)},
 	Day = 6,
 	Doi = {10.1145/3410992.3411014},
 	Location = {Malm{\"o}, Sweden},
@@ -2188,11 +2237,11 @@
 	Title = {Edge2Train: A Framework to Train Machine Learning Models (SVMs) on Resource-Constrained IoT Edge Devices},
 	Year = 2020}
 	
-%% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame 
 @inproceedings{icio2020a,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (16/RC/3918) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Sudharsan, Bharath and Breslin, John G and Ali, M Intizar},
 	Booktitle = {The 10th International Conference on the Internet of Things (ICIOT 2020)}, 
-	Series = {The 10th International Conference on the Internet of Things (ICIOT 2020)},
 	Day = 6,
 	Doi = {10.1145/3410992.3411005},
 	Location = {Malm{\"o}, Sweden},
@@ -2201,11 +2250,11 @@
 	Title = {RCE-NN: A Five-Stage Pipeline to Execute Neural Networks (CNNs) on Resource-Constrained IoT Edge Devices},
 	Year = 2020}
 
-%% Added to Sesame with grants CENTS and Insight
+%% Added to Sesame 
 @inproceedings{powe2020,
+	Note = {Funded by the Government of Ireland (DTIF DT-2018-0040-C) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Thakur, Subhasis and Breslin, John G},
 	Booktitle = {The 2020 IEEE International Conference on Power System Technology (IEEE POWERCON 2020)}, 
-	Series = {The 2020 IEEE International Conference on Power System Technology (IEEE POWERCON 2020)},
 	Day = 14,
 	Doi = {10.1109/POWERCON48463.2020.9230545},
 	Location = {Bangalore, India},
@@ -2217,7 +2266,6 @@
 @inproceedings{eeei2020,
 	Author = {Thakur, Subhasis and Breslin, John G},
 	Booktitle = {The 20th International Conference on Environmental and Electrical Engineering (EEEIC 2020)}, 
-	Series = {The 20th International Conference on Environmental and Electrical Engineering (EEEIC 2020)},
 	Day = 10,
 	Doi = {10.1109/EEEIC/ICPSEurope49358.2020.9160550},
 	Location = {Madrid, Spain},
@@ -2229,7 +2277,6 @@
 @inproceedings{wfio2020,
 	Author = {Sudharsan, Bharath and Breslin, John G and Ali, M Intizar},
 	Booktitle = {The 6th IEEE World Forum on Internet of Things (WF-IoT 2020)}, 
-	Series = {The 6th IEEE World Forum on Internet of Things (WF-IoT 2020)},
 	Day = 5,
 	Doi = {10.1109/WF-IoT48130.2020.9221276},
 	Location = {New Orleans, Louisiana, USA},
@@ -2241,7 +2288,6 @@
 @inproceedings{idcs2019a,
 	Author = {Ara, Safina S and Thakur, Subhasis and Breslin, John G},
 	Booktitle = {The 12th International Conference on Internet and Distributed Computing Systems (IDCS 2019)}, 
-	Series = {The 12th International Conference on Internet and Distributed Computing Systems (IDCS 2019)},
 	Day = 10,
 	Location = {Naples, Italy},
 	Month = oct,
@@ -2252,7 +2298,6 @@
 @inproceedings{idcs2019b,
 	Author = {Ara, Safina S and Thakur, Subhasis and Breslin, John G},
 	Booktitle = {The 12th International Conference on Internet and Distributed Computing Systems (IDCS 2019)}, 
-	Series = {The 12th International Conference on Internet and Distributed Computing Systems (IDCS 2019)},
 	Day = 10,
 	Location = {Naples, Italy},
 	Month = oct,
@@ -2264,7 +2309,6 @@
 @inproceedings{bloc2019,
 	Author = {Thakur, Subhasis and Breslin, John G},
 	Booktitle = {The 1st International Congress on Blockchain and Applications (BLOCKCHAIN 2019)}, 
-	Series = {The 1st International Congress on Blockchain and Applications (BLOCKCHAIN 2019)},
 	Day = 27,
 	Doi = {10.1007/978-3-030-23813-1_10},
 	Location = {{\'A}vila, Spain},
@@ -2280,7 +2324,6 @@
 @inproceedings{marb2019,
 	Author = {Thakur, Subhasis and Breslin, John G},
 	Booktitle = {The 1st International Conference on Mathematical Research for Blockchain Economy (MARBLE 2019)}, 
-	Series = {The 1st International Conference on Mathematical Research for Blockchain Economy (MARBLE 2019)},
 	Day = 9,
 	Doi = {10.1007/978-3-030-37110-4_3},
 	Location = {Santorini, Greece},
@@ -2294,7 +2337,6 @@
 @inproceedings{iov_2018,
 	Author = {Thakur, Subhasis and Breslin, John G},
 	Booktitle = {The 5th International Conference on Internet of Vehicles (IOV 2018)}, 
-	Series = {The 5th International Conference on Internet of Vehicles (IOV 2018)},
 	Day = 21,
 	Doi = {10.1007/978-3-030-05081-8_18},
 	Month = nov,
@@ -2306,7 +2348,6 @@
 @inproceedings{medp2018,
 	Author = {Thakur, Subhasis and Hayes, Barry P and Breslin, John G},
 	Booktitle = {The 11th Mediterranean Conference on Power Generation, Transmission, Distribution and Energy Conversion (MEDPOWER 2018)}, 
-	Series = {The 11th Mediterranean Conference on Power Generation, Transmission, Distribution and Energy Conversion (MEDPOWER 2018)},
 	Day = 14,
 	Month = nov,
 	Pdf = {http://www.johnbreslin.com/files/publications/20181114_medp2018.pdf},
@@ -2316,7 +2357,6 @@
 @inproceedings{iot_2018,
 	Author = {Quoc, Hoan Nguyen Mau and Serrano, Martin and Breslin, John G and Le Phuoc, Danh},
 	Booktitle = {The 8th International Conference on the Internet of Things (IoT 2018)}, 
-	Series = {The 8th International Conference on the Internet of Things (IoT 2018)},
 	Day = 15,
 	Doi = {10.1145/3277593.3277598},
 	Month = oct,
@@ -2328,7 +2368,6 @@
 @inproceedings{efea2018,
 	Author = {Thakur, Subhasis and Hayes, Barry P and Breslin, John G},
 	Booktitle = {The 5th International Symposium on Environment Friendly Energies and Applications (EFEA 2018)}, 
-	Series = {The 5th International Symposium on Environment Friendly Energies and Applications (EFEA 2018)},
 	Day = 24,
 	Month = sep,
 	Pdf = {http://www.johnbreslin.com/files/publications/20180924_efea2018.pdf},
@@ -2338,7 +2377,6 @@
 @inproceedings{icwe2018,
 	Author = {Piao, Guangyuan and Breslin, John G},
 	Booktitle = {The 18th International Conference on Web Engineering (ICWE 2018)}, 
-	Series = {The 18th International Conference on Web Engineering (ICWE 2018)},
 	Day = 5,
 	Doi={10.1007/978-3-319-91662-0_22},
 	Month = jun,
@@ -2349,7 +2387,6 @@
 @inproceedings{eswc2018,
 	Author = {Piao, Guangyuan and Breslin, John G},
 	Booktitle = {The 15th Extended Semantic Web Conference (ESWC 2018)}, 
-	Series = {The 15th Extended Semantic Web Conference (ESWC 2018)},
 	Day = 5,
 	Doi = {10.1007/978-3-319-93417-4_32},
 	Location = {Heraklion, Greece},
@@ -2361,7 +2398,6 @@
 @inproceedings{wise2017,
 	Author = {Piao, Guangyuan and Breslin, John G},
 	Booktitle = {The 18th International Conference on Web Information Systems Engineering (WISE 2017)}, 
-	Series = {The 18th International Conference on Web Information Systems Engineering (WISE 2017)},
 	Day = 7,
 	Month = oct,
 	Pdf = {http://www.johnbreslin.com/files/publications/20171007_wise2017.pdf},
@@ -2371,7 +2407,6 @@
 @inproceedings{ason2017,
 	Author = {Ara, Safina S and Thakur, Subhasis and Breslin, John G},
 	Booktitle = {The 2017 IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining (ASONAM 2017)}, 
-	Series = {The 2017 IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining (ASONAM 2017)},
 	Day = 31,
 	Month = jul,
 	Pdf = {http://www.johnbreslin.com/files/publications/20170731_ason2017.pdf},
@@ -2381,7 +2416,6 @@
 @inproceedings{hype2017,
 	Author = {Piao, Guangyuan and Breslin, John G},
 	Booktitle = {The 28th ACM Conference on Hypertext and Social Media (Hypertext 2017)}, 
-	Series = {The 28th ACM Conference on Hypertext and Social Media (Hypertext 2017)},
 	Day = 4,
 	Month = jul,
 	Pdf = {http://www.johnbreslin.com/files/publications/20170704_hype2017.pdf},
@@ -2391,7 +2425,6 @@
 @inproceedings{ecir2017,
 	Author = {Piao, Guangyuan and Breslin, John G},
 	Booktitle = {The 39th European Conference on Information Retrieval (ECIR 2017)}, 
-	Series = {The 39th European Conference on Information Retrieval (ECIR 2017)},
 	Day = 12,
 	Month = apr,
 	Pdf = {http://www.johnbreslin.com/files/publications/20170412_ecir2017.pdf},
@@ -2401,7 +2434,6 @@
 @inproceedings{ekaw2016,
 	Author = {Piao, Guangyuan and Breslin, John G},
 	Booktitle = {The 20th International Conference on Knowledge Engineering and Knowledge Management (EKAW 2016)}, 
-	Series = {The 20th International Conference on Knowledge Engineering and Knowledge Management (EKAW 2016)},
 	Day = 19,
 	Month = nov,
 	Pdf = {http://www.johnbreslin.com/files/publications/20161119_ekaw2016.pdf},
@@ -2411,7 +2443,6 @@
 @inproceedings{cikm2016,
 	Author = {Piao, Guangyuan and Breslin, John G},
 	Booktitle = {The 25th ACM International Conference on Information and Knowledge Management (CIKM 2016)}, 
-	Series = {The 25th ACM International Conference on Information and Knowledge Management (CIKM 2016)},
 	Day = 24,
 	Location = {Indianapolis, Indiana, USA},
 	Month = oct,
@@ -2422,7 +2453,6 @@
 @inproceedings{sema2016,
 	Author = {Piao, Guangyuan and Breslin, John G},
 	Booktitle = {The 12th International Conference on Semantic Systems (SEMANTiCS 2016)}, 
-	Series = {The 12th International Conference on Semantic Systems (SEMANTiCS 2016)},
 	Day = 13,
 	Location = {Leipzig, Germany},
 	Month = sep,
@@ -2434,7 +2464,6 @@
 @inproceedings{umap2016a,
 	Author = {Piao, Guangyuan and Breslin, John G},
 	Booktitle = {The 24th Conference on User Modelling, Adaptation and Personalization (UMAP 2016)}, 
-	Series = {The 24th Conference on User Modelling, Adaptation and Personalization (UMAP 2016)},
 	Day = 13,
 	Location = {Halifax, Canada},
 	Month = jul,
@@ -2445,7 +2474,6 @@
 @inproceedings{sac_2016,
 	Author = {Piao, Guangyuan and Breslin, John G},
 	Booktitle = {The 31st ACM/SIGAPP Symposium on Applied Computing (SAC 2016)}, 
-	Series = {The 31st ACM/SIGAPP Symposium on Applied Computing (SAC 2016)},
 	Day = 4,
 	Month = apr,
 	Pdf = {http://www.johnbreslin.com/files/publications/20160404_sac_2016.pdf},
@@ -2455,7 +2483,6 @@
 @inproceedings{bigd2016,
 	Author = {Barnaghi, Peiman and Ghaffari, Parsa and Breslin, John G},
 	Booktitle = {The 2nd IEEE International Conference on Big Data Computing Service and Applications (BigDataService 2016)}, 
-	Series = {The 2nd IEEE International Conference on Big Data Computing Service and Applications (BigDataService 2016)},
 	Day = 29,
 	Month = mar,
 	Pdf = {http://www.johnbreslin.com/files/publications/20160329_bigd2016.pdf},
@@ -2465,7 +2492,6 @@
 @inproceedings{ista2015,
 	Author = {Crowley, David N and Breslin, John G and Curry, Edward},
 	Booktitle = {The 21st IEEE International Symposium on Technology and Society (ISTAS 2015)}, 
-	Series = {The 21st IEEE International Symposium on Technology and Society (ISTAS 2015)},
 	Day = 12,
 	Location = {Dublin, Ireland},
 	Month = nov,
@@ -2477,7 +2503,6 @@
 @inproceedings{jist2015b,
 	Author = {Piao, Guangyuan and Ara, Safina S and Breslin, John G},
 	Booktitle = {The 5th Joint International Semantic Technology Conference (JIST 2015)}, 
-	Series = {The 5th Joint International Semantic Technology Conference (JIST 2015)},
 	Day = 12,
 	Location = {Yichang, China},
 	Month = nov,
@@ -2489,7 +2514,6 @@
 @inproceedings{iccg2015,
 	Author = {Sacco, Owen and Breslin, John G},
 	Booktitle = {The 10th International Multi-Conference on Computing in the Global Information Technology (ICCGI 2015)}, 
-	Series = {The 10th International Multi-Conference on Computing in the Global Information Technology (ICCGI 2015)},
 	Day = 10,
 	Month = oct,
 	Pdf = {http://www.johnbreslin.com/files/publications/20151010_iccg2015.pdf},
@@ -2499,7 +2523,6 @@
 @inproceedings{elpu2015,
 	Author = {Sacco, Owen and Breslin, John G},
 	Booktitle = {The 19th International Conference on Electronic Publishing (ELPUB 2015)}, 
-	Series = {The 19th International Conference on Electronic Publishing (ELPUB 2015)},
 	Day = 1,
 	Location = {Malta},
 	Month = sep,
@@ -2510,7 +2533,6 @@
 @inproceedings{epar2015,
 	Author = {Porwol, Lukasz and Hassan, Islam and Ojo, Adegboyega and Breslin, John G},
 	Booktitle = {The 7th IFIP International Conference on eParticipation (ePart 2015)}, 
-	Series = {The 7th IFIP International Conference on eParticipation (ePart 2015)},
 	Day = 30,
 	Location = {Thessaloniki, Greece},
 	Month = aug,
@@ -2525,7 +2547,6 @@
 @inproceedings{iwcm2015,
 	Author = {Leggieri, Myriam and Davis, Brian and Breslin, John G},
 	Booktitle = {The 11th IEEE International Wireless Communications and Mobile Computing Conference (IWCMC 2015)}, 
-	Series = {The 11th IEEE International Wireless Communications and Mobile Computing Conference (IWCMC 2015)},
 	Day = 25,
 	Location = {Dubrovnik, Croatia},
 	Month = aug,
@@ -2537,7 +2558,6 @@
 @inproceedings{issn2015,
 	Author = {Leggieri, Myriam and von der Weth, Christian and Breslin, John G},
 	Booktitle = {The 10th IEEE International Conference on Intelligent Sensors, Sensor Networks and Information Processing (ISSNIP 2015)}, 
-	Series = {The 10th IEEE International Conference on Intelligent Sensors, Sensor Networks and Information Processing (ISSNIP 2015)},
 	Day = 7,
 	Location = {Singapore},
 	Month = apr,
@@ -2548,7 +2568,6 @@
 @inproceedings{epar2014,
 	Author = {Porwol, Lukasz and Ojo, Adegboyega and Breslin, John G},
 	Booktitle = {The 6th IFIP International Conference on eParticipation (ePart 2014)}, 
-	Series = {The 6th IFIP International Conference on eParticipation (ePart 2014)},
 	Day = 3,
 	Location = {Dublin, Ireland},
 	Month = sep,
@@ -2559,7 +2578,6 @@
 @inproceedings{dgo_2014,
 	Author = {Porwol, Lukasz and Ojo, Adegboyega and Breslin, John G},
 	Booktitle = {The 15th International Conference on Digital Government Research (dg.o 2014)}, 
-	Series = {The 15th International Conference on Digital Government Research (dg.o 2014)},
 	Day = 20,
 	Location = {Aguascalientes, Mexico},
 	Month = jun,
@@ -2570,7 +2588,6 @@
 @inproceedings{iceg2013,
 	Author = {Porwol, Lukasz and Ojo, Adegboyega and Breslin, John G},
 	Booktitle = {The 7th International Conference on Theory and Practice of Electronic Governance (ICEGOV 2013)}, 
-	Series = {The 7th International Conference on Theory and Practice of Electronic Governance (ICEGOV 2013)},
 	Day = 22,
 	Location = {Seoul, Korea},
 	Month = oct,
@@ -2582,7 +2599,6 @@
 @inproceedings{wise2013,
 	Author = {Sacco, Owen and Collina, Matteo and Schiele, Gregor and Corazza, Giovanni E and Breslin, John G and Hauswirth, Manfred},
 	Booktitle = {The 14th International Conference on Web Information System Engineering (WISE 2013)}, 
-	Series = {The 14th International Conference on Web Information System Engineering (WISE 2013)},
 	Day = 13,
 	Location = {Nanjing, China},
 	Month = oct,
@@ -2593,7 +2609,6 @@
 @inproceedings{prov2013,
 	Author = {Dabrowski, Maciej and Griffin, Keith and Breslin, John G},
 	Booktitle = {The 14th IFIP Working Conference on Virtual Enterprises (PRO-VE 2013)}, 
-	Series = {The 14th IFIP Working Conference on Virtual Enterprises (PRO-VE 2013)},
 	Day = 2,
 	Location = {Dresden, Germany},
 	Month = oct,
@@ -2604,7 +2619,6 @@
 @inproceedings{soci2013,
 	Author = {Sacco, Owen and Breslin, John G},
 	Booktitle = {The 5th IEEE International Conference on Social Computing (SocialCom 2013)}, 
-	Series = {The 5th IEEE International Conference on Social Computing (SocialCom 2013)},
 	Day = 10,
 	Location = {Washington, DC, USA},
 	Month = sep,
@@ -2615,7 +2629,6 @@
 @inproceedings{egov2013,
 	Author = {Porwol, Lukasz and Ojo, Adegboyega and Breslin, John G},
 	Booktitle = {The 2nd Joint International Conference on Electronic Government and the Information Systems Perspective and International Conference on Electronic Democracy (EGOVIS '13, EDEM '13)}, 
-	Series = {The 2nd Joint International Conference on Electronic Government and the Information Systems Perspective and International Conference on Electronic Democracy (EGOVIS '13, EDEM '13)},
 	Day = 26,
 	Location = {Prague, Czech Republic},
 	Month = aug,
@@ -2626,7 +2639,6 @@
 @inproceedings{amci2013,
 	Author = {Crowley, David N and Dabrowski, Maciej and Breslin, John G},
 	Booktitle = {The 19th Americas Conference on Information Systems (AMCIS 2013)}, 
-	Series = {The 19th Americas Conference on Information Systems (AMCIS 2013)},
 	Day = 16,
 	Location = {Chicago, Illinois, USA},
 	Month = aug,
@@ -2637,7 +2649,6 @@
 @inproceedings{dest2013,
 	Author = {Crowley, David N and Curry, Edward and Breslin, John G},
 	Booktitle = {The 7th IEEE International Conference on Digital Ecosystems and Technologies (DEST 2013)}, 
-	Series = {The 7th IEEE International Conference on Digital Ecosystems and Technologies (DEST 2013)},
 	Day = 24,
 	Month = jul,
 	Pdf = {http://www.johnbreslin.com/files/publications/20130724_dest2013.pdf},
@@ -2647,7 +2658,6 @@
 @inproceedings{trus2013,
 	Author = {Sacco, Owen and Breslin, John G and Decker, Stefan},
 	Booktitle = {The 12th IEEE International Conference on Trust, Security and Privacy in Computing and Communications (TrustCom '13)}, 
-	Series = {The 12th IEEE International Conference on Trust, Security and Privacy in Computing and Communications (TrustCom '13)},
 	Day = 16,
 	Location = {Melbourne, Australia},
 	Month = jul,
@@ -2658,7 +2668,6 @@
 @inproceedings{dgo_2013,
 	Author = {Porwol, Lukasz and Ojo, Adegboyega and Breslin, John G},
 	Booktitle = {The 14th Annual International Conference on Digital Government Research (d.go 2013)}, 
-	Series = {The 14th Annual International Conference on Digital Government Research (d.go 2013)},
 	Day = 19,
 	Location = {Quebec, Canada},
 	Month = jun,
@@ -2670,7 +2679,6 @@
 @inproceedings{iceg2012,
 	Author = {Porwol, Lukasz and O'Donoghue, Padraic and Breslin, John G and Coughlan, Chris and Mulligan, Brendan},
 	Booktitle = {The 6th International Conference on Theory and Practice of Electronic Governance (ICEGOV 2012)}, 
-	Series = {The 6th International Conference on Theory and Practice of Electronic Governance (ICEGOV 2012)},
 	Day = 22,
 	Location = {Albany, New York, USA},
 	Month = oct,
@@ -2682,7 +2690,6 @@
 @inproceedings{igic2012b,
 	Author = {Sacco, Owen and Dabrowski, Maciej and Breslin, John G},
 	Booktitle = {The 4th IEEE International Games Innovation Conference (IGIC 2012)}, 
-	Series = {The 4th IEEE International Games Innovation Conference (IGIC 2012)},
 	Day = 7,
 	Location = {Rochester, New York, USA},
 	Month = sep,
@@ -2693,7 +2700,6 @@
 @inproceedings{igic2012a,
 	Author = {Crowley, David N and Breslin, John G and Corcoran, Peter and Young, Karen},
 	Booktitle = {The 4th IEEE International Games Innovation Conference (IGIC 2012)}, 
-	Series = {The 4th IEEE International Games Innovation Conference (IGIC 2012)},
 	Day = 7,
 	Location = {Rochester, New York, USA},
 	Month = sep,
@@ -2704,7 +2710,6 @@
 @inproceedings{isem2012b,
 	Author = {Orlandi, Fabrizio and Breslin, John G and Passant, Alexandre},
 	Booktitle = {The 8th International Conference on Semantic Systems (I-SEMANTICS 2012)}, 
-	Series = {The 8th International Conference on Semantic Systems (I-SEMANTICS 2012)},
 	Day = 5,
 	Location = {Graz, Austria},
 	Month = sep,
@@ -2715,7 +2720,6 @@
 @inproceedings{isem2012a,
 	Author = {Sacco, Owen and Breslin, John G},
 	Booktitle = {The 8th International Conference on Semantic Systems (I-SEMANTICS 2012)}, 
-	Series = {The 8th International Conference on Semantic Systems (I-SEMANTICS 2012)},
 	Day = 5,
 	Location = {Graz, Austria},
 	Month = sep,
@@ -2726,7 +2730,6 @@
 @inproceedings{icss2012,
 	Author = {Vickey, Theodore A and Breslin, John G and Williams, Antonio},
 	Booktitle = {The Third International Conference on Sport and Society (ICSS 2012)}, 
-	Series = {The Third International Conference on Sport and Society (ICSS 2012)},
 	Day = 25,
 	Location = {Cambridge, UK},
 	Month = jul,
@@ -2737,7 +2740,6 @@
 @inproceedings{sss_2012,
 	Author = {Vickey, Theodore A and Breslin, John G},
 	Booktitle = {The AAAI 2012 Spring Symposium on Self-Tracking and Collective Intelligence for Personal Wellness}, 
-	Series = {The AAAI 2012 Spring Symposium on Self-Tracking and Collective Intelligence for Personal Wellness},
 	Day = 26,
 	Month = mar,
 	Pdf = {http://www.johnbreslin.com/files/publications/20120326_sss_2012.pdf},
@@ -2747,7 +2749,6 @@
 @inproceedings{icas2011,
 	Author = {Vickey, Theodore A and Tsai, Nancey T and Breslin, John G},
 	Booktitle = {The 8th International Symposium on Computer Science in Sport (IACSS 2011)}, 
-	Series = {The 8th International Symposium on Computer Science in Sport (IACSS 2011)},
 	Day = 23,
 	Month = sep,
 	Pages = {38--40},
@@ -2758,7 +2759,6 @@
 @inproceedings{eswc2011,
 	Author = {Kinsella, Sheila and Wang, Mengjiao and Breslin, John G and Hayes, Conor},
 	Booktitle = {The 8th Extended Semantic Web Conference (ESWC '11)}, 
-	Series = {The 8th Extended Semantic Web Conference (ESWC '11)},
 	Day = 1,
 	Location = {Heraklion, Greece},
 	Month = jun,
@@ -2769,7 +2769,6 @@
 @inproceedings{ecir2011,
 	Author = {Kinsella, Sheila and Passant, Alexandre and Breslin, John G},
 	Booktitle = {The 33rd European Conference on Information Retrieval (ECIR 2011)}, 
-	Series = {The 33rd European Conference on Information Retrieval (ECIR 2011)},
 	Day = 19,
 	Location = {Dublin, Ireland},
 	Month = apr,
@@ -2780,7 +2779,6 @@
 @inproceedings{sac_2011,
 	Author = {Schneider, Jodi and Passant, Alexandre and Breslin, John G},
 	Booktitle = {The 26th ACM Symposium On Applied Computing (SAC 2011)}, 
-	Series = {The 26th ACM Symposium On Applied Computing (SAC 2011)},
 	Day = 24,
 	Location = {Taichung, Taiwan},
 	Month = mar,
@@ -2791,7 +2789,6 @@
 @inproceedings{sema2010,
 	Author = {Choudhury, Smitashree and Breslin, John G},
 	Booktitle = {The 4th International Conference on Advances in Semantic Processing (SEMAPRO 2010)}, 
-	Series = {The 4th International Conference on Advances in Semantic Processing (SEMAPRO 2010)},
 	Day = 25,
 	Month = oct,
 	Pages = {126--131},
@@ -2802,7 +2799,6 @@
 @inproceedings{comm2010,
 	Author = {Schneider, Jodi and Passant, Alexandre and Groza, Tudor and Breslin, John G},
 	Booktitle = {The 3rd International Conference on Computational Models of Argument (COMMA 2010)}, 
-	Series = {The 3rd International Conference on Computational Models of Argument (COMMA 2010)},
 	Day = 10,
 	Location = {Desenzano del Garda, Italy},
 	Month = sep,
@@ -2813,7 +2809,6 @@
 @inproceedings{isem2010,
 	Author = {Kinsella, Sheila and Passant, Alexandre and Breslin, John G},
 	Booktitle = {The 6th International Conference on Semantic Systems (I-SEMANTICS 2010)}, 
-	Series = {The 6th International Conference on Semantic Systems (I-SEMANTICS 2010)},
 	Day = 1,
 	Location = {Graz, Austria},
 	Month = sep,
@@ -2824,7 +2819,6 @@
 @inproceedings{aics2010,
 	Author = {Choudhury, Smitashree and Breslin, John G},
 	Booktitle = {The 21st National Conference on Artificial Intelligence and Cognitive Science (AICS 2010)}, 
-	Series = {The 21st National Conference on Artificial Intelligence and Cognitive Science (AICS 2010)},
 	Day = 31,
 	Month = aug,
 	Pdf = {http://www.johnbreslin.com/files/publications/20100831_aics2010.pdf},
@@ -2834,7 +2828,6 @@
 @inproceedings{icwe2010a,
 	Author = {Passant, Alexandre and Breslin, John G and Decker, Stefan},
 	Booktitle = {The 10th International Conference on Web Engineering (ICWE 2010)}, 
-	Series = {The 10th International Conference on Web Engineering (ICWE 2010)},
 	Day = 8,
 	Month = jul,
 	Pages = {263--277},
@@ -2848,7 +2841,6 @@
 @inproceedings{isws2010,
 	Author = {Passant, Alexandre and Zimmerman, Antoine and Schneider, Jodi and Breslin, John G},
 	Booktitle = {The International Conference on Intelligent Semantic Web, Services and Applications (ISWSA 2010)}, 
-	Series = {The International Conference on Intelligent Semantic Web, Services and Applications (ISWSA 2010)},
 	Day = 14,
 	Location = {Amman, Jordan},
 	Month = jun,
@@ -2859,7 +2851,6 @@
 @inproceedings{webs2010c,
 	Author = {Letierce, Julie and Passant, Alexandre and Breslin, John G and Decker, Stefan},
 	Booktitle = {The Web Science Conference 2010 (WebSci '10)}, 
-	Series = {The Web Science Conference 2010 (WebSci '10)},
 	Day = 26,
 	Location = {Raleigh, North Carolina, USA},
 	Month = apr,
@@ -2870,7 +2861,6 @@
 @inproceedings{coll2009,
 	Author = {Passant, Alexandre and Laublet, Philippe and Breslin, John G and Decker, Stefan},
 	Booktitle = {The 5th International Conference on Collaborative Computing: Networking, Applications and Worksharing (CollaborateCom 2009)}, 
-	Series = {The 5th International Conference on Collaborative Computing: Networking, Applications and Worksharing (CollaborateCom 2009)},
 	Day = 13,
 	Location = {Washington, DC, USA},
 	Month = nov,
@@ -2881,7 +2871,6 @@
 @inproceedings{iswc2009,
 	Author = {Choudhury, Smitashree and Breslin, John G and Passant, Alexandre},
 	Booktitle = {The 8th International Semantic Web Conference (ISWC 2009)}, 
-	Series = {The 8th International Semantic Web Conference (ISWC 2009)},
 	Day = 27,
 	Location = {Washington, DC, USA},
 	Month = oct,
@@ -2892,7 +2881,6 @@
 @inproceedings{ss__2009,
 	Author = {Kim, Hak-Lae and Scerri, Simon and Breslin, John G},
 	Booktitle = {The AAAI 2009 Spring Symposium on Social Semantic Web: Where Web 2.0 Meets Web 3.0}, 
-	Series = {The AAAI 2009 Spring Symposium on Social Semantic Web: Where Web 2.0 Meets Web 3.0},
 	Day = 23,
 	Location = {Stanford, California, USA},
 	Month = mar,
@@ -2903,7 +2891,6 @@
 @inproceedings{webs2009,
 	Author = {Passant, Alexandre and Samwald, Matthias and Breslin, John G and Decker, Stefan},
 	Booktitle = {The Web Science Conference 2009 (WebSci '09)}, 
-	Series = {The Web Science Conference 2009 (WebSci '09)},
 	Day = 19,
 	Location = {Athens, Greece},
 	Month = mar,
@@ -2914,7 +2901,6 @@
 @inproceedings{wi__2008,
 	Author = {Groza, Tudor and Handschuh, Siegfried and Breslin, John G},
 	Booktitle = {The IEEE/WIC/ACM International Conference on Web Intelligence (WI '08)}, 
-	Series = {The IEEE/WIC/ACM International Conference on Web Intelligence (WI '08)},
 	Day = 10,
 	Location = {Sydney, Australia},
 	Month = dec,
@@ -2925,7 +2911,6 @@
 @inproceedings{itt_2008,
 	Author = {Choudhury, Smitashree and Breslin, John G},
 	Booktitle = {The 8th Annual Conference on Information Technology and Telecommunication (IT\&T 2008)}, 
-	Series = {The 8th Annual Conference on Information Technology and Telecommunication (IT\&T 2008)},
 	Day = 23,
 	Location = {Galway, Ireland},
 	Month = oct,
@@ -2936,7 +2921,6 @@
 @inproceedings{dc__2008,
 	Author = {Kim, Hak-Lae and Scerri, Simon and Breslin, John G and Decker, Stefan and Kim, Hong-Gee},
 	Booktitle = {The 8th International Conference on Dublin Core and Metadata Applications (DC 2008)}, 
-	Series = {The 8th International Conference on Dublin Core and Metadata Applications (DC 2008)},
 	Day = 25,
 	Location = {Berlin, Germany},
 	Month = sep,
@@ -2947,7 +2931,6 @@
 @inproceedings{rwss2008,
 	Author = {Kinsella, Sheila and Breslin, John G and Passant, Alexandre and Decker, Stefan},
 	Booktitle = {The Reasoning Web Summer School 2008 (RWSS 2008)}, 
-	Series = {The Reasoning Web Summer School 2008 (RWSS 2008)},
 	Day = 10,
 	Month = sep,
 	Pages = {171--199},
@@ -2961,7 +2944,6 @@
 @inproceedings{icsc2008,
 	Author = {Kim, Hak-Lae and Passant, Alexandre and Breslin, John G and Scerri, Simon and Decker, Stefan},
 	Booktitle = {The 2nd IEEE International Conference on Semantic Computing (ICSC 2008)}, 
-	Series = {The 2nd IEEE International Conference on Semantic Computing (ICSC 2008)},
 	Day = 7,
 	Location = {Santa Clara, California, USA},
 	Month = aug,
@@ -2972,7 +2954,6 @@
 @inproceedings{iv__2008,
 	Author = {Kinsella, Sheila and Boj{\=a}rs, Uldis and Harth, Andreas and Breslin, John G and Decker, Stefan},
 	Booktitle = {The 12th International Conference on Information Visualisation (IV '08)}, 
-	Series = {The 12th International Conference on Information Visualisation (IV '08)},
 	Date-Modified = {2018-03-14 14:35:16 +0000},
 	Day = 10,
 	Location = {London, UK},
@@ -2985,7 +2966,6 @@
 @inproceedings{xtec2008,
 	Author = {Boj{\=a}rs, Uldis and Breslin, John G and Passant, Alexandre},
 	Booktitle = {The European Web Technologies Conference (XTech 2008)}, 
-	Series = {The European Web Technologies Conference (XTech 2008)},
 	Date-Modified = {2018-03-14 14:35:16 +0000},
 	Day = 9,
 	Location = {Dublin, Ireland},
@@ -2997,7 +2977,6 @@
 @inproceedings{sip_2008,
 	Author = {Kim, Hak-Lae and Breslin, John G and Yang, Sung-Kwon and Song, Seung-Jae and Kim, Hong-Gee},
 	Booktitle = {The AAAI 2008 Spring Symposium on Social Information Processing (SIP 2008)}, 
-	Series = {The AAAI 2008 Spring Symposium on Social Information Processing (SIP 2008)},
 	Day = 27,
 	Location = {Stanford, California, USA},
 	Month = mar,
@@ -3008,7 +2987,6 @@
 @inproceedings{amst2008,
 	Author = {Kim, Hak-Lae and Breslin, John G and Yang, Sung-Kwon and Kim, Hong-Gee},
 	Booktitle = {The 2nd KES International Symposium on Agent and Multi-Agent Systems: Technologies and Applications (KES AMSTA 2008)}, 
-	Series = {The 2nd KES International Symposium on Agent and Multi-Agent Systems: Technologies and Applications (KES AMSTA 2008)},
 	Day = 27,
 	Location = {Inha University, Korea},
 	Month = mar,
@@ -3023,7 +3001,6 @@
 @inproceedings{iat_2007,
 	Author = {Kim, Hak-Lae and Yang, Sung-Kwon and Breslin, John G and Kim, Hong-Gee},
 	Booktitle = {The IEEE/WIC/ACM International Conference on Intelligent Agent Technology (IAT '07)}, 
-	Series = {The IEEE/WIC/ACM International Conference on Intelligent Agent Technology (IAT '07)},
 	Day = 4,
 	Location = {Silicon Valley, California, USA},
 	Month = nov,
@@ -3034,7 +3011,6 @@
 @inproceedings{asna2007,
 	Author = {Kinsella, Sheila and Harth, Andreas and Troussov, Alexander and Sogrin, Mikhail and Judge, John and Hayes, Conor and Breslin, John G},
 	Booktitle = {The 4th Conference on Applications of Social Network Analysis (ASNA 2007)}, 
-	Series = {The 4th Conference on Applications of Social Network Analysis (ASNA 2007)},
 	Day = 13,
 	Location = {University of Zurich, Switzerland},
 	Month = sep,
@@ -3045,7 +3021,6 @@
 @inproceedings{uksn2007,
 	Author = {Kinsella, Sheila and Harth, Andreas and Breslin, John G},
 	Booktitle = {The UK Social Network Conference}, 
-	Series = {The UK Social Network Conference},
 	Day = 13,
 	Location = {University of London, UK},
 	Month = jul,
@@ -3056,7 +3031,6 @@
 @inproceedings{eswc2007a,
 	Author = {Aleman-Meza, Boanerges and Boj{\=a}rs, Uldis and Boley, Harold and Breslin, John G and Mochol, Malgorzata and Nixon, Lyndon J B and Polleres, Axel and Zhdanova, Anna V},
 	Booktitle = {The 4th European Semantic Web Conference (ESWC '07)}, 
-	Series = {The 4th European Semantic Web Conference (ESWC '07)},
 	Date-Modified = {2018-03-14 14:35:16 +0000},
 	Day = 4,
 	Location = {Innsbruck, Austria},
@@ -3068,7 +3042,6 @@
 @inproceedings{icws2007,
 	Author = {Breslin, John G and Kass, Ron and Boj{\=a}rs, Uldis},
 	Booktitle = {The International Conference on Weblogs and Social Media (ICWSM 2007)}, 
-	Series = {The International Conference on Weblogs and Social Media (ICWSM 2007)},
 	Date-Modified = {2018-03-14 14:35:16 +0000},
 	Day = 26,
 	Location = {Boulder, Colorado},
@@ -3080,7 +3053,6 @@
 @inproceedings{wbc_2007,
 	Author = {Breslin, John G and Grzonkowski, S\l{}awomir and Gzella, Adam and Kruk, Sebastian R and Woroniecki, Tomasz},
 	Booktitle = {The 4th IADIS International Conference on Web-Based Communities (WBC 2007)}, 
-	Series = {The 4th IADIS International Conference on Web-Based Communities (WBC 2007)},
 	Day = 20,
 	Location = {Salamanca, Spain},
 	Month = feb,
@@ -3091,7 +3063,6 @@
 @inproceedings{dexa2006,
 	Author = {Oren, Eyal and V{\"o}lkel, Max and Breslin, John G and Decker, Stefan},
 	Booktitle = {The 17th International Conference on Database and Expert Systems Applications (DEXA 2006)}, 
-	Series = {The 17th International Conference on Database and Expert Systems Applications (DEXA 2006)},
 	Day = 19,
 	Location = {Krakow, Poland},
 	Month = sep,
@@ -3102,7 +3073,6 @@
 @inproceedings{eswc2006,
 	Author = {M{\"o}ller, Knud and Boj{\=a}rs, Uldis and Breslin, John G},
 	Booktitle = {The 3rd European Semantic Web Conference (ESWC '06)}, 
-	Series = {The 3rd European Semantic Web Conference (ESWC '06)},
 	Date-Modified = {2018-03-14 14:35:16 +0000},
 	Day = 13,
 	Location = {Budva, Montenegro},
@@ -3118,7 +3088,6 @@
 @inproceedings{iima2005,
 	Author = {Sapkota, Brahmananda and Ludwig, Lars and Zhou, Xuan and Breslin, John G},
 	Booktitle = {The 16th Annual International Information Management Association Conference (IIMA 2005)}, 
-	Series = {The 16th Annual International Information Management Association Conference (IIMA 2005)},
 	Day = 22,
 	Location = {Dublin, Ireland},
 	Month = sep,
@@ -3129,7 +3098,6 @@
 @inproceedings{isd_2005,
 	Author = {M{\"o}ller, Knud and Breslin, John G and Decker, Stefan},
 	Booktitle = {The 14th International Conference on Information Systems Development (ISD 2005)}, 
-	Series = {The 14th International Conference on Information Systems Development (ISD 2005)},
 	Day = 17,
 	Location = {Karlstad, Sweden},
 	Month = aug,
@@ -3140,7 +3108,6 @@
 @inproceedings{wiki2005,
 	Author = {Harth, Andreas and Gassert, Hannes and O'Murchu, Ina and Breslin, John G and Decker, Stefan},
 	Booktitle = {The 1st International Wikimedia Conference (Wikimania 2005)}, 
-	Series = {The 1st International Wikimedia Conference (Wikimania 2005)},
 	Day = 4,
 	Location = {Frankfurt, Germany},
 	Month = aug,
@@ -3151,7 +3118,6 @@
 @inproceedings{eswc2005,
 	Author = {Breslin, John G and Harth, Andreas and Boj{\=a}rs, Uldis and Decker, Stefan},
 	Booktitle = {The 2nd European Semantic Web Conference (ESWC '05)}, 
-	Series = {The 2nd European Semantic Web Conference (ESWC '05)},
 	Date-Modified = {2018-03-14 14:35:16 +0000},
 	Day = 19,
 	Location = {Heraklion, Greece},
@@ -3168,7 +3134,6 @@
 @inproceedings{wbc_2005,
 	Author = {Breslin, John G and Decker, Stefan and Harth, Andreas},
 	Booktitle = {The 2nd IADIS International Conference on Web-Based Communities (WBC 2005)}, 
-	Series = {The 2nd IADIS International Conference on Web-Based Communities (WBC 2005)},
 	Day = 23,
 	Location = {Carvoeiro, Portugal},
 	Month = feb,
@@ -3180,7 +3145,6 @@
 @inproceedings{icit2003,
 	Author = {Coughlan, Sean and Breslin, John G},
 	Booktitle = {The IEEE International Conference on Industrial Technology (ICIT '03)}, 
-	Series = {The IEEE International Conference on Industrial Technology (ICIT '03)},
 	Day = 10,
 	Location = {Maribor, Slovenia},
 	Month = dec,
@@ -3192,7 +3156,6 @@
 @inproceedings{kes_2003,
 	Author = {Breslin, John G and Hurley, W Gerard},
 	Booktitle = {The 7th International Conference on Knowledge-Based Intelligent Information and Engineering Systems (KES 2003)}, 
-	Series = {The 7th International Conference on Knowledge-Based Intelligent Information and Engineering Systems (KES 2003)},
 	Day = 5,
 	Location = {University of Oxford, UK},
 	Month = sep,
@@ -3207,7 +3170,6 @@
 @inproceedings{pesc1999,
 	Author = {Hurley, W Gerard and Gath, Eugene and Breslin, John G},
 	Booktitle = {The 30th IEEE Power Electronics Specialists Conference (PESC '99)}, 
-	Series = {The 30th IEEE Power Electronics Specialists Conference (PESC '99)},
 	Day = 27,
 	Location = {Charleston, South Carolina, USA},
 	Month = jun,
@@ -3218,7 +3180,6 @@
 @inproceedings{pesc1997,
 	Author = {Breslin, John G and Hurley, W Gerard},
 	Booktitle = {The 28th IEEE Power Electronics Specialists Conference (PESC '97)}, 
-	Series = {The 28th IEEE Power Electronics Specialists Conference (PESC '97)},
 	Day = 22,
 	Location = {St. Louis, Missouri, USA},
 	Month = jun,
@@ -3230,7 +3191,6 @@
 @inproceedings{upec1996,
 	Author = {Breslin, John G and Hurley, W Gerard},
 	Booktitle = {The 31st Universities Power Engineering Conference (UPEC 1996)}, 
-	Series = {The 31st Universities Power Engineering Conference (UPEC 1996)},
 	Location = {Crete, Greece},
 	Month = sep,
 	Pages = {465--468},
@@ -3242,7 +3202,6 @@
 @inproceedings{upec1995,
 	Author = {Breslin, John G and Hurley, W Gerard},
 	Booktitle = {The 30th Universities Power Engineering Conference (UPEC 1995)}, 
-	Series = {The 30th Universities Power Engineering Conference (UPEC 1995)},
 	Location = {University of Greenwich, UK},
 	Month = sep,
 	Pages = {347--350},
@@ -3253,11 +3212,11 @@
 
 %% Workshop Papers, Peer-Reviewed
 
-%% Added to Sesame with grant Insight
+%% Added to Sesame 
 @inproceedings{semi2024,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Wahid, Abdul and Yahya, Muhammad and Zaman, Farooq and Zhou, Baifan and Breslin, John G and Ali, M Intizar and Kharlamov, Evgeny},
 	Booktitle = {The 3rd International Workshop on Semantic Industrial Information Modelling (SEMIIM 2024) at the 23rd International Semantic Web Conference (ISWC 2024)}, 
-	Series = {The 3rd International Workshop on Semantic Industrial Information Modelling (SEMIIM 2024) at the 23rd International Semantic Web Conference (ISWC 2024)},
 	Day = 12,
 	Location = {Baltimore, Maryland, USA},
 	Month = nov,
@@ -3266,11 +3225,11 @@
 	Type = {Workshop Paper},
 	Year = 2024}
 
-%% Added to Sesame with grants CRT-AI and Insight
+%% Added to Sesame 
 @inproceedings{muws2023,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (18/CRT/6223) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Khan, M Jaleed and Breslin, John G and Curry, Edward},
 	Booktitle = {The 2nd International Workshop on Multimodal Human Understanding for the Web and Social Media (MUWS 2023) at the 32nd ACM International Conference on Information and Knowledge Management (CIKM 2023)}, 
-	Series = {The 2nd International Workshop on Multimodal Human Understanding for the Web and Social Media (MUWS 2023) at the 32nd ACM International Conference on Information and Knowledge Management (CIKM 2023)},
 	Day = 22,
 	Location = {Birmingham, UK},
 	Month = oct,
@@ -3279,11 +3238,11 @@
 	Type = {Workshop Paper},
 	Year = 2023}
 
-%% Added to Sesame with grants CRT-AI and Insight
+%% Added to Sesame 
 @inproceedings{nesy2023,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (18/CRT/6223) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Ward, Rory and Khan, M Jaleed and Curry, Edward and Breslin, John G},
 	Booktitle = {The 17th International Workshop on Neural-Symbolic Learning and Reasoning (NeSy 2023)}, 
-	Series = {The 17th International Workshop on Neural-Symbolic Learning and Reasoning (NeSy 2023)},
 	Day = 3,
 	Location = {La Certosa di Pontignano, Siena, Italy},
 	Month = jul,
@@ -3292,12 +3251,13 @@
 	Type = {Workshop Paper},
 	Year = 2023}
 
-%% Added to Sesame with grants CRT-AI and Insight
+%% Added to Sesame 
 @inproceedings{sds_2023,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (18/CRT/6223) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Usmani, Atiya and Khan, M Jaleed and Breslin, John G and Curry, Edward},
 	Booktitle = {The 1st International Workshop on Semantics in Dataspaces (SDS 2023) at the 32nd ACM Web Conference 2023 (TheWebConf 2023)}, 
-	Series = {The 1st International Workshop on Semantics in Dataspaces (SDS 2023) at the 32nd ACM Web Conference 2023 (TheWebConf 2023)},
 	Day = 30,
+	Doi = {10.1145/3543873.3587665},
 	Location = {Austin, Texas, USA},
 	Month = apr,
 	Pdf = {http://www.johnbreslin.com/files/publications/20230430_sds_2023.pdf},
@@ -3305,11 +3265,11 @@
 	Type = {Workshop Paper},
 	Year = 2023}
 
-%% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame 
 @inproceedings{spti2021,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (16/RC/3918) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Sudharsan, Bharath and Sundaram, Dineshkumar and Patel, Pankesh and Breslin, John G and Ali, M Intizar},
 	Booktitle = {The 5th Workshop on Security, Privacy, and Trust in the Internet of Things (SPT-IoT 2021) at the 19th IEEE International Conference on Pervasive Computing and Communications (PerCom 2021)}, 
-	Series = {The 5th Workshop on Security, Privacy, and Trust in the Internet of Things (SPT-IoT 2021) at the 19th IEEE International Conference on Pervasive Computing and Communications (PerCom 2021)},
 	Day = 22,
 	Location = {New Orleans, Louisiana, USA},
 	Month = mar,
@@ -3318,11 +3278,11 @@
 	Type = {Workshop Paper},
 	Year = 2021}
 
-%% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame 
 @inproceedings{ioth2020,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (16/RC/3918) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Sudharsan, Bharath and Sundaram, Dineshkumar and Breslin, John G and Ali, M Intizar},
 	Booktitle = {The 1st Workshop on Internet of Things-Based Health Services and Applications (IOT-HSA 2020) at the 10th International Conference on the Internet of Things (IOT 2020)}, 
-	Series = {The 1st Workshop on Internet of Things-Based Health Services and Applications (IOT-HSA 2020) at the 10th International Conference on the Internet of Things (IOT 2020)},
 	Day = 6,
 	Doi = {10.1145/3423423.3423433},
 	Location = {Malm{\"o}, Sweden},
@@ -3335,7 +3295,6 @@
 @inproceedings{ioti2019,
 	Author = {Ali, M Intizar and Patel, Pankesh and Breslin, John G},
 	Booktitle = {The International Workshop on IoT Applications and Industry 4.0 (IoTI4 2019) at the 15th International Conference on Distributed Computing in Sensor Systems (DCOSS 2019)}, 
-	Series = {The International Workshop on IoT Applications and Industry 4.0 (IoTI4 2019) at the 15th International Conference on Distributed Computing in Sensor Systems (DCOSS 2019)},
 	Day = 30,
 	DOI = {10.1109/DCOSS.2019.00079},
 	Location = {Santorini, Greece},
@@ -3348,7 +3307,6 @@
 @inproceedings{dl4k2018,
 	Author = {Piao, Guangyuan and Breslin, John G},
 	Booktitle = {The 1st Workshop on Deep Learning for Knowledge Graphs and Semantic Technologies (DL4KGS 2018) at the 15th Extended Semantic Web Conference (ESWC 2018)}, 
-	Series = {The 1st Workshop on Deep Learning for Knowledge Graphs and Semantic Technologies (DL4KGS 2018) at the 15th Extended Semantic Web Conference (ESWC 2018)},
 	Day = 4,
 	Location = {Heraklion, Greece},
 	Month = jun,
@@ -3361,7 +3319,6 @@
 @inproceedings{ublp2016,
 	Author = {Ruder, Sebastian and Ghaffari, Parsa and Breslin, John G},
 	Booktitle = {The Workshop on Uphill Battles in Language Processing (UBLP 2016) at the 2016 Conference on Empirical Methods in Natural Language Processing (EMNLP 2016)}, 
-	Series = {The Workshop on Uphill Battles in Language Processing (UBLP 2016) at the 2016 Conference on Empirical Methods in Natural Language Processing (EMNLP 2016)},
 	Day = 5,
 	Location = {Austin, Texas, USA},
 	Month = nov,
@@ -3373,7 +3330,6 @@
 @inproceedings{seme2016b,
 	Author = {Ruder, Sebastian and Ghaffari, Parsa and Breslin, John G},
 	Booktitle = {The International Workshop on Semantic Evaluation (SemEval 2016) at the 15th Annual Conference of the North American Chapter of the Association for Computational Linguistics (NAACL 2016)}, 
-	Series = {The International Workshop on Semantic Evaluation (SemEval 2016) at the 15th Annual Conference of the North American Chapter of the Association for Computational Linguistics (NAACL 2016)},
 	Day = 16,
 	Location = {San Diego, California, USA},
 	Month = jun,
@@ -3386,7 +3342,6 @@
 @inproceedings{seme2016a,
 	Author = {Ruder, Sebastian and Ghaffari, Parsa and Breslin, John G},
 	Booktitle = {The International Workshop on Semantic Evaluation (SemEval 2016) at the 15th Annual Conference of the North American Chapter of the Association for Computational Linguistics (NAACL 2016)}, 
-	Series = {The International Workshop on Semantic Evaluation (SemEval 2016) at the 15th Annual Conference of the North American Chapter of the Association for Computational Linguistics (NAACL 2016)},
 	Day = 16,
 	Location = {San Diego, California, USA},
 	Month = jun,
@@ -3399,7 +3354,6 @@
 @inproceedings{iesd2012,
 	Author = {Sacco, Owen and Thomas, George and Breslin, John G},
 	Booktitle = {The International Workshop on Intelligent Exploration of Semantic Data (IESD 2012) at the 18th International Conference on Knowledge Engineering and Knowledge Management (EKAW 2012)}, 
-	Series = {The International Workshop on Intelligent Exploration of Semantic Data (IESD 2012) at the 18th International Conference on Knowledge Engineering and Knowledge Management (EKAW 2012)},
 	Day = 9,
 	Location = {Galway, Ireland},
 	Month = oct,
@@ -3411,7 +3365,6 @@
 @inproceedings{socm2012,
 	Author = {Heravi, Bahareh R and Boran, Marie and Breslin, John G},
 	Booktitle = {The Workshop on the Potential of Social Media Tools and Data for Journalists (SocMedNews 2012) at the 6th International AAAI Conference on Weblogs and Social Media (ICWSM-12)}, 
-	Series = {The Workshop on the Potential of Social Media Tools and Data for Journalists (SocMedNews 2012) at the 6th International AAAI Conference on Weblogs and Social Media (ICWSM-12)},
 	Day = 4,
 	Location = {Dublin, Ireland},
 	Month = jun,
@@ -3423,7 +3376,6 @@
 @inproceedings{ssn_2011,
 	Author = {Crowley, David N and Passant, Alexandre and Breslin, John G},
 	Booktitle = {The 4th International Workshop on Semantic Sensor Networks 2011 (SSN 2011) at the 10th International Semantic Web Conference (ISWC 2011)}, 
-	Series = {The 4th International Workshop on Semantic Sensor Networks 2011 (SSN 2011) at the 10th International Semantic Web Conference (ISWC 2011)},
 	Day = 23,
 	Location = {Bonn, Germany},
 	Month = oct,
@@ -3435,7 +3387,6 @@
 @inproceedings{msm_2011,
 	Author = {Choudhury, Smitashree and Breslin, John G},
 	Booktitle = {The 1st Workshop on Making Sense of Microposts (MSM 2011) at the 8th Extended Semantic Web Conference (ESWC 2011)}, 
-	Series = {The 1st Workshop on Making Sense of Microposts (MSM 2011) at the 8th Extended Semantic Web Conference (ESWC 2011)},
 	Day = 30,
 	Location = {Heraklion, Greece},
 	Month = may,
@@ -3447,7 +3398,6 @@
 @inproceedings{semw2010,
 	Author = {Schneider, Jodi and Passant, Alexandre and Breslin, John G},
 	Booktitle = {The 5th Workshop on Semantic Wikis: Linking Data and People Workshop (SemWiki 2010)}, 
-	Series = {The 5th Workshop on Semantic Wikis: Linking Data and People Workshop (SemWiki 2010)},
 	Day = 31,
 	Location = {Crete, Greece},
 	Month = may,
@@ -3459,7 +3409,6 @@
 @inproceedings{swas2009,
 	Author = {Passant, Alexandre and Ciccarese, Paolo and Breslin, John G and Clark, Tim},
 	Booktitle = {The 1st International Workshop on Semantic Web Applications in Scientific Discourse (SWASD 2009) at the 8th International Semantic Web Conference (ISWC 2009)}, 
-	Series = {The 1st International Workshop on Semantic Web Applications in Scientific Discourse (SWASD 2009) at the 8th International Semantic Web Conference (ISWC 2009)},
 	Day = 26,
 	Location = {Washington, DC, USA},
 	Month = oct,
@@ -3471,7 +3420,6 @@
 @inproceedings{sdow2009,
 	Author = {Hastrup, Tuukka and Boj{\=a}rs, Uldis and Breslin, John G},
 	Booktitle = {The 2nd International Workshop on Social Data on the Web (SDOW 2009) at the 8th International Semantic Web Conference (ISWC 2009)}, 
-	Series = {The 2nd International Workshop on Social Data on the Web (SDOW 2009) at the 8th International Semantic Web Conference (ISWC 2009)},
 	Date-Modified = {2018-03-14 14:35:16 +0000},
 	Day = 25,
 	Location = {Washington, DC, USA},
@@ -3484,7 +3432,6 @@
 @inproceedings{coin2010,
 	Author = {Passant, Alexandre and Boj{\=a}rs, Uldis and Breslin, John G and Decker, Stefan},
 	Booktitle = {Coordination, Organizations, Institutions and Norms in Agent Systems V (COIN 2009)},
-	Series = {Coordination, Organizations, Institutions and Norms in Agent Systems V (COIN 2009)},
 	Day = 7,
 	Doi = {10.1007/978-3-642-14962-7_12},
 	Month = aug,
@@ -3501,7 +3448,6 @@
 @inproceedings{mall2009,
 	Author = {Boj{\=a}rs, Uldis and Passant, Alexandre and Breslin, John G and Decker, Stefan},
 	Booktitle = {The MALLOW Workshop on Coordination, Organizations, Institutions and Norms in Agent Systems in Online Communities (COIN at MALLOW 2009)}, 
-	Series = {The MALLOW Workshop on Coordination, Organizations, Institutions and Norms in Agent Systems in Online Communities (COIN at MALLOW 2009)},
 	Date-Modified = {2018-03-14 14:35:16 +0000},
 	Day = 9,
 	Location = {Turin, Italy},
@@ -3514,7 +3460,6 @@
 @inproceedings{saak2009,
 	Author = {Choudhury, Smitashree and Breslin, John G and Decker, Stefan},
 	Booktitle = {The Workshop on Semantic Authoring, Annotation and Knowledge Markup Workshop (SAAKM 2009) at the 5th International Conference on Knowledge Capture (K-CAP 2009)}, 
-	Series = {The Workshop on Semantic Authoring, Annotation and Knowledge Markup Workshop (SAAKM 2009) at the 5th International Conference on Knowledge Capture (K-CAP 2009)},
 	Day = 1,
 	Location = {Redondo Beach, California, USA},
 	Month = sep,
@@ -3526,7 +3471,6 @@
 @inproceedings{widm2008,
 	Author = {Kinsella, Sheila and Budura, Adriana and Skobeltsyn, Gleb and Michel, Sebastian and Breslin, John G and Aberer, Karl},
 	Booktitle = {The 10th ACM International Workshop on Web Information and Data Management (WIDM 2008)}, 
-	Series = {The 10th ACM International Workshop on Web Information and Data Management (WIDM 2008)},
 	Day = 30,
 	Location = {Napa Valley, California, USA},
 	Month = oct,
@@ -3538,7 +3482,6 @@
 @inproceedings{sdow2008,
 	Author = {Lange, Christoph and Boj{\=a}rs, Uldis and Groza, Tudor and Breslin, John G and Handschuh, Siegfried},
 	Booktitle = {The 1st International Workshop on Social Data on the Web (SDOW 2008) at the 7th International Semantic Web Conference (ISWC 2008)}, 
-	Series = {The 1st International Workshop on Social Data on the Web (SDOW 2008) at the 7th International Semantic Web Conference (ISWC 2008)},
 	Date-Modified = {2018-03-14 14:35:16 +0000},
 	Day = 27,
 	Issn = {16130073},
@@ -3552,7 +3495,6 @@
 @inproceedings{sfsw2008a,
 	Author = {Passant, Alexandre and Hastrup, Tuukka and Boj{\=a}rs, Uldis and Breslin, John G},
 	Booktitle = {The 4th Workshop on Scripting for the Semantic Web (SFSW 2008) at the 5th European Semantic Web Conference (ESWC '08)}, 
-	Series = {The 4th Workshop on Scripting for the Semantic Web (SFSW 2008) at the 5th European Semantic Web Conference (ESWC '08)},
 	Date-Modified = {2018-03-14 14:35:16 +0000},
 	Day = 2,
 	Location = {Tenerife, Spain},
@@ -3565,7 +3507,6 @@
 @inproceedings{saw_2008,
 	Author = {Boj{\=a}rs, Uldis and Passant, Alexandre and Breslin, John G and Decker, Stefan},
 	Booktitle = {The 2nd Workshop on Social Aspects of the Web (SAW 2008) at the 11th International Conference on Business Information Systems (BIS 2008)}, 
-	Series = {The 2nd Workshop on Social Aspects of the Web (SAW 2008) at the 11th International Conference on Business Information Systems (BIS 2008)},
 	Date-Modified = {2018-03-14 14:35:16 +0000},
 	Day = 6,
 	Location = {Innsbruck, Austria},
@@ -3578,7 +3519,6 @@
 @inproceedings{ldow2008,
 	Author = {Boj{\=a}rs, Uldis and Passant, Alexandre and Breslin, John G},
 	Booktitle = {The Workshop on Linked Data on the Web (LDOW 2008) at the 17th International World Wide Web Conference (WWW2008)}, 
-	Series = {The Workshop on Linked Data on the Web (LDOW 2008) at the 17th International World Wide Web Conference (WWW2008)},
 	Date-Modified = {2018-03-14 14:35:16 +0000},
 	Day = 22,
 	Location = {Beijing, China},
@@ -3591,7 +3531,6 @@
 @inproceedings{rdfr2007,
 	Author = {Boj{\=a}rs, Uldis and Breslin, John G},
 	Booktitle = {W3C Workshop on RDF Access to Relational Databases}, 
-	Series = {W3C Workshop on RDF Access to Relational Databases},
 	Date-Modified = {2018-03-14 14:35:16 +0000},
 	Day = 25,
 	Http = {http://www.w3.org/2007/03/RdfRDB/papers/sioc/},
@@ -3605,7 +3544,6 @@
 @inproceedings{ecsc2007,
 	Author = {Ning, Ke and Peristeras, Vassilios and Boj{\=a}rs, Uldis and Breslin, John G},
 	Booktitle = {The Workshop on CSCW and Web 2.0 at the 10th European Conference on Computer Supported Cooperative Work (ECSCW 2007)}, 
-	Series = {The Workshop on CSCW and Web 2.0 at the 10th European Conference on Computer Supported Cooperative Work (ECSCW 2007)},
 	Date-Modified = {2018-03-14 14:35:16 +0000},
 	Day = 25,
 	Location = {Limerick, Ireland},
@@ -3618,7 +3556,6 @@
 @inproceedings{sfsw2007,
 	Author = {Boj{\=a}rs, Uldis and Passant, Alexandre and Giasson, Frederick and Breslin, John G},
 	Booktitle = {The 3rd Workshop on Scripting for the Semantic Web at the 4th European Semantic Web Conference (ESWC '07)}, 
-	Series = {The 3rd Workshop on Scripting for the Semantic Web at the 4th European Semantic Web Conference (ESWC '07)},
 	Date-Modified = {2018-03-14 14:35:16 +0000},
 	Day = 6,
 	Location = {Innsbruck, Austria},
@@ -3631,7 +3568,6 @@
 @inproceedings{efw_2007b,
 	Author = {Breslin, John G and Boj{\=a}rs, Uldis and Aleman-Meza, Boanerges and Boley, Harold and Mochol, Malgorzata and Nixon, Lyndon J B and Polleres, Axel and Zhdanova, Anna V},
 	Booktitle = {The 1st International ExpertFinder Workshop (EFW 2007)}, 
-	Series = {The 1st International ExpertFinder Workshop (EFW 2007)},
 	Date-Modified = {2018-03-14 14:35:16 +0000},
 	Day = 16,
 	Location = {Berlin, Germany},
@@ -3644,7 +3580,6 @@
 @inproceedings{efw_2007a,
 	Author = {Boj{\=a}rs, Uldis and Breslin, John G},
 	Booktitle = {The 1st International ExpertFinder Workshop (EFW 2007)}, 
-	Series = {The 1st International ExpertFinder Workshop (EFW 2007)},
 	Date-Modified = {2018-03-14 14:35:16 +0000},
 	Day = 16,
 	Location = {Berlin, Germany},
@@ -3657,7 +3592,6 @@
 @inproceedings{irw_2006,
 	Author = {Choi, Hee-Chul and Kruk, Sebastian R and Grzonkowski, S\l{}awomir and Stankiewicz, Katarzyna and Davis, Brian and Breslin, John G},
 	Booktitle = {The Identity, Reference and Web Workshop (IRW2006) at the 15th International World Wide Web Conference (WWW2006)}, 
-	Series = {The Identity, Reference and Web Workshop (IRW2006) at the 15th International World Wide Web Conference (WWW2006)},
 	Day = 23,
 	Location = {Edinburgh, Scotland},
 	Month = may,
@@ -3669,7 +3603,6 @@
 @inproceedings{foaf2004a,
 	Author = {Harth, Andreas and Breslin, John G and O'Murchu, Ina and Decker, Stefan},
 	Booktitle = {The 1st Workshop on Friend of a Friend, Social Networking and the (Semantic) Web (FOAF Galway)}, 
-	Series = {The 1st Workshop on Friend of a Friend, Social Networking and the (Semantic) Web (FOAF Galway)},
 	Day = 1,
 	Http = {http://www.w3.org/2001/sw/Europe/events/foaf-galway/papers/fp/linking_semantically_enabled_online_community_sites/},
 	Location = {Galway, Ireland},
@@ -3683,7 +3616,6 @@
 @inproceedings{ecai2004,
 	Author = {O'Murchu, Ina and Breslin, John G and Decker, Stefan},
 	Booktitle = {The Workshop on the Application of Semantic Web Technologies to Web Communities at the 16th European Conference on Artificial Intelligence 2004 (ECAI 2004)}, 
-	Series = {The Workshop on the Application of Semantic Web Technologies to Web Communities at the 16th European Conference on Artificial Intelligence 2004 (ECAI 2004)},
 	Issn = {16130073},
 	Location = {Valencia, Spain},
 	Month = aug,
@@ -3695,7 +3627,6 @@
 @inproceedings{comp2000,
 	Author = {Breslin, John G and Hurley, W Gerard},
 	Booktitle = {The 7th IEEE Workshop on Computers in Power Electronics (COMPEL 2000)}, 
-	Series = {The 7th IEEE Workshop on Computers in Power Electronics (COMPEL 2000)},
 	Location = {Blacksburg, Virginia, USA},
 	Month = jul,
 	Pages = {268--271},
@@ -3707,7 +3638,6 @@
 @inproceedings{vpec1996,
 	Author = {Skutt, Glenn and Lee, Fred C and Breslin, John G},
 	Booktitle = {VPEC Seminar Series}, 
-	Series = {VPEC Seminar Series},
 	Location = {Blacksburg, Virginia, USA},
 	Month = sep,
 	Pdf = {http://www.johnbreslin.com/files/publications/19960900_vpec1996.pdf},
@@ -3717,11 +3647,11 @@
 
 %% Work in Progress Papers, Peer-Reviewed
 
-%% Added to Sesame with grants Confirm and SMART 4.0
+%% Added to Sesame 
 @inproceedings{smar2023a,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (16/RC/3918) and the European Union (MSCA 847577)},
 	Author = {Verma, Priyanka and Breslin, John G and Ponce de Leon, Miguel and O'Shea, Donna},
 	Booktitle = {The 9th IEEE International Conference on Smart Computing (SMARTCOMP 2023)}, 
-	Series = {The 9th IEEE International Conference on Smart Computing (SMARTCOMP 2023)},
 	Day = 26,
 	Doi = {10.1109/SMARTCOMP58114.2023.00058},
 	Location = {Nashville, Tennessee, USA},
@@ -3732,11 +3662,11 @@
 	Type = {Work in Progress Paper},
 	Year = 2023}
 
-%% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame 
 @inproceedings{smar2023b,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (16/RC/3918) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Bharot, Nitesh and Soderi, Mirco and Verma, Priyanka and Breslin, John G},
 	Booktitle = {The 9th IEEE International Conference on Smart Computing (SMARTCOMP 2023)}, 
-	Series = {The 9th IEEE International Conference on Smart Computing (SMARTCOMP 2023)},
 	Day = 26,
 	Doi = {10.1109/SMARTCOMP58114.2023.00051},
 	Location = {Nashville, Tennessee, USA},
@@ -3747,11 +3677,11 @@
 	Type = {Work in Progress Paper},
 	Year = 2023}
 
-%% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame 
 @inproceedings{smar2023c,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (16/RC/3918) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Soderi, Mirco and Breslin, John G},
 	Booktitle = {The 9th IEEE International Conference on Smart Computing (SMARTCOMP 2023)}, 
-	Series = {The 9th IEEE International Conference on Smart Computing (SMARTCOMP 2023)},
 	Day = 26,
 	Doi = {10.1109/SMARTCOMP58114.2023.00056},
 	Location = {Nashville, Tennessee, USA},
@@ -3764,11 +3694,11 @@
 
 %% Poster Papers, Peer-Reviewed
 
-%% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame 
 @inproceedings{smar2023d,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (16/RC/3918) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Soderi, Mirco and Breslin, John G},
 	Booktitle = {The 9th IEEE International Conference on Smart Computing (SMARTCOMP 2023)}, 
-	Series = {The 9th IEEE International Conference on Smart Computing (SMARTCOMP 2023)},
 	Day = 26,
 	Doi = {10.1109/SMARTCOMP58114.2023.00045},
 	Location = {Nashville, Tennessee, USA},
@@ -3779,11 +3709,11 @@
 	Type = {Poster Paper},
 	Year = 2023}
 
-%% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame 
 @inproceedings{mobi2022,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (16/RC/3918) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Sudharsan, Bharath and Prasad, Sonu and Jose, Dan and Breslin, John G},
 	Booktitle = {The 28th Annual International Conference On Mobile Computing And Networking (MobiCom 2022)}, 
-	Series = {The 28th Annual International Conference On Mobile Computing And Networking (MobiCom 2022)},
 	Day = 17,
 	Doi = {10.1145/3495243.3558265},
 	Location = {Sydney, Australia},
@@ -3794,11 +3724,11 @@
 	Type = {Poster Paper},
 	Year = 2022}
 	
-%% Add to Sesame with grants CENTS and Insight
+%% Add to Sesame 
 @inproceedings{iccp2022,
+	Note = {Funded by the Government of Ireland (DTIF DT-2018-0040-C) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Sudharsan, Bharath and Rahul, Panchakarla S and Yadav, Piyush and Gupta, Suneet K and Kumar, Vimal and Nguyen, Duc-Duy and Ali, M Intizar and Breslin, John G},
 	Booktitle = {The 13th ACM/IEEE International Conference on Cyber-Physical Systems (ICCPS 2022)}, 
-	Series = {The 13th ACM/IEEE International Conference on Cyber-Physical Systems (ICCPS 2022)},
 	Day = {5},
 	Doi = {10.1109/ICCPS54341.2022.00039},
 	Location = {Milan, Italy},
@@ -3809,11 +3739,11 @@
 	Type = {Poster Paper},
 	Year = 2022}
 
-%% Added to Sesame with grants Confirm, Insight and VistaMilk
+%% Added to Sesame 
 @inproceedings{ipsn2022b,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (16/RC/3918), Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2) and Taighde {\'E}ireann - Research Ireland (16/RC/3835)},
 	Author = {Sheth, Dhruv and Sudharsan, Bharath},
 	Booktitle = {The 21st ACM/IEEE International Conference on Information Processing in Sensor Networks (IPSN 2022)}, 
-	Series = {The 21st ACM/IEEE International Conference on Information Processing in Sensor Networks (IPSN 2022)},
 	Day = 4,
 	Doi = {10.1109/IPSN54338.2022.00064},
 	Location = {Milan, Italy},
@@ -3824,11 +3754,11 @@
 	Type = {Poster Paper},
 	Year = 2022}
 
-%% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame 
 @inproceedings{ipsn2022a,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (16/RC/3918) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Sudharsan, Bharath and Salerno, Simone and Yadav, Piyush and Breslin, John G},
 	Booktitle = {The 21st ACM/IEEE International Conference on Information Processing in Sensor Networks (IPSN 2022)}, 
-	Series = {The 21st ACM/IEEE International Conference on Information Processing in Sensor Networks (IPSN 2022)},
 	Day = 4,
 	Doi = {10.1109/IPSN54338.2022.00061},
 	Location = {Milan, Italy},
@@ -3839,11 +3769,11 @@
 	Type = {Poster Paper},
 	Year = 2022}
 
-%% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame 
 @inproceedings{snss2021,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (16/RC/3918) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Sudharsan, Bharath and Sheth, Dhruv and Arya, Shailesh and Rollo, Federica and Yadav, Piyush and Patel, Pankesh and Breslin, John G and Ali, M Intizar},
 	Booktitle = {The 19th ACM Conference on Embedded Networked Sensor Systems (SenSys '21)}, 
-	Series = {The 19th ACM Conference on Embedded Networked Sensor Systems (SenSys '21)},
 	Day = 15,
 	Doi = {10.1145/3485730.3492885},
 	Location = {Coimbra, Portugal},
@@ -3857,7 +3787,6 @@
 @inproceedings{debs2019,
 	Author = {Sahal, Radhya and Breslin, John G and Ali, M Intizar},
 	Booktitle = {The 13th ACM International Conference on Distributed and Event-Based Systems (DEBS 2019)}, 
-	Series = {The 13th ACM International Conference on Distributed and Event-Based Systems (DEBS 2019)},
 	Day = 26,
 	Doi = {10.1145/3328905.3332509},
 	Location = {Darmstadt, Germany},
@@ -3871,7 +3800,6 @@
 @inproceedings{gem_2018,
 	Author = {Antelmi, Alessia and Breslin, John G and Young, Karen},
 	Booktitle = {The 2018 IEEE Games, Entertainment and Media Conference (GEM 2018)}, 
-	Series = {The 2018 IEEE Games, Entertainment and Media Conference (GEM 2018)},
 	Day = 15,
 	Doi = {10.1109/GEM.2018.8516505},
 	Month = aug,
@@ -3883,7 +3811,6 @@
 @inproceedings{emnl2016,
 	Author = {Ruder, Sebastian and Ghaffari, Parsa and Breslin, John G},
 	Booktitle = {The 2016 Conference on Empirical Methods in Natural Language Processing (EMNLP 2016)}, 
-	Series = {The 2016 Conference on Empirical Methods in Natural Language Processing (EMNLP 2016)},
 	Day = 2,
 	Month = nov,
 	Pdf = {http://www.johnbreslin.com/files/publications/20161102_emnl2016.pdf},
@@ -3894,7 +3821,6 @@
 @inproceedings{umap2016b,
 	Author = {Piao, Guangyuan and Breslin, John G},
 	Booktitle = {The 24th Conference on User Modelling, Adaptation and Personalization (UMAP 2016)}, 
-	Series = {The 24th Conference on User Modelling, Adaptation and Personalization (UMAP 2016)},
 	Day = 13,
 	Location = {Halifax, Canada},
 	Month = jul,
@@ -3906,7 +3832,6 @@
 @inproceedings{jist2015a,
 	Author = {Piao, Guangyuan and Breslin, John G},
 	Booktitle = {The 5th Joint International Semantic Technology Conference (JIST 2015)}, 
-	Series = {The 5th Joint International Semantic Technology Conference (JIST 2015)},
 	Day = 11,
 	Location = {Yichang, China},
 	Month = nov,
@@ -3918,7 +3843,6 @@
 @inproceedings{lssa2015,
 	Author = {Barnaghi, Peiman and Ghaffari, Parsa and Breslin, John G},
 	Booktitle = {The Workshop on Large-Scale Sports Analytics (LSSA 2015) at the 21st ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD 2015)}, 
-	Series = {The Workshop on Large-Scale Sports Analytics (LSSA 2015) at the 21st ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD 2015)},
 	Day = 10,
 	Location = {Sydney, Australia},
 	Month = aug,
@@ -3930,7 +3854,6 @@
 @inproceedings{dgo_2015,
 	Author = {Porwol, Lukasz and Hassan, Islam and Ojo, Adegboyega and Breslin, John G},
 	Booktitle = {The 16th International Conference on Digital Government Research (dg.o 2015)}, 
-	Series = {The 16th International Conference on Digital Government Research (dg.o 2015)},
 	Day = 28,
 	Location = {Phoenix, Arizona, USA},
 	Month = may,
@@ -3943,7 +3866,6 @@
 @inproceedings{epar2013,
 	Author = {Porwol, Lukasz and Ojo, Adegboyega and Breslin, John G},
 	Booktitle = {The 5th IFIP International Conference on eParticipation (ePart 2013)}, 
-	Series = {The 5th IFIP International Conference on eParticipation (ePart 2013)},
 	Day = 17,
 	Location = {Koblenz, Germany},
 	Month = sep,
@@ -3955,7 +3877,6 @@
 @inproceedings{meme2013,
 	Author = {Covello, Roberto and Fortino, Giancarlo and Gravina, Raffaele and Aguilar, Antonio and Breslin, John G},
 	Booktitle = {The 8th International Symposium on Medical Measurements and Applications (MEMEA 2013)}, 
-	Series = {The 8th International Symposium on Medical Measurements and Applications (MEMEA 2013)},
 	Day = 4,
 	Location = {Quebec, Canada},
 	Month = may,
@@ -3967,7 +3888,6 @@
 @inproceedings{dgo_2012,
 	Author = {Porwol, Lukasz and O'Donoghue, Padraic and Breslin, John G and Mulligan, Brendan and Coughlan, Chris},
 	Booktitle = {The 13th International Conference on Digital Government Research (dg.o 2012)}, 
-	Series = {The 13th International Conference on Digital Government Research (dg.o 2012)},
 	Day = 5,
 	Location = {College Park, Maryland, USA},
 	Month = jun,
@@ -3980,7 +3900,6 @@
 @inproceedings{icws2010b,
 	Author = {Letierce, Julie and Passant, Alexandre and Breslin, John G and Decker, Stefan},
 	Booktitle = {The 4th International Conference on Weblogs and Social Media (ICWSM-10)}, 
-	Series = {The 4th International Conference on Weblogs and Social Media (ICWSM-10)},
 	Day = 25,
 	Location = {Washington, DC, USA},
 	Month = may,
@@ -3992,7 +3911,6 @@
 @inproceedings{icws2010a,
 	Author = {Passant, Alexandre and Boj{\=a}rs, Uldis and Breslin, John G and Hastrup, Tuukka and Stankovic, Milan and Laublet, Philippe},
 	Booktitle = {The 4th International Conference on Weblogs and Social Media (ICWSM-10)}, 
-	Series = {The 4th International Conference on Weblogs and Social Media (ICWSM-10)},
 	Date-Modified = {2018-03-14 14:35:16 +0000},
 	Day = 25,
 	Location = {Washington, DC, USA},
@@ -4005,7 +3923,6 @@
 @inproceedings{webs2010d,
 	Author = {Choudhury, Smitashree and Breslin, John G},
 	Booktitle = {The Web Science Conference 2010 (WebSci '10)}, 
-	Series = {The Web Science Conference 2010 (WebSci '10)},
 	Day = 26,
 	Location = {Raleigh, North Carolina, USA},
 	Month = apr,
@@ -4017,7 +3934,6 @@
 @inproceedings{webs2010a,
 	Author = {Schneider, Jodi and Passant, Alexandre and Breslin, John G},
 	Booktitle = {The Web Science Conference 2010 (WebSci '10)}, 
-	Series = {The Web Science Conference 2010 (WebSci '10)},
 	Day = 26,
 	Location = {Raleigh, North Carolina, USA},
 	Month = apr,
@@ -4029,7 +3945,6 @@
 @inproceedings{webs2010b,
 	Author = {Kinsella, Sheila and Passant, Alexandre and Breslin, John G},
 	Booktitle = {The Web Science Conference 2010 (WebSci '10)}, 
-	Series = {The Web Science Conference 2010 (WebSci '10)},
 	Day = 26,
 	Location = {Raleigh, North Carolina, USA},
 	Month = apr,
@@ -4041,7 +3956,6 @@
 @inproceedings{sems2009,
 	Author = {Passant, Alexandre and Laublet, Philippe and Breslin, John G and Decker, Stefan},
 	Booktitle = {The Workshop on Semantic Search (SemSearch2009) at the 18th International World Wide Web Conference (WWW2009)}, 
-	Series = {The Workshop on Semantic Search (SemSearch2009) at the 18th International World Wide Web Conference (WWW2009)},
 	Day = 21,
 	Month = apr,
 	Pdf = {http://www.johnbreslin.com/files/publications/20090421_sems2009.pdf},
@@ -4052,7 +3966,6 @@
 @inproceedings{www_2006,
 	Author = {Oren, Eyal and Decker, Stefan and Breslin, John G},
 	Booktitle = {The 15th International World Wide Web Conference (WWW2006)}, 
-	Series = {The 15th International World Wide Web Conference (WWW2006)},
 	Day = 26,
 	Location = {Edinburgh, Scotland},
 	Month = may,
@@ -4064,7 +3977,6 @@
 @inproceedings{ewim2005,
 	Author = {Hogan, Aidan and Harth, Andreas and Breslin, John G},
 	Booktitle = {The 2nd European Workshop on the Integration of Knowledge, Semantic and Digital Media Technologies (EWIMT 2005)}, 
-	Series = {The 2nd European Workshop on the Integration of Knowledge, Semantic and Digital Media Technologies (EWIMT 2005)},
 	Day = 30,
 	Location = {London, UK},
 	Month = nov,
@@ -4076,7 +3988,6 @@
 @inproceedings{iswc2004,
 	Author = {O'Murchu, Ina and Breslin, John G and Decker, Stefan and Neumann, Marco},
 	Booktitle = {The 3rd International Semantic Web Conference (ISWC 2004)}, 
-	Series = {The 3rd International Semantic Web Conference (ISWC 2004)},
 	Day = 9,
 	Location = {Hiroshima, Japan},
 	Month = nov,
@@ -4087,11 +3998,11 @@
 
 %% Poster and Demonstration Papers, Peer-Reviewed
 
-%% Added to Sesame with grant Confirm and OntoCommons
+%% Added to Sesame 
 @inproceedings{eswc2022b,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (16/RC/3918) and the European Union (Horizon 2020 958371)},
 	Author = {Yahya, Muhammad and Zhou, Baifan and Zheng, Zhuoxun and Zhou, Dongzhuoran and Breslin, John G and Ali, M Intizar and Kharlamov, Evgeny},
 	Booktitle = {The 19th Extended Semantic Web Conference (ESWC 2022)}, 
-	Series = {The 19th Extended Semantic Web Conference (ESWC 2022)},
 	Day = 29,
 	Doi = {10.1007/978-3-031-11609-4_16},
 	Location = {Hersonissos, Greece},
@@ -4101,11 +4012,11 @@
 	Type = {Poster and Demonstration Paper},
 	Year = 2022}
 	
-%% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame 
 @inproceedings{ubic2021,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (16/RC/3918) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Rollo, Federica and Sudharsan, Bharath and Po, Laura and Breslin, John G},
 	Booktitle = {The ACM International Joint Conference on Pervasive and Ubiquitous Computing and the 25th Annual International Symposium on Wearable Computers (UbiComp / ISWC 2021)}, 
-	Series = {The ACM International Joint Conference on Pervasive and Ubiquitous Computing and the 25th Annual International Symposium on Wearable Computers (UbiComp / ISWC 2021)},
 	Day = 21,
 	Location = {Online},
 	Month = sep,
@@ -4116,11 +4027,11 @@
 
 %% Demonstration Papers, Peer-Reviewed
 
-%% Added to Sesame with grants VistaMilk and Insight
+%% Added to Sesame 
 @inproceedings{mass2023,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (16/RC/3835) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {De Silva, Anupa and Thakur, Subhasis and Breslin, John G},
 	Booktitle = {The 20th IEEE International Conference on Mobile Ad-Hoc and Smart Systems (MASS 2023)}, 
-	Series = {The 20th IEEE International Conference on Mobile Ad-Hoc and Smart Systems (MASS 2023)},
 	Day = 25,
 	Location = {Toronto, Canada},
 	Month = sep,
@@ -4130,11 +4041,11 @@
 	Type = {Demonstration Paper},
 	Year = 2023}
 
-%% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame 
 @inproceedings{smar2023e,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (16/RC/3918) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Bharot, Nitesh and Breslin, John G and Soderi, Mirco},
 	Booktitle = {The 9th IEEE International Conference on Smart Computing (SMARTCOMP 2023)}, 
-	Series = {The 9th IEEE International Conference on Smart Computing (SMARTCOMP 2023)},
 	Day = 26,
 	Doi = {10.1109/SMARTCOMP58114.2023.00040},
 	Location = {Nashville, Tennessee, USA},
@@ -4145,11 +4056,11 @@
 	Type = {Demonstration Paper},
 	Year = 2023}
 
-%% Added to Sesame with grants Confirm
+%% Added to Sesame 
 @inproceedings{aics2022,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (16/RC/3918)},
 	Author = {Soderi, Mirco and Breslin, John G},
 	Booktitle = {The 30th Irish Conference on Artificial Intelligence and Cognitive Science (AICS 2022)}, 
-	Series = {The 30th Irish Conference on Artificial Intelligence and Cognitive Science (AICS 2022)},
 	Day = 8,
 	Location = {Cork, Ireland},
 	Month = dec,
@@ -4158,11 +4069,11 @@
 	Type = {Demonstration Paper},
 	Year = 2022}
 
-%% Added to Sesame with grant Confirm
+%% Added to Sesame 
 @inproceedings{smar2022b,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (16/RC/3918)},
 	Author = {Soderi, Mirco and Kamath, Vignesh and Breslin, John G},
 	Booktitle = {The 8th IEEE International Conference on Smart Computing (SMARTCOMP 2022)}, 
-	Series = {The 8th IEEE International Conference on Smart Computing (SMARTCOMP 2022)},
 	Day = 20,
 	Doi = {10.1109/SMARTCOMP55677.2022.00036},
 	Location = {Helsinki, Finland},
@@ -4172,11 +4083,11 @@
 	Type = {Demonstration Paper},
 	Year = 2022}
 
-%% Added to Sesame with grant Confirm
+%% Added to Sesame 
 @inproceedings{smar2022a,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (16/RC/3918)},
 	Author = {Soderi, Mirco and Kamath, Vignesh and Breslin, John G},
 	Booktitle = {The 8th IEEE International Conference on Smart Computing (SMARTCOMP 2022)}, 
-	Series = {The 8th IEEE International Conference on Smart Computing (SMARTCOMP 2022)},
 	Day = 20,
 	Doi = {10.1109/SMARTCOMP55677.2022.00041},
 	Location = {Helsinki, Finland},
@@ -4186,11 +4097,11 @@
 	Type = {Demonstration Paper},
 	Year = 2022}
 
-%% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame 
 @inproceedings{perc2022,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (16/RC/3918) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Kopparapu, Kavya and Lin, Eric and Breslin, John G and Sudharsan, Bharath},
 	Booktitle = {The 20th International Conference on Pervasive Computing and Communications (PerCom 2022)}, 
-	Series = {The 20th International Conference on Pervasive Computing and Communications (PerCom 2022)},
 	Day = 21,
 	Doi = {10.1109/PerComWorkshops53856.2022.9767250},
 	Location = {Pisa, Italy},
@@ -4200,11 +4111,11 @@
 	Type = {Demonstration Paper},
 	Year = 2022}
 
-%% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame 
 @inproceedings{wfio2021b,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (16/RC/3918) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Sudharsan, Bharath and Salerno, Simone and Nguyen, Duc-Duy and Yahya, Muhammad and Wahid, Abdul and Yadav, Piyush and Breslin, John G and Ali, M Intizar},
 	Booktitle = {The 7th IEEE World Forum on Internet of Things (WF-IoT 2021)}, 
-	Series = {The 7th IEEE World Forum on Internet of Things (WF-IoT 2021)},
 	Day = 20,
 	Location = {New Orleans, Louisiana, USA},
 	Month = jun,
@@ -4213,11 +4124,11 @@
 	Type = {Demonstration Paper},
 	Year = 2021}
 
-%% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame 
 @inproceedings{iotd2021,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (16/RC/3918) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Sudharsan, Bharath and Patel, Pankesh and Wahid, Abdul and Yahya, Muhammad and Breslin, John G and Ali, M Intizar},
 	Booktitle = {The 6th ACM/IEEE International Conference on Internet of Things Design and Implementation (IOTDI 2021)}, 
-	Series = {The 6th ACM/IEEE International Conference on Internet of Things Design and Implementation (IOTDI 2021)},
 	Day = 18,
 	Doi = {10.1145/3450268.3453513},
 	Location = {Nashville, Tennessee, USA},
@@ -4227,11 +4138,11 @@
 	Type = {Demonstration Paper},
 	Year = 2021}
 
-%% Added to Sesame with grants Confirm and Insight
+%% Added to Sesame 
 @inproceedings{iccp2021,
+	Note = {Funded by Taighde {\'E}ireann - Research Ireland (16/RC/3918) and Taighde {\'E}ireann - Research Ireland (12/RC/2289\_P2)},
 	Author = {Sudharsan, Bharath and Patel, Pankesh and Breslin, John G and Ali, M Intizar},
 	Booktitle = {The 12th ACM/IEEE International Conference on Cyber-Physical Systems (ICCPS 2021)}, 
-	Series = {The 12th ACM/IEEE International Conference on Cyber-Physical Systems (ICCPS 2021)},
 	Day = 19,
 	Doi = {10.1145/3450267.3451999},
 	Location = {Nashville, Tennessee, USA},
@@ -4241,11 +4152,10 @@
 	Type = {Demonstration Paper},
 	Year = 2021}
 
-%% Added to Sesame with no ack
+%% Added to Sesame
 @inproceedings{cods2021b,
 	Author = {Patel, Vatsal and Kanani, Sarth and Pathak, Tapan and Patel, Pankesh and Ali, M Intizar and Breslin, John G},
 	Booktitle = {The ACM India Joint International Conference on Data Science and Management of Data (CODS-COMAD 2021)}, 
-	Series = {The ACM India Joint International Conference on Data Science and Management of Data (CODS-COMAD 2021)},
 	Day = 4,
 	Doi = {10.1145/3430984.3430988},
 	Location = {Bangalore, India},
@@ -4258,7 +4168,6 @@
 @inproceedings{ikc_2015,
 	Author = {Kapitsaki, Georgia M and Breslin, John G},
 	Booktitle = {The 1st KEYSTONE Open Conference}, 
-	Series = {The 1st KEYSTONE Open Conference},
 	Day = 8,
 	Location = {Coimbra, Portugal},
 	Month = sep,
@@ -4270,7 +4179,6 @@
 @inproceedings{isem2012c,
 	Author = {Sacco, Owen and Passant, Alexandre and Breslin, John G},
 	Booktitle = {The 8th International Conference on Semantic Systems (I-SEMANTICS 2012)}, 
-	Series = {The 8th International Conference on Semantic Systems (I-SEMANTICS 2012)},
 	Day = 5,
 	Location = {Graz, Austria},
 	Month = sep,
@@ -4282,7 +4190,6 @@
 @inproceedings{icwe2010b,
 	Author = {Passant, Alexandre and Breslin, John G and Decker, Stefan},
 	Booktitle = {The 10th International Conference on Web Engineering (ICWE 2010)}, 
-	Series = {The 10th International Conference on Web Engineering (ICWE 2010)},
 	Day = 8,
 	Month = jul,
 	Pages = {263--277},
@@ -4297,7 +4204,6 @@
 @inproceedings{sfsw2008b,
 	Author = {Passant, Alexandre and Hastrup, Tuukka and Boj{\=a}rs, Uldis and Breslin, John G},
 	Booktitle = {The 4th Workshop on Scripting for the Semantic Web (SFSW 2008) at the 5th European Semantic Web Conference (ESWC '08)}, 
-	Series = {The 4th Workshop on Scripting for the Semantic Web (SFSW 2008) at the 5th European Semantic Web Conference (ESWC '08)},
 	Date-Modified = {2018-03-14 14:35:16 +0000},
 	Day = 2,
 	Location = {Tenerife, Spain},
@@ -4311,7 +4217,6 @@
 @inproceedings{eswc2007b,
 	Author = {Passant, Alexandre and Boj{\=a}rs, Uldis and Giasson, Frederick and Breslin, John G},
 	Booktitle = {The 4th European Semantic Web Conference (ESWC '07)}, 
-	Series = {The 4th European Semantic Web Conference (ESWC '07)},
 	Date-Modified = {2018-03-14 14:35:16 +0000},
 	Day = 4,
 	Location = {Innsbruck, Austria},
@@ -4326,7 +4231,6 @@
 @inproceedings{ssa_2018,
 	Author = {Piao, Guangyuan and Breslin, John G},
 	Booktitle = {Semantic Web Challenges: Revised Selected Papers from the 5th Semantic Web Evaluation Challenge (SemWebEval 2018) at the 15th Extended Semantic Web Conference (ESWC 2018)}, 
-	Series = {Semantic Web Challenges: Revised Selected Papers from the 5th Semantic Web Evaluation Challenge (SemWebEval 2018) at the 15th Extended Semantic Web Conference (ESWC 2018)},
 	Day = 17,
 	Doi = {10.1007/978-3-030-00072-1_11},
 	Month = oct,
@@ -4343,7 +4247,6 @@
 @inproceedings{fiqa2018,
 	Author = {Piao, Guangyuan and Breslin, John G},
 	Booktitle = {Challenge on Financial Opinion Mining and Question Answering at the 27th Web Conference 2018 (TheWebConf 2018)}, 
-	Series = {Challenge on Financial Opinion Mining and Question Answering at the 27th Web Conference 2018 (TheWebConf 2018)},
 	Day = 23,
 	Doi = {10.1145/3184558.3191829},
 	Location = {Lyon, France},
@@ -4356,7 +4259,6 @@
 @inproceedings{jist2015c,
 	Author = {Piao, Guangyuan and Breslin, John G},
 	Booktitle = {Challenge on Entity Type Prediction over Linked Data at the 5th Joint International Semantic Technology Conference (JIST 2015)}, 
-	Series = {Challenge on Entity Type Prediction over Linked Data at the 5th Joint International Semantic Technology Conference (JIST 2015)},
 	Day = 13,
 	Location = {Yichang, China},
 	Month = nov,
@@ -4369,7 +4271,6 @@
 @inproceedings{swc_2008,
 	Author = {Kim, Hak-Lae and Yang, Sung-Kwon and Jung, Ji-Woong and Kim, Kwang-Sub and Breslin, John G and Decker, Stefan and Kim, Hong-Gee},
 	Booktitle = {The 6th Semantic Web Challenge at the 7th International Semantic Web Conference (ISWC 2008)}, 
-	Series = {The 6th Semantic Web Challenge at the 7th International Semantic Web Conference (ISWC 2008)},
 	Day = 28,
 	Month = oct,
 	Pdf = {http://www.johnbreslin.com/files/publications/20081028_swc_2008.pdf},
@@ -4380,7 +4281,6 @@
 @inproceedings{swc_2007,
 	Author = {Kim, Hak-Lae and Yang, Sung-Kwon and Song, Seung-Jae and Breslin, John G and Kim, Hong-Gee},
 	Booktitle = {The 5th Semantic Web Challenge at the 6th International Semantic Web Conference (ISWC 2007)}, 
-	Series = {The 5th Semantic Web Challenge at the 6th International Semantic Web Conference (ISWC 2007)},
 	Day = 13,
 	Month = nov,
 	Pdf = {http://www.johnbreslin.com/files/publications/20071113_swc_2007.pdf},
@@ -4393,7 +4293,6 @@
 @inproceedings{ieco2017,
 	Author = {Breslin, John G},
 	Booktitle = {The MIT Innovation Ecosystem (iEcosystem) Symposium 2017},
-	Series = {The MIT Innovation Ecosystem (iEcosystem) Symposium 2017},
 	Month = oct,
 	Note = {Best Poster Award},
 	Pdf = {http://www.johnbreslin.com/files/publications/20171012_ieco2017.pdf},
@@ -4404,7 +4303,6 @@
 @inproceedings{mcgi2017,
 	Author = {Welsh, Dianne HB and Kaciak, Eugene and Breslin, John G},
 	Booktitle = {The 21st McGill International Entrepreneurship Conference}, 
-	Series = {The 21st McGill International Entrepreneurship Conference},
 	Month = aug,
 	Title = {Irish Women Entrepreneurs: Opportunities and Challenges for International Growth},
 	Type = {Abstract},
@@ -4415,7 +4313,6 @@
 @inproceedings{iafd2009,
 	Author = {Passant, Alexandre and Hausenblas, Michael and O'Riain, Sean and Idehen, Kingsley and Breslin, John G and Decker, Stefan},
 	Booktitle = {W3C Workshop on Improving Access to Financial Data on the Web}, 
-	Series = {W3C Workshop on Improving Access to Financial Data on the Web},
 	Day = 6,
 	Http = {http://www.w3.org/2009/03/xbrl/soi/Passant.html},
 	Location = {Arlington, Virginia, USA},
@@ -4428,7 +4325,6 @@
 @inproceedings{fsn_2009a,
 	Author = {Breslin, John G and Decker, Stefan and Hauswirth, Manfred and Hynes, Gear{\'o}id and Le Phuoc, Danh and Passant, Alexandre and Polleres, Axel and Rabsch, Cornelius and Reynolds, Vinny},
 	Booktitle = {W3C Workshop on the Future of Social Networking}, 
-	Series = {W3C Workshop on the Future of Social Networking},
 	Day = 15,
 	Http = {http://www.w3.org/2008/09/msnws/papers/sensors.html},
 	Location = {Barcelona, Spain},
@@ -4441,7 +4337,6 @@
 @inproceedings{fsn_2009b,
 	Author = {Breslin, John G and Boj{\=a}rs, Uldis and Passant, Alexandre and Fern{\'a}ndez, Sergio and Decker, Stefan},
 	Booktitle = {W3C Workshop on the Future of Social Networking}, 
-	Series = {W3C Workshop on the Future of Social Networking},
 	Date-Modified = {2018-03-14 14:35:16 +0000},
 	Day = 15,
 	Http = {http://www.w3.org/2008/09/msnws/papers/sioc.html},
@@ -4455,7 +4350,6 @@
 @inproceedings{foaf2004c,
 	Author = {O'Murchu, Ina and Breslin, John G and Decker, Stefan},
 	Booktitle = {The 1st Workshop on Friend of a Friend, Social Networking and the (Semantic) Web (FOAF Galway)}, 
-	Series = {The 1st Workshop on Friend of a Friend, Social Networking and the (Semantic) Web (FOAF Galway)},
 	Day = 1,
 	Http = {http://www.w3.org/2001/sw/Europe/events/foaf-galway/papers/pp/social_networking_portals/},
 	Location = {Galway, Ireland},
@@ -4469,7 +4363,6 @@
 @inproceedings{foaf2004b,
 	Author = {Breslin, John G},
 	Booktitle = {The 1st Workshop on Friend of a Friend, Social Networking and the (Semantic) Web (FOAF Galway)}, 
-	Series = {The 1st Workshop on Friend of a Friend, Social Networking and the (Semantic) Web (FOAF Galway)},
 	Day = 1,
 	Http = {http://www.w3.org/2001/sw/Europe/events/foaf-galway/papers/pp/creating_a_social_network/},
 	Location = {Galway, Ireland},
